@@ -10,6 +10,15 @@
     
     
     <item>
+      <title>Test</title>
+      <link>https://chlalstjd430.github.io/2020/01/test/</link>
+      <pubDate>Sun, 12 Jan 2020 20:00:04 +0900</pubDate>
+      
+      <guid>https://chlalstjd430.github.io/2020/01/test/</guid>
+      <description>test</description>
+    </item>
+    
+    <item>
       <title>Reactive Programming</title>
       <link>https://chlalstjd430.github.io/2020/01/reactive_001/</link>
       <pubDate>Sat, 11 Jan 2020 21:53:44 +0900</pubDate>
@@ -25,15 +34,6 @@
       
       <guid>https://chlalstjd430.github.io/2020/01/baek_001_baek6497/</guid>
       <description>☞ 백준 문제 바로가기[ 6497 - 전력난 ] &amp;nbsp; &amp;nbsp; 사용 언어 - C++ &amp;nbsp; ﻿적용 알고리즘 - 크루스칼 알고리즘(Kruscal Algorithm) - 합집합 찾기 알고리즘(Union - Find) - 최</description>
-    </item>
-    
-    <item>
-      <title>hugo를 이용한 github blog 시작!</title>
-      <link>https://chlalstjd430.github.io/2020/01/etc_001/</link>
-      <pubDate>Sat, 11 Jan 2020 18:28:40 +0900</pubDate>
-      
-      <guid>https://chlalstjd430.github.io/2020/01/etc_001/</guid>
-      <description>이전에 개인 사이트를 직접 제작하며 개인 블로그를 운영하였다. 개인적으로 스스로 프론트,백엔드 개발을 하고 처음으로 배포까지 했어서 뿌듯했지만 지속적인 이용은</description>
     </item>
     
   </channel>

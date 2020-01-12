@@ -4,48 +4,55 @@
   
   <url>
     <loc>https://chlalstjd430.github.io/categories/</loc>
-    <lastmod>2020-01-11T21:53:44+09:00</lastmod>
+    <lastmod>2020-01-12T20:00:04+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://chlalstjd430.github.io/</loc>
-    <lastmod>2020-01-11T21:53:44+09:00</lastmod>
+    <lastmod>2020-01-12T20:00:04+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://chlalstjd430.github.io/posts/</loc>
-    <lastmod>2020-01-11T21:53:44+09:00</lastmod>
+    <lastmod>2020-01-12T20:00:04+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://chlalstjd430.github.io/tags/reactive/</loc>
-    <lastmod>2020-01-11T21:53:44+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://chlalstjd430.github.io/2020/01/reactive_001/</loc>
-    <lastmod>2020-01-11T21:53:44+09:00</lastmod>
+    <lastmod>2020-01-12T20:00:04+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://chlalstjd430.github.io/categories/reactive_programming/</loc>
-    <lastmod>2020-01-11T21:53:44+09:00</lastmod>
+    <lastmod>2020-01-12T20:00:04+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://chlalstjd430.github.io/tags/</loc>
+    <lastmod>2020-01-12T20:00:04+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://chlalstjd430.github.io/2020/01/test/</loc>
+    <lastmod>2020-01-12T20:00:04+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://chlalstjd430.github.io/2020/01/reactive_001/</loc>
     <lastmod>2020-01-11T21:53:44+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -89,27 +96,6 @@
   <url>
     <loc>https://chlalstjd430.github.io/tags/%EC%A0%84%EB%A0%A5%EB%82%9C/</loc>
     <lastmod>2020-01-11T21:43:42+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://chlalstjd430.github.io/categories/etc/</loc>
-    <lastmod>2020-01-11T18:28:40+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://chlalstjd430.github.io/tags/hugo/</loc>
-    <lastmod>2020-01-11T18:28:40+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://chlalstjd430.github.io/2020/01/etc_001/</loc>
-    <lastmod>2020-01-11T18:28:40+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
