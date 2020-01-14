@@ -24,6 +24,13 @@
   </url>
   
   <url>
+    <loc>https://chlalstjd430.github.io/tags/2020/</loc>
+    <lastmod>2020-01-13T22:10:39+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://chlalstjd430.github.io/categories/2020-%EA%B3%84%ED%9A%8D/</loc>
     <lastmod>2020-01-13T22:10:39+09:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -45,6 +52,20 @@
   </url>
   
   <url>
+    <loc>https://chlalstjd430.github.io/tags/</loc>
+    <lastmod>2020-01-13T22:10:39+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://chlalstjd430.github.io/tags/%EA%B3%84%ED%9A%8D/</loc>
+    <lastmod>2020-01-13T22:10:39+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://chlalstjd430.github.io/tags/reactive-programming/</loc>
     <lastmod>2020-01-11T21:53:44+09:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -53,13 +74,6 @@
   
   <url>
     <loc>https://chlalstjd430.github.io/2020/01/%EB%A6%AC%EC%95%A1%ED%8B%B0%EB%B8%8C-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D_001/</loc>
-    <lastmod>2020-01-11T21:53:44+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://chlalstjd430.github.io/tags/</loc>
     <lastmod>2020-01-11T21:53:44+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
