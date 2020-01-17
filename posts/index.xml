@@ -5,10 +5,19 @@
     <link>https://chlalstjd430.github.io/posts/</link>
     <description>Recent content in Posts on cmstown</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 16 Jan 2020 20:16:13 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 17 Jan 2020 14:35:55 +0900</lastBuildDate>
     
         <atom:link href="https://chlalstjd430.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>백준 2579 - 계단 오르기</title>
+      <link>https://chlalstjd430.github.io/2020/01/%EB%B0%B1%EC%A4%802579/</link>
+      <pubDate>Fri, 17 Jan 2020 14:35:55 +0900</pubDate>
+      
+      <guid>https://chlalstjd430.github.io/2020/01/%EB%B0%B1%EC%A4%802579/</guid>
+      <description>☞ 백준 문제 바로가기[2579- 계단 오르기] &amp;nbsp; &amp;nbsp; 사용 언어 - C++ &amp;nbsp; ﻿적용 알고리즘 - Dynamic Programing(다이나믹 프로그래밍) -&amp;nbsp;관련 동</description>
+    </item>
     
     <item>
       <title>백준 1149 - RGB거리</title>
