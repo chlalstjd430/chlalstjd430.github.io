@@ -372,23 +372,23 @@
 
 <p>포도주를 마실때 총 3가지 조건으로 나누어지게 된다.</p>
 
-<ol>
-<li>첫번째 포도주인 경우</li>
-</ol>
+<p><strong>첫번째 포도주인 경우</strong></p>
 
+<blockquote>
 <p>현재까지의 포도주 양 = 현재 포도주 양 + 이전까지의 포도주 양</p>
+</blockquote>
 
-<ol>
-<li>두번째 포도주인 경우</li>
-</ol>
+<p><strong>두번째 포도주인 경우</strong></p>
 
+<blockquote>
 <p>현재까지의 포도주 양 = 현재 포도주 양 + 이전 포도주 양 + 현재-3까지의 포도주 양</p>
+</blockquote>
 
-<ol>
-<li>세번째 포도주인 경우(건너띄는 포도주)</li>
-</ol>
+<p><strong>세번째 포도주인 경우(건너띄는 포도주)</strong></p>
 
+<blockquote>
 <p>현재까지의 포도주 양 = 이전까지의 포도주 양</p>
+</blockquote>
 
 <p>이를 통해 다음과 같은 코드가 나오게 되었다.</p>
 
@@ -416,6 +416,7 @@ int main() {
 		cout &lt;&lt; max(podo[1], (podo[1] + podo[2]));
 		return 0;
 	}
+  
 	dp[1] = podo[1];
 	dp[2] = dp[1] + podo[2];
 	maxPodo = dp[2];
