@@ -5,10 +5,19 @@
     <link>https://chlalstjd430.github.io/</link>
     <description>Recent content on cmstown</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 22 Jan 2020 17:32:04 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 25 Jan 2020 01:45:20 +0900</lastBuildDate>
     
         <atom:link href="https://chlalstjd430.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>백준 1504 - 특정한 최단 경로</title>
+      <link>https://chlalstjd430.github.io/2020/01/%EB%B0%B1%EC%A4%801504/</link>
+      <pubDate>Sat, 25 Jan 2020 01:45:20 +0900</pubDate>
+      
+      <guid>https://chlalstjd430.github.io/2020/01/%EB%B0%B1%EC%A4%801504/</guid>
+      <description>백준 문제 바로가기 사용 언어 C++ 적용 알고리즘 다익스트라 알고리즘 문제풀이 이 문제는 얼핏 보면 단순 다익스트라 알고리즘을 한번 적용하여 풀 수 있는 문제로 보인다. 그</description>
+    </item>
     
     <item>
       <title>Chapter 02 - 의미있는 이름</title>
