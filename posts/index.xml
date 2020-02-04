@@ -5,10 +5,28 @@
     <link>https://chlalstjd430.github.io/posts/</link>
     <description>Recent content in Posts on cmstown</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 03 Feb 2020 18:43:57 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 04 Feb 2020 18:49:01 +0900</lastBuildDate>
     
         <atom:link href="https://chlalstjd430.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>프로그래머스 - 문자열 압축</title>
+      <link>https://chlalstjd430.github.io/2020/02/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_003/</link>
+      <pubDate>Tue, 04 Feb 2020 18:49:01 +0900</pubDate>
+      
+      <guid>https://chlalstjd430.github.io/2020/02/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_003/</guid>
+      <description>문제링크 사용언어 c++ 주의사항 문자열은 제일 앞부터 정해진 길이만큼 잘라야 합니다. 문제풀이 문제풀이를 위해서 다음과 같은 과정을 거치게 됩니다. 문자열을 자를 단</description>
+    </item>
+    
+    <item>
+      <title>백준 2529 - 부등호</title>
+      <link>https://chlalstjd430.github.io/2020/02/%EB%B0%B1%EC%A4%802529/</link>
+      <pubDate>Tue, 04 Feb 2020 16:25:20 +0900</pubDate>
+      
+      <guid>https://chlalstjd430.github.io/2020/02/%EB%B0%B1%EC%A4%802529/</guid>
+      <description>백준 문제 바로가기 사용 언어 C++ 적용 알고리즘 그리디 알고리즘 문제풀이 다음과 같은 과정을 거쳐 문제를 풀었습니다. 재귀를 통해 순열을 구한다. 해당 순열이 부등호를</description>
+    </item>
     
     <item>
       <title>Chapter 06 - 객체와 자료구조</title>
@@ -170,24 +188,6 @@
       
       <guid>https://chlalstjd430.github.io/2020/01/%EC%A0%95%EB%B3%B4_001/</guid>
       <description>IT 동아리 정보 1. YAPP 6-7월 / 12-1월 2. NEXTERS 5월 / 11월 3. SOPT 3월 / 9월 4. 프로그라피 2-3월 / 8월 5. Mash-Up 3월 / 8-9월 6. DEPROMEET 2월 / 9월 7. 멋쟁이사자처럼</description>
-    </item>
-    
-    <item>
-      <title>2020 학업 계획</title>
-      <link>https://chlalstjd430.github.io/2020/01/2020%EA%B3%84%ED%9A%8D_001/</link>
-      <pubDate>Mon, 13 Jan 2020 22:10:39 +0900</pubDate>
-      
-      <guid>https://chlalstjd430.github.io/2020/01/2020%EA%B3%84%ED%9A%8D_001/</guid>
-      <description>2020년 학업 계획 1. IT동아리 - YOURSSU 활동중(19.11.01~ ) YAPP 지원중(1.18 면접) 최종 합격(1.22) 2. S/W 마에스트로 - 1월 중순~말 서류 접</description>
-    </item>
-    
-    <item>
-      <title>Reactive Programming이란?</title>
-      <link>https://chlalstjd430.github.io/2020/01/%EB%A6%AC%EC%95%A1%ED%8B%B0%EB%B8%8C-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D_001/</link>
-      <pubDate>Sat, 11 Jan 2020 21:53:44 +0900</pubDate>
-      
-      <guid>https://chlalstjd430.github.io/2020/01/%EB%A6%AC%EC%95%A1%ED%8B%B0%EB%B8%8C-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D_001/</guid>
-      <description>Reactive Programing&amp;nbsp;간단 정리! &amp;nbsp; 안녕하세요,&amp;nbsp;이 글에서는 제가&amp;nbsp;Reactive Programing을 처음 접</description>
     </item>
     
   </channel>
