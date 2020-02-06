@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>
-        Chapter 07 - 에러 핸들링 - cmstown
+        Chapter 08 - 경계 - cmstown
       </title>
     <head>
   <meta charset="utf-8">
@@ -23,35 +23,35 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <meta name="description" content="Chapter 07 - 에러 핸들링 1. 리턴 코드 대신에 Exception을 사용하자! 기존에 flag를 이용하여 에러 코드를 리턴하거나 호출하는 측에서 예외처리를 하였다. 이" />
+  <meta name="description" content="Chapter 08 - 경계 외부에서 사용하느 코드 또한 우리 내부코드와 &amp;ldquo;깨끗하게&amp;rdquo; 통합시켜야 한다. 1. 서드파티 코드 사용하기 서드파티란? Map" />
   <meta name="generator" content="Hugo 0.59.1 with theme pure" />
-  <title>Chapter 07 - 에러 핸들링 - cmstown</title>
+  <title>Chapter 08 - 경계 - cmstown</title>
   
   
   <link rel="stylesheet" href="https://chlalstjd430.github.io/css/style.min.55864f426c18be60c2e40c404f3e9db45a40a6a7ce220999b3a5da16cb66840d.css">
   
   <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
-  <meta property="og:title" content="Chapter 07 - 에러 핸들링" />
-<meta property="og:description" content="Chapter 07 - 에러 핸들링 1. 리턴 코드 대신에 Exception을 사용하자! 기존에 flag를 이용하여 에러 코드를 리턴하거나 호출하는 측에서 예외처리를 하였다. 이" />
+  <meta property="og:title" content="Chapter 08 - 경계" />
+<meta property="og:description" content="Chapter 08 - 경계 외부에서 사용하느 코드 또한 우리 내부코드와 &ldquo;깨끗하게&rdquo; 통합시켜야 한다. 1. 서드파티 코드 사용하기 서드파티란? Map" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://chlalstjd430.github.io/2020/02/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C_007/" />
-<meta property="article:published_time" content="2020-02-04T19:26:07+09:00" />
-<meta property="article:modified_time" content="2020-02-04T19:26:07+09:00" />
-<meta itemprop="name" content="Chapter 07 - 에러 핸들링">
-<meta itemprop="description" content="Chapter 07 - 에러 핸들링 1. 리턴 코드 대신에 Exception을 사용하자! 기존에 flag를 이용하여 에러 코드를 리턴하거나 호출하는 측에서 예외처리를 하였다. 이">
+<meta property="og:url" content="https://chlalstjd430.github.io/2020/02/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C_008/" />
+<meta property="article:published_time" content="2020-02-05T21:46:46+09:00" />
+<meta property="article:modified_time" content="2020-02-05T21:46:46+09:00" />
+<meta itemprop="name" content="Chapter 08 - 경계">
+<meta itemprop="description" content="Chapter 08 - 경계 외부에서 사용하느 코드 또한 우리 내부코드와 &ldquo;깨끗하게&rdquo; 통합시켜야 한다. 1. 서드파티 코드 사용하기 서드파티란? Map">
 
 
-<meta itemprop="datePublished" content="2020-02-04T19:26:07&#43;09:00" />
-<meta itemprop="dateModified" content="2020-02-04T19:26:07&#43;09:00" />
-<meta itemprop="wordCount" content="970">
+<meta itemprop="datePublished" content="2020-02-05T21:46:46&#43;09:00" />
+<meta itemprop="dateModified" content="2020-02-05T21:46:46&#43;09:00" />
+<meta itemprop="wordCount" content="356">
 
 
 
 <meta itemprop="keywords" content="클린코드," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Chapter 07 - 에러 핸들링"/>
-<meta name="twitter:description" content="Chapter 07 - 에러 핸들링 1. 리턴 코드 대신에 Exception을 사용하자! 기존에 flag를 이용하여 에러 코드를 리턴하거나 호출하는 측에서 예외처리를 하였다. 이"/>
+<meta name="twitter:title" content="Chapter 08 - 경계"/>
+<meta name="twitter:description" content="Chapter 08 - 경계 외부에서 사용하느 코드 또한 우리 내부코드와 &ldquo;깨끗하게&rdquo; 통합시켜야 한다. 1. 서드파티 코드 사용하기 서드파티란? Map"/>
 
   <!--[if lte IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -307,8 +307,8 @@
       <h1 itemprop="name">
   <a
     class="article-title"
-    href="/2020/02/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C_007/"
-    >Chapter 07 - 에러 핸들링</a
+    href="/2020/02/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C_008/"
+    >Chapter 08 - 경계</a
   >
 </h1>
 
@@ -316,8 +316,8 @@
         
 <span class="article-date">
   <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://chlalstjd430.github.io/2020/02/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C_007/" class="article-date">
-  <time datetime="2020-02-04 19:26:07 &#43;0900 KST" itemprop="datePublished">2020-02-04</time>
+<a href="https://chlalstjd430.github.io/2020/02/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C_008/" class="article-date">
+  <time datetime="2020-02-05 21:46:46 &#43;0900 KST" itemprop="datePublished">2020-02-05</time>
 </a>
 </span>
 <span class="article-category">
@@ -329,195 +329,67 @@
     <a class="article-tag-link" href="/tags/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C/"> 클린코드 </a>
   </span>
 
-        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/2020/02/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C_007/#comments"
+        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/2020/02/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C_008/#comments"
             class="article-comment-link">Comments</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 970words</span>
-		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 2minutes </span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 356words</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 1minutes </span>
       </div>
     </div>
     <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
       
 
-<h1 id="chapter-07-에러-핸들링">Chapter 07 - 에러 핸들링</h1>
+<h1 id="chapter-08-경계">Chapter 08 - 경계</h1>
 
 <hr />
+
+<p>외부에서 사용하느 코드 또한 우리 내부코드와 &ldquo;깨끗하게&rdquo; 통합시켜야 한다.</p>
 
 <p><br><br><br></p>
 
-<h3 id="1-리턴-코드-대신에-exception을-사용하자">1. 리턴 코드 대신에 Exception을 사용하자!</h3>
-
-<hr />
-
-<p>기존에 flag를 이용하여 에러 코드를 리턴하거나 호출하는 측에서 예외처리를 하였다. 이런 방식은 예외처리를 잊어버리기 쉽고 로직을 헷갈리게 한다.</p>
-
-<p><br><br></p>
-
-<pre><code class="language-java">// Bad
-public class DeviceController {
-  ...
-  public void sendShutDown() {
-    DeviceHandle handle = getHandle(DEV1);
-    // Check the state of the device
-    if (handle != DeviceHandle.INVALID) {
-      // Save the device status to the record field
-      retrieveDeviceRecord(handle);
-      // If not suspended, shut down
-      if (record.getStatus() != DEVICE_SUSPENDED) {
-        pauseDevice(handle);
-        clearDeviceWorkQueue(handle);
-        closeDevice(handle);
-      } else {
-        logger.log(&quot;Device suspended. Unable to shut down&quot;);
-      }
-    } else {
-      logger.log(&quot;Invalid handle for: &quot; + DEV1.toString());
-    }
-  }
-  ...
-}
-
-// Good
-public class DeviceController {
-  ...
-  public void sendShutDown() {
-    try {
-      tryToShutDown();
-    } catch (DeviceShutDownError e) {
-      logger.log(e);
-    }
-  }
-
-  private void tryToShutDown() throws DeviceShutDownError {
-    DeviceHandle handle = getHandle(DEV1);
-    DeviceRecord record = retrieveDeviceRecord(handle);
-    pauseDevice(handle);
-    clearDeviceWorkQueue(handle);
-    closeDevice(handle);
-  }
-
-  private DeviceHandle getHandle(DeviceID id) {
-    ...
-    throw new DeviceShutDownError(&quot;Invalid handle for: &quot; + id.toString());
-    ...
-  }
-  ...
-}
-</code></pre>
-
-<p><br><br></p>
-
-<h3 id="2-try-catch-finally문을-먼저-쓰자">2. Try-Catch-Finally문을 먼저 쓰자</h3>
+<h3 id="1-서드파티-코드-사용하기">1. 서드파티 코드 사용하기</h3>
 
 <hr />
 
 <ul>
-<li><p>이로써 &ldquo;Scrope 정의&rdquo;가 가능하다.</p></li>
+<li><p><a href="https://tuhbm.github.io/2018/01/26/thirdParty/">서드파티란?</a></p></li>
 
-<li><p>▽ 잘못된 input을 넣을 경우 StorageException을 제대로 던지는지 확인하는 테스트 코드</p>
-
-<pre><code class="language-java">// Step 1: StorageException을 던지지 않으므로 이 테스트는 실패한다.
-
-@Test(expected = StorageException.class)
-public void retrieveSectionShouldThrowOnInvalidFileName() {
-sectionStore.retrieveSection(&quot;invalid - file&quot;);
-}
-
-public List&lt;RecordedGrip&gt; retrieveSection(String sectionName) {
-// dummy return until we have a real implementation
-return new ArrayList&lt;RecordedGrip&gt;();
-}
-// Step 2: 이제 테스트는 통과한다.
-public List&lt;RecordedGrip&gt; retrieveSection(String sectionName) {
-try {
-  FileInputStream stream = new FileInputStream(sectionName)
-} catch (Exception e) {
-  throw new StorageException(&quot;retrieval error&quot;, e);
-}
-return new ArrayList&lt;RecordedGrip&gt;();
-}
-// Step 3: Exception의 범위를 FileNotFoundException으로 줄여 정확히 어떤 Exception이 발생한지 체크하자.
-public List&lt;RecordedGrip&gt; retrieveSection(String sectionName) {
-try {
-  FileInputStream stream = new FileInputStream(sectionName);
-  stream.close();
-} catch (FileNotFoundException e) {
-  throw new StorageException(&quot;retrieval error&quot;, e);
-}
-return new ArrayList&lt;RecordedGrip&gt;();
-}
-</code></pre></li>
-</ul>
-
-<p><br><br></p>
-
-<h3 id="3-unchecked-exception을-사용하자">3. Unchecked Exception을 사용하자</h3>
-
-<hr />
+<li><p>Map같은 경우 가급적이면 Wrapping을 하여 사용하자.</p>
 
 <ul>
-<li><p>Unchecked Exception과 Checked Exception에 대하여 설명을 잘해준 <a href="https://close852.tistory.com/47">블로그</a></p></li>
-
-<li><p>상위 레벨 메소드에서 하위 레벨 메소드의 디테일에 대해 알아야 하기 때문에 캡슐화 또한 깨진다.</p></li>
-</ul>
-
-<p><br><br></p>
-
-<h3 id="4-exceptions로-문맥을-제공하자">4. Exceptions로 문맥을 제공하자</h3>
-
-<hr />
-
-<ul>
-<li><p>예외가 발생한 이유와 좀 더 구체적인 Exception 타입을 제공하자.</p></li>
-
-<li><p>catch문의 내용이 비슷하다면 하나로 묶어서 사용하자.</p></li>
-</ul>
-
-<p><br><br></p>
-
-<h3 id="5-null을-리턴하지-말자">5. NULL을 리턴하지 말자</h3>
-
-<hr />
-
-<ul>
-<li><p>null을 리턴하고 싶은 생각이 들면 Special Case object를 리턴하자.</p>
-
-<ul>
-<li><a href="https://johngrib.github.io/wiki/null-object-pattern/">Null Object Patter</a></li>
+<li>공개된 API에서 인자로 받거나 리턴하지 마라.</li>
 </ul></li>
-
-<li><p><a href="https://tuhbm.github.io/2018/01/26/thirdParty/">서드파트 라이브러리</a> 에서 null을 리턴할 가능성이 있다면 Exception을 던지거나 Special Case object를 리턴하자.</p>
-
-<pre><code class="language-java">// Bad
-List&lt;Employee&gt; employees = getEmployees();
-if (employees != null) {
-for(Employee e : employees) {
-  totalPay += e.getPay();
-}
-}
-// Good
-List&lt;Employee&gt; employees = getEmployees();
-for(Employee e : employees) {
-totalPay += e.getPay();
-}
-
-public List&lt;Employee&gt; getEmployees() {
-if( .. there are no employees .. )
-  return Collections.emptyList();
-}
-}
-</code></pre></li>
 </ul>
 
 <p><br><br></p>
 
-<h3 id="6-null을-넘기지-말자">6. NULL을 넘기지 말자</h3>
+<h3 id="2-경계를-탐험하고-공부하기">2. 경계를 탐험하고 공부하기</h3>
 
 <hr />
 
 <ul>
-<li><p>null을 메서드로 넘기는 것 또한 나쁘다</p></li>
+<li><p>서드파티를 사용할 때 우리가 사용할 코드에 대헤서는 충분히 테스트 할 필요가 있다.</p></li>
 
-<li><p>가장 이성적인 해법은 null을 파라미터로 받지 못하게 하는 것이다.</p></li>
+<li><p>테스트는 값어치를 한다.</p>
+
+<ul>
+<li><p>메인 로직에 영향을 주지 않으며 서드파티 코드를 이해할 수 있다.</p></li>
+
+<li><p>이러한 테스트는 새 버전으로 이전에 도움을 준다.</p></li>
+</ul></li>
+</ul>
+
+<p><br><br></p>
+
+<h3 id="3-아직-존재하지-않는-코드-사용하기">3. 아직 존재하지 않는 코드 사용하기</h3>
+
+<hr />
+
+<ul>
+<li><p>아직 개발되지 않은 모듈이 필요한데, 기능은 커녕 인터페이스조차 구현되지 않은 경우가 있다.</p>
+
+<ul>
+<li>필요한 인터페이스를 만들어 활용하자(임시)</li>
+</ul></li>
 </ul>
 
 <p><br><br></p>
@@ -527,16 +399,10 @@ if( .. there are no employees .. )
 <hr />
 
 <ul>
-<li><p>예외처리는 가급적 Exception을 통해 처리를 해주는 것이 코드를 간결하게 한다.</p></li>
+<li><p>서드파티를 이용할 때 내부코드와 &ldquo;깨끗하게&rdquo; 통합시키자</p></li>
 
-<li><p>null을 리턴하지도 넘기지도 말자.</p></li>
+<li><p>서드파티 코드를 충분히 테스트하며 연습하자.</p></li>
 </ul>
-
-<p><br><br><br><br><br></p>
-
-<p><a href="https://github.com/Yooii-Studios/Clean-Code">출저 : https://github.com/Yooii-Studios/Clean-Code</a></p>
-
-<p><a href="http://www.yes24.com/Product/Goods/11681152">출저 : Clean Code 클린 코드 : 애자일 소프트웨어 장인 정신</a></p>
 
     </div>
     <div class="article-footer">
@@ -544,7 +410,7 @@ if( .. there are no employees .. )
   <ul class="post-copyright list-unstyled">
     <li class="post-copyright-link hidden-xs">
       <strong>Permalink: </strong>
-      <a href="https://chlalstjd430.github.io/2020/02/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C_007/" title="Chapter 07 - 에러 핸들링" target="_blank" rel="external">https://chlalstjd430.github.io/2020/02/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C_007/</a>
+      <a href="https://chlalstjd430.github.io/2020/02/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C_008/" title="Chapter 08 - 경계" target="_blank" rel="external">https://chlalstjd430.github.io/2020/02/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C_008/</a>
     </li>
     <li class="post-copyright-license">
       <strong>License：</strong><a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN</a>
@@ -579,14 +445,9 @@ if( .. there are no employees .. )
     <div class="bar-inner">
         <ul class="pager pull-left">
             <li class="prev">
-                <a href="https://chlalstjd430.github.io/2020/02/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_003/" title="프로그래머스 - 문자열 압축"><i
+                <a href="https://chlalstjd430.github.io/2020/02/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_004/" title="프로그래머스 - 프린터"><i
                         class="icon icon-angle-left"
                         aria-hidden="true"></i><span>&nbsp;&nbsp;Older</span></a>
-            </li>
-            <li class="next">
-                <a href="https://chlalstjd430.github.io/2020/02/2020%EA%B3%84%ED%9A%8D_002/"
-                    title="2020 학습하고 싶은 공부"><span>Newer&nbsp;&nbsp;</span><i
-                        class="icon icon-angle-right" aria-hidden="true"></i></a>
             </li>
             
             <li class="toggle-toc">

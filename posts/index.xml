@@ -5,10 +5,19 @@
     <link>https://chlalstjd430.github.io/posts/</link>
     <description>Recent content in Posts on cmstown</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 05 Feb 2020 21:25:08 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 05 Feb 2020 21:46:46 +0900</lastBuildDate>
     
         <atom:link href="https://chlalstjd430.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Chapter 08 - 경계</title>
+      <link>https://chlalstjd430.github.io/2020/02/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C_008/</link>
+      <pubDate>Wed, 05 Feb 2020 21:46:46 +0900</pubDate>
+      
+      <guid>https://chlalstjd430.github.io/2020/02/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C_008/</guid>
+      <description>Chapter 08 - 경계 외부에서 사용하느 코드 또한 우리 내부코드와 &amp;ldquo;깨끗하게&amp;rdquo; 통합시켜야 한다. 1. 서드파티 코드 사용하기 서드파티란? Map</description>
+    </item>
     
     <item>
       <title>프로그래머스 - 프린터</title>
@@ -179,15 +188,6 @@
       
       <guid>https://chlalstjd430.github.io/2020/01/%EB%B0%B1%EC%A4%809465/</guid>
       <description>☞ 백준 문제 바로가기[9465- 스티커] &amp;nbsp; &amp;nbsp; 사용 언어 - C++ &amp;nbsp; ﻿적용 알고리즘 - Dynamic Programing(다이나믹 프로그래밍) -&amp;nbsp;관련 동영상</description>
-    </item>
-    
-    <item>
-      <title>백준 2579 - 계단 오르기</title>
-      <link>https://chlalstjd430.github.io/2020/01/%EB%B0%B1%EC%A4%802579/</link>
-      <pubDate>Fri, 17 Jan 2020 14:35:55 +0900</pubDate>
-      
-      <guid>https://chlalstjd430.github.io/2020/01/%EB%B0%B1%EC%A4%802579/</guid>
-      <description>☞ 백준 문제 바로가기[2579- 계단 오르기] &amp;nbsp; &amp;nbsp; 사용 언어 - C++ &amp;nbsp; ﻿적용 알고리즘 - Dynamic Programing(다이나믹 프로그래밍) -&amp;nbsp;관련 동</description>
     </item>
     
   </channel>
