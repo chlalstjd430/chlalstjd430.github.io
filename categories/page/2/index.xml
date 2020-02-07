@@ -5,10 +5,46 @@
     <link>https://chlalstjd430.github.io/categories/</link>
     <description>Recent content in Categories on cmstown</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 06 Feb 2020 17:14:03 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 07 Feb 2020 16:16:54 +0900</lastBuildDate>
     
         <atom:link href="https://chlalstjd430.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Chapter 04 - 주석</title>
+      <link>https://chlalstjd430.github.io/2020/01/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C_004/</link>
+      <pubDate>Wed, 29 Jan 2020 20:37:09 +0900</pubDate>
+      
+      <guid>https://chlalstjd430.github.io/2020/01/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C_004/</guid>
+      <description>Chapter 04 - 주석 나쁜 코드에 주석을 달지 마라. 새로 짜라. - 브라이언 W.커니핸, P.J.플라우거 1. 불필요한 주석을 없애자. 주석은 코드로 의도를 표현하지 못하여</description>
+    </item>
+    
+    <item>
+      <title>Chapter 03 - 함수</title>
+      <link>https://chlalstjd430.github.io/2020/01/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C_003/</link>
+      <pubDate>Sat, 25 Jan 2020 02:07:43 +0900</pubDate>
+      
+      <guid>https://chlalstjd430.github.io/2020/01/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C_003/</guid>
+      <description>Chapter 03 - 함수 이번 시간에는 clean한 함수를 만드는 방법에 공부하였다. 어떻게 해야 좋은 함수를 만들 수 있는지 같이 확인 해 보자. 1. 함수는 작을수록(분리될수록</description>
+    </item>
+    
+    <item>
+      <title>백준 1504 - 특정한 최단 경로</title>
+      <link>https://chlalstjd430.github.io/2020/01/%EB%B0%B1%EC%A4%801504/</link>
+      <pubDate>Sat, 25 Jan 2020 01:45:20 +0900</pubDate>
+      
+      <guid>https://chlalstjd430.github.io/2020/01/%EB%B0%B1%EC%A4%801504/</guid>
+      <description>백준 문제 바로가기 사용 언어 C++ 적용 알고리즘 다익스트라 알고리즘 문제풀이 이 문제는 얼핏 보면 단순 다익스트라 알고리즘을 한번 적용하여 풀 수 있는 문제로 보인다. 그</description>
+    </item>
+    
+    <item>
+      <title>Chapter 02 - 의미있는 이름</title>
+      <link>https://chlalstjd430.github.io/2020/01/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C_002/</link>
+      <pubDate>Wed, 22 Jan 2020 17:32:04 +0900</pubDate>
+      
+      <guid>https://chlalstjd430.github.io/2020/01/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C_002/</guid>
+      <description>Chapter 02 - 의미있는 이름 1. 의도가 담긴 이름을 짓자 변수명/메서드명을 통해서 역할을 추정할 수 있도록 이름을 짓자. 별도의 주석이 필요 없을 정도로 명확하게 이름을 짓자</description>
+    </item>
     
     <item>
       <title>Chapter 01 - 깨끗한 코드</title>
@@ -93,10 +129,10 @@
     
     <item>
       <title>Reactive Programming이란?</title>
-      <link>https://chlalstjd430.github.io/2020/01/%EB%A6%AC%EC%95%A1%ED%8B%B0%EB%B8%8C-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D_001/</link>
+      <link>https://chlalstjd430.github.io/2020/01/%EB%A6%AC%EC%95%A1%ED%8B%B0%EB%B8%8C_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D_reactive_programming/</link>
       <pubDate>Sat, 11 Jan 2020 21:53:44 +0900</pubDate>
       
-      <guid>https://chlalstjd430.github.io/2020/01/%EB%A6%AC%EC%95%A1%ED%8B%B0%EB%B8%8C-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D_001/</guid>
+      <guid>https://chlalstjd430.github.io/2020/01/%EB%A6%AC%EC%95%A1%ED%8B%B0%EB%B8%8C_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D_reactive_programming/</guid>
       <description>Reactive Programing&amp;nbsp;간단 정리! &amp;nbsp; 안녕하세요,&amp;nbsp;이 글에서는 제가&amp;nbsp;Reactive Programing을 처음 접</description>
     </item>
     
