@@ -10,12 +10,21 @@
     
     
     <item>
+      <title>프로그래머스 - 숫자 야구</title>
+      <link>https://chlalstjd430.github.io/2020/02/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_011/</link>
+      <pubDate>Wed, 26 Feb 2020 21:53:38 +0900</pubDate>
+      
+      <guid>https://chlalstjd430.github.io/2020/02/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_011/</guid>
+      <description>문제링크 사용언어 c++ 주의사항 숫자는 1~9까지만 존재한다 동일한 숫자는 없다 문제풀이 일단 문제에서 답이될 수는 123~987에서 0을 포함하거나, 동일한 숫</description>
+    </item>
+    
+    <item>
       <title>프로그래머스 - 위장</title>
       <link>https://chlalstjd430.github.io/2020/02/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_010/</link>
       <pubDate>Sun, 23 Feb 2020 17:29:27 +0900</pubDate>
       
       <guid>https://chlalstjd430.github.io/2020/02/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_010/</guid>
-      <description>문제링크 사용언어 c++ 주의사항 서로 다른 옷의 조합의 수를 구하는 공식을 생각해보자. - 문제풀이 처음에 공식을 생각하지 않은 채, 재귀로 조합으로 경우의 수를 구하여</description>
+      <description>문제링크 사용언어 c++ 주의사항 서로 다른 옷의 조합의 수를 구하는 공식을 생각해보자. 문제풀이 처음에 공식을 생각하지 않은 채, 재귀로 조합으로 경우의 수를 구하여 시</description>
     </item>
     
     <item>
@@ -178,15 +187,6 @@
       
       <guid>https://chlalstjd430.github.io/2020/02/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_003/</guid>
       <description>문제링크 사용언어 c++ 주의사항 문자열은 제일 앞부터 정해진 길이만큼 잘라야 합니다. 문제풀이 문제풀이를 위해서 다음과 같은 과정을 거치게 됩니다. 문자열을 자를 단</description>
-    </item>
-    
-    <item>
-      <title>백준 2529 - 부등호</title>
-      <link>https://chlalstjd430.github.io/2020/02/%EB%B0%B1%EC%A4%802529/</link>
-      <pubDate>Tue, 04 Feb 2020 16:25:20 +0900</pubDate>
-      
-      <guid>https://chlalstjd430.github.io/2020/02/%EB%B0%B1%EC%A4%802529/</guid>
-      <description>백준 문제 바로가기 사용 언어 C++ 적용 알고리즘 그리디 알고리즘 문제풀이 다음과 같은 과정을 거쳐 문제를 풀었습니다. 재귀를 통해 순열을 구한다. 해당 순열이 부등호를</description>
     </item>
     
   </channel>
