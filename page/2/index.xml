@@ -5,10 +5,19 @@
     <link>https://chlalstjd430.github.io/</link>
     <description>Recent content on cmstown</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 28 Feb 2020 16:35:56 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 28 Feb 2020 23:34:31 +0900</lastBuildDate>
     
         <atom:link href="https://chlalstjd430.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Chapter 07 - 에러 핸들링</title>
+      <link>https://chlalstjd430.github.io/2020/02/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C_007/</link>
+      <pubDate>Tue, 04 Feb 2020 19:26:07 +0900</pubDate>
+      
+      <guid>https://chlalstjd430.github.io/2020/02/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C_007/</guid>
+      <description>Chapter 07 - 에러 핸들링 1. 리턴 코드 대신에 Exception을 사용하자! 기존에 flag를 이용하여 에러 코드를 리턴하거나 호출하는 측에서 예외처리를 하였다. 이</description>
+    </item>
     
     <item>
       <title>프로그래머스 - 문자열 압축</title>
@@ -179,15 +188,6 @@
       
       <guid>https://chlalstjd430.github.io/2020/01/%EB%B0%B1%EC%A4%801991/</guid>
       <description>☞ 백준 문제 바로가기[ 1991 - 트리 순회] &amp;nbsp; &amp;nbsp; 사용 언어 - C++ &amp;nbsp; ﻿적용 알고리즘 - 이진 트리 전위/중위/후위 순회 알고리즘 -&amp;nbsp;관련 동영상 강의 바로가기</description>
-    </item>
-    
-    <item>
-      <title>IT 동아리 정보</title>
-      <link>https://chlalstjd430.github.io/2020/01/%EC%A0%95%EB%B3%B4_001/</link>
-      <pubDate>Tue, 14 Jan 2020 14:16:41 +0900</pubDate>
-      
-      <guid>https://chlalstjd430.github.io/2020/01/%EC%A0%95%EB%B3%B4_001/</guid>
-      <description>IT 동아리 정보 1. YAPP 6-7월 / 12-1월 2. NEXTERS 5월 / 11월 3. SOPT 3월 / 9월 4. 프로그라피 2-3월 / 8월 5. Mash-Up 3월 / 8-9월 6. DEPROMEET 2월 / 9월 7. 멋쟁이사자처럼</description>
     </item>
     
   </channel>
