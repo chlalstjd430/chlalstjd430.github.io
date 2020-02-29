@@ -4,21 +4,35 @@
   
   <url>
     <loc>https://chlalstjd430.github.io/categories/</loc>
-    <lastmod>2020-02-28T23:34:31+09:00</lastmod>
+    <lastmod>2020-02-29T18:43:00+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://chlalstjd430.github.io/</loc>
-    <lastmod>2020-02-28T23:34:31+09:00</lastmod>
+    <lastmod>2020-02-29T18:43:00+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://chlalstjd430.github.io/posts/</loc>
-    <lastmod>2020-02-28T23:34:31+09:00</lastmod>
+    <lastmod>2020-02-29T18:43:00+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://chlalstjd430.github.io/2020/02/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_013/</loc>
+    <lastmod>2020-02-29T18:43:00+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://chlalstjd430.github.io/categories/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4/</loc>
+    <lastmod>2020-02-29T18:43:00+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -53,13 +67,6 @@
   
   <url>
     <loc>https://chlalstjd430.github.io/2020/02/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_012/</loc>
-    <lastmod>2020-02-28T16:35:56+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://chlalstjd430.github.io/categories/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4/</loc>
     <lastmod>2020-02-28T16:35:56+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -465,14 +472,14 @@
   </url>
   
   <url>
-    <loc>https://chlalstjd430.github.io/categories/it-%EC%A0%95%EB%B3%B4/</loc>
+    <loc>https://chlalstjd430.github.io/tags/it-%EC%A0%95%EB%B3%B4/</loc>
     <lastmod>2020-01-14T14:16:41+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://chlalstjd430.github.io/tags/it-%EC%A0%95%EB%B3%B4/</loc>
+    <loc>https://chlalstjd430.github.io/categories/it-%EC%A0%95%EB%B3%B4/</loc>
     <lastmod>2020-01-14T14:16:41+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
