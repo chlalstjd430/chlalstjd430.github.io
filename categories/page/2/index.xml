@@ -5,10 +5,19 @@
     <link>https://chlalstjd430.github.io/categories/</link>
     <description>Recent content in Categories on cmstown</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 29 Feb 2020 18:43:00 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 01 Mar 2020 23:49:13 +0900</lastBuildDate>
     
         <atom:link href="https://chlalstjd430.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>백준 1931 - 회의실 배정</title>
+      <link>https://chlalstjd430.github.io/2020/02/%EB%B0%B1%EC%A4%801931/</link>
+      <pubDate>Wed, 05 Feb 2020 17:37:55 +0900</pubDate>
+      
+      <guid>https://chlalstjd430.github.io/2020/02/%EB%B0%B1%EC%A4%801931/</guid>
+      <description>백준 문제 바로가기 사용 언어 C++ 적용 알고리즘 그리디 알고리즘 정렬 주의사항 처음 문제 풀 때 재귀를 통해 풀었으나 시간초과가 날 뿐더러 답도 틀렸었다.. 답은 왜 틀렸는</description>
+    </item>
     
     <item>
       <title>2020 학습하고 싶은 공부</title>
@@ -179,15 +188,6 @@
       
       <guid>https://chlalstjd430.github.io/2020/01/%EB%B0%B1%EC%A4%801149/</guid>
       <description>☞ 백준 문제 바로가기[1149 - RGB거리] &amp;nbsp; &amp;nbsp; 사용 언어 - C++ &amp;nbsp; ﻿적용 알고리즘 - Dynamic Programing(다이나믹 프로그래밍) -&amp;nbsp;관련 동</description>
-    </item>
-    
-    <item>
-      <title>백준 2887 - 행성터널</title>
-      <link>https://chlalstjd430.github.io/2020/01/%EB%B0%B1%EC%A4%802887/</link>
-      <pubDate>Wed, 15 Jan 2020 21:00:48 +0900</pubDate>
-      
-      <guid>https://chlalstjd430.github.io/2020/01/%EB%B0%B1%EC%A4%802887/</guid>
-      <description>백준 문제 바로가기 사용 언어 C++ 적용 알고리즘 최소 스패닝 트리 합집합 찾기 문제풀이 일반적으로 난이도가 쉬운 최소 스패닝 트리 문제를 풀 때, 가중치 값 기준으로 정렬 후</description>
     </item>
     
   </channel>
