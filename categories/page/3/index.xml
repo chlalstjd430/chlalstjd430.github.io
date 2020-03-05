@@ -5,10 +5,19 @@
     <link>https://chlalstjd430.github.io/categories/</link>
     <description>Recent content in Categories on cmstown</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 01 Mar 2020 23:49:13 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 04 Mar 2020 23:08:54 +0900</lastBuildDate>
     
         <atom:link href="https://chlalstjd430.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>백준 1149 - RGB거리</title>
+      <link>https://chlalstjd430.github.io/2020/01/%EB%B0%B1%EC%A4%801149/</link>
+      <pubDate>Thu, 16 Jan 2020 20:16:13 +0900</pubDate>
+      
+      <guid>https://chlalstjd430.github.io/2020/01/%EB%B0%B1%EC%A4%801149/</guid>
+      <description>☞ 백준 문제 바로가기[1149 - RGB거리] &amp;nbsp; &amp;nbsp; 사용 언어 - C++ &amp;nbsp; ﻿적용 알고리즘 - Dynamic Programing(다이나믹 프로그래밍) -&amp;nbsp;관련 동</description>
+    </item>
     
     <item>
       <title>백준 2887 - 행성터널</title>
