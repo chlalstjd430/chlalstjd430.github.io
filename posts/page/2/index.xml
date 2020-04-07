@@ -5,10 +5,19 @@
     <link>https://chlalstjd430.github.io/posts/</link>
     <description>Recent content in Posts on cmstown</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 05 Apr 2020 02:40:08 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 07 Apr 2020 20:54:00 +0900</lastBuildDate>
     
         <atom:link href="https://chlalstjd430.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>리액티브</title>
+      <link>https://chlalstjd430.github.io/2020/02/%EB%A6%AC%EC%95%A1%ED%8B%B0%EB%B8%8C_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D_webflux/</link>
+      <pubDate>Thu, 06 Feb 2020 17:44:27 +0900</pubDate>
+      
+      <guid>https://chlalstjd430.github.io/2020/02/%EB%A6%AC%EC%95%A1%ED%8B%B0%EB%B8%8C_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D_webflux/</guid>
+      <description>Spring Webflux 최근 교내 커뮤니티 동아리 유어슈에서 Spring Webflux를 이용하여 프로젝트를 하였다. 사실 기존 동아리 스펙이 webflux로 정해져서 어쩔수 없이 새로운</description>
+    </item>
     
     <item>
       <title>프로그래머스 - 멀쩡한 사각형</title>
@@ -179,15 +188,6 @@
       
       <guid>https://chlalstjd430.github.io/2020/01/%EB%B0%B1%EC%A4%801504/</guid>
       <description>백준 문제 바로가기 사용 언어 C++ 적용 알고리즘 다익스트라 알고리즘 문제풀이 이 문제는 얼핏 보면 단순 다익스트라 알고리즘을 한번 적용하여 풀 수 있는 문제로 보인다. 그</description>
-    </item>
-    
-    <item>
-      <title>Chapter 02 - 의미있는 이름</title>
-      <link>https://chlalstjd430.github.io/2020/01/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C_002/</link>
-      <pubDate>Wed, 22 Jan 2020 17:32:04 +0900</pubDate>
-      
-      <guid>https://chlalstjd430.github.io/2020/01/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C_002/</guid>
-      <description>Chapter 02 - 의미있는 이름 1. 의도가 담긴 이름을 짓자 변수명/메서드명을 통해서 역할을 추정할 수 있도록 이름을 짓자. 별도의 주석이 필요 없을 정도로 명확하게 이름을 짓자</description>
     </item>
     
   </channel>

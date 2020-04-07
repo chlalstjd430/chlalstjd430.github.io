@@ -5,10 +5,19 @@
     <link>https://chlalstjd430.github.io/categories/</link>
     <description>Recent content in Categories on cmstown</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 05 Apr 2020 02:40:08 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 07 Apr 2020 20:54:00 +0900</lastBuildDate>
     
         <atom:link href="https://chlalstjd430.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Chapter 02 - 의미있는 이름</title>
+      <link>https://chlalstjd430.github.io/2020/01/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C_002/</link>
+      <pubDate>Wed, 22 Jan 2020 17:32:04 +0900</pubDate>
+      
+      <guid>https://chlalstjd430.github.io/2020/01/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C_002/</guid>
+      <description>Chapter 02 - 의미있는 이름 1. 의도가 담긴 이름을 짓자 변수명/메서드명을 통해서 역할을 추정할 수 있도록 이름을 짓자. 별도의 주석이 필요 없을 정도로 명확하게 이름을 짓자</description>
+    </item>
     
     <item>
       <title>Chapter 01 - 깨끗한 코드</title>
