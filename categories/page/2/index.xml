@@ -5,10 +5,19 @@
     <link>https://chlalstjd430.github.io/categories/</link>
     <description>Recent content in Categories on cmstown</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 07 Apr 2020 20:54:00 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 08 Apr 2020 23:41:27 +0900</lastBuildDate>
     
         <atom:link href="https://chlalstjd430.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>JWT(1) - JWT(JSON Web Token)란 무엇인가?</title>
+      <link>https://chlalstjd430.github.io/2020/02/%EA%B3%B5%EB%B6%80_jwt/</link>
+      <pubDate>Thu, 06 Feb 2020 21:42:05 +0900</pubDate>
+      
+      <guid>https://chlalstjd430.github.io/2020/02/%EA%B3%B5%EB%B6%80_jwt/</guid>
+      <description>JWT(JSON Web Token) 프로젝트를 진행 중 모바일에서 로그인 API를 제공해야 될 일이 생겼다. 기존에 웹에서 프로젝트를 할 때는 session 정보를 이용하여 로그인 기능을 제공하였는데 모바</description>
+    </item>
     
     <item>
       <title>리액티브</title>
@@ -179,15 +188,6 @@
       
       <guid>https://chlalstjd430.github.io/2020/01/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C_003/</guid>
       <description>Chapter 03 - 함수 이번 시간에는 clean한 함수를 만드는 방법에 공부하였다. 어떻게 해야 좋은 함수를 만들 수 있는지 같이 확인 해 보자. 1. 함수는 작을수록(분리될수록</description>
-    </item>
-    
-    <item>
-      <title>백준 1504 - 특정한 최단 경로</title>
-      <link>https://chlalstjd430.github.io/2020/01/%EB%B0%B1%EC%A4%801504/</link>
-      <pubDate>Sat, 25 Jan 2020 01:45:20 +0900</pubDate>
-      
-      <guid>https://chlalstjd430.github.io/2020/01/%EB%B0%B1%EC%A4%801504/</guid>
-      <description>백준 문제 바로가기 사용 언어 C++ 적용 알고리즘 다익스트라 알고리즘 문제풀이 이 문제는 얼핏 보면 단순 다익스트라 알고리즘을 한번 적용하여 풀 수 있는 문제로 보인다. 그</description>
     </item>
     
   </channel>

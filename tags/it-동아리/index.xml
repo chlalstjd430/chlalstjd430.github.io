@@ -11,6 +11,15 @@
     
     
     <item>
+      <title>20200408_TIL</title>
+      <link>https://chlalstjd430.github.io/2020/04/20200408/</link>
+      <pubDate>Wed, 08 Apr 2020 23:41:27 +0900</pubDate>
+      
+      <guid>https://chlalstjd430.github.io/2020/04/20200408/</guid>
+      <description>TIL👨‍💻💪 2020.04.08(수요일) 한일🤘 1. 학교 - 미디어수학 - 코로나때문에 zoom으로 온라인 강의 수업을 들었다. 학교 와이파이가 끊겨 중간</description>
+    </item>
+    
+    <item>
       <title>프로그래머스 - N으로 표현</title>
       <link>https://chlalstjd430.github.io/2020/04/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_020/</link>
       <pubDate>Tue, 07 Apr 2020 20:54:00 +0900</pubDate>
@@ -179,15 +188,6 @@
       
       <guid>https://chlalstjd430.github.io/2020/02/%EB%B0%B1%EC%A4%8010610/</guid>
       <description>백준 문제 바로가기 사용 언어 C++ 적용 알고리즘 그리디 알고리즘 정렬 주의사항 재귀를 통해 순열을 구하여 정답을 찾았지만 메모리 초과가 나왔다. 문제풀이 초기에 순열을</description>
-    </item>
-    
-    <item>
-      <title>JWT(1) - JWT(JSON Web Token)란 무엇인가?</title>
-      <link>https://chlalstjd430.github.io/2020/02/%EA%B3%B5%EB%B6%80_jwt/</link>
-      <pubDate>Thu, 06 Feb 2020 21:42:05 +0900</pubDate>
-      
-      <guid>https://chlalstjd430.github.io/2020/02/%EA%B3%B5%EB%B6%80_jwt/</guid>
-      <description>JWT(JSON Web Token) 프로젝트를 진행 중 모바일에서 로그인 API를 제공해야 될 일이 생겼다. 기존에 웹에서 프로젝트를 할 때는 session 정보를 이용하여 로그인 기능을 제공하였는데 모바</description>
     </item>
     
   </channel>
