@@ -5,10 +5,28 @@
     <link>https://chlalstjd430.github.io/categories/</link>
     <description>Recent content in Categories on cmstown</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 08 Apr 2020 23:41:27 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 10 Apr 2020 00:20:27 +0900</lastBuildDate>
     
         <atom:link href="https://chlalstjd430.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Chapter 04 - 주석</title>
+      <link>https://chlalstjd430.github.io/2020/01/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C_004/</link>
+      <pubDate>Wed, 29 Jan 2020 20:37:09 +0900</pubDate>
+      
+      <guid>https://chlalstjd430.github.io/2020/01/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C_004/</guid>
+      <description>Chapter 04 - 주석 나쁜 코드에 주석을 달지 마라. 새로 짜라. - 브라이언 W.커니핸, P.J.플라우거 1. 불필요한 주석을 없애자. 주석은 코드로 의도를 표현하지 못하여</description>
+    </item>
+    
+    <item>
+      <title>Chapter 03 - 함수</title>
+      <link>https://chlalstjd430.github.io/2020/01/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C_003/</link>
+      <pubDate>Sat, 25 Jan 2020 02:07:43 +0900</pubDate>
+      
+      <guid>https://chlalstjd430.github.io/2020/01/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C_003/</guid>
+      <description>Chapter 03 - 함수 이번 시간에는 clean한 함수를 만드는 방법에 공부하였다. 어떻게 해야 좋은 함수를 만들 수 있는지 같이 확인 해 보자. 1. 함수는 작을수록(분리될수록</description>
+    </item>
     
     <item>
       <title>백준 1504 - 특정한 최단 경로</title>
