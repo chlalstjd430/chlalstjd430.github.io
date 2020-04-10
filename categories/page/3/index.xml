@@ -5,10 +5,28 @@
     <link>https://chlalstjd430.github.io/categories/</link>
     <description>Recent content in Categories on cmstown</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 10 Apr 2020 00:20:27 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 11 Apr 2020 01:19:38 +0900</lastBuildDate>
     
         <atom:link href="https://chlalstjd430.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Chapter 05 - 형식 맞추기</title>
+      <link>https://chlalstjd430.github.io/2020/01/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C_005/</link>
+      <pubDate>Fri, 31 Jan 2020 22:47:01 +0900</pubDate>
+      
+      <guid>https://chlalstjd430.github.io/2020/01/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C_005/</guid>
+      <description>Chapter 05 - 형식 맞추기 질서정연하고 깔끔하며, 일관적인 코드를 본다면 사람들에게 전문가가 짰다는 인상을 심어줄 수 있다. 반대로, 코드가 어수선해 보인다면 프로젝트</description>
+    </item>
+    
+    <item>
+      <title>백준 1948 - 임계경로</title>
+      <link>https://chlalstjd430.github.io/2020/01/%EB%B0%B1%EC%A4%801948/</link>
+      <pubDate>Thu, 30 Jan 2020 00:16:09 +0900</pubDate>
+      
+      <guid>https://chlalstjd430.github.io/2020/01/%EB%B0%B1%EC%A4%801948/</guid>
+      <description>백준 문제 바로가기 사용 언어 C++ 적용 알고리즘 위상 정렬 알고리즘 문제풀이 해당 문제에서 요구하는 것은 2가지이다. 1. 모든 사람들이 만나는 시간 2. 1분도 쉬지 않고 달</description>
+    </item>
     
     <item>
       <title>Chapter 04 - 주석</title>
