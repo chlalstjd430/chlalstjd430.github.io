@@ -5,10 +5,19 @@
     <link>https://chlalstjd430.github.io/posts/</link>
     <description>Recent content in Posts on cmstown</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 15 Apr 2020 03:53:24 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 17 Apr 2020 02:54:27 +0900</lastBuildDate>
     
         <atom:link href="https://chlalstjd430.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>백준 2529 - 부등호</title>
+      <link>https://chlalstjd430.github.io/2020/02/%EB%B0%B1%EC%A4%802529/</link>
+      <pubDate>Tue, 04 Feb 2020 16:25:20 +0900</pubDate>
+      
+      <guid>https://chlalstjd430.github.io/2020/02/%EB%B0%B1%EC%A4%802529/</guid>
+      <description>백준 문제 바로가기 사용 언어 C++ 적용 알고리즘 그리디 알고리즘 문제풀이 다음과 같은 과정을 거쳐 문제를 풀었습니다. 재귀를 통해 순열을 구한다. 해당 순열이 부등호를</description>
+    </item>
     
     <item>
       <title>Chapter 06 - 객체와 자료구조</title>
@@ -179,15 +188,6 @@
       
       <guid>https://chlalstjd430.github.io/2020/01/2020%EA%B3%84%ED%9A%8D_001/</guid>
       <description>2020년 학업 계획 1. IT동아리 - YOURSSU 활동중(19.11.01~ ) YAPP 지원중(1.18 면접) 최종 합격(1.22) 2. S/W 마에스트로 - 1월 중순~말 서류 접</description>
-    </item>
-    
-    <item>
-      <title>Reactive Programming이란?</title>
-      <link>https://chlalstjd430.github.io/2020/01/%EB%A6%AC%EC%95%A1%ED%8B%B0%EB%B8%8C_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D_reactive_programming/</link>
-      <pubDate>Sat, 11 Jan 2020 21:53:44 +0900</pubDate>
-      
-      <guid>https://chlalstjd430.github.io/2020/01/%EB%A6%AC%EC%95%A1%ED%8B%B0%EB%B8%8C_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D_reactive_programming/</guid>
-      <description>Reactive Programing&amp;nbsp;간단 정리! &amp;nbsp; 안녕하세요,&amp;nbsp;이 글에서는 제가&amp;nbsp;Reactive Programing을 처음 접</description>
     </item>
     
   </channel>
