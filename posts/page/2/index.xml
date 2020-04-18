@@ -5,10 +5,19 @@
     <link>https://chlalstjd430.github.io/posts/</link>
     <description>Recent content in Posts on cmstown</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 18 Apr 2020 17:45:28 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 19 Apr 2020 04:40:59 +0900</lastBuildDate>
     
         <atom:link href="https://chlalstjd430.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>백준 1182 - 부분수열의 합</title>
+      <link>https://chlalstjd430.github.io/2020/02/%EB%B0%B1%EC%A4%801182/</link>
+      <pubDate>Fri, 28 Feb 2020 23:34:31 +0900</pubDate>
+      
+      <guid>https://chlalstjd430.github.io/2020/02/%EB%B0%B1%EC%A4%801182/</guid>
+      <description>백준 문제 바로가기 사용 언어 C++ 적용 알고리즘 브루트 포스 DFS 주의사항 크기가 양수인 부분수열 중에서 그 수열의 원소를 다 더한 값이 S가 되는 경우의 수 문제풀이 해당 문제</description>
+    </item>
     
     <item>
       <title>프로그래머스 - 라면 공장</title>
@@ -179,15 +188,6 @@
       
       <guid>https://chlalstjd430.github.io/2020/02/2020%EA%B3%84%ED%9A%8D_002/</guid>
       <description>Study TODO 리스트 이것도 공부하고 싶고, 저것도 공부하고 싶고 공부하고 싶은 내용들이 너무 많다&amp;hellip; 그래서 Study todo 리스트를 만들어보았다. 단기간 내에 모든 것</description>
-    </item>
-    
-    <item>
-      <title>Chapter 07 - 에러 핸들링</title>
-      <link>https://chlalstjd430.github.io/2020/02/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C_007/</link>
-      <pubDate>Tue, 04 Feb 2020 19:26:07 +0900</pubDate>
-      
-      <guid>https://chlalstjd430.github.io/2020/02/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C_007/</guid>
-      <description>Chapter 07 - 에러 핸들링 1. 리턴 코드 대신에 Exception을 사용하자! 기존에 flag를 이용하여 에러 코드를 리턴하거나 호출하는 측에서 예외처리를 하였다. 이</description>
     </item>
     
   </channel>
