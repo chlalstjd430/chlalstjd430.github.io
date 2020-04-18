@@ -10,6 +10,15 @@
     
     
     <item>
+      <title>2020년 04월 17일_TIL</title>
+      <link>https://chlalstjd430.github.io/2020/04/20200417/</link>
+      <pubDate>Sat, 18 Apr 2020 17:45:28 +0900</pubDate>
+      
+      <guid>https://chlalstjd430.github.io/2020/04/20200417/</guid>
+      <description>TIL👨‍💻💪 2020.04.17(금요일) 한일🤘 1. 학교 고급자바프로그래밍실습 과제 해결 파이썬 과제 해결 2. 유어슈 toekn-function MR 총평💬 유어슈 이슈를 드디어 MR</description>
+    </item>
+    
+    <item>
       <title>2020년 04월 16일_TIL</title>
       <link>https://chlalstjd430.github.io/2020/04/20200416/</link>
       <pubDate>Fri, 17 Apr 2020 02:54:27 +0900</pubDate>
@@ -178,15 +187,6 @@
       
       <guid>https://chlalstjd430.github.io/2020/02/%EB%B0%B1%EC%A4%801182/</guid>
       <description>백준 문제 바로가기 사용 언어 C++ 적용 알고리즘 브루트 포스 DFS 주의사항 크기가 양수인 부분수열 중에서 그 수열의 원소를 다 더한 값이 S가 되는 경우의 수 문제풀이 해당 문제</description>
-    </item>
-    
-    <item>
-      <title>프로그래머스 - 라면 공장</title>
-      <link>https://chlalstjd430.github.io/2020/02/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_012/</link>
-      <pubDate>Fri, 28 Feb 2020 16:35:56 +0900</pubDate>
-      
-      <guid>https://chlalstjd430.github.io/2020/02/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_012/</guid>
-      <description>문제링크 사용언어 c++ 주의사항 stock에 있는 밀가루는 오늘(0일 이후)부터 사용됩니다. stock과 k는 2 이상 100,000 이하입니다. dates의 각 원소는 1</description>
     </item>
     
   </channel>
