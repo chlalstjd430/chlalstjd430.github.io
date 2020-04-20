@@ -11,6 +11,15 @@
     
     
     <item>
+      <title>2020년 04월 19일_TIL</title>
+      <link>https://chlalstjd430.github.io/2020/04/20200419/</link>
+      <pubDate>Mon, 20 Apr 2020 09:31:58 +0900</pubDate>
+      
+      <guid>https://chlalstjd430.github.io/2020/04/20200419/</guid>
+      <description>TIL👨 💻💪 2020.04.19(일요일) 한일🤘 1. 유어슈 이슈 리뷰반영 후 MR 2. 학교 프로젝트 프로젝트 제안서 마무리 3. 얍 entity 설정 3. 오늘 참고 자료 JPA 다대다 관</description>
+    </item>
+    
+    <item>
       <title>2020년 04월 18일_TIL</title>
       <link>https://chlalstjd430.github.io/2020/04/20200418/</link>
       <pubDate>Sun, 19 Apr 2020 04:40:59 +0900</pubDate>
@@ -179,15 +188,6 @@
       
       <guid>https://chlalstjd430.github.io/2020/03/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_014/</guid>
       <description>문제링크 사용언어 c++ 주의사항 DP를 적용하여 문제를 풀지않으면 시간 초과가 된다. 문제풀이 array[N][N] = (array[N-1][N], array[N][N-1], array[N-1][N-1]) 중 가장 작은 값 + 1 위의 점화식을 이용하여 문제를 풀면된다</description>
-    </item>
-    
-    <item>
-      <title>프로그래머스 - 카펫</title>
-      <link>https://chlalstjd430.github.io/2020/02/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_013/</link>
-      <pubDate>Sat, 29 Feb 2020 18:43:00 +0900</pubDate>
-      
-      <guid>https://chlalstjd430.github.io/2020/02/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_013/</guid>
-      <description>문제링크 사용언어 c++ 주의사항 카펫의 테두리는 브라운이고, 테두리를 제외한 부분은 빨간색이다. 이 조건을 통해 두가지 공식이 나온다. 넓이*높이 = brown + red (넓이</description>
     </item>
     
   </channel>

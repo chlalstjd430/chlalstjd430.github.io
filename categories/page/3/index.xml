@@ -5,10 +5,19 @@
     <link>https://chlalstjd430.github.io/categories/</link>
     <description>Recent content in Categories on cmstown</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 19 Apr 2020 04:40:59 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 20 Apr 2020 09:31:58 +0900</lastBuildDate>
     
         <atom:link href="https://chlalstjd430.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>2020 학습하고 싶은 공부</title>
+      <link>https://chlalstjd430.github.io/2020/02/2020%EA%B3%84%ED%9A%8D_002/</link>
+      <pubDate>Wed, 05 Feb 2020 00:38:43 +0900</pubDate>
+      
+      <guid>https://chlalstjd430.github.io/2020/02/2020%EA%B3%84%ED%9A%8D_002/</guid>
+      <description>Study TODO 리스트 이것도 공부하고 싶고, 저것도 공부하고 싶고 공부하고 싶은 내용들이 너무 많다&amp;hellip; 그래서 Study todo 리스트를 만들어보았다. 단기간 내에 모든 것</description>
+    </item>
     
     <item>
       <title>Chapter 07 - 에러 핸들링</title>
@@ -179,15 +188,6 @@
       
       <guid>https://chlalstjd430.github.io/2020/01/%EB%B0%B1%EC%A4%802887/</guid>
       <description>백준 문제 바로가기 사용 언어 C++ 적용 알고리즘 최소 스패닝 트리 합집합 찾기 문제풀이 일반적으로 난이도가 쉬운 최소 스패닝 트리 문제를 풀 때, 가중치 값 기준으로 정렬 후</description>
-    </item>
-    
-    <item>
-      <title>백준 1991 - 트리 순회</title>
-      <link>https://chlalstjd430.github.io/2020/01/%EB%B0%B1%EC%A4%801991/</link>
-      <pubDate>Wed, 15 Jan 2020 20:02:24 +0900</pubDate>
-      
-      <guid>https://chlalstjd430.github.io/2020/01/%EB%B0%B1%EC%A4%801991/</guid>
-      <description>☞ 백준 문제 바로가기[ 1991 - 트리 순회] &amp;nbsp; &amp;nbsp; 사용 언어 - C++ &amp;nbsp; ﻿적용 알고리즘 - 이진 트리 전위/중위/후위 순회 알고리즘 -&amp;nbsp;관련 동영상 강의 바로가기</description>
     </item>
     
   </channel>
