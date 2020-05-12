@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>test on cmstown</title>
+    <link>https://chlalstjd430.github.io/categories/test/</link>
+    <description>Recent content in test on cmstown</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 12 May 2020 23:57:36 +0900</lastBuildDate>
+    
+	<atom:link href="https://chlalstjd430.github.io/categories/test/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Test</title>
+      <link>https://chlalstjd430.github.io/2020/05/test/</link>
+      <pubDate>Tue, 12 May 2020 23:57:36 +0900</pubDate>
+      
+      <guid>https://chlalstjd430.github.io/2020/05/test/</guid>
+      <description>testeststes</description>
+    </item>
+    
+  </channel>
+</rss>
