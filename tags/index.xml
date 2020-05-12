@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on cmstown</title>
@@ -7,187 +7,160 @@
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Fri, 28 Feb 2020 23:34:31 +0900</lastBuildDate>
     
-        <atom:link href="https://chlalstjd430.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://chlalstjd430.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>2020년 04월 21일_TIL</title>
-      <link>https://chlalstjd430.github.io/2020/04/20200421/</link>
-      <pubDate>Wed, 22 Apr 2020 02:30:30 +0900</pubDate>
+      <title>브루트 포스트</title>
+      <link>https://chlalstjd430.github.io/tags/%EB%B8%8C%EB%A3%A8%ED%8A%B8-%ED%8F%AC%EC%8A%A4%ED%8A%B8/</link>
+      <pubDate>Fri, 28 Feb 2020 23:34:31 +0900</pubDate>
       
-      <guid>https://chlalstjd430.github.io/2020/04/20200421/</guid>
-      <description>TIL👨 💻💪 2020.04.21(화요일) 한일🤘 1. 학교 미디어 수학 수업 진행 고급자바 싱글턴 패턴 학습(사실 잘 아는 부분이라..가볍게 들었다) 2. 알고리</description>
+      <guid>https://chlalstjd430.github.io/tags/%EB%B8%8C%EB%A3%A8%ED%8A%B8-%ED%8F%AC%EC%8A%A4%ED%8A%B8/</guid>
+      <description></description>
     </item>
     
     <item>
-      <title>2020년 04월 20일_TIL</title>
-      <link>https://chlalstjd430.github.io/2020/04/20200420/</link>
-      <pubDate>Tue, 21 Apr 2020 03:51:19 +0900</pubDate>
+      <title>클린코드</title>
+      <link>https://chlalstjd430.github.io/tags/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C/</link>
+      <pubDate>Tue, 11 Feb 2020 19:23:15 +0900</pubDate>
       
-      <guid>https://chlalstjd430.github.io/2020/04/20200420/</guid>
-      <description>TIL👨 💻💪 2020.04.20(월요일) 한일🤘 1. 유어슈 MR 머지 인큐베이팅 과정을 진행하시는 분들에게 코드 리뷰를 해드렸다. 유어슈 코드중 자바의 fun</description>
+      <guid>https://chlalstjd430.github.io/tags/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C/</guid>
+      <description></description>
     </item>
     
     <item>
-      <title>2020년 04월 19일_TIL</title>
-      <link>https://chlalstjd430.github.io/2020/04/20200419/</link>
-      <pubDate>Mon, 20 Apr 2020 09:31:58 +0900</pubDate>
+      <title>알고리즘</title>
+      <link>https://chlalstjd430.github.io/tags/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/</link>
+      <pubDate>Tue, 11 Feb 2020 13:24:01 +0900</pubDate>
       
-      <guid>https://chlalstjd430.github.io/2020/04/20200419/</guid>
-      <description>TIL👨 💻💪 2020.04.19(일요일) 한일🤘 1. 유어슈 이슈 리뷰반영 후 MR 2. 학교 프로젝트 프로젝트 제안서 마무리 3. 얍 entity 설정 3. 오늘 참고 자료 JPA 다대다 관</description>
+      <guid>https://chlalstjd430.github.io/tags/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/</guid>
+      <description></description>
     </item>
     
     <item>
-      <title>2020년 04월 18일_TIL</title>
-      <link>https://chlalstjd430.github.io/2020/04/20200418/</link>
-      <pubDate>Sun, 19 Apr 2020 04:40:59 +0900</pubDate>
+      <title>그리디 알고리즘</title>
+      <link>https://chlalstjd430.github.io/tags/%EA%B7%B8%EB%A6%AC%EB%94%94-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/</link>
+      <pubDate>Fri, 07 Feb 2020 14:59:53 +0900</pubDate>
       
-      <guid>https://chlalstjd430.github.io/2020/04/20200418/</guid>
-      <description>TIL👨 💻💪 2020.04.18(토요일) 한일🤘 1. 유어슈 toekn-function 리뷰 반영 후 MR 2. 학교 프로젝트 서버 기술스택 선정 3. 오늘 참고 자료 자바 직렬화, 그것이 알고싶다</description>
+      <guid>https://chlalstjd430.github.io/tags/%EA%B7%B8%EB%A6%AC%EB%94%94-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/</guid>
+      <description></description>
     </item>
     
     <item>
-      <title>2020년 04월 17일_TIL</title>
-      <link>https://chlalstjd430.github.io/2020/04/20200417/</link>
-      <pubDate>Sat, 18 Apr 2020 17:45:28 +0900</pubDate>
+      <title>JWT</title>
+      <link>https://chlalstjd430.github.io/tags/jwt/</link>
+      <pubDate>Thu, 06 Feb 2020 21:42:05 +0900</pubDate>
       
-      <guid>https://chlalstjd430.github.io/2020/04/20200417/</guid>
-      <description>TIL👨‍💻💪 2020.04.17(금요일) 한일🤘 1. 학교 고급자바프로그래밍실습 과제 해결 파이썬 과제 해결 2. 유어슈 toekn-function MR 총평💬 유어슈 이슈를 드디어 MR</description>
+      <guid>https://chlalstjd430.github.io/tags/jwt/</guid>
+      <description></description>
     </item>
     
     <item>
-      <title>2020년 04월 16일_TIL</title>
-      <link>https://chlalstjd430.github.io/2020/04/20200416/</link>
-      <pubDate>Fri, 17 Apr 2020 02:54:27 +0900</pubDate>
+      <title>spring webflux</title>
+      <link>https://chlalstjd430.github.io/tags/spring-webflux/</link>
+      <pubDate>Thu, 06 Feb 2020 17:44:27 +0900</pubDate>
       
-      <guid>https://chlalstjd430.github.io/2020/04/20200416/</guid>
-      <description>TIL👨‍💻💪 2020.04.16(목요일) 한일 정리에 앞서, 15일 TIL을 작성하지 못하였다. 15일이 선거날이라 공휴일이었는데, 나는 공휴일/주</description>
+      <guid>https://chlalstjd430.github.io/tags/spring-webflux/</guid>
+      <description></description>
     </item>
     
     <item>
-      <title>2020년 04월 14일_TIL</title>
-      <link>https://chlalstjd430.github.io/2020/04/20200414/</link>
-      <pubDate>Wed, 15 Apr 2020 03:53:24 +0900</pubDate>
+      <title>계획</title>
+      <link>https://chlalstjd430.github.io/tags/%EA%B3%84%ED%9A%8D/</link>
+      <pubDate>Wed, 05 Feb 2020 00:38:43 +0900</pubDate>
       
-      <guid>https://chlalstjd430.github.io/2020/04/20200414/</guid>
-      <description>TIL👨‍💻💪 2020.04.14(화요일) 한일🤘 1. 학교 미디어수학 선형대수 공부 컴퓨터구조론 오늘은 강의에서 간단한 리눅스 명령어 몇개 알려주었다. 이</description>
+      <guid>https://chlalstjd430.github.io/tags/%EA%B3%84%ED%9A%8D/</guid>
+      <description></description>
     </item>
     
     <item>
-      <title>2020년 04월 13일_TIL</title>
-      <link>https://chlalstjd430.github.io/2020/04/20200413/</link>
-      <pubDate>Tue, 14 Apr 2020 01:53:53 +0900</pubDate>
+      <title>KMP 알고리즘</title>
+      <link>https://chlalstjd430.github.io/tags/kmp-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/</link>
+      <pubDate>Sun, 02 Feb 2020 23:07:51 +0900</pubDate>
       
-      <guid>https://chlalstjd430.github.io/2020/04/20200413/</guid>
-      <description>TIL👨‍💻💪 2020.04.13(월요일) 한일🤘 1. 학교 고급자바프로그래밍및실습 오늘 수업에서 전략패턴에 대하여 배웠다. 사실 1년전쯤에 전략패턴을</description>
+      <guid>https://chlalstjd430.github.io/tags/kmp-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/</guid>
+      <description></description>
     </item>
     
     <item>
-      <title>2020년 04월 12일_TIL</title>
-      <link>https://chlalstjd430.github.io/2020/04/20200412/</link>
-      <pubDate>Mon, 13 Apr 2020 01:43:01 +0900</pubDate>
+      <title>위상 정렬 알고리즘</title>
+      <link>https://chlalstjd430.github.io/tags/%EC%9C%84%EC%83%81-%EC%A0%95%EB%A0%AC-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/</link>
+      <pubDate>Thu, 30 Jan 2020 00:16:09 +0900</pubDate>
       
-      <guid>https://chlalstjd430.github.io/2020/04/20200412/</guid>
-      <description>TIL👨‍💻💪 2020.04.12(일요일) 한일🤘 1.유어슈 스프린트 기간 동안 해결해야 할 이슈를 해결했다. 그리고 또 다른 이슈가 있다..😂 2. 얍 저번 스</description>
+      <guid>https://chlalstjd430.github.io/tags/%EC%9C%84%EC%83%81-%EC%A0%95%EB%A0%AC-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/</guid>
+      <description></description>
     </item>
     
     <item>
-      <title>2020년 04월 11일_TIL</title>
-      <link>https://chlalstjd430.github.io/2020/04/20200411/</link>
-      <pubDate>Sun, 12 Apr 2020 02:57:54 +0900</pubDate>
+      <title>다익스트라 알고리즘</title>
+      <link>https://chlalstjd430.github.io/tags/%EB%8B%A4%EC%9D%B5%EC%8A%A4%ED%8A%B8%EB%9D%BC-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/</link>
+      <pubDate>Sat, 25 Jan 2020 01:45:20 +0900</pubDate>
       
-      <guid>https://chlalstjd430.github.io/2020/04/20200411/</guid>
-      <description>TIL👨‍💻💪 2020.04.11(토요일) 한일🤘 1.유어슈 현재 시간 02:53분&amp;hellip; 멀티 모듈 리펙토링 작업을 진행하였다, 이 과정에서</description>
+      <guid>https://chlalstjd430.github.io/tags/%EB%8B%A4%EC%9D%B5%EC%8A%A4%ED%8A%B8%EB%9D%BC-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/</guid>
+      <description></description>
     </item>
     
     <item>
-      <title>2020년 04월 10일_TIL</title>
-      <link>https://chlalstjd430.github.io/2020/04/20200410/</link>
-      <pubDate>Sat, 11 Apr 2020 01:19:38 +0900</pubDate>
+      <title>다이나믹 프로그래밍</title>
+      <link>https://chlalstjd430.github.io/tags/%EB%8B%A4%EC%9D%B4%EB%82%98%EB%AF%B9-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/</link>
+      <pubDate>Mon, 20 Jan 2020 21:32:43 +0900</pubDate>
       
-      <guid>https://chlalstjd430.github.io/2020/04/20200410/</guid>
-      <description>TIL👨‍💻💪 2020.04.10(금요일) 한일🤘 1.알고리즘 프로그래머스에서 LEVEL 2문제를 풀었다. 모든 문제가 카카오 코딩테스트 문제였는데, 문제는</description>
+      <guid>https://chlalstjd430.github.io/tags/%EB%8B%A4%EC%9D%B4%EB%82%98%EB%AF%B9-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/</guid>
+      <description></description>
     </item>
     
     <item>
-      <title>프로그래머스 - [3차] 방금그곡</title>
-      <link>https://chlalstjd430.github.io/2020/04/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_022/</link>
-      <pubDate>Fri, 10 Apr 2020 10:56:39 +0900</pubDate>
+      <title>최소 스패닝 트리</title>
+      <link>https://chlalstjd430.github.io/tags/%EC%B5%9C%EC%86%8C-%EC%8A%A4%ED%8C%A8%EB%8B%9D-%ED%8A%B8%EB%A6%AC/</link>
+      <pubDate>Wed, 15 Jan 2020 21:00:48 +0900</pubDate>
       
-      <guid>https://chlalstjd430.github.io/2020/04/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_022/</guid>
-      <description>문제링크 사용언어 c++ 주의사항 방금그곡 서비스에서는 음악 제목, 재생이 시작되고 끝난 시각, 악보를 제공한다. 네오가 기억한 멜로디와 악보에 사용되는 음은 C, C#, D,</description>
+      <guid>https://chlalstjd430.github.io/tags/%EC%B5%9C%EC%86%8C-%EC%8A%A4%ED%8C%A8%EB%8B%9D-%ED%8A%B8%EB%A6%AC/</guid>
+      <description></description>
     </item>
     
     <item>
-      <title>2020년 04월 09일_TIL</title>
-      <link>https://chlalstjd430.github.io/2020/04/20200409/</link>
-      <pubDate>Fri, 10 Apr 2020 00:20:27 +0900</pubDate>
+      <title>이진 트리 알고리즘</title>
+      <link>https://chlalstjd430.github.io/tags/%EC%9D%B4%EC%A7%84-%ED%8A%B8%EB%A6%AC-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/</link>
+      <pubDate>Wed, 15 Jan 2020 20:02:24 +0900</pubDate>
       
-      <guid>https://chlalstjd430.github.io/2020/04/20200409/</guid>
-      <description>TIL👨‍💻💪 2020.04.09(목요일) 한일🤘 1. 학교 고급자바프로그래밍 UML사용법에 대헤서 많이 강조하시고 알려주시는 것 같다. 이전에 폭포수 모</description>
+      <guid>https://chlalstjd430.github.io/tags/%EC%9D%B4%EC%A7%84-%ED%8A%B8%EB%A6%AC-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/</guid>
+      <description></description>
     </item>
     
     <item>
-      <title>프로그래머스 - 후보키</title>
-      <link>https://chlalstjd430.github.io/2020/04/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_021/</link>
-      <pubDate>Thu, 09 Apr 2020 20:18:46 +0900</pubDate>
+      <title>IT 동아리</title>
+      <link>https://chlalstjd430.github.io/tags/it-%EB%8F%99%EC%95%84%EB%A6%AC/</link>
+      <pubDate>Tue, 14 Jan 2020 14:16:41 +0900</pubDate>
       
-      <guid>https://chlalstjd430.github.io/2020/04/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_021/</guid>
-      <description>문제링크 사용언어 c++ 주의사항 비트마스킹을 이용하여 풀 수 있는 문제이다. 기본적인 비트연산자에 대하여 숙지하여야한다. dfs로도 풀 수 있긴하다. 관계 데이터</description>
+      <guid>https://chlalstjd430.github.io/tags/it-%EB%8F%99%EC%95%84%EB%A6%AC/</guid>
+      <description></description>
     </item>
     
     <item>
-      <title>2020년 04월 08일_TIL</title>
-      <link>https://chlalstjd430.github.io/2020/04/20200408/</link>
-      <pubDate>Wed, 08 Apr 2020 23:41:27 +0900</pubDate>
+      <title>IT 정보</title>
+      <link>https://chlalstjd430.github.io/tags/it-%EC%A0%95%EB%B3%B4/</link>
+      <pubDate>Tue, 14 Jan 2020 14:16:41 +0900</pubDate>
       
-      <guid>https://chlalstjd430.github.io/2020/04/20200408/</guid>
-      <description>TIL👨‍💻💪 2020.04.08(수요일) 한일🤘 1. 학교 미디어수학 코로나때문에 zoom으로 온라인 강의 수업을 들었다. 학교 와이파이가 끊겨 중간에 못</description>
+      <guid>https://chlalstjd430.github.io/tags/it-%EC%A0%95%EB%B3%B4/</guid>
+      <description></description>
     </item>
     
     <item>
-      <title>프로그래머스 - N으로 표현</title>
-      <link>https://chlalstjd430.github.io/2020/04/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_020/</link>
-      <pubDate>Tue, 07 Apr 2020 20:54:00 +0900</pubDate>
+      <title>리액티브 프로그래밍</title>
+      <link>https://chlalstjd430.github.io/tags/%EB%A6%AC%EC%95%A1%ED%8B%B0%EB%B8%8C-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/</link>
+      <pubDate>Sat, 11 Jan 2020 21:53:44 +0900</pubDate>
       
-      <guid>https://chlalstjd430.github.io/2020/04/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_020/</guid>
-      <description>문제링크 사용언어 c++ 주의사항 최솟값이 8보다 크면 -1을 return 합니다. 문제풀이 해당 문제는 DP로 풀지못하여 DFS를 활용하였습니다. Count가 9이상이면</description>
+      <guid>https://chlalstjd430.github.io/tags/%EB%A6%AC%EC%95%A1%ED%8B%B0%EB%B8%8C-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/</guid>
+      <description></description>
     </item>
     
     <item>
-      <title>프로그래머스 - [1차] 추석 트래픽</title>
-      <link>https://chlalstjd430.github.io/2020/04/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_019/</link>
-      <pubDate>Sun, 05 Apr 2020 02:40:08 +0900</pubDate>
+      <title>크루스칼 알고리즘</title>
+      <link>https://chlalstjd430.github.io/tags/%ED%81%AC%EB%A3%A8%EC%8A%A4%EC%B9%BC-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/</link>
+      <pubDate>Sat, 11 Jan 2020 21:43:42 +0900</pubDate>
       
-      <guid>https://chlalstjd430.github.io/2020/04/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_019/</guid>
-      <description>문제링크 사용언어 c++ 주의사항 double형으로 값들을 계산할 경우 부동소수점에 유의해야 한다. 문제풀이 해당 문제를 풀기위한 순서는 다음과 같다. lines</description>
-    </item>
-    
-    <item>
-      <title>프로그래머스 - [1차] 프렌즈4블록</title>
-      <link>https://chlalstjd430.github.io/2020/03/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_018/</link>
-      <pubDate>Fri, 20 Mar 2020 15:11:44 +0900</pubDate>
-      
-      <guid>https://chlalstjd430.github.io/2020/03/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_018/</guid>
-      <description>문제링크 사용언어 c++ 주의사항 입력으로 판의 높이 m, 폭 n과 판의 배치 정보 board가 들어온다. 2 ≦ n, m ≦ 30 board는 길이 n인 문자열 m개의 배열로 주어진</description>
-    </item>
-    
-    <item>
-      <title>프로그래머스 - 짝지어 제거하기</title>
-      <link>https://chlalstjd430.github.io/2020/03/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_017/</link>
-      <pubDate>Mon, 09 Mar 2020 11:39:26 +0900</pubDate>
-      
-      <guid>https://chlalstjd430.github.io/2020/03/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_017/</guid>
-      <description>문제링크 사용언어 c++ 주의사항 문자열의 길이 : 1,000,000이하의 자연수 문자열은 모두 소문자로 이루어져 있습니다. 문제풀이 처음에 for문을 계속 돌려</description>
-    </item>
-    
-    <item>
-      <title>프로그래머스 - 땅따먹기</title>
-      <link>https://chlalstjd430.github.io/2020/03/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_016/</link>
-      <pubDate>Thu, 05 Mar 2020 15:23:47 +0900</pubDate>
-      
-      <guid>https://chlalstjd430.github.io/2020/03/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_016/</guid>
-      <description>문제링크 사용언어 c++ 주의사항 행의 개수 N : 100,000 이하의 자연수 열의 개수는 4개이고, 땅(land)은 2차원 배열로 주어집니다. 점수 : 100 이하의 자연수 문제풀이</description>
+      <guid>https://chlalstjd430.github.io/tags/%ED%81%AC%EB%A3%A8%EC%8A%A4%EC%B9%BC-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/</guid>
+      <description></description>
     </item>
     
   </channel>
