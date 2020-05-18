@@ -5,18 +5,18 @@
     <link>https://chlalstjd430.github.io/categories/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C/</link>
     <description>Recent content in 클린코드 on cmstown</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 11 Feb 2020 19:23:15 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 18 May 2020 21:12:02 +0900</lastBuildDate>
     
         <atom:link href="https://chlalstjd430.github.io/categories/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Test</title>
-      <link>https://chlalstjd430.github.io/2020/05/test/</link>
-      <pubDate>Tue, 12 May 2020 23:57:36 +0900</pubDate>
+      <title>[DesignPattern] Decorator Pattern(데코레이터 패턴)</title>
+      <link>https://chlalstjd430.github.io/2020/05/decorator/</link>
+      <pubDate>Mon, 18 May 2020 21:12:02 +0900</pubDate>
       
-      <guid>https://chlalstjd430.github.io/2020/05/test/</guid>
-      <description>testeststes</description>
+      <guid>https://chlalstjd430.github.io/2020/05/decorator/</guid>
+      <description>DecoratorPattern(데코레이터 패턴) 데코레인터 패턴이란? 객체의 결합 을 통해 기능을 동적으로 유연하게 확장 할 수 있게 해주는 패턴 위의 한 문장</description>
     </item>
     
     <item>
