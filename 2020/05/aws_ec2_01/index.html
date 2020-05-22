@@ -23,7 +23,7 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <meta name="description" content="AWS EC2를 이용하여 Spring Boot 배포하기(1) 저는 지금까지 AWS EC2를 이용하여 여러본 서버를 배포해보았었는데요. 이번에 학교에서 하는 프로젝트를 배포하는 과정을" />
+  <meta name="description" content="AWS EC2를 이용하여 Spring Boot 배포하기(1) 저는 지금까지 AWS EC2를 이용하여 여러번 서버를 배포해보았었는데요. 이번에 그 과정들을 간단하게 블로그에 담고자 글을" />
   <meta name="generator" content="Hugo 0.59.1 with theme pure" />
   <title>AWS EC2를 이용하여 Spring Boot 배포하기(1) - cmstown</title>
   
@@ -33,25 +33,25 @@
   <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
   <meta property="og:title" content="AWS EC2를 이용하여 Spring Boot 배포하기(1)" />
-<meta property="og:description" content="AWS EC2를 이용하여 Spring Boot 배포하기(1) 저는 지금까지 AWS EC2를 이용하여 여러본 서버를 배포해보았었는데요. 이번에 학교에서 하는 프로젝트를 배포하는 과정을" />
+<meta property="og:description" content="AWS EC2를 이용하여 Spring Boot 배포하기(1) 저는 지금까지 AWS EC2를 이용하여 여러번 서버를 배포해보았었는데요. 이번에 그 과정들을 간단하게 블로그에 담고자 글을" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://chlalstjd430.github.io/2020/05/aws_ec2_01/" />
 <meta property="article:published_time" content="2020-05-22T02:26:58+09:00" />
 <meta property="article:modified_time" content="2020-05-22T02:26:58+09:00" />
 <meta itemprop="name" content="AWS EC2를 이용하여 Spring Boot 배포하기(1)">
-<meta itemprop="description" content="AWS EC2를 이용하여 Spring Boot 배포하기(1) 저는 지금까지 AWS EC2를 이용하여 여러본 서버를 배포해보았었는데요. 이번에 학교에서 하는 프로젝트를 배포하는 과정을">
+<meta itemprop="description" content="AWS EC2를 이용하여 Spring Boot 배포하기(1) 저는 지금까지 AWS EC2를 이용하여 여러번 서버를 배포해보았었는데요. 이번에 그 과정들을 간단하게 블로그에 담고자 글을">
 
 
 <meta itemprop="datePublished" content="2020-05-22T02:26:58&#43;09:00" />
 <meta itemprop="dateModified" content="2020-05-22T02:26:58&#43;09:00" />
-<meta itemprop="wordCount" content="2671">
+<meta itemprop="wordCount" content="2587">
 
 
 
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="AWS EC2를 이용하여 Spring Boot 배포하기(1)"/>
-<meta name="twitter:description" content="AWS EC2를 이용하여 Spring Boot 배포하기(1) 저는 지금까지 AWS EC2를 이용하여 여러본 서버를 배포해보았었는데요. 이번에 학교에서 하는 프로젝트를 배포하는 과정을"/>
+<meta name="twitter:description" content="AWS EC2를 이용하여 Spring Boot 배포하기(1) 저는 지금까지 AWS EC2를 이용하여 여러번 서버를 배포해보았었는데요. 이번에 그 과정들을 간단하게 블로그에 담고자 글을"/>
 
   <!--[if lte IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -159,7 +159,7 @@
     <div class="widget-body">
         <ul class="category-list">
             <li class="category-list-item"><a href="https://chlalstjd430.github.io/categories/2020-%EA%B3%84%ED%9A%8D/" class="category-list-link">2020-계획</a><span class="category-list-count">2</span></li>
-            <li class="category-list-item"><a href="https://chlalstjd430.github.io/categories/aws/" class="category-list-link">aws</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="https://chlalstjd430.github.io/categories/aws/" class="category-list-link">aws</a><span class="category-list-count">2</span></li>
             <li class="category-list-item"><a href="https://chlalstjd430.github.io/categories/it-%EC%A0%95%EB%B3%B4/" class="category-list-link">it-정보</a><span class="category-list-count">1</span></li>
             <li class="category-list-item"><a href="https://chlalstjd430.github.io/categories/%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4/" class="category-list-link">디자인패턴</a><span class="category-list-count">1</span></li>
             <li class="category-list-item"><a href="https://chlalstjd430.github.io/categories/%EB%A6%AC%EC%95%A1%ED%8B%B0%EB%B8%8C-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/" class="category-list-link">리액티브-프로그래밍</a><span class="category-list-count">2</span></li>
@@ -256,6 +256,16 @@
             <li>
                 <div class="item-inner">
                     <p class="item-title">
+                        <a href="https://chlalstjd430.github.io/2020/05/aws_ec2_02/" class="title">AWS EC2를 이용하여 Spring Boot 배포하기(2)</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-05-22 13:59:22 &#43;0900 KST" itemprop="datePublished">2020-05-22</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
                         <a href="https://chlalstjd430.github.io/2020/05/aws_ec2_01/" class="title">AWS EC2를 이용하여 Spring Boot 배포하기(1)</a>
                     </p>
                     <p class="item-date">
@@ -290,16 +300,6 @@
                     </p>
                     <p class="item-date">
                         <time datetime="2020-04-09 20:18:46 &#43;0900 KST" itemprop="datePublished">2020-04-09</time>
-                    </p>
-                </div>
-            </li>
-            <li>
-                <div class="item-inner">
-                    <p class="item-title">
-                        <a href="https://chlalstjd430.github.io/2020/04/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_020/" class="title">프로그래머스 - N으로 표현</a>
-                    </p>
-                    <p class="item-date">
-                        <time datetime="2020-04-07 20:54:00 &#43;0900 KST" itemprop="datePublished">2020-04-07</time>
                     </p>
                 </div>
             </li>
@@ -347,7 +347,7 @@
 
         <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/2020/05/aws_ec2_01/#comments"
             class="article-comment-link">Comments</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 2671words</span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 2587words</span>
 		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 6minutes </span>
       </div>
     </div>
@@ -356,7 +356,7 @@
 
 <h1 id="aws-ec2를-이용하여-spring-boot-배포하기-1">AWS EC2를 이용하여 Spring Boot 배포하기(1)</h1>
 
-<p>저는 지금까지 AWS EC2를 이용하여 여러본 서버를 배포해보았었는데요. 이번에 학교에서 하는 프로젝트를 배포하는 과정을 블로그에 담고자 글을 작성합니다.</p>
+<p>저는 지금까지 AWS EC2를 이용하여 여러번 서버를 배포해보았었는데요. 이번에 그 과정들을 간단하게 블로그에 담고자 글을 작성합니다.</p>
 
 <p>먼저 시작하기 전에 제가 배포하려는 서비스는 다음과 같습니다.</p>
 
@@ -515,15 +515,17 @@
 
 <p>보안 그룹은 사진과 같이 규칙을 추가하겠습니다.</p>
 
-<p><strong>🤷‍♂️ Why?</strong>
-- 22포트</p>
-
-<pre><code>- 22포트의 경우는 AWS EC2에 터미널로 접속할 떄를 이야기합니다. 해당 포트는 내 IP에서만 접속하게끔 설정을 하였는데요, 이유는 pem키가 없으면 접속이 불가능하나 pem키가 노출되었을 때 서버에서 비트 코인 채굴 서버로 이용될 수 있기 떄문입니다! 그러므로 내 IP로설정하고 장소가 이동될 떄 마다 내 IP를 다시 받아 이용하시는게 보안적으로 좋습니다 :D
-
-- [말도 안 되는 과금의 추억. 요금 폭탄]([https://sanghaklee.tistory.com/32](https://sanghaklee.tistory.com/32))
-</code></pre>
+<p><strong>🤷‍♂️ Why?</strong></p>
 
 <ul>
+<li><p>22포트</p>
+
+<ul>
+<li><p>22포트의 경우는 AWS EC2에 터미널로 접속할 떄를 이야기합니다. 해당 포트는 내 IP에서만 접속하게끔 설정을 하였는데요, 이유는 pem키가 없으면 접속이 불가능하나 pem키가 노출되었을 때 서버에서 비트 코인 채굴 서버로 이용될 수 있기 떄문입니다! 그러므로 내 IP로설정하고 장소가 이동될 떄 마다 내 IP를 다시 받아 이용하시는게 보안적으로 좋습니다 :D</p></li>
+
+<li><p><a href="[https://sanghaklee.tistory.com/32](https://sanghaklee.tistory.com/32)">말도 안 되는 과금의 추억. 요금 폭탄</a></p></li>
+</ul></li>
+
 <li><p>80,443 포트</p>
 
 <ul>
@@ -576,54 +578,43 @@
 
 <p>인스턴스는 하나의 서버이기 떄문에 IP가 존재합니다. 인스턴스 생성시 항상 새 IP를 할당받고, 같은 인스턴스를 중지하고 다시 시작할 떄도 새 IP가 할당됩니다. 그렇게 되면 매번 접속해야 하는 IP가 변경되어 PC에서 매번 접속시 IP 주소를 확인해야하는 번거로움이 있습니다. 그렇기에  고정 IP를 가지게 해야하는데요, 우리는 이를 위해서 탄력적 IP를 할당합시다.</p>
 
-<ol>
-<li>먼저 <strong>탄력적 IP</strong> 메뉴를 클릭합니다.</li>
-</ol>
+<h5 id="1-먼저-탄력적-ip-메뉴를-클릭합니다">1. 먼저 <strong>탄력적 IP</strong> 메뉴를 클릭합니다.</h5>
 
 <p align = "left">
   <img src="https://user-images.githubusercontent.com/50758600/82560420-69354380-9bac-11ea-84c4-b3ee3cc68e4c.png" width="30%" height="30%">
 </p>
-2. **탄력적 IP 주소 할당** 을 클릭합니다.
+
+<h5 id="2-탄력적-ip-주소-할당-을-클릭합니다">2. <strong>탄력적 IP 주소 할당</strong> 을 클릭합니다.</h5>
 
 <p align = "left">
   <img src="https://user-images.githubusercontent.com/50758600/82560573-adc0df00-9bac-11ea-86f4-c1de43ba2f02.png" >
 </p>
 
-<ol>
-<li>다음 화면에서 할당을 클릭합니다.</li>
-</ol>
+<h5 id="3-다음-화면에서-할당을-클릭합니다">3. 다음 화면에서 할당을 클릭합니다.</h5>
 
 <p align = "left">
   <img src="https://user-images.githubusercontent.com/50758600/82584410-6bf56000-9bcf-11ea-8446-47c7be34a17a.png" >
 </p>
 
-<ol>
-<li>탄력적 IP를 할당받으신걸 확인하실 수 있습니다. 그러면 이전에 저희가 만든 인스턴스와 탄력적 IP를 연결해보도록 하겠습니다! 먼저 <strong>퍼블릭 IPv4 주소</strong> 밑의 IP를 클릭합시다.</li>
-</ol>
+<h5 id="4-탄력적-ip를-할당받으신걸-확인하실-수-있습니다-그러면-이전에-저희가-만든-인스턴스와-탄력적-ip를-연결해보도록-하겠습니다-먼저-퍼블릭-ipv4-주소-밑의-ip를-클릭합시다">4. 탄력적 IP를 할당받으신걸 확인하실 수 있습니다. 그러면 이전에 저희가 만든 인스턴스와 탄력적 IP를 연결해보도록 하겠습니다! 먼저 <strong>퍼블릭 IPv4 주소</strong> 밑의 IP를 클릭합시다.</h5>
 
 <p align = "left">
   <img src="https://user-images.githubusercontent.com/50758600/82584618-b545af80-9bcf-11ea-970c-c6677ee386e9.png" >
 </p>
 
-<ol>
-<li>이후 그대로 <strong>탄력적 IP 주소 연결</strong> 을 클릭합니다.</li>
-</ol>
+<h5 id="5-이후-그대로-탄력적-ip-주소-연결-을-클릭합니다">5. 이후 그대로 <strong>탄력적 IP 주소 연결</strong> 을 클릭합니다.</h5>
 
 <p align = "left">
   <img src="https://user-images.githubusercontent.com/50758600/82585719-71ec4080-9bd1-11ea-9622-ed342679f928.png" >
 </p>
 
-<ol>
-<li>이후 이전에 만든 인스턴스와 프라이빗 IP 주소를 설정합니다. 처음 AWS EC2 이용하시는 분은 그냥 그대로 설정하시고 연결하시면 됩니다.</li>
-</ol>
+<h5 id="6-이후-이전에-만든-인스턴스와-프라이빗-ip-주소를-설정합니다-처음-aws-ec2-이용하시는-분은-그냥-그대로-설정하시고-연결하시면-됩니다">6. 이후 이전에 만든 인스턴스와 프라이빗 IP 주소를 설정합니다. 처음 AWS EC2 이용하시는 분은 그냥 그대로 설정하시고 연결하시면 됩니다.</h5>
 
 <p align = "left">
   <img src="https://user-images.githubusercontent.com/50758600/82585866-abbd4700-9bd1-11ea-8aa7-53c9390e9c83.png" >
 </p>
 
-<ol>
-<li>아래와 같이 나오게되면, 탄력적 IP가 해당 인스턴스와 연결되었음을 알 수 있습니다.</li>
-</ol>
+<h5 id="7-아래와-같이-나오게되면-탄력적-ip가-해당-인스턴스와-연결되었음을-알-수-있습니다">7. 아래와 같이 나오게되면, 탄력적 IP가 해당 인스턴스와 연결되었음을 알 수 있습니다.</h5>
 
 <p align = "left">
   <img src="https://user-images.githubusercontent.com/50758600/82586211-2d14d980-9bd2-11ea-8792-b9ca07aa8cab.png" >
@@ -688,6 +679,11 @@
                 <a href="https://chlalstjd430.github.io/2020/05/decorator/" title="[DesignPattern] Decorator Pattern(데코레이터 패턴)"><i
                         class="icon icon-angle-left"
                         aria-hidden="true"></i><span>&nbsp;&nbsp;Older</span></a>
+            </li>
+            <li class="next">
+                <a href="https://chlalstjd430.github.io/2020/05/aws_ec2_02/"
+                    title="AWS EC2를 이용하여 Spring Boot 배포하기(2)"><span>Newer&nbsp;&nbsp;</span><i
+                        class="icon icon-angle-right" aria-hidden="true"></i></a>
             </li>
             
             <li class="toggle-toc">

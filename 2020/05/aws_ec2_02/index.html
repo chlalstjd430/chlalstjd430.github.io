@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>
-        백준 10610 - 30 - cmstown
+        AWS EC2를 이용하여 Spring Boot 배포하기(2) - cmstown
       </title>
     <head>
   <meta charset="utf-8">
@@ -23,35 +23,35 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <meta name="description" content="백준 문제 바로가기 사용 언어 C&#43;&#43; 적용 알고리즘 그리디 알고리즘 정렬 주의사항 재귀를 통해 순열을 구하여 정답을 찾았지만 메모리 초과가 나왔다. 문제풀이 초기에 순열을" />
+  <meta name="description" content="AWS EC2를 이용하여 Spring Boot 배포하기(2) - AWS EC2 서버 접속 오늘은 AWS EC2 서버에 접속하는 과정을 소개해드리도록 하겠습니다. 먼저 시작하기 전에 해당 글은 윈도우 를 이" />
   <meta name="generator" content="Hugo 0.59.1 with theme pure" />
-  <title>백준 10610 - 30 - cmstown</title>
+  <title>AWS EC2를 이용하여 Spring Boot 배포하기(2) - cmstown</title>
   
   
   <link rel="stylesheet" href="https://chlalstjd430.github.io/css/style.min.55864f426c18be60c2e40c404f3e9db45a40a6a7ce220999b3a5da16cb66840d.css">
   
   <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
-  <meta property="og:title" content="백준 10610 - 30" />
-<meta property="og:description" content="백준 문제 바로가기 사용 언어 C&#43;&#43; 적용 알고리즘 그리디 알고리즘 정렬 주의사항 재귀를 통해 순열을 구하여 정답을 찾았지만 메모리 초과가 나왔다. 문제풀이 초기에 순열을" />
+  <meta property="og:title" content="AWS EC2를 이용하여 Spring Boot 배포하기(2)" />
+<meta property="og:description" content="AWS EC2를 이용하여 Spring Boot 배포하기(2) - AWS EC2 서버 접속 오늘은 AWS EC2 서버에 접속하는 과정을 소개해드리도록 하겠습니다. 먼저 시작하기 전에 해당 글은 윈도우 를 이" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://chlalstjd430.github.io/2020/02/%EB%B0%B1%EC%A4%8010610/" />
-<meta property="article:published_time" content="2020-02-07T14:59:53+09:00" />
-<meta property="article:modified_time" content="2020-02-07T14:59:53+09:00" />
-<meta itemprop="name" content="백준 10610 - 30">
-<meta itemprop="description" content="백준 문제 바로가기 사용 언어 C&#43;&#43; 적용 알고리즘 그리디 알고리즘 정렬 주의사항 재귀를 통해 순열을 구하여 정답을 찾았지만 메모리 초과가 나왔다. 문제풀이 초기에 순열을">
+<meta property="og:url" content="https://chlalstjd430.github.io/2020/05/aws_ec2_02/" />
+<meta property="article:published_time" content="2020-05-22T13:59:22+09:00" />
+<meta property="article:modified_time" content="2020-05-22T13:59:22+09:00" />
+<meta itemprop="name" content="AWS EC2를 이용하여 Spring Boot 배포하기(2)">
+<meta itemprop="description" content="AWS EC2를 이용하여 Spring Boot 배포하기(2) - AWS EC2 서버 접속 오늘은 AWS EC2 서버에 접속하는 과정을 소개해드리도록 하겠습니다. 먼저 시작하기 전에 해당 글은 윈도우 를 이">
 
 
-<meta itemprop="datePublished" content="2020-02-07T14:59:53&#43;09:00" />
-<meta itemprop="dateModified" content="2020-02-07T14:59:53&#43;09:00" />
-<meta itemprop="wordCount" content="335">
+<meta itemprop="datePublished" content="2020-05-22T13:59:22&#43;09:00" />
+<meta itemprop="dateModified" content="2020-05-22T13:59:22&#43;09:00" />
+<meta itemprop="wordCount" content="731">
 
 
 
-<meta itemprop="keywords" content="그리디 알고리즘," />
+<meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="백준 10610 - 30"/>
-<meta name="twitter:description" content="백준 문제 바로가기 사용 언어 C&#43;&#43; 적용 알고리즘 그리디 알고리즘 정렬 주의사항 재귀를 통해 순열을 구하여 정답을 찾았지만 메모리 초과가 나왔다. 문제풀이 초기에 순열을"/>
+<meta name="twitter:title" content="AWS EC2를 이용하여 Spring Boot 배포하기(2)"/>
+<meta name="twitter:description" content="AWS EC2를 이용하여 Spring Boot 배포하기(2) - AWS EC2 서버 접속 오늘은 AWS EC2 서버에 접속하는 과정을 소개해드리도록 하겠습니다. 먼저 시작하기 전에 해당 글은 윈도우 를 이"/>
 
   <!--[if lte IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -327,8 +327,8 @@
       <h1 itemprop="name">
   <a
     class="article-title"
-    href="/2020/02/%EB%B0%B1%EC%A4%8010610/"
-    >백준 10610 - 30</a
+    href="/2020/05/aws_ec2_02/"
+    >AWS EC2를 이용하여 Spring Boot 배포하기(2)</a
   >
 </h1>
 
@@ -336,115 +336,101 @@
         
 <span class="article-date">
   <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://chlalstjd430.github.io/2020/02/%EB%B0%B1%EC%A4%8010610/" class="article-date">
-  <time datetime="2020-02-07 14:59:53 &#43;0900 KST" itemprop="datePublished">2020-02-07</time>
+<a href="https://chlalstjd430.github.io/2020/05/aws_ec2_02/" class="article-date">
+  <time datetime="2020-05-22 13:59:22 &#43;0900 KST" itemprop="datePublished">2020-05-22</time>
 </a>
 </span>
 <span class="article-category">
   <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/%EB%B0%B1%EC%A4%80-%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4/"> 백준 문제풀이 </a>
-</span>  
-  <span class="article-tag">
-    <i class="icon icon-tags"></i>&nbsp;
-    <a class="article-tag-link" href="/tags/%EA%B7%B8%EB%A6%AC%EB%94%94-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/"> 그리디 알고리즘 </a>
-  </span>
+  <a class="article-category-link" href="/categories/aws/"> AWS </a>
+</span>
 
-        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/2020/02/%EB%B0%B1%EC%A4%8010610/#comments"
+        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/2020/05/aws_ec2_02/#comments"
             class="article-comment-link">Comments</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 335words</span>
-		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 1minutes </span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 731words</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 2minutes </span>
       </div>
     </div>
     <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
       
 
-<p><br></p>
+<h1 id="aws-ec2를-이용하여-spring-boot-배포하기-2-aws-ec2-서버-접속">AWS EC2를 이용하여 Spring Boot 배포하기(2) - AWS EC2 서버 접속</h1>
 
-<h3 id="백준-문제-바로가기-https-www-acmicpc-net-problem-10610"><a href="https://www.acmicpc.net/problem/10610">백준 문제 바로가기</a></h3>
+<p align = "center">
+  <img src="https://media.tenor.com/images/19aba5fb5a891041880efd7efb64017f/tenor.gif" >
+</p>
 
-<p><br>
-<br>
-<br></p>
+<p>오늘은 AWS EC2 서버에 접속하는 과정을 소개해드리도록 하겠습니다. 먼저 시작하기 전에 해당 글은 <strong>윈도우</strong> 를 이용하여 접속하는 방법을 안내해드리는 점 참고해주세요!</p>
 
-<h4 id="사용-언어">사용 언어</h4>
+<h2 id="1-putty-다운로드-및-키-발급">1. putty 다운로드 및 키 발급</h2>
 
-<ul>
-<li>C++</li>
-</ul>
+<p>윈도우에서는 Mac과 같이 ssh 접속하기에 불편한 점이 많아 별도의 클라이언트를 설치해줍니다.</p>
 
-<h4 id="적용-알고리즘">적용 알고리즘</h4>
+<h5 id="1-putty-사이트-https-www-putty-org-에서-다운로드-후-putty-exe-puttygen-exe-모두-다운로드하였으면-puttygen-exe-부터-실행시켜줍니다-이후-load를-클릭합니다">1. <a href="https://www.putty.org/">putty 사이트</a>에서 다운로드 후 <strong>putty.exe</strong>,<strong>puttygen.exe</strong> 모두 다운로드하였으면, <strong>puttygen.exe</strong> 부터 실행시켜줍니다. 이후 Load를 클릭합니다.</h5>
 
-<ul>
-<li><p>그리디 알고리즘</p></li>
+<p align = "center">
+  <img src="https://user-images.githubusercontent.com/50758600/82623745-d7fdb580-9c1b-11ea-9b2d-3748f6b413b3.png" >
+</p>
 
-<li><p>정렬</p></li>
-</ul>
+<h5 id="2-이전-aws-발급한-pem-키가-저장되어있는-곳을-찾아-클릭해줍시다">2. 이전 AWS 발급한 Pem 키가 저장되어있는 곳을 찾아 클릭해줍시다.</h5>
 
-<h4 id="주의사항">주의사항</h4>
+<p align = "center">
+  <img src="https://user-images.githubusercontent.com/50758600/82624056-ad602c80-9c1c-11ea-9e66-a766ff9dc1ca.png" >
+</p>
 
-<ul>
-<li>재귀를 통해 순열을 구하여 정답을 찾았지만 메모리 초과가 나왔다.</li>
-</ul>
+<p>그러면 다음과 같이 키가 발급되었다는 팝업창이 나옵니다.</p>
 
-<h4 id="문제풀이">문제풀이</h4>
+<p align = "center">
+  <img src="https://user-images.githubusercontent.com/50758600/82624133-ccf75500-9c1c-11ea-9022-72f1f934431d.png" >
+</p>
 
-<p>초기에 순열을 통해 문제를 풀었지만 메모리 초과가 나와 다른 방법을 찾아보았다. 그 결과 30의 배수가 되기 위해서 두 가지 조건을 가져야 한다는 것을 알게 되었다.</p>
+<h5 id="3-이후-save-private-key-를-클릭해-안전한-장소에-발급된-키를-저장해줍니다">3. 이후 <strong>Save private Key</strong> 를 클릭해 안전한 장소에 발급된 키를 저장해줍니다.</h5>
 
-<ul>
-<li><p>마지막 일의 자리는 무조건 0이 되어야 한다.</p></li>
+<p align = "center">
+  <img src="https://user-images.githubusercontent.com/50758600/82624244-03cd6b00-9c1d-11ea-991a-0d031bf10830.png" >
+</p>
 
-<li><p>마지막 숫자를 제외한 나머지 숫자들의 합은 3의 배수이다.</p>
+<h2 id="2-putty를-이용하여-aws-ec2-서버-접속">2. putty를 이용하여 AWS EC2 서버 접속</h2>
 
-<pre><code class="language-c++">#include &lt;iostream&gt;
-#include &lt;string&gt;
-#include &lt;vector&gt;
-#include &lt;algorithm&gt;
+<h5 id="1-먼저-aws에서-인스턴스와-연결한-탄력적-ip를-알아옵니다-그리고-다음-사진과-같이-host-name을-설정해줍니다-자신의-탄력적-ip를-적으시면-됩니다">1. 먼저 AWS에서 인스턴스와 연결한 탄력적 ip를 알아옵니다. 그리고 다음 사진과 같이 Host Name을 설정해줍니다.(자신의 탄력적 ip를 적으시면 됩니다)</h5>
 
-using namespace std;
+<p><strong>주의 : 이전에 AWS 보안그룹에 22포트는 내 IP에서만 접근이 가능하도록 설정하였습니다. 설정한 IP의 장소가 맞는지 확인해주세요!</strong></p>
 
-vector&lt;char&gt; v;
+<p align = "center">
+  <img src="https://user-images.githubusercontent.com/50758600/82626422-c23fbe80-9c22-11ea-9ecc-913da387f9ad.png" >
+</p>
 
-bool cmp(char c1, char c2) {
-	return c1 &gt; c2;
-}
+<h5 id="2-이후-왼쪽-카테고리의-connection-ssh-auth로-이동하여-이전에-발급한-ppk를-browse-를-클릭하여-불러옵니다">2. 이후 왼쪽 카테고리의 Connection - SSH - Auth로 이동하여 이전에 발급한 ppk를 Browse..를 클릭하여 불러옵니다.</h5>
 
-int main() {
-	string str = &quot;&quot;;
-	string answer = &quot;&quot;;
-	int sum = 0;
-	cin &gt;&gt; str;
+<p><strong>주의 : pem키를 찾을 때 모든 파일에서 찾기를 하셔야 pem키가 보입니다.</strong></p>
 
-	int strSize = str.size();
-	for (int i = 0; i &lt; strSize; i++) {
-		v.push_back(str[i]);
-	}
+<p align = "center">
+  <img src="https://user-images.githubusercontent.com/50758600/82625156-645da780-9c1f-11ea-9fe8-52e80d4ac59b.png" width = "49%" >
+  <img src="https://user-images.githubusercontent.com/50758600/82625205-85be9380-9c1f-11ea-8c4b-18c8cdf07c90.png" width = "49%" >
+</p>
 
-// 큰 숫자대로 정렬
-	sort(v.begin(), v.end(), cmp);
+<h5 id="3-ppk를-잘-불러왔으면-다시-왼쪽-카테고리에서-제일-위에-있는-session-으로-이동합니다-이후-saved-sessions-에-본인의-서비스명을-입력하고-save-해줍시다-이후-저장한-세션을-선택-후-open-해줍시다">3. ppk를 잘 불러왔으면, 다시 왼쪽 카테고리에서 제일 위에 있는 <strong>Session</strong> 으로 이동합니다. 이후 <strong>Saved Sessions</strong> 에 본인의 서비스명을 입력하고 <strong>Save</strong> 해줍시다. 이후 저장한 세션을 선택 후 <strong>Open</strong> 해줍시다!</h5>
 
-// 마지막 숫자가 0이 아니면 30의 배수가 될 수 없다.
-	if (v[strSize - 1] != '0') {
-		cout &lt;&lt; -1 &lt;&lt; endl;
-		return 0;
-	}
+<p align = "center">
+  <img src="https://user-images.githubusercontent.com/50758600/82626455-d4b9f800-9c22-11ea-9955-3e0e589711d0.png" >
+</p>
 
-// 모든 수의 합을 구한다.
-	for (int i = 0; i &lt; strSize; i++) {
-		sum += v[i] - '0';
-		answer += v[i];
-	}
+<h2 id="3-aws-ec2-접속">3. AWS EC2 접속</h2>
 
-	if (sum % 3 == 0) {
-		cout &lt;&lt; answer &lt;&lt; endl;
-	}
-	else {
-		cout &lt;&lt; -1 &lt;&lt; endl;
-	}
+<p>open 해주면 보안 알림창이 처음에 나오는데 그냥 &lsquo;예&rsquo;를 눌러주시면 됩니다. 그러면 이후 다음과 같은화면이 나오며 접속이 완료됩니다!</p>
 
+<p align = "center">
+  <img src="https://user-images.githubusercontent.com/50758600/82626610-38442580-9c23-11ea-929f-136498f1ec66.png" >
+</p>
 
-}
-</code></pre></li>
-</ul>
+<p>그럼 다음 포스팅에서 본격적으로 AWS EC2 서버에 Spring Boot를 배포하는 작업을 보여드리겠습니다. 다음 포스팅에서 봐용~!👐</p>
+
+<p align = "center">
+  <img src=https://gifimage.net/wp-content/uploads/2018/05/see-ya-gif-12.gif" >
+</p>
+
+<p>참고 문헌
+- <a href="http://www.yes24.com/Product/Goods/83849117?">스프링 부트와 AWS로 혼자 구현하는 웹 서비스</a></p>
 
     </div>
     <div class="article-footer">
@@ -452,7 +438,7 @@ int main() {
   <ul class="post-copyright list-unstyled">
     <li class="post-copyright-link hidden-xs">
       <strong>Permalink: </strong>
-      <a href="https://chlalstjd430.github.io/2020/02/%EB%B0%B1%EC%A4%8010610/" title="백준 10610 - 30" target="_blank" rel="external">https://chlalstjd430.github.io/2020/02/%EB%B0%B1%EC%A4%8010610/</a>
+      <a href="https://chlalstjd430.github.io/2020/05/aws_ec2_02/" title="AWS EC2를 이용하여 Spring Boot 배포하기(2)" target="_blank" rel="external">https://chlalstjd430.github.io/2020/05/aws_ec2_02/</a>
     </li>
     <li class="post-copyright-license">
       <strong>License：</strong><a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN</a>
@@ -487,14 +473,9 @@ int main() {
     <div class="bar-inner">
         <ul class="pager pull-left">
             <li class="prev">
-                <a href="https://chlalstjd430.github.io/2020/02/%EA%B3%B5%EB%B6%80_jwt/" title="JWT(1) - JWT(JSON Web Token)란 무엇인가?"><i
+                <a href="https://chlalstjd430.github.io/2020/05/aws_ec2_01/" title="AWS EC2를 이용하여 Spring Boot 배포하기(1)"><i
                         class="icon icon-angle-left"
                         aria-hidden="true"></i><span>&nbsp;&nbsp;Older</span></a>
-            </li>
-            <li class="next">
-                <a href="https://chlalstjd430.github.io/2020/02/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_006/"
-                    title="프로그래머스 - 체육복"><span>Newer&nbsp;&nbsp;</span><i
-                        class="icon icon-angle-right" aria-hidden="true"></i></a>
             </li>
             
             <li class="toggle-toc">
@@ -591,7 +572,7 @@ int main() {
 
 <script defer>
     var disqus_config = function () {
-        this.page.url = 'https:\/\/chlalstjd430.github.io\/2020\/02\/%EB%B0%B1%EC%A4%8010610\/';
+        this.page.url = 'https:\/\/chlalstjd430.github.io\/2020\/05\/aws_ec2_02\/';
         this.page.identifier = 'https-chlalstjd430-github-io';
     };
     (function () {
