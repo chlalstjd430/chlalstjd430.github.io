@@ -10,6 +10,15 @@
     
     
     <item>
+      <title>AWS EC2를 이용하여 Spring Boot 배포하기(3)</title>
+      <link>https://chlalstjd430.github.io/2020/05/aws_ec2_03/</link>
+      <pubDate>Fri, 22 May 2020 16:46:31 +0900</pubDate>
+      
+      <guid>https://chlalstjd430.github.io/2020/05/aws_ec2_03/</guid>
+      <description>AWS EC2를 이용하여 Spring Boot 배포하기(3) 안녕하세요! 오늘은 지난 포스팅에 이어서 서버에서 Spring Boot를 배포하는 과정을 안내해드리도록 하겠습니다. 우리는 github</description>
+    </item>
+    
+    <item>
       <title>AWS EC2를 이용하여 Spring Boot 배포하기(2)</title>
       <link>https://chlalstjd430.github.io/2020/05/aws_ec2_02/</link>
       <pubDate>Fri, 22 May 2020 13:59:22 +0900</pubDate>
@@ -178,15 +187,6 @@
       
       <guid>https://chlalstjd430.github.io/2020/02/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_008/</guid>
       <description>문제링크 사용언어 c++ 주의사항 어떤 숫자에서 k개의 수를 제거했을 때 얻을 수 있는 가장 큰 숫자를 구하려 합니다. 조합하여 가장 큰 수가 아닌 숫자 순서를 유지하며 k개의</description>
-    </item>
-    
-    <item>
-      <title>프로그래머스 - 124 나라의 숫자</title>
-      <link>https://chlalstjd430.github.io/2020/02/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_007/</link>
-      <pubDate>Wed, 12 Feb 2020 18:19:00 +0900</pubDate>
-      
-      <guid>https://chlalstjd430.github.io/2020/02/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_007/</guid>
-      <description>문제링크 사용언어 c++ 주의사항 1,2,4 숫자가 반복 진행 되므로 3진법을 구하는 방법과 비슷하게 진행하면 된다. 문제풀이 124 나라에서는 10진법 124 수로 표현되는 과정을 보</description>
     </item>
     
   </channel>
