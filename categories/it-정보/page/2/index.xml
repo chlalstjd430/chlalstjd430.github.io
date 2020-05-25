@@ -5,10 +5,19 @@
     <link>https://chlalstjd430.github.io/categories/it-%EC%A0%95%EB%B3%B4/</link>
     <description>Recent content in IT 정보 on cmstown</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 14 Jan 2020 14:16:41 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 26 May 2020 03:06:40 +0900</lastBuildDate>
     
         <atom:link href="https://chlalstjd430.github.io/categories/it-%EC%A0%95%EB%B3%B4/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>프로그래머스 - 큰 수 만들기</title>
+      <link>https://chlalstjd430.github.io/2020/02/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_008/</link>
+      <pubDate>Tue, 18 Feb 2020 20:10:55 +0900</pubDate>
+      
+      <guid>https://chlalstjd430.github.io/2020/02/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_008/</guid>
+      <description>문제링크 사용언어 c++ 주의사항 어떤 숫자에서 k개의 수를 제거했을 때 얻을 수 있는 가장 큰 숫자를 구하려 합니다. 조합하여 가장 큰 수가 아닌 숫자 순서를 유지하며 k개의</description>
+    </item>
     
     <item>
       <title>프로그래머스 - 124 나라의 숫자</title>
@@ -179,15 +188,6 @@
       
       <guid>https://chlalstjd430.github.io/2020/02/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_002/</guid>
       <description>문제링크 사용언어 c++ 문제유형 힙/우선순위 큐 주의 사항 vector를 가지고 sort후 문제를 풀었더니 효율성에서 통과하지 못하였다. 이는 우선순위 큐를 선언</description>
-    </item>
-    
-    <item>
-      <title>프로그래머스 - 카카오 프렌즈 컬러링북</title>
-      <link>https://chlalstjd430.github.io/2020/02/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_001/</link>
-      <pubDate>Mon, 03 Feb 2020 17:17:32 +0900</pubDate>
-      
-      <guid>https://chlalstjd430.github.io/2020/02/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_001/</guid>
-      <description>문제링크 사용언어 c++ 문제유형 dfs/bfs 그래프 주의 사항 전역 변수를 사용할 경우 함수 내에 초기화 코드를 꼭 작성하자 제출하면 답이 틀리려서 30분넘게 씨름했는데..so</description>
     </item>
     
   </channel>

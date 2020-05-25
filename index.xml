@@ -5,10 +5,19 @@
     <link>https://chlalstjd430.github.io/</link>
     <description>Recent content on cmstown</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 22 May 2020 16:46:31 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 26 May 2020 03:06:40 +0900</lastBuildDate>
     
         <atom:link href="https://chlalstjd430.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>코디미상담 후기 - 백엔드 개발자를 꿈꾸는 초보 개발자에 대한 조언</title>
+      <link>https://chlalstjd430.github.io/2020/05/%EC%A0%95%EB%B3%B4_002/</link>
+      <pubDate>Tue, 26 May 2020 03:06:40 +0900</pubDate>
+      
+      <guid>https://chlalstjd430.github.io/2020/05/%EC%A0%95%EB%B3%B4_002/</guid>
+      <description>코디미 상담 후기 - 백엔드 개발자를 꿈꾸는 초보 개발자에 대한 조언 최근 코덕이라는 이사이트를 애용하는데, 해당 사이트에서 코디미 라는 곳을 알게되었습니다. 코디</description>
+    </item>
     
     <item>
       <title>AWS EC2를 이용하여 Spring Boot 배포하기(3)</title>
@@ -179,15 +188,6 @@
       
       <guid>https://chlalstjd430.github.io/2020/02/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_009/</guid>
       <description>문제링크 사용언어 c++ 주의사항 종이접기를 진행할 떄마다 생기는 규칙을 찾아야한다. 문제풀이 문제의 예제만으로는 규칙을 찾기 어려워 n=4일 떄 값을 직접 구해보아</description>
-    </item>
-    
-    <item>
-      <title>프로그래머스 - 큰 수 만들기</title>
-      <link>https://chlalstjd430.github.io/2020/02/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_008/</link>
-      <pubDate>Tue, 18 Feb 2020 20:10:55 +0900</pubDate>
-      
-      <guid>https://chlalstjd430.github.io/2020/02/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_008/</guid>
-      <description>문제링크 사용언어 c++ 주의사항 어떤 숫자에서 k개의 수를 제거했을 때 얻을 수 있는 가장 큰 숫자를 구하려 합니다. 조합하여 가장 큰 수가 아닌 숫자 순서를 유지하며 k개의</description>
     </item>
     
   </channel>
