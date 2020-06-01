@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>
+        [DesignPattern] Factory method pattern(팩토리 메소드 패턴) - cmstown
+      </title>
+    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no,email=no,adress=no">
+  
+  <meta name="theme-color" content="#000000" />
+  
+  <meta http-equiv="window-target" content="_top" />
+  
+  
+  <meta name="description" content="Factory method pattern(팩토리 메소드 패턴) 이번에 학습할 디자인 패턴은 &amp;ldquo;팩토리 메소드 패턴&amp;rdquo; 입니다. 팩토리 메소드 메서드 패턴이란" />
+  <meta name="generator" content="Hugo 0.59.1 with theme pure" />
+  <title>[DesignPattern] Factory method pattern(팩토리 메소드 패턴) - cmstown</title>
+  
+  
+  <link rel="stylesheet" href="https://chlalstjd430.github.io/css/style.min.55864f426c18be60c2e40c404f3e9db45a40a6a7ce220999b3a5da16cb66840d.css">
+  
+  <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
+  <meta property="og:title" content="[DesignPattern] Factory method pattern(팩토리 메소드 패턴)" />
+<meta property="og:description" content="Factory method pattern(팩토리 메소드 패턴) 이번에 학습할 디자인 패턴은 &ldquo;팩토리 메소드 패턴&rdquo; 입니다. 팩토리 메소드 메서드 패턴이란" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://chlalstjd430.github.io/2020/06/03_factory_method_pattern/" />
+<meta property="article:published_time" content="2020-06-02T02:04:49+09:00" />
+<meta property="article:modified_time" content="2020-06-02T02:04:49+09:00" />
+<meta itemprop="name" content="[DesignPattern] Factory method pattern(팩토리 메소드 패턴)">
+<meta itemprop="description" content="Factory method pattern(팩토리 메소드 패턴) 이번에 학습할 디자인 패턴은 &ldquo;팩토리 메소드 패턴&rdquo; 입니다. 팩토리 메소드 메서드 패턴이란">
+
+
+<meta itemprop="datePublished" content="2020-06-02T02:04:49&#43;09:00" />
+<meta itemprop="dateModified" content="2020-06-02T02:04:49&#43;09:00" />
+<meta itemprop="wordCount" content="2458">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="[DesignPattern] Factory method pattern(팩토리 메소드 패턴)"/>
+<meta name="twitter:description" content="Factory method pattern(팩토리 메소드 패턴) 이번에 학습할 디자인 패턴은 &ldquo;팩토리 메소드 패턴&rdquo; 입니다. 팩토리 메소드 메서드 패턴이란"/>
+
+  <!--[if lte IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+    <![endif]-->
+
+  <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+  </head>
+
+  
+  
+
+  <body class="main-center theme-black" itemscope itemtype="http://schema.org/WebPage"><header class="header" itemscope itemtype="http://schema.org/WPHeader">
+    <div class="slimContent">
+      <div class="navbar-header">
+        <div class="profile-block text-center">
+          <a id="avatar" href="https://github.com/chlalstjd430" target="_blank">
+            <img class="img-circle img-rotate" src="https://chlalstjd430.github.io/avatar.png" width="200" height="200">
+          </a>
+          <h2 id="name" class="hidden-xs hidden-sm">최민성</h2>
+          <h3 id="title" class="hidden-xs hidden-sm hidden-md">26, 숭실대학교</h3>
+          <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i>Seoul, Korea</small>
+        </div><div class="search" id="search-form-wrap">
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="Search" />
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i
+                        class="icon icon-search"></i></button>
+            </span>
+        </div>
+        <div class="ins-search">
+            <div class="ins-search-mask"></div>
+            <div class="ins-search-container">
+                <div class="ins-input-wrapper">
+                    <input type="text" class="ins-search-input" placeholder="Type something..."
+                        x-webkit-speech />
+                    <button type="button" class="close ins-close ins-selectable" data-dismiss="modal"
+                        aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="ins-section-wrapper">
+                    <div class="ins-section-container"></div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+        <ul class="nav navbar-nav main-nav">
+            <li class="menu-item menu-item-home">
+                <a href="/">
+                    <i class="icon icon-home-fill"></i>
+                  <span class="menu-title">Home</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-archives">
+                <a href="/posts/">
+                    <i class="icon icon-archives-fill"></i>
+                  <span class="menu-title">Posts</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-categories">
+                <a href="/categories/">
+                    <i class="icon icon-folder"></i>
+                  <span class="menu-title">Categories</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-tags">
+                <a href="/tags/">
+                    <i class="icon icon-tags"></i>
+                  <span class="menu-title">Tags</span>
+                </a>
+            </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    
+      <div class="widget">
+    <h3 class="widget-title">Board</h3>
+    <div class="widget-body">
+        <div id="board">
+            <div class="content"><p>cms3136@gmail.com</p><p>- 숭실대학교 글로벌미디어학부</p><p>- Lectopia s/w expert course 17기</p><p>- YOURSSU 백엔드 개발자</p><p>- YAPP 16기</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+      <div class="widget">
+    <h3 class="widget-title"> Categories</h3>
+    <div class="widget-body">
+        <ul class="category-list">
+            <li class="category-list-item"><a href="https://chlalstjd430.github.io/categories/2020-%EA%B3%84%ED%9A%8D/" class="category-list-link">2020-계획</a><span class="category-list-count">2</span></li>
+            <li class="category-list-item"><a href="https://chlalstjd430.github.io/categories/aws/" class="category-list-link">aws</a><span class="category-list-count">3</span></li>
+            <li class="category-list-item"><a href="https://chlalstjd430.github.io/categories/it-%EC%A0%95%EB%B3%B4/" class="category-list-link">it-정보</a><span class="category-list-count">2</span></li>
+            <li class="category-list-item"><a href="https://chlalstjd430.github.io/categories/%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4/" class="category-list-link">디자인패턴</a><span class="category-list-count">3</span></li>
+            <li class="category-list-item"><a href="https://chlalstjd430.github.io/categories/%EB%A6%AC%EC%95%A1%ED%8B%B0%EB%B8%8C-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/" class="category-list-link">리액티브-프로그래밍</a><span class="category-list-count">2</span></li>
+            <li class="category-list-item"><a href="https://chlalstjd430.github.io/categories/%EB%B0%B1%EC%A4%80-%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4/" class="category-list-link">백준-문제풀이</a><span class="category-list-count">16</span></li>
+            <li class="category-list-item"><a href="https://chlalstjd430.github.io/categories/%EC%8A%A4%ED%84%B0%EB%94%94/" class="category-list-link">스터디</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="https://chlalstjd430.github.io/categories/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/" class="category-list-link">알고리즘</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="https://chlalstjd430.github.io/categories/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C/" class="category-list-link">클린코드</a><span class="category-list-count">9</span></li>
+            <li class="category-list-item"><a href="https://chlalstjd430.github.io/categories/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4/" class="category-list-link">프로그래머스-문제풀이</a><span class="category-list-count">22</span></li>
+        </ul>
+    </div>
+</div>
+      <div class="widget">
+    <h3 class="widget-title"> Tags</h3>
+    <div class="widget-body">
+        <ul class="tag-list">
+            
+            
+            <li class="tag-list-item"><a href="https://chlalstjd430.github.io/tags/it-%EB%8F%99%EC%95%84%EB%A6%AC/" class="tag-list-link">it-동아리</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://chlalstjd430.github.io/tags/it-%EC%A0%95%EB%B3%B4/" class="tag-list-link">it-정보</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://chlalstjd430.github.io/tags/jwt/" class="tag-list-link">jwt</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://chlalstjd430.github.io/tags/kmp-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/" class="tag-list-link">kmp-알고리즘</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://chlalstjd430.github.io/tags/spring-webflux/" class="tag-list-link">spring-webflux</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://chlalstjd430.github.io/tags/%EA%B3%84%ED%9A%8D/" class="tag-list-link">계획</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://chlalstjd430.github.io/tags/%EA%B7%B8%EB%A6%AC%EB%94%94-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/" class="tag-list-link">그리디-알고리즘</a><span
+                    class="tag-list-count">5</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://chlalstjd430.github.io/tags/%EB%8B%A4%EC%9D%B4%EB%82%98%EB%AF%B9-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/" class="tag-list-link">다이나믹-프로그래밍</a><span
+                    class="tag-list-count">4</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://chlalstjd430.github.io/tags/%EB%8B%A4%EC%9D%B5%EC%8A%A4%ED%8A%B8%EB%9D%BC-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/" class="tag-list-link">다익스트라-알고리즘</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://chlalstjd430.github.io/tags/%EB%A6%AC%EC%95%A1%ED%8B%B0%EB%B8%8C-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/" class="tag-list-link">리액티브-프로그래밍</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://chlalstjd430.github.io/tags/%EB%B8%8C%EB%A3%A8%ED%8A%B8-%ED%8F%AC%EC%8A%A4%ED%8A%B8/" class="tag-list-link">브루트-포스트</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://chlalstjd430.github.io/tags/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/" class="tag-list-link">알고리즘</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://chlalstjd430.github.io/tags/%EC%9C%84%EC%83%81-%EC%A0%95%EB%A0%AC-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/" class="tag-list-link">위상-정렬-알고리즘</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://chlalstjd430.github.io/tags/%EC%9D%B4%EC%A7%84-%ED%8A%B8%EB%A6%AC-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/" class="tag-list-link">이진-트리-알고리즘</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://chlalstjd430.github.io/tags/%EC%B5%9C%EC%86%8C-%EC%8A%A4%ED%8C%A8%EB%8B%9D-%ED%8A%B8%EB%A6%AC/" class="tag-list-link">최소-스패닝-트리</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://chlalstjd430.github.io/tags/%ED%81%AC%EB%A3%A8%EC%8A%A4%EC%B9%BC-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/" class="tag-list-link">크루스칼-알고리즘</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://chlalstjd430.github.io/tags/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C/" class="tag-list-link">클린코드</a><span
+                    class="tag-list-count">9</span></li>
+            
+        </ul>
+
+    </div>
+</div>
+      
+<div class="widget">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget-body">
+        <ul class="recent-post-list list-unstyled no-thumbnail">
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://chlalstjd430.github.io/2020/06/03_factory_method_pattern/" class="title">[DesignPattern] Factory method pattern(팩토리 메소드 패턴)</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-06-02 02:04:49 &#43;0900 KST" itemprop="datePublished">2020-06-02</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://chlalstjd430.github.io/2020/05/02_templete_method_pattern/" class="title">[DesignPattern] Template Method Pattern(템플릿 메소드 패턴)</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-05-26 15:37:48 &#43;0900 KST" itemprop="datePublished">2020-05-26</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://chlalstjd430.github.io/2020/05/%EC%A0%95%EB%B3%B4_002/" class="title">코디미상담 후기 - 백엔드 개발자를 꿈꾸는 초보 개발자에 대한 조언</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-05-26 03:06:40 &#43;0900 KST" itemprop="datePublished">2020-05-26</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://chlalstjd430.github.io/2020/05/aws_ec2_03/" class="title">AWS EC2를 이용하여 Spring Boot 배포하기(3)</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-05-22 16:46:31 &#43;0900 KST" itemprop="datePublished">2020-05-22</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://chlalstjd430.github.io/2020/05/aws_ec2_02/" class="title">AWS EC2를 이용하여 Spring Boot 배포하기(2)</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-05-22 13:59:22 &#43;0900 KST" itemprop="datePublished">2020-05-22</time>
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+  </div>
+</aside>
+
+    
+    
+<aside class="sidebar sidebar-toc collapse" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    <h4 class="toc-title">Catalogue</h4>
+    <nav id="toc" class="js-toc toc">
+
+    </nav>
+  </div>
+</aside>
+<main class="main" role="main"><div class="content">
+  <article id="-" class="article article-type-" itemscope
+    itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/2020/06/03_factory_method_pattern/"
+    >[DesignPattern] Factory method pattern(팩토리 메소드 패턴)</a
+  >
+</h1>
+
+      <div class="article-meta">
+        
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="https://chlalstjd430.github.io/2020/06/03_factory_method_pattern/" class="article-date">
+  <time datetime="2020-06-02 02:04:49 &#43;0900 KST" itemprop="datePublished">2020-06-02</time>
+</a>
+</span>
+<span class="article-category">
+  <i class="icon icon-folder"></i>&nbsp;
+  <a class="article-category-link" href="/categories/%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4/"> 디자인패턴 </a>
+</span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/2020/06/03_factory_method_pattern/#comments"
+            class="article-comment-link">Comments</a></span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 2458words</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 5minutes </span>
+      </div>
+    </div>
+    <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
+      
+
+<h1 id="factory-method-pattern-팩토리-메소드-패턴">Factory method pattern(팩토리 메소드 패턴)</h1>
+
+<p>이번에 학습할 디자인 패턴은 &ldquo;팩토리 메소드 패턴&rdquo; 입니다.</p>
+
+<h3 id="팩토리-메소드-메서드-패턴이란">팩토리 메소드 메서드 패턴이란?</h3>
+
+<p>위키에서는 다음과 같이 설명합니다.</p>
+
+<blockquote>
+<p>Factory method는 부모(상위) 클래스에 알려지지 않은 구체 클래스를 생성하는 패턴이며. 자식(하위) 클래스가 어떤 객체를 생성할지를 결정하도록 하는 패턴이기도 하다. 부모(상위) 클래스 코드에 구체 클래스 이름을 감추기 위한 방법으로도 사용한다.</p>
+</blockquote>
+
+<p>이번에도 역시나 예제로 자세히 살펴보도록 합시다.</p>
+
+<p><p align = "center">
+   <img src = "https://media1.tenor.com/images/e8144164703c22c5d7b46fd1e44f82ae/tenor.gif?itemid=5333229">
+ </p></p>
+
+<p><br><br></p>
+
+<h3 id="여러-방식의-엘리베이터-스케줄링-방법-지원하기-일반">여러 방식의 엘리베이터 스케줄링 방법 지원하기(일반)</h3>
+
+<p>엘리베이터 제어 시스템에서 다양한 엘리베이터 스케줄링을 지원한다고 했을 때, 다음과 같은 구조의 클래스가 있다고 가정해봅시다.</p>
+
+<p align = "center">
+  <img src = "https://user-images.githubusercontent.com/50758600/83435194-c071c880-a476-11ea-83a7-dcd94be8f9e6.png">
+</p>
+
+<ul>
+<li><p>ElevatorManager Class : 여러 엘리베이터 중에서 스케줄링에 따라서 하나의 엘리베이터를 선택하고 이동시킴</p></li>
+
+<li><p>EleveatorController Class : 하나의 엘리베이터 이동을 제어하는 클래스</p></li>
+
+<li><p>ThroughputScheduler Class : 처리량을 기준으로 스케줄링하는 클래스</p></li>
+</ul>
+
+<p>코드로 표현하면, 다음과 같습니다.</p>
+
+<pre><code class="language-JAVA">
+enum Direction {UP, DOW}
+
+class ElevatorManager {
+    private List&lt;ElevatorController&gt; controllers;
+    private ThroughputScheduler scheduler;
+
+    public ElevatorManager(int controllerCount){
+        controllers = new ArrayList&lt;ElevatorController&gt;(controllerCount);
+        for(int i = 0; i &lt; controllerCount; i++){
+            ElevatorController controller = new ElevatorController(i);
+            controllers.add(controller);
+        }
+        scheduler = new ThroughputScheduler();
+    }
+
+    public void requestElevator(int destination, Direction direction){
+        int selectedElevator = scheduler.selectElevator(this, destination, direction);
+        controllers.get(selectedElevator).gotoFloor(destination);
+    }
+}
+
+class ElevatorController {
+    private int id;
+    private int curFloor;
+
+    public ElevatorController(int id) {
+        this.id = id;
+        curFloor = 1;
+    }
+
+    public void gotoFloor(int destination){
+        System.out.println(&quot;Elevator [&quot; + id + &quot;] Floor: &quot; + curFloor);
+        curFloor = destination;
+        System.out.println(&quot; ==&gt; &quot; + curFloor);
+    }
+}
+
+class ThroughputScheduler {
+    public int selectElevator(ElevatorManager manager, int destination, Direction direction){
+      // 실제 구현하지는 않음
+        return 0;
+    }
+}
+
+
+public class Client {
+    public static void main(String[] args) {
+        ElevatorManager em = new ElevatorManager(1);
+        em.requestElevator(4, Direction.UP);
+    }
+}
+
+</code></pre>
+
+<p>먼저 코도를 잘 읽어가며 각 클래스들의 기능들을 자세히 파악해봅시다. 이후 다음과 문제점을 어떻게 해결할지 생각해봅시다.</p>
+
+<ul>
+<li><p><strong>🙋‍♂️문제점</strong></p>
+
+<ul>
+<li><p>현대 ElevatorManager는 ThroughputScheduler를 이용하고 있다. 즉 엘리베이터의 처리량을 최대화시키는 전략을 사용하고 있다. 만약 다른 스케쥴링 전략을 사용해야 한다면? 예를 들어 사용자의 대기시간을 최소화시키는 엘리베이터를 선택하는 전략을 사용해야 한다면?</p></li>
+
+<li><p>스케쥴링 전략이 프로그램 실행 중에 변경을 해야 한다면? 즉, 동적 스케쥴링을 지원해야 한다면 어떻게 해야할까? 예를 들어 오전에는 대기시간 최소화 전략을 사용하고 오후에는 처리량 최대화 전략을 사용해야 한다면?</p></li>
+</ul></li>
+</ul>
+
+<p>먼저 기존에 자주 사용하는 패턴으로 &ldquo;Strategy Patter(전략 패턴)&rdquo; 을 생각하기 쉽습니다. 그렇다면 해당 패턴으로 위와 같은 문제를 해결해봅시다!</p>
+
+<p><br><br><br></p>
+
+<h3 id="여러-방식의-엘리베이터-스케줄링-방법-지원하기-strategy-patter-적용">여러 방식의 엘리베이터 스케줄링 방법 지원하기(Strategy patter 적용)</h3>
+
+<p>스트래티지 패턴을 적용하면, 다음과 같이 클래스 구조가 나오게 됩니다.</p>
+
+<p align = "center">
+  <img src = "https://user-images.githubusercontent.com/50758600/83437904-8525c880-a47b-11ea-922a-0baa98c00ddb.png">
+</p>
+
+<p>위의 다이어그램에서 ElevatorController가 표현되어있지 않지만, ElevatorManager와 연결되어있다고 생각하고 보면 된다.</p>
+
+<p>해당 구조를 보면 ElevatorSheduler를 구현한 클래스들이 생겨서, 위의 문제점을 해결할 수 있을 것으로 보입니다. 실제 코드를 봐볼까요?</p>
+
+<pre><code class="language-JAVA">interface ElevatorScheduler {
+    public int selectElevator(ElevatorManager manager, int destination, Direction direction);
+}
+
+class ThroughputScheduler implements ElevatorScheduler{
+    @Override
+    public int selectElevator(ElevatorManager manager, int destination, Direction direction){
+        // 실제 구현하지는 않음
+        return 0;
+    }
+}
+
+class ResponseTimeScheduler implements ElevatorScheduler {
+    @Override
+    public int selectElevator(ElevatorManager manager, int destination, Direction direction) {
+        // 실제 구현하지는 않음
+        return 1;
+    }
+}
+
+enum Direction {UP, DOW}
+
+class ElevatorManager {
+    private List&lt;ElevatorController&gt; controllers;
+
+    public ElevatorManager(int controllerCount){
+        controllers = new ArrayList&lt;ElevatorController&gt;(controllerCount);
+        for(int i = 0; i &lt; controllerCount; i++){
+            ElevatorController controller = new ElevatorController(i);
+            controllers.add(controller);
+        }
+    }
+
+    public void requestElevator(int destination, Direction direction){
+        ElevatorScheduler scheduler;
+
+        int hour = Calendar.getInstance().get(Calendar.HOUR_OF_DAY);
+        if(hour &lt; 12) {
+            scheduler = new ResponseTimeScheduler();
+        }
+        else{
+            scheduler = new ThroughputScheduler();
+        }
+
+        int selectedElevator = scheduler.selectElevator(this, destination, direction);
+        controllers.get(selectedElevator).gotoFloor(destination);
+    }
+}
+</code></pre>
+
+<p>확실히 이전 문제점을 해결한 것 같습니다. 그러나 ElevatorManager의 requestElevator method를 자세히 살펴보도록 하겠습니다. requestElevator()는 이미 선택된 전략을가지고 엘리베이터를 이동시키는 것이 해당 메소드의 책임입니다. 그런데 현재 코드에서는 전략까지 해당 메소드에서 선택하기 때문에 <a href="http://blog.cmstown.com/2020/01/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C_003/">함수 설계 원칙</a>에 어긋나게 됩니다.</p>
+
+<pre><code class="language-JAVA">int hour = Calendar.getInstance().get(Calendar.HOUR_OF_DAY);
+if(hour &lt; 12) {
+    scheduler = new ResponseTimeScheduler();
+}
+else{
+    scheduler = new ThroughputScheduler();
+}
+</code></pre>
+
+<p>위의 코드는 requestElevator에 있으면 옳은 방법은 아닙니다. 예를들어 현재 오전/오후에 나누어져 스케쥴러를 다르게 하지만, 특별한 공휴일, 평일, 주말마다 다르게 구현하기 위해서는 현재의 코드로는 표현하기 무리가 있어 보입니다. 그렇기에 <strong>전략을 선택하는 기능</strong> 을 분리하는게 좋아보입니다.</p>
+
+<p><br><br><br></p>
+
+<h3 id="여러-방식의-엘리베이터-스케줄링-방법-지원하기-factory-method-pattern-적용">여러 방식의 엘리베이터 스케줄링 방법 지원하기(Factory method pattern 적용)</h3>
+
+<p>팩토리 메소드 패턴을 이용하여 스케줄링 전략에 맞는 객체를 생성하는 코드를 별도로 정의하여봅시다. 그러면 다음과 같은 구조가 나오게 됩니다.</p>
+
+<p align = "center">
+  <img src = "https://user-images.githubusercontent.com/50758600/83440223-81944080-a47f-11ea-9819-815939d1aaec.png">
+</p>
+
+<p>기존의 클래스들에 SchedulerFactory가 추가된 것을 확인하실 수 있습니다. 해당 클래스에서는 전략들을 생성하는 알고리즘에 의해서 만들어진 Schedular를 반환하게끔 합니다. 즉, 스케줄러를 선택하는 행위는 SchedulerFactory가 하게 됩니다.</p>
+
+<p>이를 실제 코드로 살펴보도록 하겠습니다!</p>
+
+<pre><code class="language-JAVA">enum Direction {UP, DOWN}
+
+class ElevatorManager {
+    private List&lt;ElevatorController&gt; controllers;
+    private SchedulingStrategyID strategyID;
+
+    public ElevatorManager(int controllerCount, SchedulingStrategyID strategyID){
+        controllers = new ArrayList&lt;ElevatorController&gt;(controllerCount);
+        for(int i = 0; i &lt; controllerCount; i++){
+            ElevatorController controller = new ElevatorController(i);
+            controllers.add(controller);
+        }
+        this.strategyID = strategyID;
+    }
+
+    public void setStrategyID(SchedulingStrategyID strategyID){
+        this.strategyID = strategyID;
+    }
+
+    public void requestElevator(int destination, Direction direction){
+        ElevatorScheduler scheduler = SchedulerFactory.getScheduler(strategyID);
+        System.out.println(scheduler);
+        int selectedElevator = scheduler.selectElevator(this, destination, direction);
+        controllers.get(selectedElevator).gotoFloor(destination);
+    }
+}
+
+class ElevatorController {
+    private int id;
+    private int curFloor;
+
+    public ElevatorController(int id) {
+        this.id = id;
+        curFloor = 1;
+    }
+
+    public void gotoFloor(int destination){
+        System.out.println(&quot;Elevator [&quot; + id + &quot;] Floor: &quot; + curFloor);
+        curFloor = destination;
+        System.out.println(&quot; ==&gt; &quot; + curFloor);
+    }
+}
+
+enum SchedulingStrategyID {RESPONSE_TIME, THROUGHPUT, DYNAMIC}
+
+class SchedulerFactory {
+    public static ElevatorScheduler getScheduler(SchedulingStrategyID strategyID){
+        ElevatorScheduler scheduler = null;
+        switch (strategyID) {
+            case RESPONSE_TIME:
+                scheduler = new ResponseTimeScheduler();
+                break;
+            case THROUGHPUT:
+                scheduler = new ThroughputScheduler();
+                break;
+            case DYNAMIC: {
+                int hour = Calendar.getInstance().get(Calendar.HOUR_OF_DAY);
+                if(hour &lt; 12) {
+                    scheduler = new ResponseTimeScheduler();
+                }
+                else{
+                    scheduler = new ThroughputScheduler();
+                }
+                break;
+            }
+        }
+        return scheduler;
+    }
+}
+
+interface ElevatorScheduler {
+    public int selectElevator(ElevatorManager manager, int destination, Direction direction);
+}
+
+class ThroughputScheduler implements ElevatorScheduler{
+    @Override
+    public int selectElevator(ElevatorManager manager, int destination, Direction direction){
+        // 실제 구현하지는 않음
+        return 0;
+    }
+}
+
+class ResponseTimeScheduler implements ElevatorScheduler {
+    @Override
+    public int selectElevator(ElevatorManager manager, int destination, Direction direction) {
+        // 실제 구현하지는 않음
+        return 1;
+    }
+}
+
+public class Client {
+    public static void main(String[] args) {
+        ElevatorManager emWithResponseTimerScheduler = new ElevatorManager(2, SchedulingStrategyID.RESPONSE_TIME);
+        emWithResponseTimerScheduler.requestElevator(10, Direction.UP);
+
+        ElevatorManager emWithThroughputScheduler = new ElevatorManager(2, SchedulingStrategyID.RESPONSE_TIME);
+        emWithThroughputScheduler.requestElevator(10, Direction.UP);
+
+        ElevatorManager emWithDynamicScheduler = new ElevatorManager(2, SchedulingStrategyID.RESPONSE_TIME);
+        emWithDynamicScheduler.requestElevator(10, Direction.UP);
+    }
+}
+</code></pre>
+
+<p>SchedulerFactory Class를 보면 확실히 이전과 다르게 스케줄러를 선택하는 책임이 분리가 되는 것을 확인하실 수 있습니다.</p>
+
+<p>추가적으로 스케줄러는 지속적으로 사용되기 때문에 각각의 스케줄러를 싱글톤 패턴까지 적용하면 더 성능적으로 효율적인 구조가 될 수 있습니다. 그러나 오늘 이 시간에서는 팩토리 메소드 패턴을 설명하기 위한 시간이기 때문에, 생략하고 이 부분은 스스로 고민하시고 적용해보시면 좋을 것 같습니다:D</p>
+
+<p>더불어 팩토리 메소드 패턴은 상속을 이용하여 구현을 할 수도 있는데 간단하게만 설명하도록 하겠습니다.</p>
+
+<p align = "center">
+  <img src = "https://user-images.githubusercontent.com/50758600/83443900-7d6b2180-a485-11ea-8f85-ccb38b84aac2.png">
+</p>
+
+<p>디자인 패턴을 구현하는데 절대적인 방법은 없습니다. 디자인 패턴은 다양한 방법으로 적용할 수 있기에 예제에 나온 방법만 생각하시지마시고 원론적인 부분을 이해하여 필요할 때 실제 프로젝트에 적용하며 학습하시면 좋을 것 같습니다.</p>
+
+<p><br><br><br></p>
+
+<p>결과적으로 위의 과정을 통해서 Factory method pattern을 이용하면 객체의 생성 코드를 별도의 클래스/메소드로 분리함으로써 객체 생성의 변화를 대비하는데 굉장히 유용한 것을 알 수 있었습니다.</p>
+
+<p><br><br><br></p>
+
+<p>참고
+- <a href="http://www.kyobobook.co.kr/product/detailViewKor.laf?mallGb=KOR&amp;ejkGb=KOR&amp;barcode=9788968480911&amp;orderClick=JAj&amp;OV_REFFER=http://click.linkprice.com/click.php?m=kbbook&amp;a=A100532541&amp;l=9999&amp;l_cd1=0&amp;u_id=kacg2ap746029ofs02yqe&amp;l_cd2=0&amp;tu=http%3A%2F%2Fwww.kyobobook.co.kr%2Fproduct%2FdetailViewKor.laf%3FmallGb%3DKOR%26ejkGb%3DKOR%26barcode%3D9788968480911%26orderClick%3DJAj">JAVA 객체지향 디자인 패턴 </a></p>
+
+    </div>
+    <div class="article-footer">
+<blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
+    <li class="post-copyright-link hidden-xs">
+      <strong>Permalink: </strong>
+      <a href="https://chlalstjd430.github.io/2020/06/03_factory_method_pattern/" title="[DesignPattern] Factory method pattern(팩토리 메소드 패턴)" target="_blank" rel="external">https://chlalstjd430.github.io/2020/06/03_factory_method_pattern/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>License：</strong><a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN</a>
+    </li>
+  </ul>
+</blockquote>
+
+<div class="panel panel-default panel-badger">
+  <div class="panel-body">
+    <figure class="media">
+      <div class="media-left">
+        <a href="https://github.com/chlalstjd430" target="_blank" class="img-burn thumb-sm visible-lg">
+          <img src="https://chlalstjd430.github.io/avatar.png" class="img-rounded w-full" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading"><a href="https://github.com/chlalstjd430" target="_blank"><span class="text-dark">최민성</span><small class="ml-1x">26, 숭실대학교</small></a></h3>
+        <div>cms3136@gmail.com</div>
+      </div>
+    </figure>
+  </div>
+</div>
+    </div>
+  </article>
+<section id="comments">
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+</section>
+
+</div><nav class="bar bar-footer clearfix" data-stick-bottom>
+    <div class="bar-inner">
+        <ul class="pager pull-left">
+            <li class="prev">
+                <a href="https://chlalstjd430.github.io/2020/05/02_templete_method_pattern/" title="[DesignPattern] Template Method Pattern(템플릿 메소드 패턴)"><i
+                        class="icon icon-angle-left"
+                        aria-hidden="true"></i><span>&nbsp;&nbsp;Older</span></a>
+            </li>
+            
+            <li class="toggle-toc">
+                <a class="toggle-btn collapsed" data-toggle="collapse" href="#collapseToc" aria-expanded="false"
+                    title="Catalogue" role="button">
+                    <span>[&nbsp;</span><span>Catalogue</span>
+                    <i class="text-collapsed icon icon-anchor"></i>
+                    <i class="text-in icon icon-close"></i>
+                    <span>]</span>
+                </a>
+            </li>
+        </ul>
+        <div class="bar-right">
+            <div class="share-component" data-sites=""
+                data-mobile-sites="weibo,qq,qzone"></div>
+        </div>
+    </div>
+</nav>
+
+</main><footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+<ul class="social-links">
+    <li><a href="https://github.com/chlalstjd430" target="_blank" title="github" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-github"></i></a></li>
+    <li><a href="https://chlalstjd430.github.io/index.xml" target="_blank" title="rss" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-rss"></i></a></li>
+</ul>
+  <div class="copyright">
+    &copy;2017  -
+    2020
+    <div class="publishby">
+        Theme by <a href="https://github.com/xiaoheiAh" target="_blank"> xiaoheiAh </a>base on<a href="https://github.com/xiaoheiAh/hugo-theme-pure" target="_blank"> pure</a>.
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_SVG"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+            showMathMenu: false, //disables context menu
+            tex2jax: {
+            inlineMath: [ ['$','$'], ['\\(','\\)'] ]
+           }
+    });
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script>
+    window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/highlight.min.js"></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/python.min.js" defer></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/javascript.min.js" defer></script><script>
+    hljs.configure({
+        tabReplace: '    ', 
+        classPrefix: ''     
+        
+    })
+    hljs.initHighlightingOnLoad();
+</script>
+<script src="https://chlalstjd430.github.io/js/application.min.bdeb64b910570b6c41badc6a05b7afb0c8ad9efd8525de3c7257d59e786326a3.js"></script>
+<script src="https://chlalstjd430.github.io/js/plugin.min.51ff8c7317566f82259170fa36e09c4493adc9b9378b427a01ad3f017ebac7dd.js"></script>
+
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: 'Posts',
+                PAGES: 'Pages',
+                CATEGORIES: 'Categories',
+                TAGS: 'Tags',
+                UNTITLED: '(Untitled)',
+            },
+            ROOT_URL: 'https:\/\/chlalstjd430.github.io',
+            CONTENT_URL: 'https:\/\/chlalstjd430.github.io\/searchindex.json ',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+<script type="text/javascript" src="https://chlalstjd430.github.io/js/insight.min.a343cd9a5a7698336b28ef3a7c16a3a1b1d2d5fb17dc8ed04022bbe08cc5459073a15bdafa3a8a58cdd56080784bdd69fa70b1ae8597565c799c57ed00f0e120.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+<script>
+    tocbot.init({
+        
+        tocSelector: '.js-toc',
+        
+        contentSelector: '.js-toc-content',
+        
+        headingSelector: 'h1, h2, h3',
+        
+        hasInnerContainers: true,
+    });
+</script>
+
+
+<script>
+(function() { 
+var d = document, s = d.createElement('script');
+s.src = 'https://' + 'https-chlalstjd430-github-io' + '.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+
+  </body>
+</html>
