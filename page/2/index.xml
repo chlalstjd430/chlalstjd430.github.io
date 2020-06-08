@@ -5,10 +5,19 @@
     <link>https://chlalstjd430.github.io/</link>
     <description>Recent content on cmstown</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 02 Jun 2020 18:04:02 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 08 Jun 2020 14:02:59 +0900</lastBuildDate>
     
         <atom:link href="https://chlalstjd430.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>프로그래머스 - 라면 공장</title>
+      <link>https://chlalstjd430.github.io/2020/02/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_012/</link>
+      <pubDate>Fri, 28 Feb 2020 16:35:56 +0900</pubDate>
+      
+      <guid>https://chlalstjd430.github.io/2020/02/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_012/</guid>
+      <description>문제링크 사용언어 c++ 주의사항 stock에 있는 밀가루는 오늘(0일 이후)부터 사용됩니다. stock과 k는 2 이상 100,000 이하입니다. dates의 각 원소는 1</description>
+    </item>
     
     <item>
       <title>프로그래머스 - 숫자 야구</title>
@@ -179,15 +188,6 @@
       
       <guid>https://chlalstjd430.github.io/2020/02/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C_007/</guid>
       <description>Chapter 07 - 에러 핸들링 1. 리턴 코드 대신에 Exception을 사용하자! 기존에 flag를 이용하여 에러 코드를 리턴하거나 호출하는 측에서 예외처리를 하였다. 이</description>
-    </item>
-    
-    <item>
-      <title>프로그래머스 - 문자열 압축</title>
-      <link>https://chlalstjd430.github.io/2020/02/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_003/</link>
-      <pubDate>Tue, 04 Feb 2020 18:49:01 +0900</pubDate>
-      
-      <guid>https://chlalstjd430.github.io/2020/02/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_003/</guid>
-      <description>문제링크 사용언어 c++ 주의사항 문자열은 제일 앞부터 정해진 길이만큼 잘라야 합니다. 문제풀이 문제풀이를 위해서 다음과 같은 과정을 거치게 됩니다. 문자열을 자를 단</description>
     </item>
     
   </channel>

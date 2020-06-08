@@ -3,28 +3,42 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://chlalstjd430.github.io/2020/06/put_vs_patch/</loc>
-    <lastmod>2020-06-02T18:04:02+09:00</lastmod>
+    <loc>https://chlalstjd430.github.io/2020/06/04_abstact_factory_pattern/</loc>
+    <lastmod>2020-06-08T14:02:59+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://chlalstjd430.github.io/categories/</loc>
-    <lastmod>2020-06-02T18:04:02+09:00</lastmod>
+    <lastmod>2020-06-08T14:02:59+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://chlalstjd430.github.io/</loc>
-    <lastmod>2020-06-02T18:04:02+09:00</lastmod>
+    <lastmod>2020-06-08T14:02:59+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://chlalstjd430.github.io/posts/</loc>
+    <lastmod>2020-06-08T14:02:59+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://chlalstjd430.github.io/categories/%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4/</loc>
+    <lastmod>2020-06-08T14:02:59+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://chlalstjd430.github.io/2020/06/put_vs_patch/</loc>
     <lastmod>2020-06-02T18:04:02+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -39,13 +53,6 @@
   
   <url>
     <loc>https://chlalstjd430.github.io/2020/06/03_factory_method_pattern/</loc>
-    <lastmod>2020-06-02T02:04:49+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://chlalstjd430.github.io/categories/%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4/</loc>
     <lastmod>2020-06-02T02:04:49+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -262,14 +269,14 @@
   </url>
   
   <url>
-    <loc>https://chlalstjd430.github.io/tags/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C/</loc>
+    <loc>https://chlalstjd430.github.io/categories/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C/</loc>
     <lastmod>2020-02-11T19:23:15+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://chlalstjd430.github.io/categories/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C/</loc>
+    <loc>https://chlalstjd430.github.io/tags/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C/</loc>
     <lastmod>2020-02-11T19:23:15+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -662,12 +669,6 @@
   
   <url>
     <loc>https://chlalstjd430.github.io/series/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://chlalstjd430.github.io/1/01/teamplay/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
