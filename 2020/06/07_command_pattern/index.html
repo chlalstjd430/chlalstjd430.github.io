@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>
-        Chapter 06 - 객체와 자료구조 - cmstown
+        [DesignPattern] Command pattern(커맨드 패턴) - cmstown
       </title>
     <head>
   <meta charset="utf-8">
@@ -23,35 +23,35 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <meta name="description" content="Chapter 06 - 객체와 자료구조 1. 자료 추상화 목록 6-1 구체적인 Point 클래스 public class Point { public double x; public double y; } 목록 6-2 추상적인 Point 클래스 public interface Point { double getX(); double getY(); void setCartesian(double x, double y); double getR(); double getTheta(); void setPolar(double r, double" />
+  <meta name="description" content="Command pattern(커맨드 패턴) 이번에 학습할 디자인 패턴은 커맨드 패턴 입니다. Command pattern(커맨드 패턴)이란? 위키에서는 다음과 같이 정의합니다." />
   <meta name="generator" content="Hugo 0.59.1 with theme pure" />
-  <title>Chapter 06 - 객체와 자료구조 - cmstown</title>
+  <title>[DesignPattern] Command pattern(커맨드 패턴) - cmstown</title>
   
   
   <link rel="stylesheet" href="https://chlalstjd430.github.io/css/style.min.55864f426c18be60c2e40c404f3e9db45a40a6a7ce220999b3a5da16cb66840d.css">
   
   <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
-  <meta property="og:title" content="Chapter 06 - 객체와 자료구조" />
-<meta property="og:description" content="Chapter 06 - 객체와 자료구조 1. 자료 추상화 목록 6-1 구체적인 Point 클래스 public class Point { public double x; public double y; } 목록 6-2 추상적인 Point 클래스 public interface Point { double getX(); double getY(); void setCartesian(double x, double y); double getR(); double getTheta(); void setPolar(double r, double" />
+  <meta property="og:title" content="[DesignPattern] Command pattern(커맨드 패턴)" />
+<meta property="og:description" content="Command pattern(커맨드 패턴) 이번에 학습할 디자인 패턴은 커맨드 패턴 입니다. Command pattern(커맨드 패턴)이란? 위키에서는 다음과 같이 정의합니다." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://chlalstjd430.github.io/2020/02/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C_006/" />
-<meta property="article:published_time" content="2020-02-03T18:43:57+09:00" />
-<meta property="article:modified_time" content="2020-02-03T18:43:57+09:00" />
-<meta itemprop="name" content="Chapter 06 - 객체와 자료구조">
-<meta itemprop="description" content="Chapter 06 - 객체와 자료구조 1. 자료 추상화 목록 6-1 구체적인 Point 클래스 public class Point { public double x; public double y; } 목록 6-2 추상적인 Point 클래스 public interface Point { double getX(); double getY(); void setCartesian(double x, double y); double getR(); double getTheta(); void setPolar(double r, double">
+<meta property="og:url" content="https://chlalstjd430.github.io/2020/06/07_command_pattern/" />
+<meta property="article:published_time" content="2020-06-13T17:52:37+09:00" />
+<meta property="article:modified_time" content="2020-06-13T17:52:37+09:00" />
+<meta itemprop="name" content="[DesignPattern] Command pattern(커맨드 패턴)">
+<meta itemprop="description" content="Command pattern(커맨드 패턴) 이번에 학습할 디자인 패턴은 커맨드 패턴 입니다. Command pattern(커맨드 패턴)이란? 위키에서는 다음과 같이 정의합니다.">
 
 
-<meta itemprop="datePublished" content="2020-02-03T18:43:57&#43;09:00" />
-<meta itemprop="dateModified" content="2020-02-03T18:43:57&#43;09:00" />
-<meta itemprop="wordCount" content="1225">
+<meta itemprop="datePublished" content="2020-06-13T17:52:37&#43;09:00" />
+<meta itemprop="dateModified" content="2020-06-13T17:52:37&#43;09:00" />
+<meta itemprop="wordCount" content="960">
 
 
 
-<meta itemprop="keywords" content="클린코드," />
+<meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Chapter 06 - 객체와 자료구조"/>
-<meta name="twitter:description" content="Chapter 06 - 객체와 자료구조 1. 자료 추상화 목록 6-1 구체적인 Point 클래스 public class Point { public double x; public double y; } 목록 6-2 추상적인 Point 클래스 public interface Point { double getX(); double getY(); void setCartesian(double x, double y); double getR(); double getTheta(); void setPolar(double r, double"/>
+<meta name="twitter:title" content="[DesignPattern] Command pattern(커맨드 패턴)"/>
+<meta name="twitter:description" content="Command pattern(커맨드 패턴) 이번에 학습할 디자인 패턴은 커맨드 패턴 입니다. Command pattern(커맨드 패턴)이란? 위키에서는 다음과 같이 정의합니다."/>
 
   <!--[if lte IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -328,8 +328,8 @@
       <h1 itemprop="name">
   <a
     class="article-title"
-    href="/2020/02/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C_006/"
-    >Chapter 06 - 객체와 자료구조</a
+    href="/2020/06/07_command_pattern/"
+    >[DesignPattern] Command pattern(커맨드 패턴)</a
   >
 </h1>
 
@@ -337,231 +337,117 @@
         
 <span class="article-date">
   <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://chlalstjd430.github.io/2020/02/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C_006/" class="article-date">
-  <time datetime="2020-02-03 18:43:57 &#43;0900 KST" itemprop="datePublished">2020-02-03</time>
+<a href="https://chlalstjd430.github.io/2020/06/07_command_pattern/" class="article-date">
+  <time datetime="2020-06-13 17:52:37 &#43;0900 KST" itemprop="datePublished">2020-06-13</time>
 </a>
 </span>
 <span class="article-category">
   <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C/"> 클린코드 </a>
-</span>  
-  <span class="article-tag">
-    <i class="icon icon-tags"></i>&nbsp;
-    <a class="article-tag-link" href="/tags/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C/"> 클린코드 </a>
-  </span>
+  <a class="article-category-link" href="/categories/%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4/"> 디자인패턴 </a>
+</span>
 
-        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/2020/02/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C_006/#comments"
+        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/2020/06/07_command_pattern/#comments"
             class="article-comment-link">Comments</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 1225words</span>
-		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 3minutes </span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 960words</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 2minutes </span>
       </div>
     </div>
     <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
       
 
-<h1 id="chapter-06-객체와-자료구조">Chapter 06 - 객체와 자료구조</h1>
+<h1 id="command-pattern-커맨드-패턴">Command pattern(커맨드 패턴)</h1>
 
-<hr />
+<p>이번에 학습할 디자인 패턴은 <strong>커맨드 패턴</strong> 입니다.</p>
+
+<h3 id="command-pattern-커맨드-패턴-이란">Command pattern(커맨드 패턴)이란?</h3>
+
+<p>위키에서는 다음과 같이 정의합니다.</p>
+
+<blockquote>
+<p>커맨드 패턴(Command pattern)이란 요청을 객체의 형태로 캡슐화하여 사용자가 보낸 요청을 나중에 이용할 수 있도록 매서드 이름, 매개변수 등 요청에 필요한 정보를 저장 또는 로깅, 취소할 수 있게 하는 패턴이다.</p>
+
+<p>커맨드 패턴에는 명령(command), 수신자(receiver), 발동자(invoker), 클라이언트(client)의 네개의 용어가 항상 따른다. 커맨드 객체는 수신자 객체를 가지고 있으며, 수신자의 메서드를 호출하고, 이에 수신자는 자신에게 정의된 메서드를 수행한다. 커맨드 객체는 별도로 발동자 객체에 전달되어 명령을 발동하게 한다. 발동자 객체는 필요에 따라 명령 발동에 대한 기록을 남길 수 있다. 한 발동자 객체에 다수의 커맨드 객체가 전달될 수 있다. 클라이언트 객체는 발동자 객체와 하나 이상의 커맨드 객체를 보유한다. 클라이언트 객체는 어느 시점에서 어떤 명령을 수행할지를 결정한다. 명령을 수행하려면, 클라이언트 객체는 발동자 객체로 커맨드 객체를 전달한다.</p>
+</blockquote>
+
+<p>예제와 함께 커맨드 패턴에 대해 자세히 알아보도록 하겠습니다.</p>
+
+<h3 id="만능-버튼-만들기">만능 버튼 만들기</h3>
+
+<p>우리가 만능 버튼을 만들어야한다는 문제에 앞서, 일반적으로 램프와 버튼 관계의 클래스를 만들면 다음과 같이 만들 수 있습니다.</p>
+
+<p align = "center">
+  <img src = "https://user-images.githubusercontent.com/50758600/84565023-5673f000-ada1-11ea-9b76-57da5b4026e8.png"/>
+</p>
+
+<p>이와 같이 클래스를 만들었을 때, 다음과 같은 문제점을 고민해봅시다.</p>
+
+<ol>
+<li><p>버튼이 눌렸을 때 램프를 켜는 대신에 다른 기능을 수행하기 위해서는 어떤 변경 작업을 해야 되는가? 예를 들어 버튼이 눌리면 알람을 시작시키려면?</p></li>
+
+<li><p>버튼이 눌렸을 때 수행되는 기능을 프로그램이 동작할 때 결정하기 위해서는?</p></li>
+</ol>
+
+<p><br><br></p>
+
+<p>이러한 문제점을 해결하기 위해 커맨드 패턴을 이용해봅시다.</p>
+
+<p>커맨드 패턴에는 총 4가지의 역할이 존재합니다.</p>
+
+<ol>
+<li>Invoker</li>
+</ol>
+
+<ul>
+<li>기능의 실행을 요청하는 호출자 클래스</li>
+</ul>
+
+<ol>
+<li>Command</li>
+</ol>
+
+<ul>
+<li><p>실행될 기능에 대한 인터페이스</p></li>
+
+<li><p>실행될 기능을 execute 메세드로 표현</p></li>
+</ul>
+
+<ol>
+<li>ConcreteCommand</li>
+</ol>
+
+<ul>
+<li>실제로 실행되는 기능을 구현(Command 구현 클래스)</li>
+</ul>
+
+<ol>
+<li>Receiver</li>
+</ol>
+
+<ul>
+<li>ConcreteCommand에서 execute 메소드를 구현할 때 필요한 클래스</li>
+</ul>
+
+<p>그렇다면 위에 클래스에 4가지 역할을 대입하면 다음과 같습니다.</p>
+
+<blockquote>
+<p>Invoker - Button <br>
+Command <br>
+ConcreteCommand - LampOnCommand, AlarmStartCommand  <br>
+Receiver - Lamp, Alarm <br></p>
+</blockquote>
+
+<p>결론적으로 다음과 같은 클래스 구조가 나옵니다.</p>
+
+<p align = "center">
+  <img src = "https://user-images.githubusercontent.com/50758600/84565696-ddc36280-ada5-11ea-8ade-9644121930cb.png"/>
+</p>
+
+<p>다음과 같은 클래스 구조를 갖게되면, 동적으로 command를 설정함과 동시에  여러 기능들을 추가적으로 구현하는데 어렵지않게 됩니다.</p>
 
 <p><br><br><br></p>
 
-<h3 id="1-자료-추상화">1. 자료 추상화</h3>
-
-<hr />
-
-<ul>
-<li><p>목록 6-1 구체적인 Point 클래스</p>
-
-<pre><code class="language-java">public class Point {
-public double x;
-public double y;
-}
-</code></pre></li>
-
-<li><p>목록 6-2 추상적인 Point 클래스</p>
-
-<pre><code class="language-java">public interface Point {
-double getX();
-double getY();
-void setCartesian(double x, double y);
-double getR();
-double getTheta();
-void setPolar(double r, double theta);
-}
-</code></pre></li>
-</ul>
-
-<p>목록 6-1같은 경우 내부 구졸르 노출하고. 목록 6-2는 구현을 완전히 숨긴다. 구현을 완전히 감추기 위해서는 <strong>추상화</strong> 가 필요하다. set,get 메서드로 변수를 다룬다고 클래스가 아니라, 추상 인터페이스를 제공해 사용자가 구현을 모른 채 자료의 핵심을 조작할 수 있어야 진정한 의미의 클래스다.</p>
-
-<p><br><br></p>
-
-<h3 id="2-자료-객체-비대칭">2. 자료/객체 비대칭</h3>
-
-<ul>
-<li><p><strong>객체</strong> 는 추상화 뒤로 자료를 숨긴 채 자료를 다루는 함수만 제공한다.</p></li>
-
-<li><p><strong>자료 구조</strong> 는 자료를 그대로 공개하며 별다른 함수는 제공하지 않는다.</p></li>
-</ul>
-
-<p>두 정의는 본질적으로 상반되며 두 개념은 사실상 정반대이다.</p>
-
-<ul>
-<li><p>목록 6-5 절차적인 도형 (Procedural Shape)</p>
-
-<pre><code class="language-java">public class Square {
-public Point topLeft;
-public double side;
-}
-
-public class Rectangle {
-public Point topLeft;
-public double height;
-public double width;
-}
-
-public class Circle {
-public Point center;
-public double radius;
-}
-
-public class Geometry {
-public final double PI = 3.141592653589793;
-
-public double area(Object shape) throws NoSuchShapeException {
-if (shape instanceof Square) {
-  Square s = (Square)shape;
-  return s.side * s.side;
-} else if (shape instanceof Rectangle) {
-  Rectangle r = (Rectangle)shape;
-  return r.height * r.width;
-} else if (shape instanceof Circle) {
-  Circle c = (Circle)shape;
-  return PI * c.radius * c.radius;
-}
-throw new NoSuchShapeException();
-}
-}
-</code></pre></li>
-</ul>
-
-<p>객체 지향 프로그래머가 위 코드를 보면 의아해 할 것이다. 하지만 Geometry 클래스에 둘레 길이를 구하기 위해서 perimeter() 함수를 추가하고 싶을 경우 도형 클래스는 아무 영향도 받지 않는다. 반대로 새 도형을 추가하고 싶다면 Geometry 클래스에 속한 함수를 모두 고쳐야 한다. 그래서 두 조건은 완전히 정반대라고 할 수 있다.</p>
-
-<ul>
-<li><p>목록 6-6 다형적인 도형 (Polymorphic Shape)</p>
-
-<pre><code class="language-java">public class Square implements Shape {
-private Point topLeft;
-private double side;
-
-public double area() {
-return side * side;
-}
-}
-
-public class Rectangle implements Shape {
-private Point topLeft;
-private double height;
-private double width;
-
-public double area() {
-return height * width;
-}
-}
-
-public class Circle implements Shape {
-private Point center;
-private double radius;
-public final double PI = 3.141592653589793;
-
-public double area() {
-return PI * radius * radius;
-}
-}
-</code></pre></li>
-</ul>
-
-<p>이번에는 목록 6-6을 살펴보자. 객체 지향적인 도형 클래스다. 새 도형을 추가해서 기존 함수에 아무런 영향을 미치지 않는다. 반면 새 함수를 추가하고 싶다면 도형 클래스 전부를 고쳐야 한다.</p>
-
-<p>즉, 객체 지향 코드에서 어려운 변경은 절차적인 코드에서 쉬우며, 절차적인 코드에서 어려운 변경은 객체 지향 코드에서 쉽다. 그러므로 <strong>상황에 맞게 클래스 &amp; 객체 지향 기법을 사용하거나, 절차적인 코드와 자료 구조를 적절하게 사용하는 것이 좋다.</strong></p>
-
-<p><br><br></p>
-
-<h3 id="3-디미터-법칩">3. 디미터 법칩</h3>
-
-<hr />
-
-<p>모듈은 자신이 조작하는 객체의 속사정을 몰라야 한다는 법칙이다. 좀 더 정확히 표현하자면, 디미터 법칙은 <strong>&ldquo;클래스 C의 메서드 f는 다음과 같은 객체의 메서드만 호출해야 한다&rdquo;</strong> 고 주장한다.</p>
-
-<ul>
-<li><p>클래스 C</p></li>
-
-<li><p>f가 생성한 객체</p>
-
-<pre><code class="language-java">int f(){
-Module module = new Modele();
-module.메서드()
-}
-</code></pre></li>
-
-<li><p>f 인수로 넘어온 객체</p>
-
-<pre><code class="language-java">int f(Module module){
-module.메서드()
-}
-</code></pre></li>
-
-<li><p>C 인스턴스 변수에 저장된 객체</p>
-
-<pre><code class="language-java">class C {
-private Module module;
-
-...
-
-int f(){
-module.메서드();
-}
-}
-</code></pre></li>
-</ul>
-
-<p>하지만 위 객체에서 허용된 메서드가 반환하는 객체의 메서드는 호출하면 안 된다.</p>
-
-<ul>
-<li><p>기차 충돌</p>
-
-<pre><code class="language-java">final String outputDir = ctxt.getOptions().getScratchDir().getAbsolutePath();
-</code></pre></li>
-</ul>
-
-<p>위와 같은 코드는 일반적으로 조잡하다 여겨지므로 가능하면 피하자.</p>
-
-<ul>
-<li><p>잡종 구조</p>
-
-<ul>
-<li>절반은 객체 절반은 자료 구조인 잡종 구조는 가급적이면 지양하자. 이는 어중간한 설계처럼 보인다.</li>
-</ul></li>
-
-<li><p>자료 전달 객체(DTO)</p></li>
-</ul>
-
-<p><br><br></p>
-
-<h3 id="결론">결론</h3>
-
-<hr />
-
-<ul>
-<li><p>클래스를 만들 때 가급적이면 추상화 과정을 거쳐 만드는 것이 더 바람직한 클래스 설계라고 생각이 든다.</p></li>
-
-<li><p>무조건 객체가 옳은 것은 아니다. 상황에 맞게 객체나 자료 구조를 사용하여야 한다.</p></li>
-</ul>
-
-<p><br><br><br><br><br></p>
-
-<p><a href="https://github.com/Yooii-Studios/Clean-Code">출저 : https://github.com/Yooii-Studios/Clean-Code</a></p>
-
-<p><a href="http://www.yes24.com/Product/Goods/11681152">출저 : Clean Code 클린 코드 : 애자일 소프트웨어 장인 정신</a></p>
+<p>참고
+- <a href="http://www.kyobobook.co.kr/product/detailViewKor.laf?mallGb=KOR&amp;ejkGb=KOR&amp;barcode=9788968480911&amp;orderClick=JAj&amp;OV_REFFER=http://click.linkprice.com/click.php?m=kbbook&amp;a=A100532541&amp;l=9999&amp;l_cd1=0&amp;u_id=kacg2ap746029ofs02yqe&amp;l_cd2=0&amp;tu=http%3A%2F%2Fwww.kyobobook.co.kr%2Fproduct%2FdetailViewKor.laf%3FmallGb%3DKOR%26ejkGb%3DKOR%26barcode%3D9788968480911%26orderClick%3DJAj">JAVA 객체지향 디자인 패턴 </a></p>
 
     </div>
     <div class="article-footer">
@@ -569,7 +455,7 @@ module.메서드();
   <ul class="post-copyright list-unstyled">
     <li class="post-copyright-link hidden-xs">
       <strong>Permalink: </strong>
-      <a href="https://chlalstjd430.github.io/2020/02/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C_006/" title="Chapter 06 - 객체와 자료구조" target="_blank" rel="external">https://chlalstjd430.github.io/2020/02/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C_006/</a>
+      <a href="https://chlalstjd430.github.io/2020/06/07_command_pattern/" title="[DesignPattern] Command pattern(커맨드 패턴)" target="_blank" rel="external">https://chlalstjd430.github.io/2020/06/07_command_pattern/</a>
     </li>
     <li class="post-copyright-license">
       <strong>License：</strong><a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN</a>
@@ -604,13 +490,13 @@ module.메서드();
     <div class="bar-inner">
         <ul class="pager pull-left">
             <li class="prev">
-                <a href="https://chlalstjd430.github.io/2020/02/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_002/" title="프로그래머스 - 더 맵게"><i
+                <a href="https://chlalstjd430.github.io/2020/06/06_sigleton_pattern/" title="[DesignPattern] Sigleton pattern(싱글톤 패턴)"><i
                         class="icon icon-angle-left"
                         aria-hidden="true"></i><span>&nbsp;&nbsp;Older</span></a>
             </li>
             <li class="next">
-                <a href="https://chlalstjd430.github.io/2020/02/%EB%B0%B1%EC%A4%802529/"
-                    title="백준 2529 - 부등호"><span>Newer&nbsp;&nbsp;</span><i
+                <a href="https://chlalstjd430.github.io/2020/06/08_observer_pattern/"
+                    title="[DesignPattern] Observer pattern(옵저버 패턴)"><span>Newer&nbsp;&nbsp;</span><i
                         class="icon icon-angle-right" aria-hidden="true"></i></a>
             </li>
             
