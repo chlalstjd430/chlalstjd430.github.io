@@ -5,10 +5,64 @@
     <link>https://chlalstjd430.github.io/</link>
     <description>Recent content on cmstown</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 13 Jun 2020 23:13:36 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 23 Jun 2020 15:02:09 +0900</lastBuildDate>
     
         <atom:link href="https://chlalstjd430.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>백준 1504 - 특정한 최단 경로</title>
+      <link>https://chlalstjd430.github.io/2020/01/%EB%B0%B1%EC%A4%801504/</link>
+      <pubDate>Sat, 25 Jan 2020 01:45:20 +0900</pubDate>
+      
+      <guid>https://chlalstjd430.github.io/2020/01/%EB%B0%B1%EC%A4%801504/</guid>
+      <description>백준 문제 바로가기 사용 언어 C++ 적용 알고리즘 다익스트라 알고리즘 문제풀이 이 문제는 얼핏 보면 단순 다익스트라 알고리즘을 한번 적용하여 풀 수 있는 문제로 보인다. 그</description>
+    </item>
+    
+    <item>
+      <title>Chapter 02 - 의미있는 이름</title>
+      <link>https://chlalstjd430.github.io/2020/01/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C_002/</link>
+      <pubDate>Wed, 22 Jan 2020 17:32:04 +0900</pubDate>
+      
+      <guid>https://chlalstjd430.github.io/2020/01/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C_002/</guid>
+      <description>Chapter 02 - 의미있는 이름 1. 의도가 담긴 이름을 짓자 변수명/메서드명을 통해서 역할을 추정할 수 있도록 이름을 짓자. 별도의 주석이 필요 없을 정도로 명확하게 이름을 짓자</description>
+    </item>
+    
+    <item>
+      <title>Chapter 01 - 깨끗한 코드</title>
+      <link>https://chlalstjd430.github.io/2020/01/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C_001/</link>
+      <pubDate>Tue, 21 Jan 2020 21:18:20 +0900</pubDate>
+      
+      <guid>https://chlalstjd430.github.io/2020/01/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C_001/</guid>
+      <description>01.21부로 클린 코드에 대하여 요약한 게시글을 보고 나만의 후기를 남길 예정이다. 책은 우선시 되는 다른 공부가 어느정도 정리되면 그 때 읽어볼 예정이다. Chapter 01 -</description>
+    </item>
+    
+    <item>
+      <title>백준 2156 - 포도주 시식</title>
+      <link>https://chlalstjd430.github.io/2020/01/%EB%B0%B1%EC%A4%802156/</link>
+      <pubDate>Mon, 20 Jan 2020 21:32:43 +0900</pubDate>
+      
+      <guid>https://chlalstjd430.github.io/2020/01/%EB%B0%B1%EC%A4%802156/</guid>
+      <description>백준 문제 바로가기 사용 언어 C++ 적용 알고리즘 다이나믹 프로그래밍 문제풀이 포도주 잔을 선택하면 그 잔에 들어있는 포도주는 모두 마셔야 하고, 마신 후에는 원래 위치에</description>
+    </item>
+    
+    <item>
+      <title>백준 9465 - 스티커</title>
+      <link>https://chlalstjd430.github.io/2020/01/%EB%B0%B1%EC%A4%809465/</link>
+      <pubDate>Sun, 19 Jan 2020 00:22:02 +0900</pubDate>
+      
+      <guid>https://chlalstjd430.github.io/2020/01/%EB%B0%B1%EC%A4%809465/</guid>
+      <description>☞ 백준 문제 바로가기[9465- 스티커] &amp;nbsp; &amp;nbsp; 사용 언어 - C++ &amp;nbsp; ﻿적용 알고리즘 - Dynamic Programing(다이나믹 프로그래밍) -&amp;nbsp;관련 동영상</description>
+    </item>
+    
+    <item>
+      <title>백준 2579 - 계단 오르기</title>
+      <link>https://chlalstjd430.github.io/2020/01/%EB%B0%B1%EC%A4%802579/</link>
+      <pubDate>Fri, 17 Jan 2020 14:35:55 +0900</pubDate>
+      
+      <guid>https://chlalstjd430.github.io/2020/01/%EB%B0%B1%EC%A4%802579/</guid>
+      <description>☞ 백준 문제 바로가기[2579- 계단 오르기] &amp;nbsp; &amp;nbsp; 사용 언어 - C++ &amp;nbsp; ﻿적용 알고리즘 - Dynamic Programing(다이나믹 프로그래밍) -&amp;nbsp;관련 동</description>
+    </item>
     
     <item>
       <title>백준 1149 - RGB거리</title>

@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>
+        [Python 기초] - 함수와 모듈 - cmstown
+      </title>
+    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no,email=no,adress=no">
+  
+  <meta name="theme-color" content="#000000" />
+  
+  <meta http-equiv="window-target" content="_top" />
+  
+  
+  <meta name="description" content="[Python 기초] - 함수와 모듈 함수 기본 함수 만들기 def hello(name) : # 함수 선언 return name &#43;&#39;님, 안녕하세요!&#39; hello(&#39;홍길동&#39;) # 함수 호출 pass 예약어 이름만 만들어 놓고 내" />
+  <meta name="generator" content="Hugo 0.59.1 with theme pure" />
+  <title>[Python 기초] - 함수와 모듈 - cmstown</title>
+  
+  
+  <link rel="stylesheet" href="https://chlalstjd430.github.io/css/style.min.55864f426c18be60c2e40c404f3e9db45a40a6a7ce220999b3a5da16cb66840d.css">
+  
+  <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
+  <meta property="og:title" content="[Python 기초] - 함수와 모듈" />
+<meta property="og:description" content="[Python 기초] - 함수와 모듈 함수 기본 함수 만들기 def hello(name) : # 함수 선언 return name &#43;&#39;님, 안녕하세요!&#39; hello(&#39;홍길동&#39;) # 함수 호출 pass 예약어 이름만 만들어 놓고 내" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://chlalstjd430.github.io/2020/06/python_05_function/" />
+<meta property="article:published_time" content="2020-06-23T15:01:53+09:00" />
+<meta property="article:modified_time" content="2020-06-23T15:01:53+09:00" />
+<meta itemprop="name" content="[Python 기초] - 함수와 모듈">
+<meta itemprop="description" content="[Python 기초] - 함수와 모듈 함수 기본 함수 만들기 def hello(name) : # 함수 선언 return name &#43;&#39;님, 안녕하세요!&#39; hello(&#39;홍길동&#39;) # 함수 호출 pass 예약어 이름만 만들어 놓고 내">
+
+
+<meta itemprop="datePublished" content="2020-06-23T15:01:53&#43;09:00" />
+<meta itemprop="dateModified" content="2020-06-23T15:01:53&#43;09:00" />
+<meta itemprop="wordCount" content="1131">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="[Python 기초] - 함수와 모듈"/>
+<meta name="twitter:description" content="[Python 기초] - 함수와 모듈 함수 기본 함수 만들기 def hello(name) : # 함수 선언 return name &#43;&#39;님, 안녕하세요!&#39; hello(&#39;홍길동&#39;) # 함수 호출 pass 예약어 이름만 만들어 놓고 내"/>
+
+  <!--[if lte IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+    <![endif]-->
+
+  <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+  </head>
+
+  
+  
+
+  <body class="main-center theme-black" itemscope itemtype="http://schema.org/WebPage"><header class="header" itemscope itemtype="http://schema.org/WPHeader">
+    <div class="slimContent">
+      <div class="navbar-header">
+        <div class="profile-block text-center">
+          <a id="avatar" href="https://github.com/chlalstjd430" target="_blank">
+            <img class="img-circle img-rotate" src="https://chlalstjd430.github.io/avatar.png" width="200" height="200">
+          </a>
+          <h2 id="name" class="hidden-xs hidden-sm">최민성</h2>
+          <h3 id="title" class="hidden-xs hidden-sm hidden-md">26, 숭실대학교</h3>
+          <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i>Seoul, Korea</small>
+        </div><div class="search" id="search-form-wrap">
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="Search" />
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i
+                        class="icon icon-search"></i></button>
+            </span>
+        </div>
+        <div class="ins-search">
+            <div class="ins-search-mask"></div>
+            <div class="ins-search-container">
+                <div class="ins-input-wrapper">
+                    <input type="text" class="ins-search-input" placeholder="Type something..."
+                        x-webkit-speech />
+                    <button type="button" class="close ins-close ins-selectable" data-dismiss="modal"
+                        aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="ins-section-wrapper">
+                    <div class="ins-section-container"></div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+        <ul class="nav navbar-nav main-nav">
+            <li class="menu-item menu-item-home">
+                <a href="/">
+                    <i class="icon icon-home-fill"></i>
+                  <span class="menu-title">Home</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-archives">
+                <a href="/posts/">
+                    <i class="icon icon-archives-fill"></i>
+                  <span class="menu-title">Posts</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-categories">
+                <a href="/categories/">
+                    <i class="icon icon-folder"></i>
+                  <span class="menu-title">Categories</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-tags">
+                <a href="/tags/">
+                    <i class="icon icon-tags"></i>
+                  <span class="menu-title">Tags</span>
+                </a>
+            </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    
+      <div class="widget">
+    <h3 class="widget-title">Board</h3>
+    <div class="widget-body">
+        <div id="board">
+            <div class="content"><p>cms3136@gmail.com</p><p>- 숭실대학교 글로벌미디어학부</p><p>- Lectopia s/w expert course 17기</p><p>- YOURSSU 백엔드 개발자</p><p>- YAPP 16기</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+      <div class="widget">
+    <h3 class="widget-title"> Categories</h3>
+    <div class="widget-body">
+        <ul class="category-list">
+            <li class="category-list-item"><a href="https://chlalstjd430.github.io/categories/2020-%EA%B3%84%ED%9A%8D/" class="category-list-link">2020-계획</a><span class="category-list-count">2</span></li>
+            <li class="category-list-item"><a href="https://chlalstjd430.github.io/categories/aws/" class="category-list-link">aws</a><span class="category-list-count">3</span></li>
+            <li class="category-list-item"><a href="https://chlalstjd430.github.io/categories/it-%EC%A0%95%EB%B3%B4/" class="category-list-link">it-정보</a><span class="category-list-count">2</span></li>
+            <li class="category-list-item"><a href="https://chlalstjd430.github.io/categories/%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4/" class="category-list-link">디자인패턴</a><span class="category-list-count">8</span></li>
+            <li class="category-list-item"><a href="https://chlalstjd430.github.io/categories/%EB%A6%AC%EC%95%A1%ED%8B%B0%EB%B8%8C-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/" class="category-list-link">리액티브-프로그래밍</a><span class="category-list-count">2</span></li>
+            <li class="category-list-item"><a href="https://chlalstjd430.github.io/categories/%EB%B0%B1%EC%97%94%EB%93%9C/" class="category-list-link">백엔드</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="https://chlalstjd430.github.io/categories/%EB%B0%B1%EC%A4%80-%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4/" class="category-list-link">백준-문제풀이</a><span class="category-list-count">16</span></li>
+            <li class="category-list-item"><a href="https://chlalstjd430.github.io/categories/%EC%8A%A4%ED%84%B0%EB%94%94/" class="category-list-link">스터디</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="https://chlalstjd430.github.io/categories/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/" class="category-list-link">알고리즘</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="https://chlalstjd430.github.io/categories/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C/" class="category-list-link">클린코드</a><span class="category-list-count">9</span></li>
+            <li class="category-list-item"><a href="https://chlalstjd430.github.io/categories/%ED%8C%8C%EC%9D%B4%EC%8D%AC/" class="category-list-link">파이썬</a><span class="category-list-count">6</span></li>
+            <li class="category-list-item"><a href="https://chlalstjd430.github.io/categories/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4/" class="category-list-link">프로그래머스-문제풀이</a><span class="category-list-count">22</span></li>
+        </ul>
+    </div>
+</div>
+      <div class="widget">
+    <h3 class="widget-title"> Tags</h3>
+    <div class="widget-body">
+        <ul class="tag-list">
+            
+            
+            <li class="tag-list-item"><a href="https://chlalstjd430.github.io/tags/it-%EB%8F%99%EC%95%84%EB%A6%AC/" class="tag-list-link">it-동아리</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://chlalstjd430.github.io/tags/it-%EC%A0%95%EB%B3%B4/" class="tag-list-link">it-정보</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://chlalstjd430.github.io/tags/jwt/" class="tag-list-link">jwt</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://chlalstjd430.github.io/tags/kmp-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/" class="tag-list-link">kmp-알고리즘</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://chlalstjd430.github.io/tags/spring-webflux/" class="tag-list-link">spring-webflux</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://chlalstjd430.github.io/tags/%EA%B3%84%ED%9A%8D/" class="tag-list-link">계획</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://chlalstjd430.github.io/tags/%EA%B7%B8%EB%A6%AC%EB%94%94-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/" class="tag-list-link">그리디-알고리즘</a><span
+                    class="tag-list-count">5</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://chlalstjd430.github.io/tags/%EB%8B%A4%EC%9D%B4%EB%82%98%EB%AF%B9-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/" class="tag-list-link">다이나믹-프로그래밍</a><span
+                    class="tag-list-count">4</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://chlalstjd430.github.io/tags/%EB%8B%A4%EC%9D%B5%EC%8A%A4%ED%8A%B8%EB%9D%BC-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/" class="tag-list-link">다익스트라-알고리즘</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://chlalstjd430.github.io/tags/%EB%A6%AC%EC%95%A1%ED%8B%B0%EB%B8%8C-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/" class="tag-list-link">리액티브-프로그래밍</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://chlalstjd430.github.io/tags/%EB%B8%8C%EB%A3%A8%ED%8A%B8-%ED%8F%AC%EC%8A%A4%ED%8A%B8/" class="tag-list-link">브루트-포스트</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://chlalstjd430.github.io/tags/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/" class="tag-list-link">알고리즘</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://chlalstjd430.github.io/tags/%EC%9C%84%EC%83%81-%EC%A0%95%EB%A0%AC-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/" class="tag-list-link">위상-정렬-알고리즘</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://chlalstjd430.github.io/tags/%EC%9D%B4%EC%A7%84-%ED%8A%B8%EB%A6%AC-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/" class="tag-list-link">이진-트리-알고리즘</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://chlalstjd430.github.io/tags/%EC%B5%9C%EC%86%8C-%EC%8A%A4%ED%8C%A8%EB%8B%9D-%ED%8A%B8%EB%A6%AC/" class="tag-list-link">최소-스패닝-트리</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://chlalstjd430.github.io/tags/%ED%81%AC%EB%A3%A8%EC%8A%A4%EC%B9%BC-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/" class="tag-list-link">크루스칼-알고리즘</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://chlalstjd430.github.io/tags/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C/" class="tag-list-link">클린코드</a><span
+                    class="tag-list-count">9</span></li>
+            
+        </ul>
+
+    </div>
+</div>
+      
+<div class="widget">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget-body">
+        <ul class="recent-post-list list-unstyled no-thumbnail">
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://chlalstjd430.github.io/2020/06/python_06_class/" class="title">[Python 기초] - 클래스</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-06-23 15:02:09 &#43;0900 KST" itemprop="datePublished">2020-06-23</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://chlalstjd430.github.io/2020/06/python_05_function/" class="title">[Python 기초] - 함수와 모듈</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-06-23 15:01:53 &#43;0900 KST" itemprop="datePublished">2020-06-23</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://chlalstjd430.github.io/2020/06/python_04_string/" class="title">[Python 기초] - 문자열의 개념</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-06-23 15:01:46 &#43;0900 KST" itemprop="datePublished">2020-06-23</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://chlalstjd430.github.io/2020/06/python_03_control/" class="title">[Python 기초] - 제어문과 데이터 구조</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-06-23 15:01:31 &#43;0900 KST" itemprop="datePublished">2020-06-23</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://chlalstjd430.github.io/2020/06/python_02_collections/" class="title">[Python 기초] - 튜플,세트 그리고 딕셔너리</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-06-23 15:00:58 &#43;0900 KST" itemprop="datePublished">2020-06-23</time>
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+  </div>
+</aside>
+
+    
+    
+<aside class="sidebar sidebar-toc collapse" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    <h4 class="toc-title">Catalogue</h4>
+    <nav id="toc" class="js-toc toc">
+
+    </nav>
+  </div>
+</aside>
+<main class="main" role="main"><div class="content">
+  <article id="-" class="article article-type-" itemscope
+    itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/2020/06/python_05_function/"
+    >[Python 기초] - 함수와 모듈</a
+  >
+</h1>
+
+      <div class="article-meta">
+        
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="https://chlalstjd430.github.io/2020/06/python_05_function/" class="article-date">
+  <time datetime="2020-06-23 15:01:53 &#43;0900 KST" itemprop="datePublished">2020-06-23</time>
+</a>
+</span>
+<span class="article-category">
+  <i class="icon icon-folder"></i>&nbsp;
+  <a class="article-category-link" href="/categories/%ED%8C%8C%EC%9D%B4%EC%8D%AC/"> 파이썬 </a>
+</span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/2020/06/python_05_function/#comments"
+            class="article-comment-link">Comments</a></span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 1131words</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 3minutes </span>
+      </div>
+    </div>
+    <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
+      
+
+<h1 id="python-기초-함수와-모듈">[Python 기초] - 함수와 모듈</h1>
+
+<h2 id="함수-기본">함수 기본</h2>
+
+<h3 id="함수-만들기">함수 만들기</h3>
+
+<pre><code class="language-python">def hello(name) : # 함수 선언
+	return name +'님, 안녕하세요!'
+
+hello('홍길동') # 함수 호출
+</code></pre>
+
+<h3 id="pass-예약어">pass 예약어</h3>
+
+<ul>
+<li><p>이름만 만들어 놓고 내용은 pass 예약어를 사용하여 비울 수 잇음</p>
+
+<pre><code class="language-python"># 오류인 상황
+if True :
+	# True일  때 아무런 할 일이 없다고 빈 줄로 둘 때 오류 발생
+else :
+
+	print('거짓')
+
+# 정상 작동
+if True :
+	pass
+else :
+	print('거짓')
+</code></pre></li>
+</ul>
+
+<h3 id="함수의-매개변수-전달">함수의 매개변수 전달</h3>
+
+<ol>
+<li><p>매개변수의 개수를 지정해 전달하는 방법</p>
+
+<pre><code class="language-python">def para_func(v1, v2) :
+	return v1 + v2
+</code></pre></li>
+
+<li><p>매개변수에 기본값을 설정해 놓고 전달하는 방법</p>
+
+<pre><code class="language-python">def para_func(v1, v2 = 1)
+	return v1 ** v2
+</code></pre></li>
+
+<li><p>매개변수의 개수를 지정하지 않고 전달하는 방법</p>
+
+<pre><code class="language-python">def para_func(*para) :
+	result = 0
+
+	for num in para :
+		result += num
+
+	return result
+</code></pre></li>
+</ol>
+
+<ul>
+<li><p>함수 호출할 때 딕셔너리의 형식의 매개변수를 키 = 값 형식으로 사용</p>
+
+<pre><code class="language-python">def dic_func(**para) :
+for k in para.keys() :
+    print('%s --&gt; %d명입니다.' % (k, para[k]))
+
+dic_func(트와이스=9, 소녀시대=7, 걸스데이=4, 블랙핑크=4)
+</code></pre></li>
+</ul>
+
+<h2 id="인수-이해하기">인수 이해하기</h2>
+
+<h3 id="위치나-키워드로-인수-설정">위치나 키워드로 인수 설정</h3>
+
+<pre><code class="language-python">def print_student_info(name, birth, major='CS', country='KOR') :
+    print('이름 :', name, ', 생년월일 : ', birth, ', 전공 : ', major, ', 국적 : ', country)
+
+print_student_info('홍길동', '2020-06-09')
+print_student_info('홍길동', '2020-06-09', 'SERVER')  
+print_student_info(birth='2020-06-10', name='길동 홍')
+</code></pre>
+
+<p>출력 결과</p>
+
+<pre><code>이름 : 홍길동 , 생년월일 :  2020-06-09 , 전공 :  CS , 국적 :  KOR
+이름 : 홍길동 , 생년월일 :  2020-06-09 , 전공 :  SERVER , 국적 :  KOR
+이름 : 길동 홍 , 생년월일 :  2020-06-10 , 전공 :  CS , 국적 :  KOR
+</code></pre>
+
+<h3 id="키워드로만-호출하기">키워드로만 호출하기</h3>
+
+<pre><code class="language-python">def concat(*args, sep='/'):
+	return sep.join(args)
+
+concat('a', 'b', 'c')
+'a/b/c'
+concat('a', 'b', 'c', sep = '.')
+'a.b.c'
+concat(sep='-', 'a','b', 'c')
+# SyntaxError
+# 개수가 정해져 있지 않은 인수는 함수 선언 시 가장 뒤쪽에 배치하여야 한다.
+</code></pre>
+
+<h3 id="언패킹-인수-리스트-활용하기">언패킹 인수 리스트 활용하기</h3>
+
+<pre><code class="language-python">args = 5, 10
+list(range(*args))
+# [5, 6, 7, 8, 9]
+</code></pre>
+
+<h2 id="모듈">모듈</h2>
+
+<h3 id="모듈의-생성과-사용">모듈의 생성과 사용</h3>
+
+<p>Module1.py</p>
+
+<pre><code class="language-python">def func1():
+	print('func1')
+
+def func2():
+	print('func2')
+</code></pre>
+
+<p>Module2.py</p>
+
+<pre><code class="language-python">import Module1
+
+Module1.func1()
+Module2.func2()
+</code></pre>
+
+<ul>
+<li><p>모듈병을 생략하고 사용하고 싶을 때</p>
+
+<ul>
+<li>from 모듈명 import 함수1, 함수2</li>
+<li>from 모듈명 import *</li>
+</ul>
+
+<p>Module3.py</p>
+
+<pre><code class="language-python">from Modul1 import func1, func2
+
+func1()
+func2()
+</code></pre></li>
+</ul>
+
+<h3 id="모듈의-종류">모듈의 종류</h3>
+
+<ul>
+<li>표준 모듈 : 파이썬에서 제공하는 모듈</li>
+<li>사용자 정의 모듈 : 사용자가 직접 정의한 모듈</li>
+<li>서드 파티 모듈 : 파이썬이 아닌 외부 회사나 단체에서 제공하는 모듈</li>
+<li>모듈의 목록 확인 방법
+
+<ul>
+<li>모듈명.builtin_module_names</li>
+<li>dir(모듈명)</li>
+</ul></li>
+</ul>
+
+<h2 id="함수의-응용">함수의 응용</h2>
+
+<h3 id="패키지">패키지</h3>
+
+<ul>
+<li>모듈을 주제별로 분리할 때 사용</li>
+</ul>
+
+<p><img src="Python%2011%207d7cfdc1cb044362b48444b871c40bcf/Untitled.png" alt="Python%2011%207d7cfdc1cb044362b48444b871c40bcf/Untitled.png" /></p>
+
+<ul>
+<li><p>임포트 형식</p>
+
+<pre><code class="language-python">from 패키지명.모듈명 import 함수명
+</code></pre></li>
+</ul>
+
+<h3 id="내부-함수-lambda-map">내부 함수, lambda, map()</h3>
+
+<ul>
+<li><p>내부 함수</p>
+
+<pre><code class="language-python">def outFunc(v1, v2) :
+	def inFunc(num1, num2) :
+		return num1 + num2
+	return inFunc(v1, v2)
+
+print(outFunc(10,20))
+
+## 출력 결과 ##
+30
+</code></pre></li>
+</ul>
+
+<p>outFunc() 함수 밖에서 호출하면 오류</p>
+
+<pre><code class="language-python">print(inFunc(10,20)) # 불가능
+</code></pre>
+
+<ul>
+<li><p>람다 함수</p>
+
+<ul>
+<li>쓰고 버리는 일시적인 함수로 함수가 생성된 곳에서만 필요</li>
+<li>간단한 기능을 일반적인 함수와 같이 정의해두고 쓰는 것이 아닌 필요한 곳에 즉시 사용 후 버릴 수 있음</li>
+
+<li><p>람다에는 return 문이 포함되어 있지 않으며 반환값을 만드는 표현식이 있음</p>
+
+<pre><code class="language-python">g = lambda x: x**2
+print(g(8))
+64
+
+f = lambda x ,y=7: x + y
+print(f(3))
+10
+
+myList = [1, 2, 3, 4, 5]
+add10 = lambda num : num + 10
+myList = list(map(add10, myList))
+print(myList)
+
+## 출력 결과 ##
+[11, 12, 13, 14, 15]
+
+# 두 리스트의 각 자릿수를 합쳐서 새로운 리스트로 만들기
+list1 = [1, 2, 3, 4]
+list2 = [10, 20, 30, 40]
+hapList = list(map(lambda n1,n2 : n1 + n2, list1, list2))
+print(hapList)
+
+## 출력 결과 ##
+[11, 22, 33, 44]
+</code></pre></li>
+</ul></li>
+</ul>
+
+<h3 id="제너레이터와-yield">제너레이터와 yield</h3>
+
+<ul>
+<li><p>yield 문 : 함수를 종결하지 않으면서 값을 계속 반환</p>
+
+<pre><code class="language-python">def number_generator():
+	yield 0
+	yield 1
+	yield 2
+
+for i in number_generator():
+	print(i)
+</code></pre>
+
+<pre><code>## 출력 결과 ##
+0
+1
+2
+</code></pre></li>
+</ul>
+
+    </div>
+    <div class="article-footer">
+<blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
+    <li class="post-copyright-link hidden-xs">
+      <strong>Permalink: </strong>
+      <a href="https://chlalstjd430.github.io/2020/06/python_05_function/" title="[Python 기초] - 함수와 모듈" target="_blank" rel="external">https://chlalstjd430.github.io/2020/06/python_05_function/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>License：</strong><a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN</a>
+    </li>
+  </ul>
+</blockquote>
+
+<div class="panel panel-default panel-badger">
+  <div class="panel-body">
+    <figure class="media">
+      <div class="media-left">
+        <a href="https://github.com/chlalstjd430" target="_blank" class="img-burn thumb-sm visible-lg">
+          <img src="https://chlalstjd430.github.io/avatar.png" class="img-rounded w-full" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading"><a href="https://github.com/chlalstjd430" target="_blank"><span class="text-dark">최민성</span><small class="ml-1x">26, 숭실대학교</small></a></h3>
+        <div>cms3136@gmail.com</div>
+      </div>
+    </figure>
+  </div>
+</div>
+    </div>
+  </article>
+<section id="comments">
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+</section>
+
+</div><nav class="bar bar-footer clearfix" data-stick-bottom>
+    <div class="bar-inner">
+        <ul class="pager pull-left">
+            <li class="prev">
+                <a href="https://chlalstjd430.github.io/2020/06/python_04_string/" title="[Python 기초] - 문자열의 개념"><i
+                        class="icon icon-angle-left"
+                        aria-hidden="true"></i><span>&nbsp;&nbsp;Older</span></a>
+            </li>
+            <li class="next">
+                <a href="https://chlalstjd430.github.io/2020/06/python_06_class/"
+                    title="[Python 기초] - 클래스"><span>Newer&nbsp;&nbsp;</span><i
+                        class="icon icon-angle-right" aria-hidden="true"></i></a>
+            </li>
+            
+            <li class="toggle-toc">
+                <a class="toggle-btn collapsed" data-toggle="collapse" href="#collapseToc" aria-expanded="false"
+                    title="Catalogue" role="button">
+                    <span>[&nbsp;</span><span>Catalogue</span>
+                    <i class="text-collapsed icon icon-anchor"></i>
+                    <i class="text-in icon icon-close"></i>
+                    <span>]</span>
+                </a>
+            </li>
+        </ul>
+        <div class="bar-right">
+            <div class="share-component" data-sites=""
+                data-mobile-sites="weibo,qq,qzone"></div>
+        </div>
+    </div>
+</nav>
+
+</main><footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+<ul class="social-links">
+    <li><a href="https://github.com/chlalstjd430" target="_blank" title="github" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-github"></i></a></li>
+    <li><a href="https://chlalstjd430.github.io/index.xml" target="_blank" title="rss" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-rss"></i></a></li>
+</ul>
+  <div class="copyright">
+    &copy;2017  -
+    2020
+    <div class="publishby">
+        Theme by <a href="https://github.com/xiaoheiAh" target="_blank"> xiaoheiAh </a>base on<a href="https://github.com/xiaoheiAh/hugo-theme-pure" target="_blank"> pure</a>.
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_SVG"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+            showMathMenu: false, //disables context menu
+            tex2jax: {
+            inlineMath: [ ['$','$'], ['\\(','\\)'] ]
+           }
+    });
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script>
+    window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/highlight.min.js"></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/python.min.js" defer></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/javascript.min.js" defer></script><script>
+    hljs.configure({
+        tabReplace: '    ', 
+        classPrefix: ''     
+        
+    })
+    hljs.initHighlightingOnLoad();
+</script>
+<script src="https://chlalstjd430.github.io/js/application.min.bdeb64b910570b6c41badc6a05b7afb0c8ad9efd8525de3c7257d59e786326a3.js"></script>
+<script src="https://chlalstjd430.github.io/js/plugin.min.51ff8c7317566f82259170fa36e09c4493adc9b9378b427a01ad3f017ebac7dd.js"></script>
+
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: 'Posts',
+                PAGES: 'Pages',
+                CATEGORIES: 'Categories',
+                TAGS: 'Tags',
+                UNTITLED: '(Untitled)',
+            },
+            ROOT_URL: 'https:\/\/chlalstjd430.github.io',
+            CONTENT_URL: 'https:\/\/chlalstjd430.github.io\/searchindex.json ',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+<script type="text/javascript" src="https://chlalstjd430.github.io/js/insight.min.a343cd9a5a7698336b28ef3a7c16a3a1b1d2d5fb17dc8ed04022bbe08cc5459073a15bdafa3a8a58cdd56080784bdd69fa70b1ae8597565c799c57ed00f0e120.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+<script>
+    tocbot.init({
+        
+        tocSelector: '.js-toc',
+        
+        contentSelector: '.js-toc-content',
+        
+        headingSelector: 'h1, h2, h3',
+        
+        hasInnerContainers: true,
+    });
+</script>
+
+
+<script>
+(function() { 
+var d = document, s = d.createElement('script');
+s.src = 'https://' + 'https-chlalstjd430-github-io' + '.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+
+  </body>
+</html>
