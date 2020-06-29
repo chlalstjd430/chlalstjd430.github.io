@@ -24,11 +24,11 @@
   
   
   <meta name="description" content="알고리즘 문제를 풀면서 어떠한 문제를 풀 때 어떠한 알고리즘을 적용해야하는 특징이 보이는 경우가 있다. 그래서 그러한 특징들이 보일 떄 마다 정리하려고 한다. 알고리" />
-  <meta name="generator" content="Hugo 0.59.1 with theme pure" />
+  <meta name="generator" content="Hugo 0.73.0 with theme pure" />
   <title>알고리즘 특징정리 - cmstown</title>
   
   
-  <link rel="stylesheet" href="https://chlalstjd430.github.io/css/style.min.55864f426c18be60c2e40c404f3e9db45a40a6a7ce220999b3a5da16cb66840d.css">
+  <link rel="stylesheet" href="https://chlalstjd430.github.io/css/style.min.9aaa883ebea87c2fd2d087c069cb2736c5f6cb2d52460262cad27bb9f932afc8.css">
   
   <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
@@ -40,16 +40,13 @@
 <meta property="article:modified_time" content="2020-02-11T13:24:01+09:00" />
 <meta itemprop="name" content="알고리즘 특징정리">
 <meta itemprop="description" content="알고리즘 문제를 풀면서 어떠한 문제를 풀 때 어떠한 알고리즘을 적용해야하는 특징이 보이는 경우가 있다. 그래서 그러한 특징들이 보일 떄 마다 정리하려고 한다. 알고리">
-
-
 <meta itemprop="datePublished" content="2020-02-11T13:24:01&#43;09:00" />
 <meta itemprop="dateModified" content="2020-02-11T13:24:01&#43;09:00" />
 <meta itemprop="wordCount" content="855">
 
 
 
-<meta itemprop="keywords" content="알고리즘," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="알고리즘," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="알고리즘 특징정리"/>
 <meta name="twitter:description" content="알고리즘 문제를 풀면서 어떠한 문제를 풀 때 어떠한 알고리즘을 적용해야하는 특징이 보이는 경우가 있다. 그래서 그러한 특징들이 보일 떄 마다 정리하려고 한다. 알고리"/>
 
@@ -148,7 +145,7 @@
     <h3 class="widget-title">Board</h3>
     <div class="widget-body">
         <div id="board">
-            <div class="content"><p>cms3136@gmail.com</p><p>- 숭실대학교 글로벌미디어학부</p><p>- Lectopia s/w expert course 17기</p><p>- YOURSSU 백엔드 개발자</p><p>- YAPP 16기</p>
+            <div class="content"><p>cms3136@gmail.com</p><p>- 숭실대학교 글로벌미디어학부</p><p>- Lectopia s/w expert course 17기</p><p>- YOURSSU 백엔드 개발자</p><p>- YAPP 16기</p><p>- NEXTERS 17기</p>
             </div>
         </div>
     </div>
@@ -359,75 +356,57 @@
       </div>
     </div>
     <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
-      
-
-<p>알고리즘 문제를 풀면서 어떠한 문제를 풀 때 어떠한 알고리즘을 적용해야하는 특징이 보이는 경우가 있다. 그래서 그러한 특징들이 보일 떄 마다 정리하려고 한다.</p>
-
+      <p>알고리즘 문제를 풀면서 어떠한 문제를 풀 때 어떠한 알고리즘을 적용해야하는 특징이 보이는 경우가 있다. 그래서 그러한 특징들이 보일 떄 마다 정리하려고 한다.</p>
 <h3 id="알고리즘-특징">알고리즘 특징</h3>
-
 <p><strong>1. DFS(깊이 우선 탐색) vs BFS(넓이 우선 탐색)</strong></p>
-
 <p>DFS/BFS는 그래프 문제의 대표적인 알고리즘이라 많은 사람들이 많이들 접해봤을 거라 생각한다. 사실 DFS로만 BFS로만 문제를 풀어야하는 경우는 <strong>거의</strong> 없다. 왠만하면 두 알고리즘 적용이 다 가능하다. 그래서 필자같은 경우에도 특별하게 메모리 초과가 날 것 같지않으면 DFS가 편해 DFS로 문제를 거의 푼다.</p>
-
 <ul>
-<li><p>DFS</p>
-
+<li>
+<p>DFS</p>
 <ul>
-<li><p>재귀or스택을 이용하여 구현한다.</p></li>
-
-<li><p>나는 주로 재귀를 통해 구현한다.</p></li>
-</ul></li>
-
-<li><p>BFS</p>
-
+<li>
+<p>재귀or스택을 이용하여 구현한다.</p>
 <ul>
-<li><p>큐를 이용하여 구현한다.</p></li>
-
-<li><p>나는 주로 최단 경로를 탐색할 떄 많이 적용한다.</p></li>
-
-<li><p>가중치 없는 그래프의 최단 경로문제는 BFS로만 접근해야 한다고 한다.</p></li>
-</ul></li>
+<li>나는 주로 재귀를 통해 구현한다.</li>
 </ul>
-
-<p><br><br></p>
-
+</li>
+</ul>
+</li>
+<li>
+<p>BFS</p>
+<ul>
+<li>
+<p>큐를 이용하여 구현한다.</p>
+</li>
+<li>
+<p>나는 주로 최단 경로를 탐색할 떄 많이 적용한다.</p>
+<ul>
+<li>가중치 없는 그래프의 최단 경로문제는 BFS로만 접근해야 한다고 한다.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
 <p><strong>2. Dynamic Programming(다이나믹 프로그래밍)</strong></p>
-
 <p>일정한 규칙을 가지고 결과를 도출하는 문제들은 거의 DP이다. 사실 DP에서 <strong>점화식</strong> 만 구하면 어지간하면 답을 구하지만 처음 보는 문제의 점화식을 구하기는 절대 쉽지 않다. 그래서 내가 느끼기엔 더 많은 문제를 계속해서 풀어봐야 하는 것 같다.</p>
-
-<p><br><br></p>
-
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
 <p><strong>3. Greedy Algorithm(탐욕 알고리즘)</strong></p>
-
 <p>코딩 테스트 및 여러가지 알고리즘 문제에서 대표적인 알고리즘이다. 해당 문제를 풀기 위해서는 정렬,자료구조 개념이 있으면 좋을 것 같다.</p>
-
-<p><br><br></p>
-
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
 <p><strong>3. Kruskal Algorithm(크루스칼 알고리즘)</strong></p>
-
 <p>보통 <strong>최소 신장 트리의 구현(MST)</strong> 방법으로 채택되는 알고리즘이다.<strong>즉, 가장 적은 비용으로 모든 노드를 연결하기 위해 사용되는 알고리즘이다.</strong> 크루스칼 알고리즘에서는 <strong>Union-Finde(합집합 찾기)</strong> 를 사용한다.</p>
-
-<p><br><br></p>
-
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
 <p><strong>4. Dijkstra Algorithm(다익스트라 알고리즘)</strong></p>
-
 <p><strong>하나의 정점에서 다른 모든 정점까지의 최단 경로</strong> 를 구하는 문제에 사용된다. 보통 우선순위 큐(Priority Queue)를 활용해서 문제를 푼다.</p>
-
-<p><br><br></p>
-
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
 <p><strong>5. Floyd Warshall Algorithm(플로이드 와샬 알고리즘)</strong></p>
-
 <p>다익스트라는 하나의 정점에서 다른 모든 정점이라면, 플로이드 와샬은 <strong>모든 정점에서 다른 모든 정점의 최단 경로</strong> 를 구하는 문제에 사용된다.</p>
-
-<p><br><br></p>
-
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
 <p><strong>6. Topological Sorting(위상 정렬)</strong></p>
-
-<p><br><br></p>
-
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
 <p><strong>7. Strongly Connected Component(강한 결합 요소)</strong></p>
-
-<p><br><br></p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
 
     </div>
     <div class="article-footer">
@@ -572,15 +551,17 @@
     });
 </script>
 
-
-<script>
-(function() { 
-var d = document, s = d.createElement('script');
-s.src = 'https://' + 'https-chlalstjd430-github-io' + '.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
+<script defer>
+    var disqus_config = function () {
+        this.page.url = 'https:\/\/chlalstjd430.github.io\/2020\/02\/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98_%ED%8A%B9%EC%A7%95%EC%A0%95%EB%A6%AC\/';
+        this.page.identifier = 'https-chlalstjd430-github-io';
+    };
+    (function () {
+        var d = document, s = d.createElement('script');
+        s.src = '//' + 'https-chlalstjd430-github-io' + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
 </script>
-
   </body>
 </html>

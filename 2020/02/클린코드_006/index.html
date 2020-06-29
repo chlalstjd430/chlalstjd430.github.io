@@ -24,11 +24,11 @@
   
   
   <meta name="description" content="Chapter 06 - 객체와 자료구조 1. 자료 추상화 목록 6-1 구체적인 Point 클래스 public class Point { public double x; public double y; } 목록 6-2 추상적인 Point 클래스 public interface Point { double getX(); double getY(); void setCartesian(double x, double y); double getR(); double getTheta(); void setPolar(double r, double" />
-  <meta name="generator" content="Hugo 0.59.1 with theme pure" />
+  <meta name="generator" content="Hugo 0.73.0 with theme pure" />
   <title>Chapter 06 - 객체와 자료구조 - cmstown</title>
   
   
-  <link rel="stylesheet" href="https://chlalstjd430.github.io/css/style.min.55864f426c18be60c2e40c404f3e9db45a40a6a7ce220999b3a5da16cb66840d.css">
+  <link rel="stylesheet" href="https://chlalstjd430.github.io/css/style.min.9aaa883ebea87c2fd2d087c069cb2736c5f6cb2d52460262cad27bb9f932afc8.css">
   
   <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
@@ -40,16 +40,13 @@
 <meta property="article:modified_time" content="2020-02-03T18:43:57+09:00" />
 <meta itemprop="name" content="Chapter 06 - 객체와 자료구조">
 <meta itemprop="description" content="Chapter 06 - 객체와 자료구조 1. 자료 추상화 목록 6-1 구체적인 Point 클래스 public class Point { public double x; public double y; } 목록 6-2 추상적인 Point 클래스 public interface Point { double getX(); double getY(); void setCartesian(double x, double y); double getR(); double getTheta(); void setPolar(double r, double">
-
-
 <meta itemprop="datePublished" content="2020-02-03T18:43:57&#43;09:00" />
 <meta itemprop="dateModified" content="2020-02-03T18:43:57&#43;09:00" />
 <meta itemprop="wordCount" content="1225">
 
 
 
-<meta itemprop="keywords" content="클린코드," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="클린코드," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Chapter 06 - 객체와 자료구조"/>
 <meta name="twitter:description" content="Chapter 06 - 객체와 자료구조 1. 자료 추상화 목록 6-1 구체적인 Point 클래스 public class Point { public double x; public double y; } 목록 6-2 추상적인 Point 클래스 public interface Point { double getX(); double getY(); void setCartesian(double x, double y); double getR(); double getTheta(); void setPolar(double r, double"/>
 
@@ -148,7 +145,7 @@
     <h3 class="widget-title">Board</h3>
     <div class="widget-body">
         <div id="board">
-            <div class="content"><p>cms3136@gmail.com</p><p>- 숭실대학교 글로벌미디어학부</p><p>- Lectopia s/w expert course 17기</p><p>- YOURSSU 백엔드 개발자</p><p>- YAPP 16기</p>
+            <div class="content"><p>cms3136@gmail.com</p><p>- 숭실대학교 글로벌미디어학부</p><p>- Lectopia s/w expert course 17기</p><p>- YOURSSU 백엔드 개발자</p><p>- YAPP 16기</p><p>- NEXTERS 17기</p>
             </div>
         </div>
     </div>
@@ -359,210 +356,183 @@
       </div>
     </div>
     <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
-      
-
-<h1 id="chapter-06-객체와-자료구조">Chapter 06 - 객체와 자료구조</h1>
-
-<hr />
-
-<p><br><br><br></p>
-
+      <h1 id="chapter-06---객체와-자료구조">Chapter 06 - 객체와 자료구조</h1>
+<hr>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
 <h3 id="1-자료-추상화">1. 자료 추상화</h3>
-
-<hr />
-
+<hr>
 <ul>
-<li><p>목록 6-1 구체적인 Point 클래스</p>
-
+<li>목록 6-1 구체적인 Point 클래스</li>
+</ul>
 <pre><code class="language-java">public class Point {
-public double x;
-public double y;
+  public double x;
+  public double y;
 }
-</code></pre></li>
-
-<li><p>목록 6-2 추상적인 Point 클래스</p>
-
+</code></pre>
+<ul>
+<li>목록 6-2 추상적인 Point 클래스</li>
+</ul>
 <pre><code class="language-java">public interface Point {
-double getX();
-double getY();
-void setCartesian(double x, double y);
-double getR();
-double getTheta();
-void setPolar(double r, double theta);
+  double getX();
+  double getY();
+  void setCartesian(double x, double y);
+  double getR();
+  double getTheta();
+  void setPolar(double r, double theta);
 }
-</code></pre></li>
-</ul>
-
+</code></pre>
 <p>목록 6-1같은 경우 내부 구졸르 노출하고. 목록 6-2는 구현을 완전히 숨긴다. 구현을 완전히 감추기 위해서는 <strong>추상화</strong> 가 필요하다. set,get 메서드로 변수를 다룬다고 클래스가 아니라, 추상 인터페이스를 제공해 사용자가 구현을 모른 채 자료의 핵심을 조작할 수 있어야 진정한 의미의 클래스다.</p>
-
-<p><br><br></p>
-
-<h3 id="2-자료-객체-비대칭">2. 자료/객체 비대칭</h3>
-
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<h3 id="2-자료객체-비대칭">2. 자료/객체 비대칭</h3>
 <ul>
-<li><p><strong>객체</strong> 는 추상화 뒤로 자료를 숨긴 채 자료를 다루는 함수만 제공한다.</p></li>
-
-<li><p><strong>자료 구조</strong> 는 자료를 그대로 공개하며 별다른 함수는 제공하지 않는다.</p></li>
+<li>
+<p><strong>객체</strong> 는 추상화 뒤로 자료를 숨긴 채 자료를 다루는 함수만 제공한다.</p>
+</li>
+<li>
+<p><strong>자료 구조</strong> 는 자료를 그대로 공개하며 별다른 함수는 제공하지 않는다.</p>
+</li>
 </ul>
-
 <p>두 정의는 본질적으로 상반되며 두 개념은 사실상 정반대이다.</p>
-
 <ul>
-<li><p>목록 6-5 절차적인 도형 (Procedural Shape)</p>
-
+<li>목록 6-5 절차적인 도형 (Procedural Shape)</li>
+</ul>
 <pre><code class="language-java">public class Square {
-public Point topLeft;
-public double side;
+  public Point topLeft;
+  public double side;
 }
 
 public class Rectangle {
-public Point topLeft;
-public double height;
-public double width;
+  public Point topLeft;
+  public double height;
+  public double width;
 }
 
 public class Circle {
-public Point center;
-public double radius;
+  public Point center;
+  public double radius;
 }
 
 public class Geometry {
-public final double PI = 3.141592653589793;
+  public final double PI = 3.141592653589793;
 
-public double area(Object shape) throws NoSuchShapeException {
-if (shape instanceof Square) {
-  Square s = (Square)shape;
-  return s.side * s.side;
-} else if (shape instanceof Rectangle) {
-  Rectangle r = (Rectangle)shape;
-  return r.height * r.width;
-} else if (shape instanceof Circle) {
-  Circle c = (Circle)shape;
-  return PI * c.radius * c.radius;
+  public double area(Object shape) throws NoSuchShapeException {
+    if (shape instanceof Square) {
+      Square s = (Square)shape;
+      return s.side * s.side;
+    } else if (shape instanceof Rectangle) {
+      Rectangle r = (Rectangle)shape;
+      return r.height * r.width;
+    } else if (shape instanceof Circle) {
+      Circle c = (Circle)shape;
+      return PI * c.radius * c.radius;
+    }
+    throw new NoSuchShapeException();
+  }
 }
-throw new NoSuchShapeException();
-}
-}
-</code></pre></li>
-</ul>
-
+</code></pre>
 <p>객체 지향 프로그래머가 위 코드를 보면 의아해 할 것이다. 하지만 Geometry 클래스에 둘레 길이를 구하기 위해서 perimeter() 함수를 추가하고 싶을 경우 도형 클래스는 아무 영향도 받지 않는다. 반대로 새 도형을 추가하고 싶다면 Geometry 클래스에 속한 함수를 모두 고쳐야 한다. 그래서 두 조건은 완전히 정반대라고 할 수 있다.</p>
-
 <ul>
-<li><p>목록 6-6 다형적인 도형 (Polymorphic Shape)</p>
-
+<li>목록 6-6 다형적인 도형 (Polymorphic Shape)</li>
+</ul>
 <pre><code class="language-java">public class Square implements Shape {
-private Point topLeft;
-private double side;
+  private Point topLeft;
+  private double side;
 
-public double area() {
-return side * side;
-}
+  public double area() {
+    return side * side;
+  }
 }
 
 public class Rectangle implements Shape {
-private Point topLeft;
-private double height;
-private double width;
+  private Point topLeft;
+  private double height;
+  private double width;
 
-public double area() {
-return height * width;
-}
+  public double area() {
+    return height * width;
+  }
 }
 
 public class Circle implements Shape {
-private Point center;
-private double radius;
-public final double PI = 3.141592653589793;
+  private Point center;
+  private double radius;
+  public final double PI = 3.141592653589793;
 
-public double area() {
-return PI * radius * radius;
+  public double area() {
+    return PI * radius * radius;
+  }
 }
-}
-</code></pre></li>
-</ul>
-
+</code></pre>
 <p>이번에는 목록 6-6을 살펴보자. 객체 지향적인 도형 클래스다. 새 도형을 추가해서 기존 함수에 아무런 영향을 미치지 않는다. 반면 새 함수를 추가하고 싶다면 도형 클래스 전부를 고쳐야 한다.</p>
-
 <p>즉, 객체 지향 코드에서 어려운 변경은 절차적인 코드에서 쉬우며, 절차적인 코드에서 어려운 변경은 객체 지향 코드에서 쉽다. 그러므로 <strong>상황에 맞게 클래스 &amp; 객체 지향 기법을 사용하거나, 절차적인 코드와 자료 구조를 적절하게 사용하는 것이 좋다.</strong></p>
-
-<p><br><br></p>
-
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
 <h3 id="3-디미터-법칩">3. 디미터 법칩</h3>
-
-<hr />
-
+<hr>
 <p>모듈은 자신이 조작하는 객체의 속사정을 몰라야 한다는 법칙이다. 좀 더 정확히 표현하자면, 디미터 법칙은 <strong>&ldquo;클래스 C의 메서드 f는 다음과 같은 객체의 메서드만 호출해야 한다&rdquo;</strong> 고 주장한다.</p>
-
 <ul>
-<li><p>클래스 C</p></li>
-
-<li><p>f가 생성한 객체</p>
-
+<li>
+<p>클래스 C</p>
+</li>
+<li>
+<p>f가 생성한 객체</p>
+</li>
+</ul>
 <pre><code class="language-java">int f(){
-Module module = new Modele();
-module.메서드()
+  Module module = new Modele();
+  module.메서드()
 }
-</code></pre></li>
-
-<li><p>f 인수로 넘어온 객체</p>
-
+</code></pre>
+<ul>
+<li>f 인수로 넘어온 객체</li>
+</ul>
 <pre><code class="language-java">int f(Module module){
-module.메서드()
+  module.메서드()
 }
-</code></pre></li>
-
-<li><p>C 인스턴스 변수에 저장된 객체</p>
-
+</code></pre>
+<ul>
+<li>C 인스턴스 변수에 저장된 객체</li>
+</ul>
 <pre><code class="language-java">class C {
-private Module module;
+  private Module module;
 
-...
+  ...
 
-int f(){
-module.메서드();
+  int f(){
+    module.메서드();
+  }
 }
-}
-</code></pre></li>
-</ul>
-
+</code></pre>
 <p>하지만 위 객체에서 허용된 메서드가 반환하는 객체의 메서드는 호출하면 안 된다.</p>
-
 <ul>
-<li><p>기차 충돌</p>
-
-<pre><code class="language-java">final String outputDir = ctxt.getOptions().getScratchDir().getAbsolutePath();
-</code></pre></li>
+<li>기차 충돌</li>
 </ul>
-
+<pre><code class="language-java">final String outputDir = ctxt.getOptions().getScratchDir().getAbsolutePath();
+</code></pre>
 <p>위와 같은 코드는 일반적으로 조잡하다 여겨지므로 가능하면 피하자.</p>
-
 <ul>
-<li><p>잡종 구조</p>
-
+<li>
+<p>잡종 구조</p>
 <ul>
 <li>절반은 객체 절반은 자료 구조인 잡종 구조는 가급적이면 지양하자. 이는 어중간한 설계처럼 보인다.</li>
-</ul></li>
-
-<li><p>자료 전달 객체(DTO)</p></li>
 </ul>
-
-<p><br><br></p>
-
+</li>
+<li>
+<p>자료 전달 객체(DTO)</p>
+</li>
+</ul>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
 <h3 id="결론">결론</h3>
-
-<hr />
-
+<hr>
 <ul>
-<li><p>클래스를 만들 때 가급적이면 추상화 과정을 거쳐 만드는 것이 더 바람직한 클래스 설계라고 생각이 든다.</p></li>
-
-<li><p>무조건 객체가 옳은 것은 아니다. 상황에 맞게 객체나 자료 구조를 사용하여야 한다.</p></li>
+<li>
+<p>클래스를 만들 때 가급적이면 추상화 과정을 거쳐 만드는 것이 더 바람직한 클래스 설계라고 생각이 든다.</p>
+</li>
+<li>
+<p>무조건 객체가 옳은 것은 아니다. 상황에 맞게 객체나 자료 구조를 사용하여야 한다.</p>
+</li>
 </ul>
-
-<p><br><br><br><br><br></p>
-
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
 <p><a href="https://github.com/Yooii-Studios/Clean-Code">출저 : https://github.com/Yooii-Studios/Clean-Code</a></p>
-
 <p><a href="http://www.yes24.com/Product/Goods/11681152">출저 : Clean Code 클린 코드 : 애자일 소프트웨어 장인 정신</a></p>
 
     </div>
@@ -708,15 +678,17 @@ module.메서드();
     });
 </script>
 
-
-<script>
-(function() { 
-var d = document, s = d.createElement('script');
-s.src = 'https://' + 'https-chlalstjd430-github-io' + '.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
+<script defer>
+    var disqus_config = function () {
+        this.page.url = 'https:\/\/chlalstjd430.github.io\/2020\/02\/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C_006\/';
+        this.page.identifier = 'https-chlalstjd430-github-io';
+    };
+    (function () {
+        var d = document, s = d.createElement('script');
+        s.src = '//' + 'https-chlalstjd430-github-io' + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
 </script>
-
   </body>
 </html>

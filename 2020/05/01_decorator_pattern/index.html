@@ -24,11 +24,11 @@
   
   
   <meta name="description" content="DecoratorPattern(데코레이터 패턴) 데코레인터 패턴이란? 객체의 결합 을 통해 기능을 동적으로 유연하게 확장 할 수 있게 해주는 패턴 위의 한 문장" />
-  <meta name="generator" content="Hugo 0.59.1 with theme pure" />
+  <meta name="generator" content="Hugo 0.73.0 with theme pure" />
   <title>[DesignPattern] Decorator Pattern(데코레이터 패턴) - cmstown</title>
   
   
-  <link rel="stylesheet" href="https://chlalstjd430.github.io/css/style.min.55864f426c18be60c2e40c404f3e9db45a40a6a7ce220999b3a5da16cb66840d.css">
+  <link rel="stylesheet" href="https://chlalstjd430.github.io/css/style.min.9aaa883ebea87c2fd2d087c069cb2736c5f6cb2d52460262cad27bb9f932afc8.css">
   
   <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
@@ -40,16 +40,13 @@
 <meta property="article:modified_time" content="2020-05-18T21:12:02+09:00" />
 <meta itemprop="name" content="[DesignPattern] Decorator Pattern(데코레이터 패턴)">
 <meta itemprop="description" content="DecoratorPattern(데코레이터 패턴) 데코레인터 패턴이란? 객체의 결합 을 통해 기능을 동적으로 유연하게 확장 할 수 있게 해주는 패턴 위의 한 문장">
-
-
 <meta itemprop="datePublished" content="2020-05-18T21:12:02&#43;09:00" />
 <meta itemprop="dateModified" content="2020-05-18T21:12:02&#43;09:00" />
-<meta itemprop="wordCount" content="2533">
+<meta itemprop="wordCount" content="2529">
 
 
 
-<meta itemprop="keywords" content="" />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="[DesignPattern] Decorator Pattern(데코레이터 패턴)"/>
 <meta name="twitter:description" content="DecoratorPattern(데코레이터 패턴) 데코레인터 패턴이란? 객체의 결합 을 통해 기능을 동적으로 유연하게 확장 할 수 있게 해주는 패턴 위의 한 문장"/>
 
@@ -148,7 +145,7 @@
     <h3 class="widget-title">Board</h3>
     <div class="widget-body">
         <div id="board">
-            <div class="content"><p>cms3136@gmail.com</p><p>- 숭실대학교 글로벌미디어학부</p><p>- Lectopia s/w expert course 17기</p><p>- YOURSSU 백엔드 개발자</p><p>- YAPP 16기</p>
+            <div class="content"><p>cms3136@gmail.com</p><p>- 숭실대학교 글로벌미디어학부</p><p>- Lectopia s/w expert course 17기</p><p>- YOURSSU 백엔드 개발자</p><p>- YAPP 16기</p><p>- NEXTERS 17기</p>
             </div>
         </div>
     </div>
@@ -350,37 +347,26 @@
 
         <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/2020/05/01_decorator_pattern/#comments"
             class="article-comment-link">Comments</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 2533words</span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 2529words</span>
 		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 6minutes </span>
       </div>
     </div>
     <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
-      
-
-<h1 id="decoratorpattern-데코레이터-패턴">DecoratorPattern(데코레이터 패턴)</h1>
-
+      <h1 id="decoratorpattern데코레이터-패턴">DecoratorPattern(데코레이터 패턴)</h1>
 <h3 id="데코레인터-패턴이란">데코레인터 패턴이란?</h3>
-
 <blockquote>
 <p>객체의 결합 을 통해 기능을 동적으로 유연하게 확장 할 수 있게 해주는 패턴</p>
 </blockquote>
-
 <p>위의 한 문장으로 정확히 무엇인지 정확히 이해하기 힘듭니다, 아래의 내용을 통해 데코레이터 패턴을 살펴봅시다!</p>
-
-<h3 id="도로-표시-방법-조합하기-데코레이터-패턴을-모를-떄-ver">도로 표시 방법 조합하기(데코레이터 패턴을 모를 떄 ver)</h3>
-
+<h3 id="도로-표시-방법-조합하기데코레이터-패턴을-모를-떄-ver">도로 표시 방법 조합하기(데코레이터 패턴을 모를 떄 ver)</h3>
 <p><strong>도로가 있을 떄 차선을 표시해야할 떄 우리는 어떻게 클래스를 만들까?</strong></p>
-
-<p align="center">
-  <img src = "https://user-images.githubusercontent.com/50758600/82202927-903a0e00-993d-11ea-9ea7-8a1faa323c54.png" align = "center">
-</p>
-
-<p>도로가 있을 떄 차선을 표시하기 위해 기본적으로 2가지 클래스를 만들어보았습니다!
-- RodaDisplay Class : 기본 도로 표시 기능을 제공하는 클래스
-- RoadDIsplayWithLane Class : 기본 도로 표시에 추가적으로 차선을 표시하는 클래스</p>
-
+<!-- raw HTML omitted -->
+<p>도로가 있을 떄 차선을 표시하기 위해 기본적으로 2가지 클래스를 만들어보았습니다!</p>
+<ul>
+<li>RodaDisplay Class : 기본 도로 표시 기능을 제공하는 클래스</li>
+<li>RoadDIsplayWithLane Class : 기본 도로 표시에 추가적으로 차선을 표시하는 클래스</li>
+</ul>
 <p>이 둘을 코드로 표현하면 다음과 같습니다~</p>
-
 <pre><code class="language-java">public class Client {
     public static void main(String[] args) {
         System.out.println(&quot;첫번째 draw&quot;);
@@ -408,9 +394,7 @@ class RoadDisplayWithLane extends RoadDisplay{
     }
 }
 </code></pre>
-
 <p>위의 코드 중 main을 보면 &ldquo;draw()&ldquo;라는 메소드를 사용하여 기능을 통일 시켜주었습니다. 그래서 결과를 보면</p>
-
 <pre><code>첫번째 draw
 도로 기본 표시
 
@@ -418,32 +402,22 @@ class RoadDisplayWithLane extends RoadDisplay{
 도로 기본 표시
 차선 표시
 </code></pre>
-
 <p>다음과 같이 출력이 됩니다. 동일한 &ldquo;draw()&ldquo;메소드를 수행했지만 다른 출력값이 나오는 것을 확인할 수 있습니다.</p>
-
 <p><strong>기능만 봐서는 잘 작동하는 것 같은데,,과연 해당 코드에 문제점이 없을까요?🤔</strong></p>
-
-<p align = "center">
-  <img src = "https://thumbs.gfycat.com/AltruisticDisastrousBuck-size_restricted.gif">
-</p>
-
+<!-- raw HTML omitted -->
 <p>문제점이 있는지 확인하기 위해 다음과 같은 사항을 체크해봅시다!</p>
-
 <ol>
-<li><p>또 다른 추가적인 도로 표시 기능을 구현하고 싶다면 어떻게 해야 하는가?(도로 표시에 교통량도 표시하고싶다면..!?)🚖🚖🚖</p></li>
-
-<li><p>뿐만아니라 여러가지 추가 기능의 조합하여 제공하고 싶다면 어떻게 해야 할까요?
-예를 들어 기본 도로 표시에 차선 표시 기능과 교통량 표시 기능을 함께 제공하고 싶다면요! 🏞 + 🚖🚖🚖</p></li>
+<li>
+<p>또 다른 추가적인 도로 표시 기능을 구현하고 싶다면 어떻게 해야 하는가?(도로 표시에 교통량도 표시하고싶다면..!?)🚖🚖🚖</p>
+</li>
+<li>
+<p>뿐만아니라 여러가지 추가 기능의 조합하여 제공하고 싶다면 어떻게 해야 할까요? 
+예를 들어 기본 도로 표시에 차선 표시 기능과 교통량 표시 기능을 함께 제공하고 싶다면요! 🏞 + 🚖🚖🚖</p>
+</li>
 </ol>
-
 <p>위의 사항들을 다음과 같이 시도해봅시다!</p>
-
-<p align = "center">
-  <img src = "https://user-images.githubusercontent.com/50758600/82206241-d8a7fa80-9942-11ea-82c6-27f0ea3231fa.png">
-</p>
-
+<!-- raw HTML omitted -->
 <p>추가적으로 RoadDisplay를 상속받는 RoadDisplayWithTraffic 클래스를 구현하는거죠!! 즉, 코드를 보면 다음과 같습니다!</p>
-
 <pre><code class="language-java">public class Client {
     public static void main(String[] args) {
         System.out.println(&quot;첫번째 draw&quot;);
@@ -486,9 +460,7 @@ class RoadDisplayWithTraffic extends RoadDisplay{
     }
 }
 </code></pre>
-
 <p>이 코드의 실행 결과도</p>
-
 <pre><code>첫번째 draw
 도로 기본 표시
 
@@ -500,15 +472,9 @@ class RoadDisplayWithTraffic extends RoadDisplay{
 도로 기본 표시
 교통량 표시
 </code></pre>
-
 <p>로 잘 수행이됩니다. 그렇다면 이와 같은 방식으로 <strong>기능들을 조합하여 사용하자는 두번째 사항</strong> 에 부합되도록 하려면 어떻게할까요?</p>
-
-<p align = "center">
-  <img src = "https://user-images.githubusercontent.com/50758600/82206990-1e18f780-9944-11ea-91c2-95a2057efbcb.png">
-</p>
-
+<!-- raw HTML omitted -->
 <p>위와 같은 표처럼 많은 기능을 구현하기 위해 우리는 다음과 같이 코드를 작성해야할지 모릅니다..</p>
-
 <pre><code class="language-java">class RoadDisplay{
     public void draw(){
         System.out.println(&quot;도로 기본 표시&quot;);
@@ -578,31 +544,16 @@ class RoadDisplayWithLaneCrossing extends RoadDisplay{
                   .
                   .
 </code></pre>
-
-<p>위의 코드를 보면 무언가 문제가 있다고 느껴지시지 않나요? 위의 코드를 보면 중복된 코드들이 많이 보입니다. &ldquo;차선 표시&rdquo;를 print해주는 문장만 벌써 3개 등장했습니다..
+<p>위의 코드를 보면 무언가 문제가 있다고 느껴지시지 않나요? 위의 코드를 보면 중복된 코드들이 많이 보입니다. &ldquo;차선 표시&quot;를 print해주는 문장만 벌써 3개 등장했습니다..
 그러면 기능들이 추가될 떄마다 중복된 코드는&hellip;.</p>
-
-<p align = "center">
-  <img src = "https://media.tenor.com/images/ea8bc435841d346bfad9d47090b8eeff/tenor.gif">
-  <img src = "https://media.tenor.com/images/ea8bc435841d346bfad9d47090b8eeff/tenor.gif">
-  <img src = "https://media.tenor.com/images/ea8bc435841d346bfad9d47090b8eeff/tenor.gif">
-</p>
-
+<!-- raw HTML omitted -->
 <p>맞습니다..기능이 추가될 떄마다 우리는 불필요한 하드 코딩을 하게 됩니다.</p>
-
 <p>그러면 데코레이터 패턴을 적용하면 어떻게 해결될까요!?</p>
-
 <h3 id="데코레이터-패턴-적용-ver">데코레이터 패턴 적용 ver</h3>
-
 <p>다음은 데코레이터 패턴을 적용한 후의 클래스 다이어그램입니다.</p>
-
-<p align = "center">
-  <img src = "https://user-images.githubusercontent.com/50758600/82208863-40604480-9947-11ea-8d6a-50d8b32a6688.png">
-</p>
-
+<!-- raw HTML omitted -->
 <p>훨씬 간결해진 구조 보이시나요!? 기존에 기능들을 조합하기 위해 조합되는 기능만큼 클래스들을 생성했는데, 데코리에터 패턴을 이용하면 고유한 기능들 개수만큼만 클래스를 생성해주시면 됩니다!
 그러면 코드를 볼까요?</p>
-
 <pre><code class="language-java">public class Client {
     public static void main(String[] args) {
         Display roadWithLaneAndTraffic = new TrafficDecorator(
@@ -688,26 +639,21 @@ class TrafficDecorator extends DisplayDecorator{
     }
 }
 </code></pre>
-
 <p>수행결과</p>
-
 <pre><code>--- draw 호출 ---
 도로 기본 표시
 	횡단보도 표시
 	차선 표시
 	교통량 표시
 </code></pre>
-
 <p>main안의 코드들을 살펴봅시다! 예전에 해당 기능을 구현하기 위해서는 새로 클래스를 만들어서 구현했는데, 데코레이터 페턴이 적용된 현재는
 생성자 DisplayDecorator 클래스를 상속받는 클래스들의 생성자에 구현하고자 하는 기능들을 추가하면 간단하게 구현됩니다. 즉, 새로운 클래스 구현이 아닌 생성자에 필요한 기능을 담는 것으로 기능의 조합이 가능해집니다!</p>
-
-<p>이로써 우리는 앞으로 데코레이터 패턴을 이용하여 기본 기능에 추가될 수 있는 많은 수의 부가 기능에 대해서 다양한 조합을 동적으로 구현할 수 있습니다~!
-<p align = "center">
-  <img src="https://media0.giphy.com/media/vcKEsYOdjoCeJRpn95/giphy.gif">
-</p></p>
-
-<p>참고
-- <a href="http://www.kyobobook.co.kr/product/detailViewKor.laf?mallGb=KOR&amp;ejkGb=KOR&amp;barcode=9788968480911&amp;orderClick=JAj&amp;OV_REFFER=http://click.linkprice.com/click.php?m=kbbook&amp;a=A100532541&amp;l=9999&amp;l_cd1=0&amp;u_id=kacg2ap746029ofs02yqe&amp;l_cd2=0&amp;tu=http%3A%2F%2Fwww.kyobobook.co.kr%2Fproduct%2FdetailViewKor.laf%3FmallGb%3DKOR%26ejkGb%3DKOR%26barcode%3D9788968480911%26orderClick%3DJAj">JAVA 객체지향 디자인 패턴 </a></p>
+<p>이로써 우리는 앞으로 데코레이터 패턴을 이용하여 기본 기능에 추가될 수 있는 많은 수의 부가 기능에 대해서 다양한 조합을 동적으로 구현할 수 있습니다~!</p>
+<!-- raw HTML omitted -->
+<p>참고</p>
+<ul>
+<li><a href="http://www.kyobobook.co.kr/product/detailViewKor.laf?mallGb=KOR&amp;ejkGb=KOR&amp;barcode=9788968480911&amp;orderClick=JAj&amp;OV_REFFER=http://click.linkprice.com/click.php?m=kbbook&amp;a=A100532541&amp;l=9999&amp;l_cd1=0&amp;u_id=kacg2ap746029ofs02yqe&amp;l_cd2=0&amp;tu=http%3A%2F%2Fwww.kyobobook.co.kr%2Fproduct%2FdetailViewKor.laf%3FmallGb%3DKOR%26ejkGb%3DKOR%26barcode%3D9788968480911%26orderClick%3DJAj">JAVA 객체지향 디자인 패턴 </a></li>
+</ul>
 
     </div>
     <div class="article-footer">
@@ -852,15 +798,17 @@ class TrafficDecorator extends DisplayDecorator{
     });
 </script>
 
-
-<script>
-(function() { 
-var d = document, s = d.createElement('script');
-s.src = 'https://' + 'https-chlalstjd430-github-io' + '.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
+<script defer>
+    var disqus_config = function () {
+        this.page.url = 'https:\/\/chlalstjd430.github.io\/2020\/05\/01_decorator_pattern\/';
+        this.page.identifier = 'https-chlalstjd430-github-io';
+    };
+    (function () {
+        var d = document, s = d.createElement('script');
+        s.src = '//' + 'https-chlalstjd430-github-io' + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
 </script>
-
   </body>
 </html>

@@ -24,11 +24,11 @@
   
   
   <meta name="description" content="Chapter 02 - 의미있는 이름 1. 의도가 담긴 이름을 짓자 변수명/메서드명을 통해서 역할을 추정할 수 있도록 이름을 짓자. 별도의 주석이 필요 없을 정도로 명확하게 이름을 짓자" />
-  <meta name="generator" content="Hugo 0.59.1 with theme pure" />
+  <meta name="generator" content="Hugo 0.73.0 with theme pure" />
   <title>Chapter 02 - 의미있는 이름 - cmstown</title>
   
   
-  <link rel="stylesheet" href="https://chlalstjd430.github.io/css/style.min.55864f426c18be60c2e40c404f3e9db45a40a6a7ce220999b3a5da16cb66840d.css">
+  <link rel="stylesheet" href="https://chlalstjd430.github.io/css/style.min.9aaa883ebea87c2fd2d087c069cb2736c5f6cb2d52460262cad27bb9f932afc8.css">
   
   <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
@@ -40,16 +40,13 @@
 <meta property="article:modified_time" content="2020-01-22T17:32:04+09:00" />
 <meta itemprop="name" content="Chapter 02 - 의미있는 이름">
 <meta itemprop="description" content="Chapter 02 - 의미있는 이름 1. 의도가 담긴 이름을 짓자 변수명/메서드명을 통해서 역할을 추정할 수 있도록 이름을 짓자. 별도의 주석이 필요 없을 정도로 명확하게 이름을 짓자">
-
-
 <meta itemprop="datePublished" content="2020-01-22T17:32:04&#43;09:00" />
 <meta itemprop="dateModified" content="2020-01-22T17:32:04&#43;09:00" />
 <meta itemprop="wordCount" content="750">
 
 
 
-<meta itemprop="keywords" content="클린코드," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="클린코드," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Chapter 02 - 의미있는 이름"/>
 <meta name="twitter:description" content="Chapter 02 - 의미있는 이름 1. 의도가 담긴 이름을 짓자 변수명/메서드명을 통해서 역할을 추정할 수 있도록 이름을 짓자. 별도의 주석이 필요 없을 정도로 명확하게 이름을 짓자"/>
 
@@ -148,7 +145,7 @@
     <h3 class="widget-title">Board</h3>
     <div class="widget-body">
         <div id="board">
-            <div class="content"><p>cms3136@gmail.com</p><p>- 숭실대학교 글로벌미디어학부</p><p>- Lectopia s/w expert course 17기</p><p>- YOURSSU 백엔드 개발자</p><p>- YAPP 16기</p>
+            <div class="content"><p>cms3136@gmail.com</p><p>- 숭실대학교 글로벌미디어학부</p><p>- Lectopia s/w expert course 17기</p><p>- YOURSSU 백엔드 개발자</p><p>- YAPP 16기</p><p>- NEXTERS 17기</p>
             </div>
         </div>
     </div>
@@ -359,142 +356,129 @@
       </div>
     </div>
     <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
-      
-
-<h1 id="chapter-02-의미있는-이름">Chapter 02 - 의미있는 이름</h1>
-
-<hr />
-
-<p><br><br><br></p>
-
+      <h1 id="chapter-02---의미있는-이름">Chapter 02 - 의미있는 이름</h1>
+<hr>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
 <h3 id="1-의도가-담긴-이름을-짓자">1. 의도가 담긴 이름을 짓자</h3>
-
-<hr />
-
+<hr>
 <ul>
-<li><p>변수명/메서드명을 통해서 역할을 추정할 수 있도록 이름을 짓자.</p></li>
-
-<li><p>별도의 주석이 필요 없을 정도로 명확하게 이름을 짓자.</p></li>
-
-<li><p>예시</p>
-
+<li>
+<p>변수명/메서드명을 통해서 역할을 추정할 수 있도록 이름을 짓자.</p>
+</li>
+<li>
+<p>별도의 주석이 필요 없을 정도로 명확하게 이름을 짓자.</p>
+</li>
+<li>
+<p>예시</p>
+</li>
+</ul>
 <pre><code>int d; (X) -&gt; int elapsedTimeInDays;
 
 public void getThem(){ ... } (x) -&gt; public void getFlaggedCells(){ ... } (o)
-</code></pre></li>
-</ul>
-
-<p><br><br></p>
-
+</code></pre>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
 <h3 id="2-그릇된-정보를-피하자">2. 그릇된 정보를 피하자.</h3>
-
-<hr />
-
+<hr>
 <ul>
-<li><p>중의적인 의미를 피하자.</p></li>
-
-<li><p>개발자에게 특수한 의미를 가지는 단어(Collection - list 등)는 실제 컨테이너가 해당 타입이 아닌 경우 변수명에 넣지 말자.</p></li>
-
-<li><p>예시</p>
-
+<li>
+<p>중의적인 의미를 피하자.</p>
+</li>
+<li>
+<p>개발자에게 특수한 의미를 가지는 단어(Collection - list 등)는 실제 컨테이너가 해당 타입이 아닌 경우 변수명에 넣지 말자.</p>
+</li>
+<li>
+<p>예시</p>
+</li>
+</ul>
 <pre><code>String[] customerList; (x) -&gt; List&lt;String&gt; customerList; (o)
-</code></pre></li>
-</ul>
-
-<p><br><br></p>
-
-<h3 id="3-불용어-noise-word-를-사용하지-말자">3. 불용어(noise word)를 사용하지 말자.</h3>
-
-<hr />
-
+</code></pre>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<h3 id="3-불용어noise-word를-사용하지-말자">3. 불용어(noise word)를 사용하지 말자.</h3>
+<hr>
 <ul>
-<li><p>클래스 이름에 Manager, Processor, Data, Info 같은 불용어를 붙이지 말자.</p></li>
-
-<li><p>예시</p>
-
+<li>
+<p>클래스 이름에 Manager, Processor, Data, Info 같은 불용어를 붙이지 말자.</p>
+</li>
+<li>
+<p>예시</p>
+</li>
+</ul>
 <pre><code>Class StudentInfo{ ... } (x) -&gt; Class Student{ ... } (o)
-</code></pre></li>
-</ul>
-
-<p><br><br></p>
-
+</code></pre>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
 <h3 id="4-발음하기-쉬운-이름을-사용하자">4. 발음하기 쉬운 이름을 사용하자.</h3>
-
-<hr />
-
+<hr>
 <ul>
-<li><p>숫자를 혼용하지 말자.</p></li>
-
-<li><p>우리가 아는 단어 위주로 사용하자.</p></li>
+<li>
+<p>숫자를 혼용하지 말자.</p>
+</li>
+<li>
+<p>우리가 아는 단어 위주로 사용하자.</p>
+</li>
 </ul>
-
-<p><br><br></p>
-
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
 <h3 id="5-검색하기-쉬운-이름을-사용하자">5. 검색하기 쉬운 이름을 사용하자.</h3>
-
-<hr />
-
+<hr>
 <ul>
-<li><p>상수는 static final과 같이 정희하여 사용하자.</p></li>
-
-<li><p>변수의 이름은 변수의 범위에 비례하여 길어진다.</p></li>
+<li>
+<p>상수는 static final과 같이 정희하여 사용하자.</p>
+</li>
+<li>
+<p>변수의 이름은 변수의 범위에 비례하여 길어진다.</p>
+</li>
 </ul>
-
-<h3 id="6-클래스-메서드">6. 클래스/메서드</h3>
-
+<h3 id="6-클래스메서드">6. 클래스/메서드</h3>
 <ul>
-<li><p>변수</p>
-
+<li>
+<p>변수</p>
 <ul>
 <li>변수명에 해당 변수의 타입등을 적지말자.</li>
-</ul></li>
-
-<li><p>클래스</p>
-
+</ul>
+</li>
+<li>
+<p>클래스</p>
 <ul>
 <li>명사 혹은 명사구(Custemer, Student)를 사용하고 동사는 사용하지 말자.</li>
-</ul></li>
-
-<li><p>메서드</p>
-
+</ul>
+</li>
+<li>
+<p>메서드</p>
 <ul>
-<li><p>동사 혹은 동사구(updatePayment, deleteAccount)하자.</p></li>
-
-<li><p>접근자는 get, 변경자는 set, 조건자는 is로 시작하자. (should, has 도 가능)</p></li>
-
-<li><p>생성자를 오버로드할 경우 정적 팩토리 메서드를 사용하고 해당 생성자를 private로 선언한다.</p></li>
-
-<li><p>예시</p>
-
+<li>
+<p>동사 혹은 동사구(updatePayment, deleteAccount)하자.</p>
+</li>
+<li>
+<p>접근자는 get, 변경자는 set, 조건자는 is로 시작하자. (should, has 도 가능)</p>
+</li>
+<li>
+<p>생성자를 오버로드할 경우 정적 팩토리 메서드를 사용하고 해당 생성자를 private로 선언한다.</p>
+<ul>
+<li>예시</li>
+</ul>
 <pre><code>Complex fulcrumPoint = new Complex(23.0);  (x)
 Complex fulcrumPoint = Complex.FromRealNumber(23.0);  (o)
-</code></pre></li>
-</ul></li>
+</code></pre>
+</li>
 </ul>
-
-<p><br><br></p>
-
+</li>
+</ul>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
 <h3 id="7-함부로-이름을-줄이지-말자">7. 함부로 이름을 줄이지 말자.</h3>
-
 <pre><code>GS (x) -&gt; GasStation (o)
 </code></pre>
-
-<p><br><br></p>
-
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
 <h3 id="결론">결론</h3>
-
-<hr />
-
+<hr>
 <ul>
-<li><p>사실 위의 내용 말고 &ldquo; -를 사용하자&rdquo;, &ldquo;-를 하지말자&rdquo; 라는 내용이 더 있다. 하지만 근본적인 내용들은 위의 내용과 겹칠 뿐더러 오히려 더 나열하면 헷갈릴 것 같아 정리 내용에서 제외하였다.</p></li>
-
-<li><p>결론적으로 이름을 성의있게 지어야 한다는 것을 알게 되었다. 나 역시도 어느정도 성의 있게 지켜가며 이름을 지었지만 이번 공부를 통해 더 명확하게 이름을 지을 수 있을 것 같다.</p></li>
+<li>
+<p>사실 위의 내용 말고 &quot; -를 사용하자&rdquo;, &ldquo;-를 하지말자&rdquo; 라는 내용이 더 있다. 하지만 근본적인 내용들은 위의 내용과 겹칠 뿐더러 오히려 더 나열하면 헷갈릴 것 같아 정리 내용에서 제외하였다.</p>
+</li>
+<li>
+<p>결론적으로 이름을 성의있게 지어야 한다는 것을 알게 되었다. 나 역시도 어느정도 성의 있게 지켜가며 이름을 지었지만 이번 공부를 통해 더 명확하게 이름을 지을 수 있을 것 같다.</p>
+</li>
 </ul>
-
-<p><br><br><br><br><br></p>
-
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
 <p><a href="https://github.com/Yooii-Studios/Clean-Code">출저 : https://github.com/Yooii-Studios/Clean-Code</a></p>
-
 <p><a href="http://www.yes24.com/Product/Goods/11681152">출저 : Clean Code 클린 코드 : 애자일 소프트웨어 장인 정신</a></p>
 
     </div>
@@ -640,15 +624,17 @@ Complex fulcrumPoint = Complex.FromRealNumber(23.0);  (o)
     });
 </script>
 
-
-<script>
-(function() { 
-var d = document, s = d.createElement('script');
-s.src = 'https://' + 'https-chlalstjd430-github-io' + '.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
+<script defer>
+    var disqus_config = function () {
+        this.page.url = 'https:\/\/chlalstjd430.github.io\/2020\/01\/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C_002\/';
+        this.page.identifier = 'https-chlalstjd430-github-io';
+    };
+    (function () {
+        var d = document, s = d.createElement('script');
+        s.src = '//' + 'https-chlalstjd430-github-io' + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
 </script>
-
   </body>
 </html>

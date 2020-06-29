@@ -15,7 +15,7 @@
       <pubDate>Fri, 07 Feb 2020 14:59:53 +0900</pubDate>
       
       <guid>https://chlalstjd430.github.io/2020/02/%EB%B0%B1%EC%A4%8010610/</guid>
-      <description>백준 문제 바로가기 사용 언어 C++ 적용 알고리즘 그리디 알고리즘 정렬 주의사항 재귀를 통해 순열을 구하여 정답을 찾았지만 메모리 초과가 나왔다. 문제풀이 초기에 순열을</description>
+      <description>C++ 적용 알고리즘 그리디 알고리즘 정렬 주의사항 재귀를 통해 순열을 구하여 정답을 찾았지만 메모리 초과가 나왔다. 문제풀이 초기에 순열을 통해 문제를 풀었지만 메모리</description>
     </item>
     
     <item>
@@ -51,7 +51,7 @@
       <pubDate>Thu, 06 Feb 2020 14:43:20 +0900</pubDate>
       
       <guid>https://chlalstjd430.github.io/2020/02/%EB%B0%B1%EC%A4%802217/</guid>
-      <description>백준 문제 바로가기 사용 언어 C++ 적용 알고리즘 그리디 알고리즘 정렬 문제풀이 k개의 로프를 사용하여 중량이 w인 물체를 들어올릴 때, 각각의 로프에는 모두 고르게 w/k 만</description>
+      <description>C++ 적용 알고리즘 그리디 알고리즘 정렬 문제풀이 k개의 로프를 사용하여 중량이 w인 물체를 들어올릴 때, 각각의 로프에는 모두 고르게 w/k 만큼의 중량이 걸리게 된다. 위</description>
     </item>
     
     <item>
@@ -60,7 +60,7 @@
       <pubDate>Thu, 06 Feb 2020 14:08:14 +0900</pubDate>
       
       <guid>https://chlalstjd430.github.io/2020/02/%EB%B0%B1%EC%A4%801049/</guid>
-      <description>백준 문제 바로가기 사용 언어 C++ 적용 알고리즘 그리디 알고리즘 정렬 주의사항 문제의 주어진 조건을 잘 파악하고 경우의 수를 나누어야 한다. 문제풀이 문제의 내용과 조건</description>
+      <description>C++ 적용 알고리즘 그리디 알고리즘 정렬 주의사항 문제의 주어진 조건을 잘 파악하고 경우의 수를 나누어야 한다. 문제풀이 문제의 내용과 조건을 보면 3가지의 경우에 한해</description>
     </item>
     
     <item>
@@ -87,7 +87,7 @@
       <pubDate>Wed, 05 Feb 2020 17:37:55 +0900</pubDate>
       
       <guid>https://chlalstjd430.github.io/2020/02/%EB%B0%B1%EC%A4%801931/</guid>
-      <description>백준 문제 바로가기 사용 언어 C++ 적용 알고리즘 그리디 알고리즘 정렬 주의사항 처음 문제 풀 때 재귀를 통해 풀었으나 시간초과가 날 뿐더러 답도 틀렸었다.. 답은 왜 틀렸는</description>
+      <description>C++ 적용 알고리즘 그리디 알고리즘 정렬 주의사항 처음 문제 풀 때 재귀를 통해 풀었으나 시간초과가 날 뿐더러 답도 틀렸었다.. 답은 왜 틀렸는지 의문이다. 문제풀이 해당</description>
     </item>
     
     <item>
@@ -123,7 +123,7 @@
       <pubDate>Tue, 04 Feb 2020 16:25:20 +0900</pubDate>
       
       <guid>https://chlalstjd430.github.io/2020/02/%EB%B0%B1%EC%A4%802529/</guid>
-      <description>백준 문제 바로가기 사용 언어 C++ 적용 알고리즘 그리디 알고리즘 문제풀이 다음과 같은 과정을 거쳐 문제를 풀었습니다. 재귀를 통해 순열을 구한다. 해당 순열이 부등호를</description>
+      <description>C++ 적용 알고리즘 그리디 알고리즘 문제풀이 다음과 같은 과정을 거쳐 문제를 풀었습니다. 재귀를 통해 순열을 구한다. 해당 순열이 부등호를 충족시키는지 검사한다. (</description>
     </item>
     
     <item>
@@ -159,7 +159,7 @@
       <pubDate>Sun, 02 Feb 2020 23:07:51 +0900</pubDate>
       
       <guid>https://chlalstjd430.github.io/2020/02/%EB%B0%B1%EC%A4%801786/</guid>
-      <description>백준 문제 바로가기 사용 언어 C++ 적용 알고리즘 KMP 알고리즘 문제풀이 문제에서는 것은 단순 문자열 비교 알고리즘이 아니라 KMP나 라빈 카프 같은 효율적인 알고리즘을 요</description>
+      <description>C++ 적용 알고리즘 KMP 알고리즘 문제풀이 문제에서는 것은 단순 문자열 비교 알고리즘이 아니라 KMP나 라빈 카프 같은 효율적인 알고리즘을 요구합니다. 그러므로 저는 KMP</description>
     </item>
     
     <item>

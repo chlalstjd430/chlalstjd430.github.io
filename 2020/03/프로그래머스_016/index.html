@@ -24,11 +24,11 @@
   
   
   <meta name="description" content="문제링크 사용언어 c&#43;&#43; 주의사항 행의 개수 N : 100,000 이하의 자연수 열의 개수는 4개이고, 땅(land)은 2차원 배열로 주어집니다. 점수 : 100 이하의 자연수 문제풀이" />
-  <meta name="generator" content="Hugo 0.59.1 with theme pure" />
+  <meta name="generator" content="Hugo 0.73.0 with theme pure" />
   <title>프로그래머스 - 땅따먹기 - cmstown</title>
   
   
-  <link rel="stylesheet" href="https://chlalstjd430.github.io/css/style.min.55864f426c18be60c2e40c404f3e9db45a40a6a7ce220999b3a5da16cb66840d.css">
+  <link rel="stylesheet" href="https://chlalstjd430.github.io/css/style.min.9aaa883ebea87c2fd2d087c069cb2736c5f6cb2d52460262cad27bb9f932afc8.css">
   
   <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
@@ -40,16 +40,13 @@
 <meta property="article:modified_time" content="2020-03-05T15:23:47+09:00" />
 <meta itemprop="name" content="프로그래머스 - 땅따먹기">
 <meta itemprop="description" content="문제링크 사용언어 c&#43;&#43; 주의사항 행의 개수 N : 100,000 이하의 자연수 열의 개수는 4개이고, 땅(land)은 2차원 배열로 주어집니다. 점수 : 100 이하의 자연수 문제풀이">
-
-
 <meta itemprop="datePublished" content="2020-03-05T15:23:47&#43;09:00" />
 <meta itemprop="dateModified" content="2020-03-05T15:23:47&#43;09:00" />
 <meta itemprop="wordCount" content="379">
 
 
 
-<meta itemprop="keywords" content="" />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="프로그래머스 - 땅따먹기"/>
 <meta name="twitter:description" content="문제링크 사용언어 c&#43;&#43; 주의사항 행의 개수 N : 100,000 이하의 자연수 열의 개수는 4개이고, 땅(land)은 2차원 배열로 주어집니다. 점수 : 100 이하의 자연수 문제풀이"/>
 
@@ -148,7 +145,7 @@
     <h3 class="widget-title">Board</h3>
     <div class="widget-body">
         <div id="board">
-            <div class="content"><p>cms3136@gmail.com</p><p>- 숭실대학교 글로벌미디어학부</p><p>- Lectopia s/w expert course 17기</p><p>- YOURSSU 백엔드 개발자</p><p>- YAPP 16기</p>
+            <div class="content"><p>cms3136@gmail.com</p><p>- 숭실대학교 글로벌미디어학부</p><p>- Lectopia s/w expert course 17기</p><p>- YOURSSU 백엔드 개발자</p><p>- YAPP 16기</p><p>- NEXTERS 17기</p>
             </div>
         </div>
     </div>
@@ -355,46 +352,40 @@
       </div>
     </div>
     <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
-      
-
-<h3 id="문제링크-https-programmers-co-kr-learn-courses-30-lessons-12913"><a href="https://programmers.co.kr/learn/courses/30/lessons/12913">문제링크</a></h3>
-
-<p><br><br></p>
-
+      <h3 id="문제링크httpsprogrammerscokrlearncourses30lessons12913"><a href="https://programmers.co.kr/learn/courses/30/lessons/12913">문제링크</a></h3>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
 <h3 id="사용언어">사용언어</h3>
-
 <ul>
 <li>c++</li>
 </ul>
-
-<p><br><br></p>
-
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
 <h3 id="주의사항">주의사항</h3>
-
 <ul>
-<li><p>행의 개수 N : 100,000 이하의 자연수</p></li>
-
-<li><p>열의 개수는 4개이고, 땅(land)은 2차원 배열로 주어집니다.</p></li>
-
-<li><p>점수 : 100 이하의 자연수</p></li>
+<li>
+<p>행의 개수 N : 100,000 이하의 자연수</p>
+</li>
+<li>
+<p>열의 개수는 4개이고, 땅(land)은 2차원 배열로 주어집니다.</p>
+</li>
+<li>
+<p>점수 : 100 이하의 자연수</p>
+</li>
 </ul>
-
-<p><br><br></p>
-
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
 <h3 id="문제풀이">문제풀이</h3>
-
 <p>처음 문제를 풀 때는 재귀로 문제에 접그하였더니 예제는 통과하였지만, 실행을 하니 모두 실패가 나왔다. 그래서 DP로 접근하여 문제를 풀기로 했다. 문제 풀이 과정은 다음과 같다.</p>
-
 <ol>
-<li><p>행의 두번째 줄부터 열을 차례대로 검사한다.</p></li>
-
-<li><p>해당칸은 이전 행에서 열이 같잊않은 칸들 중 가장 큰수를 더한값이 된다. 즉, n = n + max(n-1)(열이 같지 않은 칸 중 가장 큰 값) 이라는 점화식이 이용된다.</p></li>
-
-<li><p>마지막 행까지 검사가 끝나면 마지막 행에서 가장 큰 값을 찾아 답을 구한다.</p></li>
+<li>
+<p>행의 두번째 줄부터 열을 차례대로 검사한다.</p>
+</li>
+<li>
+<p>해당칸은 이전 행에서 열이 같잊않은 칸들 중 가장 큰수를 더한값이 된다. 즉, n = n + max(n-1)(열이 같지 않은 칸 중 가장 큰 값) 이라는 점화식이 이용된다.</p>
+</li>
+<li>
+<p>마지막 행까지 검사가 끝나면 마지막 행에서 가장 큰 값을 찾아 답을 구한다.</p>
+</li>
 </ol>
-
 <p>이를 코드로 표현하면 다음과 같습니다.</p>
-
 <pre><code class="language-c++">#include &lt;iostream&gt;
 #include &lt;vector&gt;
 #include &lt;algorithm&gt;
@@ -576,15 +567,17 @@ int solution(vector&lt;vector&lt;int&gt; &gt; land)
     });
 </script>
 
-
-<script>
-(function() { 
-var d = document, s = d.createElement('script');
-s.src = 'https://' + 'https-chlalstjd430-github-io' + '.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
+<script defer>
+    var disqus_config = function () {
+        this.page.url = 'https:\/\/chlalstjd430.github.io\/2020\/03\/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_016\/';
+        this.page.identifier = 'https-chlalstjd430-github-io';
+    };
+    (function () {
+        var d = document, s = d.createElement('script');
+        s.src = '//' + 'https-chlalstjd430-github-io' + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
 </script>
-
   </body>
 </html>

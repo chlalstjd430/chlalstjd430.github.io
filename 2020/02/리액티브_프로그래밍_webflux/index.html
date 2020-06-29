@@ -24,11 +24,11 @@
   
   
   <meta name="description" content="Spring Webflux 최근 교내 커뮤니티 동아리 유어슈에서 Spring Webflux를 이용하여 프로젝트를 하였다. 사실 기존 동아리 스펙이 webflux로 정해져서 어쩔수 없이 새로운" />
-  <meta name="generator" content="Hugo 0.59.1 with theme pure" />
+  <meta name="generator" content="Hugo 0.73.0 with theme pure" />
   <title>리액티브 - cmstown</title>
   
   
-  <link rel="stylesheet" href="https://chlalstjd430.github.io/css/style.min.55864f426c18be60c2e40c404f3e9db45a40a6a7ce220999b3a5da16cb66840d.css">
+  <link rel="stylesheet" href="https://chlalstjd430.github.io/css/style.min.9aaa883ebea87c2fd2d087c069cb2736c5f6cb2d52460262cad27bb9f932afc8.css">
   
   <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
@@ -40,16 +40,13 @@
 <meta property="article:modified_time" content="2020-02-06T17:44:27+09:00" />
 <meta itemprop="name" content="리액티브">
 <meta itemprop="description" content="Spring Webflux 최근 교내 커뮤니티 동아리 유어슈에서 Spring Webflux를 이용하여 프로젝트를 하였다. 사실 기존 동아리 스펙이 webflux로 정해져서 어쩔수 없이 새로운">
-
-
 <meta itemprop="datePublished" content="2020-02-06T17:44:27&#43;09:00" />
 <meta itemprop="dateModified" content="2020-02-06T17:44:27&#43;09:00" />
 <meta itemprop="wordCount" content="861">
 
 
 
-<meta itemprop="keywords" content="spring webflux," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="spring webflux," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="리액티브"/>
 <meta name="twitter:description" content="Spring Webflux 최근 교내 커뮤니티 동아리 유어슈에서 Spring Webflux를 이용하여 프로젝트를 하였다. 사실 기존 동아리 스펙이 webflux로 정해져서 어쩔수 없이 새로운"/>
 
@@ -148,7 +145,7 @@
     <h3 class="widget-title">Board</h3>
     <div class="widget-body">
         <div id="board">
-            <div class="content"><p>cms3136@gmail.com</p><p>- 숭실대학교 글로벌미디어학부</p><p>- Lectopia s/w expert course 17기</p><p>- YOURSSU 백엔드 개발자</p><p>- YAPP 16기</p>
+            <div class="content"><p>cms3136@gmail.com</p><p>- 숭실대학교 글로벌미디어학부</p><p>- Lectopia s/w expert course 17기</p><p>- YOURSSU 백엔드 개발자</p><p>- YAPP 16기</p><p>- NEXTERS 17기</p>
             </div>
         </div>
     </div>
@@ -359,136 +356,119 @@
       </div>
     </div>
     <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
-      
-
-<h1 id="spring-webflux">Spring Webflux</h1>
-
-<hr />
-
+      <h1 id="spring-webflux">Spring Webflux</h1>
+<hr>
 <p>최근 교내 커뮤니티 동아리 유어슈에서 Spring Webflux를 이용하여 프로젝트를 하였다. 사실 기존 동아리 스펙이 webflux로 정해져서 어쩔수 없이 새로운 프로젝트에 사용하여서 webflux가 왜 필요한지? 어떠한 장점이 있는지? 등 이해도가 부족하다는 생각이 들었다. 그래서 앞으로 webflux를 정리하고 reactive programming을 이해하하는 과정을 문서로 담아 정리하려고 한다.</p>
-
 <h4 id="연관된-나의-글">연관된 나의 글</h4>
-
 <ul>
 <li><a href="https://chlalstjd430.github.io/2020/01/%EB%A6%AC%EC%95%A1%ED%8B%B0%EB%B8%8C-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D_001/">리엑티브 프로그래밍이란?</a></li>
 </ul>
-
 <h3 id="spring-webflux란">Spring Webflux란?</h3>
-
 <p>reactive-stack 웹 프레임워크인 Spring Webflux는 Spring 5버전부터 추가되었다. Webflux는 non-blocking을 지향하고  Reactive Streams back pressure을 지원한다. 그리고 Sprinb MVC와 Spring Webflux는 같이 사용할 수 있다.</p>
-
-<p><img src="https://docs.spring.io/spring/docs/current/spring-framework-reference/images/spring-mvc-and-webflux-venn.png" alt="co-exist Spring5" /></p>
-
+<p><img src="https://docs.spring.io/spring/docs/current/spring-framework-reference/images/spring-mvc-and-webflux-venn.png" alt="co-exist Spring5"></p>
 <p><strong>Spring 웹 요청을 처리하는 방식</strong></p>
-
 <ol>
-<li><p>요청 매핑</p>
-
+<li>요청 매핑</li>
+</ol>
 <ul>
-<li><p>웹 요청을 어느 핸들러에게 보낼지 결정</p></li>
-
-<li><p>URL, 헤더</p></li>
-
-<li><p>@RequestMapping</p></li>
-</ul></li>
-
-<li><p>요청 바인딩</p>
-
+<li>
+<p>웹 요청을 어느 핸들러에게 보낼지 결정</p>
+</li>
+<li>
+<p>URL, 헤더</p>
+</li>
+<li>
+<p>@RequestMapping</p>
+</li>
+</ul>
+<ol start="2">
+<li>요청 바인딩</li>
+</ol>
 <ul>
-<li><p>핸들러에 전달할 웹 요청 준비</p></li>
-
-<li><p>웹 URL, 헤더, 쿠키, 바디 등</p></li>
-</ul></li>
-
-<li><p>핸들러(controller) 실행</p>
-
+<li>
+<p>핸들러에 전달할 웹 요청 준비</p>
+</li>
+<li>
+<p>웹 URL, 헤더, 쿠키, 바디 등</p>
+</li>
+</ul>
+<ol start="3">
+<li>핸들러(controller) 실행</li>
+</ol>
 <ul>
 <li>전달 받은 요청 정보를 이용해 로직을 수행하고 결과를 리턴</li>
-</ul></li>
-
-<li><p>핸들러 결과 처리(응답 생성)</p>
-
-<ul>
-<li><p>핸들러의 리턴 값으로 웹 응답 생성</p>
-
-<pre><code class="language-java">@RestController
-public class MyController {
-@GetMapping(&quot;/hello/{name}&quot;) // 1. 요청 매핑
-String hello(@PathVariable String name){ // 2. 요청 바인딩
-return &quot;Hello! &quot; + name; // 3,4. 해들러 실행 후 결과 처리
-}
-}
-</code></pre></li>
-</ul></li>
-</ol>
-
-<p><strong>함수형 WebFlux가 웹 요청을 처리하는 방식</strong></p>
-
-<ol>
-<li><p>요청 매핑</p>
-
-<ul>
-<li>RouterFunction</li>
-</ul></li>
-
-<li><p>요청 바인딩</p></li>
-</ol>
-
-<p>-HandlerFUnction</p>
-
-<ol>
-<li>핸들러 실행</li>
-</ol>
-
-<p>-HandlerFUnction</p>
-
-<ol>
+</ul>
+<ol start="4">
 <li>핸들러 결과 처리(응답 생성)</li>
 </ol>
-
-<p>-HandlerFUnction</p>
-
-<h3 id="spring-webflux를-사용하는-이유">spring webflux를 사용하는 이유</h3>
-
 <ul>
-<li><p>비동기-논블럭킹 리엑티브 개발에 사용</p></li>
-
-<li><p>효율적으로 등장하는 고성능 웹 애플리케이션 개발</p></li>
-
-<li><p>서비스간 호출이 많은 마이크로서비스 아키텍처에 적합</p></li>
-
-<li><p><del>새로운 방식으로 개발해보고 싶은 호기심 충족</del></p>
-
+<li>핸들러의 리턴 값으로 웹 응답 생성</li>
+</ul>
+<pre><code class="language-java">@RestController
+public class MyController {
+  @GetMapping(&quot;/hello/{name}&quot;) // 1. 요청 매핑
+  String hello(@PathVariable String name){ // 2. 요청 바인딩
+    return &quot;Hello! &quot; + name; // 3,4. 해들러 실행 후 결과 처리
+  }
+}
+</code></pre>
+<p><strong>함수형 WebFlux가 웹 요청을 처리하는 방식</strong></p>
+<ol>
+<li>요청 매핑</li>
+</ol>
+<ul>
+<li>RouterFunction</li>
+</ul>
+<ol start="2">
+<li>요청 바인딩</li>
+</ol>
+<p>-HandlerFUnction</p>
+<ol start="3">
+<li>핸들러 실행</li>
+</ol>
+<p>-HandlerFUnction</p>
+<ol start="4">
+<li>핸들러 결과 처리(응답 생성)</li>
+</ol>
+<p>-HandlerFUnction</p>
+<h3 id="spring-webflux를-사용하는-이유">spring webflux를 사용하는 이유</h3>
+<ul>
+<li>
+<p>비동기-논블럭킹 리엑티브 개발에 사용</p>
+</li>
+<li>
+<p>효율적으로 등장하는 고성능 웹 애플리케이션 개발</p>
+</li>
+<li>
+<p>서비스간 호출이 많은 마이크로서비스 아키텍처에 적합</p>
+</li>
+<li>
+<p><del>새로운 방식으로 개발해보고 싶은 호기심 충족</del></p>
 <ul>
 <li>발표자 토비님께서는 이를 권장하지 않는다 하셨다.</li>
-</ul></li>
-
-<li><p>thread pool hell 발생을 저하</p>
-
+</ul>
+</li>
+<li>
+<p>thread pool hell 발생을 저하</p>
 <ul>
 <li>일반적으로 spring은 멀티 스레드 기반으로 동작하고, 만약 blocking IO로 진행된다면 준비된 스레드보다 더 많은 요청이 들어올 경우 thread pool hell이 발생합니다. 하지만 webflux를 사용할 경우 비동기 non-blocking IO로 서버의 코어 갯수만큼 스레드가 할당되어 사용되기 때문에, thread pool hell이 발생을 줄일 수 있습니다.</li>
-</ul></li>
-
-<li><p>검증된 JVM과 방대한 자바 생태계를 이용할 수 있는 장점이 있습니다.</p></li>
 </ul>
-
+</li>
+<li>
+<p>검증된 JVM과 방대한 자바 생태계를 이용할 수 있는 장점이 있습니다.</p>
+</li>
+</ul>
 <h4 id="webflux-작동원리">webflux 작동원리</h4>
-
-<h4 id="지원-웹-서버-컨테이너">지원 웹 서버/컨테이너</h4>
-
+<h4 id="지원-웹-서버컨테이너">지원 웹 서버/컨테이너</h4>
 <ul>
 <li>Sel</li>
 </ul>
-
-<p><br><br><br><br><br></p>
-
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
 <p>참고자료</p>
-
 <ul>
-<li><p><a href="https://www.youtube.com/watch?v=2E_1yb8iLKk&amp;t=536s">스프링캠프 강의 - 토비</a></p>
-
-<h1 id="20-02-07-아직-작성이-완료되지-않은-문서입니다-d">20.02.07 아직 작성이 완료되지 않은 문서입니다 :D</h1></li>
+<li><a href="https://www.youtube.com/watch?v=2E_1yb8iLKk&amp;t=536s">스프링캠프 강의 - 토비</a></li>
 </ul>
+<h1 id="200207-아직-작성이-완료되지-않은-문서입니다-d">20.02.07 아직 작성이 완료되지 않은 문서입니다 :D</h1>
 
     </div>
     <div class="article-footer">
@@ -633,15 +613,17 @@ return &quot;Hello! &quot; + name; // 3,4. 해들러 실행 후 결과 처리
     });
 </script>
 
-
-<script>
-(function() { 
-var d = document, s = d.createElement('script');
-s.src = 'https://' + 'https-chlalstjd430-github-io' + '.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
+<script defer>
+    var disqus_config = function () {
+        this.page.url = 'https:\/\/chlalstjd430.github.io\/2020\/02\/%EB%A6%AC%EC%95%A1%ED%8B%B0%EB%B8%8C_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D_webflux\/';
+        this.page.identifier = 'https-chlalstjd430-github-io';
+    };
+    (function () {
+        var d = document, s = d.createElement('script');
+        s.src = '//' + 'https-chlalstjd430-github-io' + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
 </script>
-
   </body>
 </html>

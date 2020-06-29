@@ -24,11 +24,11 @@
   
   
   <meta name="description" content="Chapter 07 - 에러 핸들링 1. 리턴 코드 대신에 Exception을 사용하자! 기존에 flag를 이용하여 에러 코드를 리턴하거나 호출하는 측에서 예외처리를 하였다. 이" />
-  <meta name="generator" content="Hugo 0.59.1 with theme pure" />
+  <meta name="generator" content="Hugo 0.73.0 with theme pure" />
   <title>Chapter 07 - 에러 핸들링 - cmstown</title>
   
   
-  <link rel="stylesheet" href="https://chlalstjd430.github.io/css/style.min.55864f426c18be60c2e40c404f3e9db45a40a6a7ce220999b3a5da16cb66840d.css">
+  <link rel="stylesheet" href="https://chlalstjd430.github.io/css/style.min.9aaa883ebea87c2fd2d087c069cb2736c5f6cb2d52460262cad27bb9f932afc8.css">
   
   <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
@@ -40,16 +40,13 @@
 <meta property="article:modified_time" content="2020-02-04T19:26:07+09:00" />
 <meta itemprop="name" content="Chapter 07 - 에러 핸들링">
 <meta itemprop="description" content="Chapter 07 - 에러 핸들링 1. 리턴 코드 대신에 Exception을 사용하자! 기존에 flag를 이용하여 에러 코드를 리턴하거나 호출하는 측에서 예외처리를 하였다. 이">
-
-
 <meta itemprop="datePublished" content="2020-02-04T19:26:07&#43;09:00" />
 <meta itemprop="dateModified" content="2020-02-04T19:26:07&#43;09:00" />
-<meta itemprop="wordCount" content="970">
+<meta itemprop="wordCount" content="969">
 
 
 
-<meta itemprop="keywords" content="클린코드," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="클린코드," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Chapter 07 - 에러 핸들링"/>
 <meta name="twitter:description" content="Chapter 07 - 에러 핸들링 1. 리턴 코드 대신에 Exception을 사용하자! 기존에 flag를 이용하여 에러 코드를 리턴하거나 호출하는 측에서 예외처리를 하였다. 이"/>
 
@@ -148,7 +145,7 @@
     <h3 class="widget-title">Board</h3>
     <div class="widget-body">
         <div id="board">
-            <div class="content"><p>cms3136@gmail.com</p><p>- 숭실대학교 글로벌미디어학부</p><p>- Lectopia s/w expert course 17기</p><p>- YOURSSU 백엔드 개발자</p><p>- YAPP 16기</p>
+            <div class="content"><p>cms3136@gmail.com</p><p>- 숭실대학교 글로벌미디어학부</p><p>- Lectopia s/w expert course 17기</p><p>- YOURSSU 백엔드 개발자</p><p>- YAPP 16기</p><p>- NEXTERS 17기</p>
             </div>
         </div>
     </div>
@@ -354,27 +351,18 @@
 
         <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/2020/02/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C_007/#comments"
             class="article-comment-link">Comments</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 970words</span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 969words</span>
 		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 2minutes </span>
       </div>
     </div>
     <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
-      
-
-<h1 id="chapter-07-에러-핸들링">Chapter 07 - 에러 핸들링</h1>
-
-<hr />
-
-<p><br><br><br></p>
-
+      <h1 id="chapter-07---에러-핸들링">Chapter 07 - 에러 핸들링</h1>
+<hr>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
 <h3 id="1-리턴-코드-대신에-exception을-사용하자">1. 리턴 코드 대신에 Exception을 사용하자!</h3>
-
-<hr />
-
+<hr>
 <p>기존에 flag를 이용하여 에러 코드를 리턴하거나 호출하는 측에서 예외처리를 하였다. 이런 방식은 예외처리를 잊어버리기 쉽고 로직을 헷갈리게 한다.</p>
-
-<p><br><br></p>
-
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
 <pre><code class="language-java">// Bad
 public class DeviceController {
   ...
@@ -426,139 +414,127 @@ public class DeviceController {
   ...
 }
 </code></pre>
-
-<p><br><br></p>
-
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
 <h3 id="2-try-catch-finally문을-먼저-쓰자">2. Try-Catch-Finally문을 먼저 쓰자</h3>
-
-<hr />
-
+<hr>
 <ul>
-<li><p>이로써 &ldquo;Scrope 정의&rdquo;가 가능하다.</p></li>
-
-<li><p>▽ 잘못된 input을 넣을 경우 StorageException을 제대로 던지는지 확인하는 테스트 코드</p>
-
-<pre><code class="language-java">// Step 1: StorageException을 던지지 않으므로 이 테스트는 실패한다.
-
-@Test(expected = StorageException.class)
-public void retrieveSectionShouldThrowOnInvalidFileName() {
-sectionStore.retrieveSection(&quot;invalid - file&quot;);
-}
-
-public List&lt;RecordedGrip&gt; retrieveSection(String sectionName) {
-// dummy return until we have a real implementation
-return new ArrayList&lt;RecordedGrip&gt;();
-}
-// Step 2: 이제 테스트는 통과한다.
-public List&lt;RecordedGrip&gt; retrieveSection(String sectionName) {
-try {
-  FileInputStream stream = new FileInputStream(sectionName)
-} catch (Exception e) {
-  throw new StorageException(&quot;retrieval error&quot;, e);
-}
-return new ArrayList&lt;RecordedGrip&gt;();
-}
-// Step 3: Exception의 범위를 FileNotFoundException으로 줄여 정확히 어떤 Exception이 발생한지 체크하자.
-public List&lt;RecordedGrip&gt; retrieveSection(String sectionName) {
-try {
-  FileInputStream stream = new FileInputStream(sectionName);
-  stream.close();
-} catch (FileNotFoundException e) {
-  throw new StorageException(&quot;retrieval error&quot;, e);
-}
-return new ArrayList&lt;RecordedGrip&gt;();
-}
-</code></pre></li>
+<li>
+<p>이로써 &ldquo;Scrope 정의&quot;가 가능하다.</p>
+</li>
+<li>
+<p>▽ 잘못된 input을 넣을 경우 StorageException을 제대로 던지는지 확인하는 테스트 코드</p>
+</li>
 </ul>
+<pre><code class="language-java">  // Step 1: StorageException을 던지지 않으므로 이 테스트는 실패한다.
 
-<p><br><br></p>
+  @Test(expected = StorageException.class)
+  public void retrieveSectionShouldThrowOnInvalidFileName() {
+    sectionStore.retrieveSection(&quot;invalid - file&quot;);
+  }
 
+  public List&lt;RecordedGrip&gt; retrieveSection(String sectionName) {
+    // dummy return until we have a real implementation
+    return new ArrayList&lt;RecordedGrip&gt;();
+  }
+  // Step 2: 이제 테스트는 통과한다.
+  public List&lt;RecordedGrip&gt; retrieveSection(String sectionName) {
+    try {
+      FileInputStream stream = new FileInputStream(sectionName)
+    } catch (Exception e) {
+      throw new StorageException(&quot;retrieval error&quot;, e);
+    }
+  return new ArrayList&lt;RecordedGrip&gt;();
+}
+  // Step 3: Exception의 범위를 FileNotFoundException으로 줄여 정확히 어떤 Exception이 발생한지 체크하자.
+  public List&lt;RecordedGrip&gt; retrieveSection(String sectionName) {
+    try {
+      FileInputStream stream = new FileInputStream(sectionName);
+      stream.close();
+    } catch (FileNotFoundException e) {
+      throw new StorageException(&quot;retrieval error&quot;, e);
+    }
+    return new ArrayList&lt;RecordedGrip&gt;();
+  }
+</code></pre>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
 <h3 id="3-unchecked-exception을-사용하자">3. Unchecked Exception을 사용하자</h3>
-
-<hr />
-
+<hr>
 <ul>
-<li><p>Unchecked Exception과 Checked Exception에 대하여 설명을 잘해준 <a href="https://close852.tistory.com/47">블로그</a></p></li>
-
-<li><p>상위 레벨 메소드에서 하위 레벨 메소드의 디테일에 대해 알아야 하기 때문에 캡슐화 또한 깨진다.</p></li>
+<li>
+<p>Unchecked Exception과 Checked Exception에 대하여 설명을 잘해준 <a href="https://close852.tistory.com/47">블로그</a></p>
+</li>
+<li>
+<p>상위 레벨 메소드에서 하위 레벨 메소드의 디테일에 대해 알아야 하기 때문에 캡슐화 또한 깨진다.</p>
+</li>
 </ul>
-
-<p><br><br></p>
-
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
 <h3 id="4-exceptions로-문맥을-제공하자">4. Exceptions로 문맥을 제공하자</h3>
-
-<hr />
-
+<hr>
 <ul>
-<li><p>예외가 발생한 이유와 좀 더 구체적인 Exception 타입을 제공하자.</p></li>
-
-<li><p>catch문의 내용이 비슷하다면 하나로 묶어서 사용하자.</p></li>
+<li>
+<p>예외가 발생한 이유와 좀 더 구체적인 Exception 타입을 제공하자.</p>
+</li>
+<li>
+<p>catch문의 내용이 비슷하다면 하나로 묶어서 사용하자.</p>
+</li>
 </ul>
-
-<p><br><br></p>
-
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
 <h3 id="5-null을-리턴하지-말자">5. NULL을 리턴하지 말자</h3>
-
-<hr />
-
+<hr>
 <ul>
-<li><p>null을 리턴하고 싶은 생각이 들면 Special Case object를 리턴하자.</p>
-
+<li>
+<p>null을 리턴하고 싶은 생각이 들면 Special Case object를 리턴하자.</p>
 <ul>
 <li><a href="https://johngrib.github.io/wiki/null-object-pattern/">Null Object Patter</a></li>
-</ul></li>
-
-<li><p><a href="https://tuhbm.github.io/2018/01/26/thirdParty/">서드파트 라이브러리</a> 에서 null을 리턴할 가능성이 있다면 Exception을 던지거나 Special Case object를 리턴하자.</p>
-
+</ul>
+</li>
+<li>
+<p><a href="https://tuhbm.github.io/2018/01/26/thirdParty/">서드파트 라이브러리</a> 에서 null을 리턴할 가능성이 있다면 Exception을 던지거나 Special Case object를 리턴하자.</p>
+</li>
+</ul>
 <pre><code class="language-java">// Bad
-List&lt;Employee&gt; employees = getEmployees();
-if (employees != null) {
-for(Employee e : employees) {
-  totalPay += e.getPay();
-}
-}
-// Good
-List&lt;Employee&gt; employees = getEmployees();
-for(Employee e : employees) {
-totalPay += e.getPay();
-}
+  List&lt;Employee&gt; employees = getEmployees();
+  if (employees != null) {
+    for(Employee e : employees) {
+      totalPay += e.getPay();
+    }
+  }
+  // Good
+  List&lt;Employee&gt; employees = getEmployees();
+  for(Employee e : employees) {
+    totalPay += e.getPay();
+  }
 
-public List&lt;Employee&gt; getEmployees() {
-if( .. there are no employees .. )
-  return Collections.emptyList();
+  public List&lt;Employee&gt; getEmployees() {
+    if( .. there are no employees .. )
+      return Collections.emptyList();
+    }
 }
-}
-</code></pre></li>
-</ul>
-
-<p><br><br></p>
-
+</code></pre>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
 <h3 id="6-null을-넘기지-말자">6. NULL을 넘기지 말자</h3>
-
-<hr />
-
+<hr>
 <ul>
-<li><p>null을 메서드로 넘기는 것 또한 나쁘다</p></li>
-
-<li><p>가장 이성적인 해법은 null을 파라미터로 받지 못하게 하는 것이다.</p></li>
+<li>
+<p>null을 메서드로 넘기는 것 또한 나쁘다</p>
+</li>
+<li>
+<p>가장 이성적인 해법은 null을 파라미터로 받지 못하게 하는 것이다.</p>
+</li>
 </ul>
-
-<p><br><br></p>
-
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
 <h3 id="결론">결론</h3>
-
-<hr />
-
+<hr>
 <ul>
-<li><p>예외처리는 가급적 Exception을 통해 처리를 해주는 것이 코드를 간결하게 한다.</p></li>
-
-<li><p>null을 리턴하지도 넘기지도 말자.</p></li>
+<li>
+<p>예외처리는 가급적 Exception을 통해 처리를 해주는 것이 코드를 간결하게 한다.</p>
+</li>
+<li>
+<p>null을 리턴하지도 넘기지도 말자.</p>
+</li>
 </ul>
-
-<p><br><br><br><br><br></p>
-
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
 <p><a href="https://github.com/Yooii-Studios/Clean-Code">출저 : https://github.com/Yooii-Studios/Clean-Code</a></p>
-
 <p><a href="http://www.yes24.com/Product/Goods/11681152">출저 : Clean Code 클린 코드 : 애자일 소프트웨어 장인 정신</a></p>
 
     </div>
@@ -704,15 +680,17 @@ if( .. there are no employees .. )
     });
 </script>
 
-
-<script>
-(function() { 
-var d = document, s = d.createElement('script');
-s.src = 'https://' + 'https-chlalstjd430-github-io' + '.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
+<script defer>
+    var disqus_config = function () {
+        this.page.url = 'https:\/\/chlalstjd430.github.io\/2020\/02\/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C_007\/';
+        this.page.identifier = 'https-chlalstjd430-github-io';
+    };
+    (function () {
+        var d = document, s = d.createElement('script');
+        s.src = '//' + 'https-chlalstjd430-github-io' + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
 </script>
-
   </body>
 </html>

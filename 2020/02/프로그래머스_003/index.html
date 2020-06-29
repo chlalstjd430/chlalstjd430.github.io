@@ -24,11 +24,11 @@
   
   
   <meta name="description" content="문제링크 사용언어 c&#43;&#43; 주의사항 문자열은 제일 앞부터 정해진 길이만큼 잘라야 합니다. 문제풀이 문제풀이를 위해서 다음과 같은 과정을 거치게 됩니다. 문자열을 자를 단" />
-  <meta name="generator" content="Hugo 0.59.1 with theme pure" />
+  <meta name="generator" content="Hugo 0.73.0 with theme pure" />
   <title>프로그래머스 - 문자열 압축 - cmstown</title>
   
   
-  <link rel="stylesheet" href="https://chlalstjd430.github.io/css/style.min.55864f426c18be60c2e40c404f3e9db45a40a6a7ce220999b3a5da16cb66840d.css">
+  <link rel="stylesheet" href="https://chlalstjd430.github.io/css/style.min.9aaa883ebea87c2fd2d087c069cb2736c5f6cb2d52460262cad27bb9f932afc8.css">
   
   <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
@@ -40,16 +40,13 @@
 <meta property="article:modified_time" content="2020-02-04T18:49:01+09:00" />
 <meta itemprop="name" content="프로그래머스 - 문자열 압축">
 <meta itemprop="description" content="문제링크 사용언어 c&#43;&#43; 주의사항 문자열은 제일 앞부터 정해진 길이만큼 잘라야 합니다. 문제풀이 문제풀이를 위해서 다음과 같은 과정을 거치게 됩니다. 문자열을 자를 단">
-
-
 <meta itemprop="datePublished" content="2020-02-04T18:49:01&#43;09:00" />
 <meta itemprop="dateModified" content="2020-02-04T18:49:01&#43;09:00" />
-<meta itemprop="wordCount" content="410">
+<meta itemprop="wordCount" content="409">
 
 
 
-<meta itemprop="keywords" content="" />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="프로그래머스 - 문자열 압축"/>
 <meta name="twitter:description" content="문제링크 사용언어 c&#43;&#43; 주의사항 문자열은 제일 앞부터 정해진 길이만큼 잘라야 합니다. 문제풀이 문제풀이를 위해서 다음과 같은 과정을 거치게 됩니다. 문자열을 자를 단"/>
 
@@ -148,7 +145,7 @@
     <h3 class="widget-title">Board</h3>
     <div class="widget-body">
         <div id="board">
-            <div class="content"><p>cms3136@gmail.com</p><p>- 숭실대학교 글로벌미디어학부</p><p>- Lectopia s/w expert course 17기</p><p>- YOURSSU 백엔드 개발자</p><p>- YAPP 16기</p>
+            <div class="content"><p>cms3136@gmail.com</p><p>- 숭실대학교 글로벌미디어학부</p><p>- Lectopia s/w expert course 17기</p><p>- YOURSSU 백엔드 개발자</p><p>- YAPP 16기</p><p>- NEXTERS 17기</p>
             </div>
         </div>
     </div>
@@ -350,44 +347,38 @@
 
         <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/2020/02/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_003/#comments"
             class="article-comment-link">Comments</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 410words</span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 409words</span>
 		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 1minutes </span>
       </div>
     </div>
     <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
-      
-
-<h3 id="문제링크-https-programmers-co-kr-learn-courses-30-lessons-60057"><a href="https://programmers.co.kr/learn/courses/30/lessons/60057">문제링크</a></h3>
-
-<p><br><br></p>
-
+      <h3 id="문제링크httpsprogrammerscokrlearncourses30lessons60057"><a href="https://programmers.co.kr/learn/courses/30/lessons/60057">문제링크</a></h3>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
 <h3 id="사용언어">사용언어</h3>
-
 <ul>
 <li>c++</li>
 </ul>
-
 <h3 id="주의사항">주의사항</h3>
-
 <ul>
 <li>문자열은 제일 앞부터 정해진 길이만큼 잘라야 합니다.</li>
 </ul>
-
-<p><br><br></p>
-
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
 <h3 id="문제풀이">문제풀이</h3>
-
 <p>문제풀이를 위해서 다음과 같은 과정을 거치게 됩니다.</p>
-
 <ol>
-<li><p>문자열을 자를 단위는 <strong>&ldquo;1 ~ (문자열 길이/2)&rdquo;</strong> 입니다.</p></li>
-
-<li><p>문자열 단위별로 제공되는 문자열을 압축해봅니다.</p></li>
-
-<li><p><strong>&ldquo;문자열 총 길이 - (문자열 총 길이 / 문자열 자를 단위) * 문자열 자를 단위&rdquo;</strong> 만큼은 압축에 포함되지 않기 때문에 별도 추가합니다.</p></li>
-
-<li><p>이전에 가장 짧았던 문자열과 길이를 비교합니다.</p>
-
+<li>
+<p>문자열을 자를 단위는 <strong>&ldquo;1 ~ (문자열 길이/2)&quot;</strong> 입니다.</p>
+</li>
+<li>
+<p>문자열 단위별로 제공되는 문자열을 압축해봅니다.</p>
+</li>
+<li>
+<p><strong>&ldquo;문자열 총 길이 - (문자열 총 길이 / 문자열 자를 단위) * 문자열 자를 단위&rdquo;</strong> 만큼은 압축에 포함되지 않기 때문에 별도 추가합니다.</p>
+</li>
+<li>
+<p>이전에 가장 짧았던 문자열과 길이를 비교합니다.</p>
+</li>
+</ol>
 <pre><code class="language-c++">#include &lt;string&gt;
 #include &lt;vector&gt;
 #include &lt;algorithm&gt;
@@ -395,44 +386,43 @@
 using namespace std;
 
 int solution(string s) {
-int len = s.length();
-int answer = len;
+    int len = s.length();
+    int answer = len;
 
-// i = 문자열을 자를 단위
-for(int i = 1; i &lt;= (len/2); i++){
-    string result = &quot;&quot;;
-    string tmp = s.substr(0, i); // 처음 비교해야 될 문자열
-    int cnt = 1; // 압축이 없을 경우 1
+    // i = 문자열을 자를 단위
+    for(int i = 1; i &lt;= (len/2); i++){
+        string result = &quot;&quot;;
+        string tmp = s.substr(0, i); // 처음 비교해야 될 문자열
+        int cnt = 1; // 압축이 없을 경우 1
 
-    // 자를 문자열 단위만큼 이동하며 비교
-    for(int j = i; j &lt;= len; j+=i){
-      // 현재 압축이 있다면
-        if(tmp == s.substr(j, i)){
-            cnt++;
-        }
-        // 현재 압축이 없다면
-        else{
-          // 지금까지 압축이 없었을 경우
-            if(cnt == 1){
-                result += tmp;
+        // 자를 문자열 단위만큼 이동하며 비교
+        for(int j = i; j &lt;= len; j+=i){
+          // 현재 압축이 있다면
+            if(tmp == s.substr(j, i)){
+                cnt++;
             }
-            // 지금까지 압축이 있었을 경우
+            // 현재 압축이 없다면
             else{
-                result += (to_string(cnt) + tmp);
+              // 지금까지 압축이 없었을 경우
+                if(cnt == 1){
+                    result += tmp;
+                }
+                // 지금까지 압축이 있었을 경우
+                else{
+                    result += (to_string(cnt) + tmp);
+                }
+
+                tmp = s.substr(j, i);
+                cnt = 1;
             }
+        }      
 
-            tmp = s.substr(j, i);
-            cnt = 1;
-        }
-    }      
-
-    result += s.substr((len/i) * i); // 문자열을 자르는 단위에 포함 안되는 문자열 추가
-    answer = min(answer, (int)result.length());      
+        result += s.substr((len/i) * i); // 문자열을 자르는 단위에 포함 안되는 문자열 추가
+        answer = min(answer, (int)result.length());      
+    }
+    return answer;
 }
-return answer;
-}
-</code></pre></li>
-</ol>
+</code></pre>
 
     </div>
     <div class="article-footer">
@@ -577,15 +567,17 @@ return answer;
     });
 </script>
 
-
-<script>
-(function() { 
-var d = document, s = d.createElement('script');
-s.src = 'https://' + 'https-chlalstjd430-github-io' + '.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
+<script defer>
+    var disqus_config = function () {
+        this.page.url = 'https:\/\/chlalstjd430.github.io\/2020\/02\/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_003\/';
+        this.page.identifier = 'https-chlalstjd430-github-io';
+    };
+    (function () {
+        var d = document, s = d.createElement('script');
+        s.src = '//' + 'https-chlalstjd430-github-io' + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
 </script>
-
   </body>
 </html>

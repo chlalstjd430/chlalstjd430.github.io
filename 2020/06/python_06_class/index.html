@@ -24,11 +24,11 @@
   
   
   <meta name="description" content="[Python 기초] - 클래스 클래스의 개념 id() : 클래스에 의해 생성된 &amp;lsquo;객체&amp;rsquo;의 식별자를 반환하는 함수 &amp;lsquo;객체&amp;rsquo;는 &amp;" />
-  <meta name="generator" content="Hugo 0.59.1 with theme pure" />
+  <meta name="generator" content="Hugo 0.73.0 with theme pure" />
   <title>[Python 기초] - 클래스 - cmstown</title>
   
   
-  <link rel="stylesheet" href="https://chlalstjd430.github.io/css/style.min.55864f426c18be60c2e40c404f3e9db45a40a6a7ce220999b3a5da16cb66840d.css">
+  <link rel="stylesheet" href="https://chlalstjd430.github.io/css/style.min.9aaa883ebea87c2fd2d087c069cb2736c5f6cb2d52460262cad27bb9f932afc8.css">
   
   <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
@@ -40,16 +40,13 @@
 <meta property="article:modified_time" content="2020-06-23T15:02:09+09:00" />
 <meta itemprop="name" content="[Python 기초] - 클래스">
 <meta itemprop="description" content="[Python 기초] - 클래스 클래스의 개념 id() : 클래스에 의해 생성된 &lsquo;객체&rsquo;의 식별자를 반환하는 함수 &lsquo;객체&rsquo;는 &">
-
-
 <meta itemprop="datePublished" content="2020-06-23T15:02:09&#43;09:00" />
 <meta itemprop="dateModified" content="2020-06-23T15:02:09&#43;09:00" />
 <meta itemprop="wordCount" content="488">
 
 
 
-<meta itemprop="keywords" content="" />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="[Python 기초] - 클래스"/>
 <meta name="twitter:description" content="[Python 기초] - 클래스 클래스의 개념 id() : 클래스에 의해 생성된 &lsquo;객체&rsquo;의 식별자를 반환하는 함수 &lsquo;객체&rsquo;는 &"/>
 
@@ -148,7 +145,7 @@
     <h3 class="widget-title">Board</h3>
     <div class="widget-body">
         <div id="board">
-            <div class="content"><p>cms3136@gmail.com</p><p>- 숭실대학교 글로벌미디어학부</p><p>- Lectopia s/w expert course 17기</p><p>- YOURSSU 백엔드 개발자</p><p>- YAPP 16기</p>
+            <div class="content"><p>cms3136@gmail.com</p><p>- 숭실대학교 글로벌미디어학부</p><p>- Lectopia s/w expert course 17기</p><p>- YOURSSU 백엔드 개발자</p><p>- YAPP 16기</p><p>- NEXTERS 17기</p>
             </div>
         </div>
     </div>
@@ -355,19 +352,13 @@
       </div>
     </div>
     <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
-      
-
-<h1 id="python-기초-클래스">[Python 기초] - 클래스</h1>
-
+      <h1 id="python-기초---클래스">[Python 기초] - 클래스</h1>
 <h2 id="클래스의-개념">클래스의 개념</h2>
-
 <ul>
 <li>id() : 클래스에 의해 생성된 &lsquo;객체&rsquo;의 식별자를 반환하는 함수</li>
 <li>&lsquo;객체&rsquo;는 &lsquo;클래스&rsquo;에 의해 생성된 실체</li>
 </ul>
-
 <h3 id="클래스-생성-및-선언">클래스 생성 및 선언</h3>
-
 <pre><code class="language-python">class Car :
     # 속성(변수)
     count = 0 # 클래스 변수
@@ -403,21 +394,15 @@ car.upSpeed(30)
 
 print('%s의 현재 속도는 %d입니다.' %(car.getName(), car.getSpeed()))
 </code></pre>
-
 <pre><code>검정의 현재 속도는 0입니다.
 파랑의 현재 속도는 35입니다.
 </code></pre>
-
 <h2 id="클래스의-상속">클래스의 상속</h2>
-
 <h3 id="상속을-구현하는-문법">상속을 구현하는 문법</h3>
-
 <pre><code class="language-python">class SubClass(SuperClass) :
 	# ~~
 </code></pre>
-
 <h3 id="메서드-오버라이딩-구현-코드">메서드 오버라이딩 구현 코드</h3>
-
 <pre><code class="language-python">## 부모 클래스 ##
 class Car :
 	speed = 0
@@ -431,37 +416,32 @@ class Sedan(Car) :
 		if self.speed &gt; 150 :
 			self.speed = 150
 </code></pre>
-
 <h2 id="클래스-심화">클래스 심화</h2>
-
 <h3 id="클래스의-특별한-메소드">클래스의 특별한 메소드</h3>
-
 <ul>
 <li><strong>del</strong>() 메소드
-
 <ul>
 <li>소멸자, 생성자와 반대로 인스턴스 삭제할 때 자동 호출</li>
-</ul></li>
+</ul>
+</li>
 <li><strong>repr</strong>() 메소드
-
 <ul>
 <li>인스턴스를 print() 문으로 출력할 때 실행</li>
-</ul></li>
+</ul>
+</li>
 <li><strong>add</strong>() 메소드
-
 <ul>
 <li>인스턴스 사이에 덧셈 작업이 일어날 때 실행되는 메소드</li>
-</ul></li>
+</ul>
+</li>
 <li>비교 메소드
-
 <ul>
 <li><strong>lt</strong>(), <strong>le</strong>(), <strong>gt</strong>(), <strong>ge</strong>(), <strong>eq</strong>(), <strong>ne</strong>()</li>
 <li>순서대로 &lt;. &lt;=, &gt;. &gt;=, ==, !=</li>
-</ul></li>
 </ul>
-
+</li>
+</ul>
 <h3 id="추상-메소드">추상 메소드</h3>
-
 <pre><code class="language-python">class SuperClass :
 	def method(self) : #
 		raise NotImplementedError()
@@ -614,15 +594,17 @@ class SubClass(SuperClass) :
     });
 </script>
 
-
-<script>
-(function() { 
-var d = document, s = d.createElement('script');
-s.src = 'https://' + 'https-chlalstjd430-github-io' + '.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
+<script defer>
+    var disqus_config = function () {
+        this.page.url = 'https:\/\/chlalstjd430.github.io\/2020\/06\/python_06_class\/';
+        this.page.identifier = 'https-chlalstjd430-github-io';
+    };
+    (function () {
+        var d = document, s = d.createElement('script');
+        s.src = '//' + 'https-chlalstjd430-github-io' + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
 </script>
-
   </body>
 </html>
