@@ -5,10 +5,19 @@
     <link>https://chlalstjd430.github.io/categories/</link>
     <description>Recent content in Categories on cmstown</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 30 Jun 2020 23:46:11 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 01 Jul 2020 01:40:21 +0900</lastBuildDate>
     
         <atom:link href="https://chlalstjd430.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>알고리즘 특징정리</title>
+      <link>https://chlalstjd430.github.io/2020/02/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98_%ED%8A%B9%EC%A7%95%EC%A0%95%EB%A6%AC/</link>
+      <pubDate>Tue, 11 Feb 2020 13:24:01 +0900</pubDate>
+      
+      <guid>https://chlalstjd430.github.io/2020/02/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98_%ED%8A%B9%EC%A7%95%EC%A0%95%EB%A6%AC/</guid>
+      <description>알고리즘 문제를 풀면서 어떠한 문제를 풀 때 어떠한 알고리즘을 적용해야하는 특징이 보이는 경우가 있다. 그래서 그러한 특징들이 보일 떄 마다 정리하려고 한다. 알고리</description>
+    </item>
     
     <item>
       <title>프로그래머스 - 체육복</title>
@@ -179,15 +188,6 @@
       
       <guid>https://chlalstjd430.github.io/2020/01/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C_005/</guid>
       <description>Chapter 05 - 형식 맞추기 질서정연하고 깔끔하며, 일관적인 코드를 본다면 사람들에게 전문가가 짰다는 인상을 심어줄 수 있다. 반대로, 코드가 어수선해 보인다면 프로젝트</description>
-    </item>
-    
-    <item>
-      <title>백준 1948 - 임계경로</title>
-      <link>https://chlalstjd430.github.io/2020/01/%EB%B0%B1%EC%A4%801948/</link>
-      <pubDate>Thu, 30 Jan 2020 00:16:09 +0900</pubDate>
-      
-      <guid>https://chlalstjd430.github.io/2020/01/%EB%B0%B1%EC%A4%801948/</guid>
-      <description>백준 문제 바로가기 사용 언어 C++ 적용 알고리즘 위상 정렬 알고리즘 문제풀이 해당 문제에서 요구하는 것은 2가지이다. 1. 모든 사람들이 만나는 시간 2. 1분도 쉬지 않고 달</description>
     </item>
     
   </channel>
