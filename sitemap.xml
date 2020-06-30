@@ -3,6 +3,41 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://chlalstjd430.github.io/2020/06/spring_core_01/</loc>
+    <lastmod>2020-06-30T23:46:11+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://chlalstjd430.github.io/categories/</loc>
+    <lastmod>2020-06-30T23:46:11+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://chlalstjd430.github.io/</loc>
+    <lastmod>2020-06-30T23:46:11+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://chlalstjd430.github.io/posts/</loc>
+    <lastmod>2020-06-30T23:46:11+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://chlalstjd430.github.io/categories/%EC%8A%A4%ED%94%84%EB%A7%81/</loc>
+    <lastmod>2020-06-30T23:46:11+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://chlalstjd430.github.io/2020/06/gc/</loc>
     <lastmod>2020-06-24T18:44:55+09:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -10,28 +45,7 @@
   </url>
   
   <url>
-    <loc>https://chlalstjd430.github.io/categories/</loc>
-    <lastmod>2020-06-24T18:44:55+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://chlalstjd430.github.io/</loc>
-    <lastmod>2020-06-24T18:44:55+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://chlalstjd430.github.io/categories/java/</loc>
-    <lastmod>2020-06-24T18:44:55+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://chlalstjd430.github.io/posts/</loc>
     <lastmod>2020-06-24T18:44:55+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
