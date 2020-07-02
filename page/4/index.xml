@@ -5,10 +5,19 @@
     <link>https://chlalstjd430.github.io/</link>
     <description>Recent content on cmstown</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 02 Jul 2020 02:21:47 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 03 Jul 2020 02:49:29 +0900</lastBuildDate>
     
         <atom:link href="https://chlalstjd430.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>백준 1786 - 찾기</title>
+      <link>https://chlalstjd430.github.io/2020/02/%EB%B0%B1%EC%A4%801786/</link>
+      <pubDate>Sun, 02 Feb 2020 23:07:51 +0900</pubDate>
+      
+      <guid>https://chlalstjd430.github.io/2020/02/%EB%B0%B1%EC%A4%801786/</guid>
+      <description>C++ 적용 알고리즘 KMP 알고리즘 문제풀이 문제에서는 것은 단순 문자열 비교 알고리즘이 아니라 KMP나 라빈 카프 같은 효율적인 알고리즘을 요구합니다. 그러므로 저는 KMP</description>
+    </item>
     
     <item>
       <title>Chapter 05 - 형식 맞추기</title>
