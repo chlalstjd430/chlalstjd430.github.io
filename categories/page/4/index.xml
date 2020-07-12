@@ -5,10 +5,28 @@
     <link>https://chlalstjd430.github.io/categories/</link>
     <description>Recent content in Categories on cmstown</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 09 Jul 2020 19:10:24 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 12 Jul 2020 12:32:18 +0900</lastBuildDate>
     
         <atom:link href="https://chlalstjd430.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>백준 2529 - 부등호</title>
+      <link>https://chlalstjd430.github.io/2020/02/%EB%B0%B1%EC%A4%802529/</link>
+      <pubDate>Tue, 04 Feb 2020 16:25:20 +0900</pubDate>
+      
+      <guid>https://chlalstjd430.github.io/2020/02/%EB%B0%B1%EC%A4%802529/</guid>
+      <description>C++ 적용 알고리즘 그리디 알고리즘 문제풀이 다음과 같은 과정을 거쳐 문제를 풀었습니다. 재귀를 통해 순열을 구한다. 해당 순열이 부등호를 충족시키는지 검사한다. (</description>
+    </item>
+    
+    <item>
+      <title>Chapter 06 - 객체와 자료구조</title>
+      <link>https://chlalstjd430.github.io/2020/02/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C_006/</link>
+      <pubDate>Mon, 03 Feb 2020 18:43:57 +0900</pubDate>
+      
+      <guid>https://chlalstjd430.github.io/2020/02/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C_006/</guid>
+      <description>Chapter 06 - 객체와 자료구조 1. 자료 추상화 목록 6-1 구체적인 Point 클래스 public class Point { public double x; public double y; } 목록 6-2 추상적인 Point 클래스 public interface Point { double getX(); double getY(); void setCartesian(double x, double y); double getR(); double getTheta(); void setPolar(double r, double</description>
+    </item>
     
     <item>
       <title>프로그래머스 - 더 맵게</title>
@@ -170,24 +188,6 @@
       
       <guid>https://chlalstjd430.github.io/2020/01/2020%EA%B3%84%ED%9A%8D_001/</guid>
       <description>2020년 학업 계획 20-07-02 업데이트 1. IT동아리&amp;lt; YOURSSU 활동중(19.11.01~ ) YAPP 지원중(1.18 면접) 최종 합격(1.22) NEXTERS 최종 합격(6월)</description>
-    </item>
-    
-    <item>
-      <title>Reactive Programming이란?</title>
-      <link>https://chlalstjd430.github.io/2020/01/%EB%A6%AC%EC%95%A1%ED%8B%B0%EB%B8%8C_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D_reactive_programming/</link>
-      <pubDate>Sat, 11 Jan 2020 21:53:44 +0900</pubDate>
-      
-      <guid>https://chlalstjd430.github.io/2020/01/%EB%A6%AC%EC%95%A1%ED%8B%B0%EB%B8%8C_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D_reactive_programming/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>백준6497 - 전력난</title>
-      <link>https://chlalstjd430.github.io/2020/01/%EB%B0%B1%EC%A4%806497/</link>
-      <pubDate>Sat, 11 Jan 2020 21:43:42 +0900</pubDate>
-      
-      <guid>https://chlalstjd430.github.io/2020/01/%EB%B0%B1%EC%A4%806497/</guid>
-      <description></description>
     </item>
     
   </channel>
