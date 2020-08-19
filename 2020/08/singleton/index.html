@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>
-        프로그래머스 - 숫자 야구 - cmstown
+        Spring Singleton VS Java Singleton - cmstown
       </title>
     <head>
   <meta charset="utf-8">
@@ -23,32 +23,32 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <meta name="description" content="문제링크 사용언어 c&#43;&#43; 주의사항 숫자는 1~9까지만 존재한다 동일한 숫자는 없다 문제풀이 일단 문제에서 답이될 수는 123~987에서 0을 포함하거나, 동일한 숫" />
+  <meta name="description" content="Spring Singleton VS Java Singleton(스프링 싱글톤과 자바 싱글톤의 차이) 최근 프로젝트를 하던도중 싱글톤으로 구현해야하는 클래스가 생겼는데, Spring에서 s" />
   <meta name="generator" content="Hugo 0.73.0 with theme pure" />
-  <title>프로그래머스 - 숫자 야구 - cmstown</title>
+  <title>Spring Singleton VS Java Singleton - cmstown</title>
   
   
   <link rel="stylesheet" href="https://chlalstjd430.github.io/css/style.min.9aaa883ebea87c2fd2d087c069cb2736c5f6cb2d52460262cad27bb9f932afc8.css">
   
   <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
-  <meta property="og:title" content="프로그래머스 - 숫자 야구" />
-<meta property="og:description" content="문제링크 사용언어 c&#43;&#43; 주의사항 숫자는 1~9까지만 존재한다 동일한 숫자는 없다 문제풀이 일단 문제에서 답이될 수는 123~987에서 0을 포함하거나, 동일한 숫" />
+  <meta property="og:title" content="Spring Singleton VS Java Singleton" />
+<meta property="og:description" content="Spring Singleton VS Java Singleton(스프링 싱글톤과 자바 싱글톤의 차이) 최근 프로젝트를 하던도중 싱글톤으로 구현해야하는 클래스가 생겼는데, Spring에서 s" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://chlalstjd430.github.io/2020/02/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_011/" />
-<meta property="article:published_time" content="2020-02-26T21:53:38+09:00" />
-<meta property="article:modified_time" content="2020-02-26T21:53:38+09:00" />
-<meta itemprop="name" content="프로그래머스 - 숫자 야구">
-<meta itemprop="description" content="문제링크 사용언어 c&#43;&#43; 주의사항 숫자는 1~9까지만 존재한다 동일한 숫자는 없다 문제풀이 일단 문제에서 답이될 수는 123~987에서 0을 포함하거나, 동일한 숫">
-<meta itemprop="datePublished" content="2020-02-26T21:53:38&#43;09:00" />
-<meta itemprop="dateModified" content="2020-02-26T21:53:38&#43;09:00" />
-<meta itemprop="wordCount" content="354">
+<meta property="og:url" content="https://chlalstjd430.github.io/2020/08/singleton/" />
+<meta property="article:published_time" content="2020-08-19T13:51:32+09:00" />
+<meta property="article:modified_time" content="2020-08-19T13:51:32+09:00" />
+<meta itemprop="name" content="Spring Singleton VS Java Singleton">
+<meta itemprop="description" content="Spring Singleton VS Java Singleton(스프링 싱글톤과 자바 싱글톤의 차이) 최근 프로젝트를 하던도중 싱글톤으로 구현해야하는 클래스가 생겼는데, Spring에서 s">
+<meta itemprop="datePublished" content="2020-08-19T13:51:32&#43;09:00" />
+<meta itemprop="dateModified" content="2020-08-19T13:51:32&#43;09:00" />
+<meta itemprop="wordCount" content="182">
 
 
 
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="프로그래머스 - 숫자 야구"/>
-<meta name="twitter:description" content="문제링크 사용언어 c&#43;&#43; 주의사항 숫자는 1~9까지만 존재한다 동일한 숫자는 없다 문제풀이 일단 문제에서 답이될 수는 123~987에서 0을 포함하거나, 동일한 숫"/>
+<meta name="twitter:title" content="Spring Singleton VS Java Singleton"/>
+<meta name="twitter:description" content="Spring Singleton VS Java Singleton(스프링 싱글톤과 자바 싱글톤의 차이) 최근 프로젝트를 하던도중 싱글톤으로 구현해야하는 클래스가 생겼는데, Spring에서 s"/>
 
   <!--[if lte IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -328,8 +328,8 @@
       <h1 itemprop="name">
   <a
     class="article-title"
-    href="/2020/02/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_011/"
-    >프로그래머스 - 숫자 야구</a
+    href="/2020/08/singleton/"
+    >Spring Singleton VS Java Singleton</a
   >
 </h1>
 
@@ -337,85 +337,33 @@
         
 <span class="article-date">
   <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://chlalstjd430.github.io/2020/02/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_011/" class="article-date">
-  <time datetime="2020-02-26 21:53:38 &#43;0900 KST" itemprop="datePublished">2020-02-26</time>
+<a href="https://chlalstjd430.github.io/2020/08/singleton/" class="article-date">
+  <time datetime="2020-08-19 13:51:32 &#43;0900 KST" itemprop="datePublished">2020-08-19</time>
 </a>
 </span>
 <span class="article-category">
   <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4/"> 프로그래머스 문제풀이 </a>
+  <a class="article-category-link" href="/categories/%EC%8A%A4%ED%94%84%EB%A7%81/"> 스프링 </a>
 </span>
 
-        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/2020/02/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_011/#comments"
+        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/2020/08/singleton/#comments"
             class="article-comment-link">Comments</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 354words</span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 182words</span>
 		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 1minutes </span>
       </div>
     </div>
     <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
-      <h3 id="문제링크httpsprogrammerscokrlearncourses30lessons42841"><a href="https://programmers.co.kr/learn/courses/30/lessons/42841">문제링크</a></h3>
-<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
-<h3 id="사용언어">사용언어</h3>
-<ul>
-<li>c++</li>
-</ul>
-<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
-<h3 id="주의사항">주의사항</h3>
+      <h1 id="spring-singleton-vs-java-singleton스프링-싱글톤과-자바-싱글톤의-차이">Spring Singleton VS Java Singleton(스프링 싱글톤과 자바 싱글톤의 차이)</h1>
+<p>최근 프로젝트를 하던도중 싱글톤으로 구현해야하는 클래스가 생겼는데, Spring에서 singleton으로 구현하는 것(scope을 singleton으로 빈 등록)과 자바 싱글톤으로 구현하는 것에 어떠한 차이가 있을지 궁금해서 내용을 찾아보았다.</p>
+<h2 id="결론">결론</h2>
 <ul>
 <li>
-<p>숫자는 1~9까지만 존재한다</p>
+<p>스프링 싱글톤은 컨테이너 당 하나 생성된다.</p>
 </li>
 <li>
-<p>동일한 숫자는 없다</p>
+<p>자바 싱글톤은 클래스당 하나가 생성된다.</p>
 </li>
 </ul>
-<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
-<h3 id="문제풀이">문제풀이</h3>
-<p>일단 문제에서 답이될 수는 123~987에서 0을 포함하거나, 동일한 숫자가 있는 경우를 제외한 모든 숫자가 처음에 답이 될 수 있다. 이후 baceball에 담겨있는 숫자와 스트라이크,볼 정보를 통해 숫자들을 다 비교하며 답이 될 수 없는 수는 완전히 제외 하다보면 답이 될 수있는 수의 개수를 구할 수 있다.</p>
-<pre><code class="language-c++">#include &lt;string&gt;
-#include &lt;vector&gt;
-
-using namespace std;
-
-int solution(vector&lt;vector&lt;int&gt;&gt; baseball) {
-    int answer = 0;
-    int baseball_size = baseball.size();
-    vector&lt;string&gt; answers;
-
-    // 가능한 모든 경우의 수 추가
-    for(int i = 123; i &lt;= 987; i++){
-        string number = to_string(i);
-        // 숫자에 0이 들어가있거나 동일한 숫자가 들어있으면 추가X
-        if(number[1] == '0' || number[2] == '0' ||
-            number[0] == number[1] || number[1] == number[2] || number[0] == number[2]){
-            continue;
-        }
-        answers.push_back(number);
-    }
-    // baseball에 담긴
-    for(int i = 0; i &lt; baseball_size; i++){
-        string number = to_string(baseball[i][0]);
-        int answers_size = answers.size();
-        for(int j = answers.size() - 1; j &gt;= 0; j--){
-            int strike = 0;
-            int ball = 0;
-            string check = answers[j];
-            for(int k = 0; k &lt; 3; k++){
-                if(number[k] == check[k]){
-                    strike++;
-                }
-                if(number[k] == check[(k+1)%3] || number[k] == check[(k+2)%3]){
-                    ball++;
-                }      
-            }   
-            if(baseball[i][1] == strike &amp;&amp; baseball[i][2] == ball) continue;
-                answers.erase(answers.begin() + j);
-        }
-    }
-    answer = answers.size();
-    return answer;
-}
-</code></pre>
 
     </div>
     <div class="article-footer">
@@ -423,7 +371,7 @@ int solution(vector&lt;vector&lt;int&gt;&gt; baseball) {
   <ul class="post-copyright list-unstyled">
     <li class="post-copyright-link hidden-xs">
       <strong>Permalink: </strong>
-      <a href="https://chlalstjd430.github.io/2020/02/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_011/" title="프로그래머스 - 숫자 야구" target="_blank" rel="external">https://chlalstjd430.github.io/2020/02/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_011/</a>
+      <a href="https://chlalstjd430.github.io/2020/08/singleton/" title="Spring Singleton VS Java Singleton" target="_blank" rel="external">https://chlalstjd430.github.io/2020/08/singleton/</a>
     </li>
     <li class="post-copyright-license">
       <strong>License：</strong><a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN</a>
@@ -458,14 +406,9 @@ int solution(vector&lt;vector&lt;int&gt;&gt; baseball) {
     <div class="bar-inner">
         <ul class="pager pull-left">
             <li class="prev">
-                <a href="https://chlalstjd430.github.io/2020/02/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_010/" title="프로그래머스 - 위장"><i
+                <a href="https://chlalstjd430.github.io/2020/07/spring_core_08/" title="[Spring Core(스프링 프레임워크 핵심기술)] 08. IoC 컨테이너 : 프로퍼티"><i
                         class="icon icon-angle-left"
                         aria-hidden="true"></i><span>&nbsp;&nbsp;Older</span></a>
-            </li>
-            <li class="next">
-                <a href="https://chlalstjd430.github.io/2020/02/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_012/"
-                    title="프로그래머스 - 라면 공장"><span>Newer&nbsp;&nbsp;</span><i
-                        class="icon icon-angle-right" aria-hidden="true"></i></a>
             </li>
             
             <li class="toggle-toc">
