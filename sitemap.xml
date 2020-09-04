@@ -3,21 +3,42 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://chlalstjd430.github.io/categories/</loc>
-    <lastmod>2020-08-19T13:51:32+09:00</lastmod>
+    <loc>https://chlalstjd430.github.io/2020/09/docker_01/</loc>
+    <lastmod>2020-09-04T13:23:15+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://chlalstjd430.github.io/</loc>
-    <lastmod>2020-08-19T13:51:32+09:00</lastmod>
+    <lastmod>2020-09-04T13:23:15+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://chlalstjd430.github.io/tags/docker/</loc>
+    <lastmod>2020-09-04T13:23:15+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://chlalstjd430.github.io/posts/</loc>
+    <lastmod>2020-09-04T13:23:15+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://chlalstjd430.github.io/tags/</loc>
+    <lastmod>2020-09-04T13:23:15+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://chlalstjd430.github.io/categories/</loc>
     <lastmod>2020-08-19T13:51:32+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -348,13 +369,6 @@
   <url>
     <loc>https://chlalstjd430.github.io/2020/02/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_013/</loc>
     <lastmod>2020-02-29T18:43:00+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://chlalstjd430.github.io/tags/</loc>
-    <lastmod>2020-02-28T23:34:31+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

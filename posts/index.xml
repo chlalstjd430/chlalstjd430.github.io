@@ -5,10 +5,19 @@
     <link>https://chlalstjd430.github.io/posts/</link>
     <description>Recent content in Posts on cmstown</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 19 Aug 2020 13:51:32 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 04 Sep 2020 13:23:15 +0900</lastBuildDate>
     
         <atom:link href="https://chlalstjd430.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>[Docker/도커]01. 도커의 기초 - 도커란 무엇인가?</title>
+      <link>https://chlalstjd430.github.io/2020/09/docker_01/</link>
+      <pubDate>Fri, 04 Sep 2020 13:23:15 +0900</pubDate>
+      
+      <guid>https://chlalstjd430.github.io/2020/09/docker_01/</guid>
+      <description>🐳도커를 공부하기 전에&amp;hellip;🐳 최근 도커/쿠버네티스와 같은 운영환경이 개발에 주를 이루고 있다. 이에 먼저 컨테이너를 쉽게 이식하고 운영 환경에 굉장</description>
+    </item>
     
     <item>
       <title>Spring Singleton VS Java Singleton</title>
@@ -179,15 +188,6 @@
       
       <guid>https://chlalstjd430.github.io/2020/06/06_sigleton_pattern/</guid>
       <description>Sigleton pattern(싱글톤 패턴) 이번에 학습할 디자인 패턴은 싱글톤 패턴 입니다. Sigleton pattern(싱글톤 패턴)이란? 위키에서는 다음과 같이 정의합니다.</description>
-    </item>
-    
-    <item>
-      <title>[DesignPattern] Strategy pattern(전략 패턴)</title>
-      <link>https://chlalstjd430.github.io/2020/06/05_strategy_pattern/</link>
-      <pubDate>Thu, 11 Jun 2020 21:16:48 +0900</pubDate>
-      
-      <guid>https://chlalstjd430.github.io/2020/06/05_strategy_pattern/</guid>
-      <description>Strategy pattern(전략 패턴) 이번에 학습할 디자인 패턴은 전략 패턴 입니다. Strategy pattern(전략 패턴)이란? 위키에서는 다음과 같이 정의합니다. 전략 패</description>
     </item>
     
   </channel>
