@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>
+        [Docker/도커]02. 도커의 기초 - 도커를 사용하는 의의 / 도커 설치하기 - cmstown
+      </title>
+    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no,email=no,adress=no">
+  
+  <meta name="theme-color" content="#000000" />
+  
+  <meta http-equiv="window-target" content="_top" />
+  
+  
+  <meta name="description" content="더 자세한 내용은 부디 책을 참고하길 부탁드린다. 🐳 02.도커의 기초 - 도커를 사용하는 의의 🐳 앞 장 에서 도카가 무엇인지 살펴보았다. 또한 사실 앞장만 봐도 왜 도커" />
+  <meta name="generator" content="Hugo 0.73.0 with theme pure" />
+  <title>[Docker/도커]02. 도커의 기초 - 도커를 사용하는 의의 / 도커 설치하기 - cmstown</title>
+  
+  
+  <link rel="stylesheet" href="https://chlalstjd430.github.io/css/style.min.9aaa883ebea87c2fd2d087c069cb2736c5f6cb2d52460262cad27bb9f932afc8.css">
+  
+  <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
+  <meta property="og:title" content="[Docker/도커]02. 도커의 기초 - 도커를 사용하는 의의 / 도커 설치하기" />
+<meta property="og:description" content="더 자세한 내용은 부디 책을 참고하길 부탁드린다. 🐳 02.도커의 기초 - 도커를 사용하는 의의 🐳 앞 장 에서 도카가 무엇인지 살펴보았다. 또한 사실 앞장만 봐도 왜 도커" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://chlalstjd430.github.io/2020/09/docker_02/" />
+<meta property="article:published_time" content="2020-09-04T17:36:13+09:00" />
+<meta property="article:modified_time" content="2020-09-04T17:36:13+09:00" />
+<meta itemprop="name" content="[Docker/도커]02. 도커의 기초 - 도커를 사용하는 의의 / 도커 설치하기">
+<meta itemprop="description" content="더 자세한 내용은 부디 책을 참고하길 부탁드린다. 🐳 02.도커의 기초 - 도커를 사용하는 의의 🐳 앞 장 에서 도카가 무엇인지 살펴보았다. 또한 사실 앞장만 봐도 왜 도커">
+<meta itemprop="datePublished" content="2020-09-04T17:36:13&#43;09:00" />
+<meta itemprop="dateModified" content="2020-09-04T17:36:13&#43;09:00" />
+<meta itemprop="wordCount" content="1768">
+
+
+
+<meta itemprop="keywords" content="Docker," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="[Docker/도커]02. 도커의 기초 - 도커를 사용하는 의의 / 도커 설치하기"/>
+<meta name="twitter:description" content="더 자세한 내용은 부디 책을 참고하길 부탁드린다. 🐳 02.도커의 기초 - 도커를 사용하는 의의 🐳 앞 장 에서 도카가 무엇인지 살펴보았다. 또한 사실 앞장만 봐도 왜 도커"/>
+
+  <!--[if lte IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+    <![endif]-->
+
+  <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+  </head>
+
+  
+  
+
+  <body class="main-center theme-black" itemscope itemtype="http://schema.org/WebPage"><header class="header" itemscope itemtype="http://schema.org/WPHeader">
+    <div class="slimContent">
+      <div class="navbar-header">
+        <div class="profile-block text-center">
+          <a id="avatar" href="https://github.com/chlalstjd430" target="_blank">
+            <img class="img-circle img-rotate" src="https://chlalstjd430.github.io/avatar.png" width="200" height="200">
+          </a>
+          <h2 id="name" class="hidden-xs hidden-sm">최민성</h2>
+          <h3 id="title" class="hidden-xs hidden-sm hidden-md">26, 숭실대학교</h3>
+          <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i>Seoul, Korea</small>
+        </div><div class="search" id="search-form-wrap">
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="Search" />
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i
+                        class="icon icon-search"></i></button>
+            </span>
+        </div>
+        <div class="ins-search">
+            <div class="ins-search-mask"></div>
+            <div class="ins-search-container">
+                <div class="ins-input-wrapper">
+                    <input type="text" class="ins-search-input" placeholder="Type something..."
+                        x-webkit-speech />
+                    <button type="button" class="close ins-close ins-selectable" data-dismiss="modal"
+                        aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="ins-section-wrapper">
+                    <div class="ins-section-container"></div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+        <ul class="nav navbar-nav main-nav">
+            <li class="menu-item menu-item-home">
+                <a href="/">
+                    <i class="icon icon-home-fill"></i>
+                  <span class="menu-title">Home</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-archives">
+                <a href="/posts/">
+                    <i class="icon icon-archives-fill"></i>
+                  <span class="menu-title">Posts</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-categories">
+                <a href="/categories/">
+                    <i class="icon icon-folder"></i>
+                  <span class="menu-title">Categories</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-tags">
+                <a href="/tags/">
+                    <i class="icon icon-tags"></i>
+                  <span class="menu-title">Tags</span>
+                </a>
+            </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    
+      <div class="widget">
+    <h3 class="widget-title">Board</h3>
+    <div class="widget-body">
+        <div id="board">
+            <div class="content"><p>cms3136@gmail.com</p><p>- 숭실대학교 글로벌미디어학부</p><p>- Lectopia s/w expert course 17기</p><p>- YOURSSU 백엔드 개발자</p><p>- YAPP 16기</p><p>- NEXTERS 17기</p><p>- Naver Webtoon 백엔드 인턴(20.09.14 ~ 12.31)</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+      <div class="widget">
+    <h3 class="widget-title"> Categories</h3>
+    <div class="widget-body">
+        <ul class="category-list">
+            <li class="category-list-item"><a href="https://chlalstjd430.github.io/categories/2020-%EA%B3%84%ED%9A%8D/" class="category-list-link">2020-계획</a><span class="category-list-count">2</span></li>
+            <li class="category-list-item"><a href="https://chlalstjd430.github.io/categories/aws/" class="category-list-link">aws</a><span class="category-list-count">3</span></li>
+            <li class="category-list-item"><a href="https://chlalstjd430.github.io/categories/it-%EC%A0%95%EB%B3%B4/" class="category-list-link">it-정보</a><span class="category-list-count">2</span></li>
+            <li class="category-list-item"><a href="https://chlalstjd430.github.io/categories/java/" class="category-list-link">java</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="https://chlalstjd430.github.io/categories/%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4/" class="category-list-link">디자인패턴</a><span class="category-list-count">8</span></li>
+            <li class="category-list-item"><a href="https://chlalstjd430.github.io/categories/%EB%A6%AC%EC%95%A1%ED%8B%B0%EB%B8%8C-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/" class="category-list-link">리액티브-프로그래밍</a><span class="category-list-count">2</span></li>
+            <li class="category-list-item"><a href="https://chlalstjd430.github.io/categories/%EB%B0%B1%EC%97%94%EB%93%9C/" class="category-list-link">백엔드</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="https://chlalstjd430.github.io/categories/%EB%B0%B1%EC%A4%80-%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4/" class="category-list-link">백준-문제풀이</a><span class="category-list-count">16</span></li>
+            <li class="category-list-item"><a href="https://chlalstjd430.github.io/categories/%EC%8A%A4%ED%84%B0%EB%94%94/" class="category-list-link">스터디</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="https://chlalstjd430.github.io/categories/%EC%8A%A4%ED%94%84%EB%A7%81/" class="category-list-link">스프링</a><span class="category-list-count">9</span></li>
+            <li class="category-list-item"><a href="https://chlalstjd430.github.io/categories/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/" class="category-list-link">알고리즘</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="https://chlalstjd430.github.io/categories/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C/" class="category-list-link">클린코드</a><span class="category-list-count">9</span></li>
+            <li class="category-list-item"><a href="https://chlalstjd430.github.io/categories/%ED%8C%8C%EC%9D%B4%EC%8D%AC/" class="category-list-link">파이썬</a><span class="category-list-count">6</span></li>
+            <li class="category-list-item"><a href="https://chlalstjd430.github.io/categories/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4/" class="category-list-link">프로그래머스-문제풀이</a><span class="category-list-count">22</span></li>
+        </ul>
+    </div>
+</div>
+      <div class="widget">
+    <h3 class="widget-title"> Tags</h3>
+    <div class="widget-body">
+        <ul class="tag-list">
+            
+            
+            <li class="tag-list-item"><a href="https://chlalstjd430.github.io/tags/docker/" class="tag-list-link">docker</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://chlalstjd430.github.io/tags/it-%EB%8F%99%EC%95%84%EB%A6%AC/" class="tag-list-link">it-동아리</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://chlalstjd430.github.io/tags/it-%EC%A0%95%EB%B3%B4/" class="tag-list-link">it-정보</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://chlalstjd430.github.io/tags/jwt/" class="tag-list-link">jwt</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://chlalstjd430.github.io/tags/kmp-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/" class="tag-list-link">kmp-알고리즘</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://chlalstjd430.github.io/tags/spring-webflux/" class="tag-list-link">spring-webflux</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://chlalstjd430.github.io/tags/%EA%B3%84%ED%9A%8D/" class="tag-list-link">계획</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://chlalstjd430.github.io/tags/%EA%B7%B8%EB%A6%AC%EB%94%94-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/" class="tag-list-link">그리디-알고리즘</a><span
+                    class="tag-list-count">5</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://chlalstjd430.github.io/tags/%EB%8B%A4%EC%9D%B4%EB%82%98%EB%AF%B9-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/" class="tag-list-link">다이나믹-프로그래밍</a><span
+                    class="tag-list-count">4</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://chlalstjd430.github.io/tags/%EB%8B%A4%EC%9D%B5%EC%8A%A4%ED%8A%B8%EB%9D%BC-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/" class="tag-list-link">다익스트라-알고리즘</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://chlalstjd430.github.io/tags/%EB%A6%AC%EC%95%A1%ED%8B%B0%EB%B8%8C-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/" class="tag-list-link">리액티브-프로그래밍</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://chlalstjd430.github.io/tags/%EB%B8%8C%EB%A3%A8%ED%8A%B8-%ED%8F%AC%EC%8A%A4%ED%8A%B8/" class="tag-list-link">브루트-포스트</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://chlalstjd430.github.io/tags/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/" class="tag-list-link">알고리즘</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://chlalstjd430.github.io/tags/%EC%9C%84%EC%83%81-%EC%A0%95%EB%A0%AC-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/" class="tag-list-link">위상-정렬-알고리즘</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://chlalstjd430.github.io/tags/%EC%9D%B4%EC%A7%84-%ED%8A%B8%EB%A6%AC-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/" class="tag-list-link">이진-트리-알고리즘</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://chlalstjd430.github.io/tags/%EC%B5%9C%EC%86%8C-%EC%8A%A4%ED%8C%A8%EB%8B%9D-%ED%8A%B8%EB%A6%AC/" class="tag-list-link">최소-스패닝-트리</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://chlalstjd430.github.io/tags/%ED%81%AC%EB%A3%A8%EC%8A%A4%EC%B9%BC-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/" class="tag-list-link">크루스칼-알고리즘</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://chlalstjd430.github.io/tags/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C/" class="tag-list-link">클린코드</a><span
+                    class="tag-list-count">9</span></li>
+            
+        </ul>
+
+    </div>
+</div>
+      
+<div class="widget">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget-body">
+        <ul class="recent-post-list list-unstyled no-thumbnail">
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://chlalstjd430.github.io/2020/09/docker_02/" class="title">[Docker/도커]02. 도커의 기초 - 도커를 사용하는 의의 / 도커 설치하기</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-09-04 17:36:13 &#43;0900 KST" itemprop="datePublished">2020-09-04</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://chlalstjd430.github.io/2020/09/docker_01/" class="title">[Docker/도커]01. 도커의 기초 - 도커란 무엇인가?</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-09-04 13:23:15 &#43;0900 KST" itemprop="datePublished">2020-09-04</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://chlalstjd430.github.io/2020/08/singleton/" class="title">Spring Singleton VS Java Singleton</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-08-19 13:51:32 &#43;0900 KST" itemprop="datePublished">2020-08-19</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://chlalstjd430.github.io/2020/07/spring_core_08/" class="title">[Spring Core(스프링 프레임워크 핵심기술)] 08. IoC 컨테이너 : 프로퍼티</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-07-12 12:32:18 &#43;0900 KST" itemprop="datePublished">2020-07-12</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://chlalstjd430.github.io/2020/07/spring_core_07/" class="title">[Spring Core(스프링 프레임워크 핵심기술)] 07. IoC 컨테이너 : 프로파일</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-07-12 12:30:33 &#43;0900 KST" itemprop="datePublished">2020-07-12</time>
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+  </div>
+</aside>
+
+    
+    
+<aside class="sidebar sidebar-toc collapse" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    <h4 class="toc-title">Catalogue</h4>
+    <nav id="toc" class="js-toc toc">
+
+    </nav>
+  </div>
+</aside>
+<main class="main" role="main"><div class="content">
+  <article id="-" class="article article-type-" itemscope
+    itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/2020/09/docker_02/"
+    >[Docker/도커]02. 도커의 기초 - 도커를 사용하는 의의 / 도커 설치하기</a
+  >
+</h1>
+
+      <div class="article-meta">
+        
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="https://chlalstjd430.github.io/2020/09/docker_02/" class="article-date">
+  <time datetime="2020-09-04 17:36:13 &#43;0900 KST" itemprop="datePublished">2020-09-04</time>
+</a>
+</span>
+  
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>&nbsp;
+    <a class="article-tag-link" href="/tags/docker/"> Docker </a>
+  </span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/2020/09/docker_02/#comments"
+            class="article-comment-link">Comments</a></span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 1768words</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 4minutes </span>
+      </div>
+    </div>
+    <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
+      <p>더 자세한 내용은 부디 <a href="http://www.yes24.com/Product/Goods/70893433">책</a>을 참고하길 부탁드린다.</p>
+<h1 id="-02도커의-기초---도커를-사용하는-의의-">🐳 02.도커의 기초 - 도커를 사용하는 의의 🐳</h1>
+<p><a href="http://blog.cmstown.com/2020/09/docker_01/">앞 장</a> 에서 도카가 무엇인지 살펴보았다. 또한 사실 앞장만 봐도 왜 도커를 사용하는지 알 수 있을 것이다. 그럼에도 불구하고 이번장에서 도커를 왜 사용하는지 도커를 사용하는 의의와 도커를 설치하는 방법에 대해 알아보자.</p>
+<p>도커를 사용하는 의의는 크게 다음과 같다.</p>
+<ul>
+<li>
+<p>변화하지 않는 실행 환경으로 멱등성(Idempotency) 확보</p>
+</li>
+<li>
+<p>코드를 통한 실행 환경 구축 및 애플리케이션 구성</p>
+</li>
+<li>
+<p>실행 환경과 애플리케이션의 일체화로 이식성 향상</p>
+</li>
+<li>
+<p>시스템을 구성하는 애플리케이션 및 미들웨어의 관리 용이성</p>
+</li>
+</ul>
+<p>그럼 위 내용의 장점들을 하나씬 순서대로 살펴보자.</p>
+<h2 id="환경-차이로-인한-문제-방지">환경 차이로 인한 문제 방지</h2>
+<p>애플리케이션을 개발을 수행하면서 다음과 같은 문제를 경험한 적이 있을 것이다.</p>
+<blockquote>
+<p>문제 1 : B 서버에서도 같은 애플리케이션을 배포하고 싶은데, A 서버와 다르게 동작하네ㅐ&hellip;</p>
+<p>문제 2 : B 서버에 설치된 라이브러리 버전이 다르네..?</p>
+<p>문제 3 : 모든 서버에 같은 아카이브를 배포하고 싶은데&hellip;</p>
+</blockquote>
+<p>위 문제의 근본적인 원인은 <strong>인프라의 가변성(mutable infrastructure)</strong> 을 허용하고 있다는 것이다. 이 문제를 해결하기 위해 최근 제안된 것이 <strong>코드로 관리하는 인프라</strong>와 <strong>불면 인프라</strong> 개념이다. 도커는 도커 이미지(Dockerfile)로 서버 구성을 코드로 관리할 수 있따. 그러므로 기존 컨테이너를 빠르게 폐기하고 새로이 구축할 수 있다. <strong>즉, 도커를 사용하면 코드로 관리하는 인프라와 불변 인프라의 두 개념을 간단하고 낮은 비용으로 실현할 수 있다.</strong></p>
+<h2 id="애플리케이션-구성-관리의-용이성">애플리케이션 구성 관리의 용이성</h2>
+<p>도커 컨테이너는 애플리케이션과 인프라를 함께 담은 상자다. 이 상자를 여러 개 조합하여 시스템을 구성할 수 있어야 한다. 이를 위해 시스템 전체에 대한 적절한 구성 관리가 필요해졌다.</p>
+<p>이런 문제는 도커에서 이미 해결했다. 여러 컨테이너를 사용하는 애플리케이션을 쉽게 관리할 수 있도록 <strong>도커 컴포즈(Docker Compose)</strong> 라는 도구를 제공한다. 도커 컴포즈를 사용하면 yaml 포맷으로 작성된 설정 파일로 컨테이너를 정의하거나 컨테이너 간의 의존 관게를 정의해 시작 순서를 제어할 수 있어야 한다.</p>
+<!-- raw HTML omitted -->
+<p>도커 컴포즈를 이용하여 Redis 컨테이너 구성에 대한 정의를 하는 예</p>
+<pre><code class="language-yaml">version: &quot;3&quot;
+services:
+    web:
+        image: gihyodocker/web
+        ports:
+            - &quot;3000:3000&quot;
+        environemnt:
+            REDIS_TARGET: redis
+        depends_on:
+            - redis
+    redis:
+        image: &quot;redis:alpine&quot;
+</code></pre>
+<p>대규모 트래픽 처리 같은 많은 작업을 해야 하는 시스템은 도커가 설치된 서버(도커 노드)를 여러 대 갖추고 이 노드 그룹에 필요한 만큼의 애플리케이션 컨테이너를 배포해야 한다. 도커 컴포즈가 단일 서버를 넘어 여러 서버에 걸쳐 있는 여러 컨테이너를 관리할 수 있도록 한 도구가 <strong>도커 스웜(Docker Swarm)</strong> 이다.</p>
+<p>여러 컨테이너를 관리하는 것만이 목적인 도커 컴포즈와 달리 도커 스웜은 컨테이너의 증감은 물론이고 노드의 리소스를 효율적으로 활용하기 위한 컨테이너 배치 및 로드 밸런싱 기능 등 더욱 실용적인 기능을 갖추고 있다. 또, 배포 시에도 롤링 업데이트(오래된 컨테이너와 새로운 컨테이너를 단계적으로 서비스에 교체 투입하는 것)가 가능해 운영 면에서도 장점이 많다. 이렇게 여러 서버에 걸쳐 있는 여러 컨테이너를 관리하는 기법을 <strong>컨테이너 오케스트레이션(container orchestration)</strong> 이라고 한다.</p>
+<p>컨테이너 오케스트레이션 분야에서 사실상 표준으로 자리 잡은 것은 <strong>쿠버네티스(Kubernetes)</strong> 다. 쿠버네티스는 구글이 오랫동안 컨테이너를 운영하면서 얻은 노하우를 담은 오픈 소스이고 도커 스웜보다 기능이 충실하며 확정성이 높다. 이에 대해서는 추후에 자세히 다루도록 하겠다.</p>
+<h2 id="운영-환경에서-빛을-발하는-도커">운영 환경에서 빛을 발하는 도커</h2>
+<p>도커는 실제 개발 환경 뿐만 아니라 운영 환경에서도 많이 사용된다. 도커에는 운영에 도움을 주기 위한 여러도구가 있는데, 임미 주요 클라우드 플랫폼(GCP, AWS 등)에 컨테이너 운영 환경이 갖춰져 있어 도커를 운영 환경에 적용하기 위한 진입 장벽이 많이 낮아져있다.</p>
+<h2 id="새로운-개발-스타일">새로운 개발 스타일</h2>
+<p>도커를 통해 인프라와 애플리케이션이 모두 컨테이너 형태로 제공되면서 인프라와 애플리케이션의 설정을 모두 코드 수준에서 쉽게 수정할 수 있게 됐다. 즉, 기존에는 명확했던 인프라 엔지니어와 서버 사이드 엔지니어의 영역 구분이 점점 희미해지고 있다.</p>
+<p>또한 도커는 서버 사이드 엔지니어와 인프라 엔지니어만의 전유물이 아니고 프론트엔드 및 모바일 개발에도 점차 기초 기술이 될 것이다.</p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<h1 id="-02도커의-기초---도커-설치하기-">🐳 02.도커의 기초 - 도커 설치하기 🐳</h1>
+<h2 id="os별-설치-방법">OS별 설치 방법</h2>
+<p>도커를 설치하는 방법은 윈도우,리눅스,macOS냐에 따라 달라진다.</p>
+<p>사실 설치 방법에 대해서는 이미 블로그들에 많이 소개되어 링크를 첨부하도록 하겠다.</p>
+<ul>
+<li>
+<p><a href="https://goddaehee.tistory.com/251">윈도우 도커 설치</a></p>
+</li>
+<li>
+<p><a href="https://medium.com/@elastic7327/%EB%A6%AC%EB%88%85%EC%8A%A4-%EC%9A%B0%EB%B6%84%ED%88%AC-centos-%EC%97%90-1%EB%B6%84%EB%A7%8C%EC%97%90-%EB%8F%84%EC%BB%A4%EB%A5%BC-%EC%84%A4%EC%B9%98%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95-how-to-install-a-docker-on-linux-ubuntu-centos-in-one-minute-d4fb1718e66d">리눅스 도커 설치</a></p>
+</li>
+<li>
+<p><a href="https://daeson.tistory.com/290">macOS 도커 설치</a></p>
+</li>
+</ul>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<p><strong>참고</strong></p>
+<p><a href="http://www.yes24.com/Product/Goods/70893433">도커/쿠버네티스를 활용한 컨테이너 개발 실전 입문</a></p>
+<p><a href="https://subicura.com/2017/01/19/docker-guide-for-beginners-1.html">초보를 위한 도커 안내서</a></p>
+
+    </div>
+    <div class="article-footer">
+<blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
+    <li class="post-copyright-link hidden-xs">
+      <strong>Permalink: </strong>
+      <a href="https://chlalstjd430.github.io/2020/09/docker_02/" title="[Docker/도커]02. 도커의 기초 - 도커를 사용하는 의의 / 도커 설치하기" target="_blank" rel="external">https://chlalstjd430.github.io/2020/09/docker_02/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>License：</strong><a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN</a>
+    </li>
+  </ul>
+</blockquote>
+
+<div class="panel panel-default panel-badger">
+  <div class="panel-body">
+    <figure class="media">
+      <div class="media-left">
+        <a href="https://github.com/chlalstjd430" target="_blank" class="img-burn thumb-sm visible-lg">
+          <img src="https://chlalstjd430.github.io/avatar.png" class="img-rounded w-full" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading"><a href="https://github.com/chlalstjd430" target="_blank"><span class="text-dark">최민성</span><small class="ml-1x">26, 숭실대학교</small></a></h3>
+        <div>cms3136@gmail.com</div>
+      </div>
+    </figure>
+  </div>
+</div>
+    </div>
+  </article>
+<section id="comments">
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+</section>
+
+</div><nav class="bar bar-footer clearfix" data-stick-bottom>
+    <div class="bar-inner">
+        <ul class="pager pull-left">
+            <li class="prev">
+                <a href="https://chlalstjd430.github.io/2020/09/docker_01/" title="[Docker/도커]01. 도커의 기초 - 도커란 무엇인가?"><i
+                        class="icon icon-angle-left"
+                        aria-hidden="true"></i><span>&nbsp;&nbsp;Older</span></a>
+            </li>
+            
+            <li class="toggle-toc">
+                <a class="toggle-btn collapsed" data-toggle="collapse" href="#collapseToc" aria-expanded="false"
+                    title="Catalogue" role="button">
+                    <span>[&nbsp;</span><span>Catalogue</span>
+                    <i class="text-collapsed icon icon-anchor"></i>
+                    <i class="text-in icon icon-close"></i>
+                    <span>]</span>
+                </a>
+            </li>
+        </ul>
+        <div class="bar-right">
+            <div class="share-component" data-sites=""
+                data-mobile-sites="weibo,qq,qzone"></div>
+        </div>
+    </div>
+</nav>
+
+</main><footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+<ul class="social-links">
+    <li><a href="https://github.com/chlalstjd430" target="_blank" title="github" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-github"></i></a></li>
+    <li><a href="https://chlalstjd430.github.io/index.xml" target="_blank" title="rss" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-rss"></i></a></li>
+</ul>
+  <div class="copyright">
+    &copy;2017  -
+    2020
+    <div class="publishby">
+        Theme by <a href="https://github.com/xiaoheiAh" target="_blank"> xiaoheiAh </a>base on<a href="https://github.com/xiaoheiAh/hugo-theme-pure" target="_blank"> pure</a>.
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_SVG"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+            showMathMenu: false, //disables context menu
+            tex2jax: {
+            inlineMath: [ ['$','$'], ['\\(','\\)'] ]
+           }
+    });
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script>
+    window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/highlight.min.js"></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/python.min.js" defer></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/javascript.min.js" defer></script><script>
+    hljs.configure({
+        tabReplace: '    ', 
+        classPrefix: ''     
+        
+    })
+    hljs.initHighlightingOnLoad();
+</script>
+<script src="https://chlalstjd430.github.io/js/application.min.bdeb64b910570b6c41badc6a05b7afb0c8ad9efd8525de3c7257d59e786326a3.js"></script>
+<script src="https://chlalstjd430.github.io/js/plugin.min.51ff8c7317566f82259170fa36e09c4493adc9b9378b427a01ad3f017ebac7dd.js"></script>
+
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: 'Posts',
+                PAGES: 'Pages',
+                CATEGORIES: 'Categories',
+                TAGS: 'Tags',
+                UNTITLED: '(Untitled)',
+            },
+            ROOT_URL: 'https:\/\/chlalstjd430.github.io',
+            CONTENT_URL: 'https:\/\/chlalstjd430.github.io\/searchindex.json ',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+<script type="text/javascript" src="https://chlalstjd430.github.io/js/insight.min.a343cd9a5a7698336b28ef3a7c16a3a1b1d2d5fb17dc8ed04022bbe08cc5459073a15bdafa3a8a58cdd56080784bdd69fa70b1ae8597565c799c57ed00f0e120.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+<script>
+    tocbot.init({
+        
+        tocSelector: '.js-toc',
+        
+        contentSelector: '.js-toc-content',
+        
+        headingSelector: 'h1, h2, h3',
+        
+        hasInnerContainers: true,
+    });
+</script>
+
+<script>
+    (function() { 
+    var d = document, s = d.createElement('script');
+    s.src = 'https://' + 'https-chlalstjd430-github-io' + '.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+  </body>
+</html>
