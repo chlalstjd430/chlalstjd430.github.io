@@ -5,10 +5,19 @@
     <link>https://chlalstjd430.github.io/posts/</link>
     <description>Recent content in Posts on cmstown</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 05 Sep 2020 21:49:33 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 06 Sep 2020 03:14:26 +0900</lastBuildDate>
     
         <atom:link href="https://chlalstjd430.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>[Python 기초] - 튜플,세트 그리고 딕셔너리</title>
+      <link>https://chlalstjd430.github.io/2020/06/python_02_collections/</link>
+      <pubDate>Tue, 23 Jun 2020 15:00:58 +0900</pubDate>
+      
+      <guid>https://chlalstjd430.github.io/2020/06/python_02_collections/</guid>
+      <description>[Python 기초] - 튜플,세트 그리고 딕셔너리 다양한 데이터 타입 컴퓨터 자원의 효율적 사용을 위해 상황에 맞는 데이터 구조를 선택해야 질 높은 프로그램을 개발할 수 있음 튜플</description>
+    </item>
     
     <item>
       <title>[Python 기초] - 리스트</title>
@@ -179,15 +188,6 @@
       
       <guid>https://chlalstjd430.github.io/2020/03/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_018/</guid>
       <description>문제링크 사용언어 c++ 주의사항 입력으로 판의 높이 m, 폭 n과 판의 배치 정보 board가 들어온다. 2 ≦ n, m ≦ 30 board는 길이 n인 문자열 m개의 배열로 주어진</description>
-    </item>
-    
-    <item>
-      <title>프로그래머스 - 짝지어 제거하기</title>
-      <link>https://chlalstjd430.github.io/2020/03/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_017/</link>
-      <pubDate>Mon, 09 Mar 2020 11:39:26 +0900</pubDate>
-      
-      <guid>https://chlalstjd430.github.io/2020/03/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_017/</guid>
-      <description>문제링크 사용언어 c++ 주의사항 문자열의 길이 : 1,000,000이하의 자연수 문자열은 모두 소문자로 이루어져 있습니다. 문제풀이 처음에 for문을 계속 돌려</description>
     </item>
     
   </channel>
