@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Devops on cmstown</title>
+    <link>https://chlalstjd430.github.io/tags/devops/</link>
+    <description>Recent content in Devops on cmstown</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 04 Sep 2020 21:04:07 +0900</lastBuildDate>
+    
+        <atom:link href="https://chlalstjd430.github.io/tags/devops/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>[Docker/도커]03.도커 컨테이너 배포 - 컨테이너로 애플리케이션 실행하기</title>
+      <link>https://chlalstjd430.github.io/2020/09/docker_03/</link>
+      <pubDate>Fri, 04 Sep 2020 21:04:07 +0900</pubDate>
+      
+      <guid>https://chlalstjd430.github.io/2020/09/docker_03/</guid>
+      <description>더 자세한 내용은 부디 책을 참고하길 부탁드립니다. 🐳 03.도커 컨테이너 배포 - 컨테이너로 애플리케이션 실행하기 🐳 도커의 기본 개념과 의의를 알아보았으니 도커</description>
+    </item>
+    
+    <item>
+      <title>[Docker/도커]02. 도커의 기초 - 도커를 사용하는 의의 / 도커 설치하기</title>
+      <link>https://chlalstjd430.github.io/2020/09/docker_02/</link>
+      <pubDate>Fri, 04 Sep 2020 17:36:13 +0900</pubDate>
+      
+      <guid>https://chlalstjd430.github.io/2020/09/docker_02/</guid>
+      <description>더 자세한 내용은 부디 책을 참고하길 부탁드립니다. 🐳 02.도커의 기초 - 도커를 사용하는 의의 🐳 앞 장 에서 도카가 무엇인지 살펴보았다. 또한 사실 앞장만 봐도 왜 도</description>
+    </item>
+    
+    <item>
+      <title>[Docker/도커]01. 도커의 기초 - 도커란 무엇인가?</title>
+      <link>https://chlalstjd430.github.io/2020/09/docker_01/</link>
+      <pubDate>Fri, 04 Sep 2020 13:23:15 +0900</pubDate>
+      
+      <guid>https://chlalstjd430.github.io/2020/09/docker_01/</guid>
+      <description>🐳도커를 공부하기 전에&amp;hellip;🐳 최근 도커/쿠버네티스와 같은 운영환경이 개발에 주를 이루고 있다. 이에 먼저 컨테이너를 쉽게 이식하고 운영 환경에 굉장</description>
+    </item>
+    
+    <item>
+      <title>Spring Singleton VS Java Singleton</title>
+      <link>https://chlalstjd430.github.io/2020/08/singleton/</link>
+      <pubDate>Wed, 19 Aug 2020 13:51:32 +0900</pubDate>
+      
+      <guid>https://chlalstjd430.github.io/2020/08/singleton/</guid>
+      <description>Spring Singleton VS Java Singleton(스프링 싱글톤과 자바 싱글톤의 차이) 최근 프로젝트를 하던도중 싱글톤으로 구현해야하는 클래스가 생겼는데, Spring에서 s</description>
+    </item>
+    
+    <item>
+      <title>[Spring Core(스프링 프레임워크 핵심기술)] 08. IoC 컨테이너 : 프로퍼티</title>
+      <link>https://chlalstjd430.github.io/2020/07/spring_core_08/</link>
+      <pubDate>Sun, 12 Jul 2020 12:32:18 +0900</pubDate>
+      
+      <guid>https://chlalstjd430.github.io/2020/07/spring_core_08/</guid>
+      <description>property 프로퍼티 다양한 방법으로 정의할 수 있는 설정값 Environment의 역할은 프로퍼티 소스 실행 및 프로퍼티 값 가져오기 application에 등록된 여</description>
+    </item>
+    
+    <item>
+      <title>[Spring Core(스프링 프레임워크 핵심기술)] 07. IoC 컨테이너 : 프로파일</title>
+      <link>https://chlalstjd430.github.io/2020/07/spring_core_07/</link>
+      <pubDate>Sun, 12 Jul 2020 12:30:33 +0900</pubDate>
+      
+      <guid>https://chlalstjd430.github.io/2020/07/spring_core_07/</guid>
+      <description>profile ApplicationContext extends EnvironmentCapable application context는 bean factory뿐만 아니라 다양한 기능들을 제공한다. 그 중에서 구현하고 있는 EnviromentCapable에서 제공하</description>
+    </item>
+    
+    <item>
+      <title>[Spring Core(스프링 프레임워크 핵심기술)] 06. IoC 컨테이너 : 빈의 스코프</title>
+      <link>https://chlalstjd430.github.io/2020/07/spring_core_06/</link>
+      <pubDate>Thu, 09 Jul 2020 19:10:24 +0900</pubDate>
+      
+      <guid>https://chlalstjd430.github.io/2020/07/spring_core_06/</guid>
+      <description>빈의 스코프 Scope 싱글톤(default) 프로토타입 Request Session WebSocket &amp;hellip; Single.java @Component public class Single { } Proto.java @Component @Scope(&amp;quot;prototype&amp;quot;) public class Proto { } AppRunner.java @Component public class AppRunner implements ApplicationRunner { @Autowired ApplicationContext ctx; @Override public void run(ApplicationArguments args) throws Exception { System.out.println(&amp;quot;single&amp;quot;); System.out.println(ctx.getBean(Single.class)); System.out.println(ctx.getBean(Single.class)); System.out.println(ctx.getBean(Single.class)); System.out.println(&amp;quot;proto&amp;quot;); System.out.println(ctx.getBean(Proto.class)); System.out.println(ctx.getBean(Proto.class)); System.out.println(ctx.getBean(Proto.class)); }</description>
+    </item>
+    
+    <item>
+      <title>[Spring Core(스프링 프레임워크 핵심기술)] 05. IoC 컨테이너 : @Component와 Component-Scan</title>
+      <link>https://chlalstjd430.github.io/2020/07/spring_core_05/</link>
+      <pubDate>Thu, 09 Jul 2020 10:04:44 +0900</pubDate>
+      
+      <guid>https://chlalstjd430.github.io/2020/07/spring_core_05/</guid>
+      <description>@Component와 Component-Scan 컴포넌트 스캔 주요 기능 @Component @Repository @Service @Controller @Configuration @Componenet-Scan spring 3.1 부터 지원 @ComponentScan 어노테이션부터 component scan을 시작하여 해당 파일이 있는 패키지 안의 모든 것을 sc</description>
+    </item>
+    
+    <item>
+      <title>[Spring Core(스프링 프레임워크 핵심기술)] 04. @Autowired</title>
+      <link>https://chlalstjd430.github.io/2020/07/spring_core_04/</link>
+      <pubDate>Fri, 03 Jul 2020 02:49:29 +0900</pubDate>
+      
+      <guid>https://chlalstjd430.github.io/2020/07/spring_core_04/</guid>
+      <description>@Autowired 필요한 의존 객체의 &amp;ldquo;타입&amp;quot;에 해당하는 빈을 찾아 주입한다. 사용할 수 있는 위치 클래스 주입 BookRepository.java public class BookRepository { } BookService.java @Service public class BookService { BookRepository bookRepository; @Autowired public BookService(BookRepository bookRepository){ this.bookRepository</description>
+    </item>
+    
+    <item>
+      <title>[Spring Core(스프링 프레임워크 핵심기술)] 03. IoC 컨테이너 2부 : ApplicationContext와 다양한 빈 설정 방법</title>
+      <link>https://chlalstjd430.github.io/2020/07/spring_core_03/</link>
+      <pubDate>Thu, 02 Jul 2020 02:21:47 +0900</pubDate>
+      
+      <guid>https://chlalstjd430.github.io/2020/07/spring_core_03/</guid>
+      <description>2. IoC 컨테이너 2부 : ApplicationContext와 다양한 빈 설정 방법 스프링 IoC 컨테이너의 역할 빈 인스턴스 생성 의존관계설정 빈 제공 ApplicationContext 크게 두가지로</description>
+    </item>
+    
+    <item>
+      <title>[Spring Core(스프링 프레임워크 핵심기술)] 02. 스프링 IoC 컨테이너와 빈</title>
+      <link>https://chlalstjd430.github.io/2020/07/spring_core_02/</link>
+      <pubDate>Wed, 01 Jul 2020 01:40:21 +0900</pubDate>
+      
+      <guid>https://chlalstjd430.github.io/2020/07/spring_core_02/</guid>
+      <description>스프링 IoC 컨테이너와 빈 IoC(Inversion of Control) 의존 관계 주입(DI, Dependency Injection)이라고도 하며, 어떤 객체가 사용하는 의존 객체를 직접 만들어 사용하는게 아니라, 주</description>
+    </item>
+    
+    <item>
+      <title>[Spring Core(스프링 프레임워크 핵심기술)] 01. 내가 스프링 핵심기술을 공부하게 된 이유</title>
+      <link>https://chlalstjd430.github.io/2020/06/spring_core_01/</link>
+      <pubDate>Tue, 30 Jun 2020 23:46:11 +0900</pubDate>
+      
+      <guid>https://chlalstjd430.github.io/2020/06/spring_core_01/</guid>
+      <description>[Spring Core(스프링 프레임워크 핵심기술)] 01 - 내가 스프링 핵심기술을 공부하게 된 이유 스프링을 공부한지 1년이 다되간다, 스프링을 이용하여 다양한 프로젝트</description>
+    </item>
+    
+    <item>
+      <title>[JAVA] - GC(Garbage Collection)</title>
+      <link>https://chlalstjd430.github.io/2020/06/gc/</link>
+      <pubDate>Wed, 24 Jun 2020 18:44:55 +0900</pubDate>
+      
+      <guid>https://chlalstjd430.github.io/2020/06/gc/</guid>
+      <description>[JAVA] - GC(Garbage Collection) GC(Garbage Collection)는 Java 프로세스가 동작하는 과정에서 불필요한 또는 더이상은 사용하지 않는 객체들을 메모리에서 제거함으로써, Java 프로세스가 한</description>
+    </item>
+    
+    <item>
+      <title>[Python 기초] - 클래스</title>
+      <link>https://chlalstjd430.github.io/2020/06/python_06_class/</link>
+      <pubDate>Tue, 23 Jun 2020 15:02:09 +0900</pubDate>
+      
+      <guid>https://chlalstjd430.github.io/2020/06/python_06_class/</guid>
+      <description>[Python 기초] - 클래스 클래스의 개념 id() : 클래스에 의해 생성된 &amp;lsquo;객체&amp;rsquo;의 식별자를 반환하는 함수 &amp;lsquo;객체&amp;rsquo;는 &amp;</description>
+    </item>
+    
+    <item>
+      <title>[Python 기초] - 함수와 모듈</title>
+      <link>https://chlalstjd430.github.io/2020/06/python_05_function/</link>
+      <pubDate>Tue, 23 Jun 2020 15:01:53 +0900</pubDate>
+      
+      <guid>https://chlalstjd430.github.io/2020/06/python_05_function/</guid>
+      <description>[Python 기초] - 함수와 모듈 함수 기본 함수 만들기 def hello(name) : # 함수 선언 return name +&#39;님, 안녕하세요!&#39; hello(&#39;홍길동&#39;) # 함수 호출 pass 예약어 이름만 만들어 놓고 내</description>
+    </item>
+    
+    <item>
+      <title>[Python 기초] - 문자열의 개념</title>
+      <link>https://chlalstjd430.github.io/2020/06/python_04_string/</link>
+      <pubDate>Tue, 23 Jun 2020 15:01:46 +0900</pubDate>
+      
+      <guid>https://chlalstjd430.github.io/2020/06/python_04_string/</guid>
+      <description>[Python 기초] - 문자열의 개념 문자열의 개념 ss = &#39;파이썬&#39; * 3 ## 출력 결과 ## &#39;파이썬파이썬파이썬&#39; 문자열의 모든 글자 뒤에 $를 붙여서 출력하는 코드 ss = &#39;파이썬</description>
+    </item>
+    
+    <item>
+      <title>[Python 기초] - 제어문과 데이터 구조</title>
+      <link>https://chlalstjd430.github.io/2020/06/python_03_control/</link>
+      <pubDate>Tue, 23 Jun 2020 15:01:31 +0900</pubDate>
+      
+      <guid>https://chlalstjd430.github.io/2020/06/python_03_control/</guid>
+      <description>[Python 기초] - 제어문과 데이터 구조 데이터 정렬 : sorted() 함수 리스트 nums = 4, 2, 5, 7, 1, 3 sorted(nums) [1, 2, 3, 4, 5, 7] sorted(nums, reverse = True) [7, 5 , 4, 3, 2, 1] nums (4, 2, 5, 7, 1, 3( 딕셔너리 programmer_dict = {&#39;Python&#39;:5, &#39;C&#39;:2, &#39;C++&#39;:3, &#39;Java&#39;:4, &#39;Ruby&#39;:1}</description>
+    </item>
+    
+    <item>
+      <title>[Python 기초] - 튜플,세트 그리고 딕셔너리</title>
+      <link>https://chlalstjd430.github.io/2020/06/python_02_collections/</link>
+      <pubDate>Tue, 23 Jun 2020 15:00:58 +0900</pubDate>
+      
+      <guid>https://chlalstjd430.github.io/2020/06/python_02_collections/</guid>
+      <description>[Python 기초] - 튜플,세트 그리고 딕셔너리 다양한 데이터 타입 컴퓨터 자원의 효율적 사용을 위해 상황에 맞는 데이터 구조를 선택해야 질 높은 프로그램을 개발할 수 있음 튜플</description>
+    </item>
+    
+    <item>
+      <title>[Python 기초] - 리스트</title>
+      <link>https://chlalstjd430.github.io/2020/06/python_01_list/</link>
+      <pubDate>Tue, 23 Jun 2020 15:00:26 +0900</pubDate>
+      
+      <guid>https://chlalstjd430.github.io/2020/06/python_01_list/</guid>
+      <description>[Python 기초] - 리스트 리스트 기본 리스트 생성 리스트명 = [값1, 값2, 값3] 리스트의 색인 num_list = [3, 1, 5, 2] # 양수핼인 0 1 2 3 # 음수색인 -4 -3 -2 -1 길이 len(num_list) # 4 출력</description>
+    </item>
+    
+    <item>
+      <title>[DesignPattern] Observer pattern(옵저버 패턴)</title>
+      <link>https://chlalstjd430.github.io/2020/06/08_observer_pattern/</link>
+      <pubDate>Sat, 13 Jun 2020 23:13:36 +0900</pubDate>
+      
+      <guid>https://chlalstjd430.github.io/2020/06/08_observer_pattern/</guid>
+      <description>Observer pattern(옵저버 패턴) 이번에 학습할 디자인 패턴은 옵저버 패턴 입니다. Observer pattern(옵저버 패턴)이란? 위키에서는 다음과 같이 정의합니다.</description>
+    </item>
+    
+  </channel>
+</rss>

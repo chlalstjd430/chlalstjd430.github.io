@@ -10,12 +10,21 @@
     
     
     <item>
+      <title>[Docker/도커]03.도커 컨테이너 배포 - 컨테이너로 애플리케이션 실행하기</title>
+      <link>https://chlalstjd430.github.io/2020/09/docker_03/</link>
+      <pubDate>Fri, 04 Sep 2020 21:04:07 +0900</pubDate>
+      
+      <guid>https://chlalstjd430.github.io/2020/09/docker_03/</guid>
+      <description>더 자세한 내용은 부디 책을 참고하길 부탁드립니다. 🐳 03.도커 컨테이너 배포 - 컨테이너로 애플리케이션 실행하기 🐳 도커의 기본 개념과 의의를 알아보았으니 도커</description>
+    </item>
+    
+    <item>
       <title>[Docker/도커]02. 도커의 기초 - 도커를 사용하는 의의 / 도커 설치하기</title>
       <link>https://chlalstjd430.github.io/2020/09/docker_02/</link>
       <pubDate>Fri, 04 Sep 2020 17:36:13 +0900</pubDate>
       
       <guid>https://chlalstjd430.github.io/2020/09/docker_02/</guid>
-      <description>더 자세한 내용은 부디 책을 참고하길 부탁드린다. 🐳 02.도커의 기초 - 도커를 사용하는 의의 🐳 앞 장 에서 도카가 무엇인지 살펴보았다. 또한 사실 앞장만 봐도 왜 도커</description>
+      <description>더 자세한 내용은 부디 책을 참고하길 부탁드립니다. 🐳 02.도커의 기초 - 도커를 사용하는 의의 🐳 앞 장 에서 도카가 무엇인지 살펴보았다. 또한 사실 앞장만 봐도 왜 도</description>
     </item>
     
     <item>
@@ -178,15 +187,6 @@
       
       <guid>https://chlalstjd430.github.io/2020/06/08_observer_pattern/</guid>
       <description>Observer pattern(옵저버 패턴) 이번에 학습할 디자인 패턴은 옵저버 패턴 입니다. Observer pattern(옵저버 패턴)이란? 위키에서는 다음과 같이 정의합니다.</description>
-    </item>
-    
-    <item>
-      <title>[DesignPattern] Command pattern(커맨드 패턴)</title>
-      <link>https://chlalstjd430.github.io/2020/06/07_command_pattern/</link>
-      <pubDate>Sat, 13 Jun 2020 17:52:37 +0900</pubDate>
-      
-      <guid>https://chlalstjd430.github.io/2020/06/07_command_pattern/</guid>
-      <description>Command pattern(커맨드 패턴) 이번에 학습할 디자인 패턴은 커맨드 패턴 입니다. Command pattern(커맨드 패턴)이란? 위키에서는 다음과 같이 정의합니다.</description>
     </item>
     
   </channel>

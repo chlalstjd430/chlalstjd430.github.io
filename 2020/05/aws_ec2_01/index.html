@@ -157,6 +157,7 @@
         <ul class="category-list">
             <li class="category-list-item"><a href="https://chlalstjd430.github.io/categories/2020-%EA%B3%84%ED%9A%8D/" class="category-list-link">2020-계획</a><span class="category-list-count">2</span></li>
             <li class="category-list-item"><a href="https://chlalstjd430.github.io/categories/aws/" class="category-list-link">aws</a><span class="category-list-count">3</span></li>
+            <li class="category-list-item"><a href="https://chlalstjd430.github.io/categories/docker/" class="category-list-link">docker</a><span class="category-list-count">3</span></li>
             <li class="category-list-item"><a href="https://chlalstjd430.github.io/categories/it-%EC%A0%95%EB%B3%B4/" class="category-list-link">it-정보</a><span class="category-list-count">2</span></li>
             <li class="category-list-item"><a href="https://chlalstjd430.github.io/categories/java/" class="category-list-link">java</a><span class="category-list-count">1</span></li>
             <li class="category-list-item"><a href="https://chlalstjd430.github.io/categories/%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4/" class="category-list-link">디자인패턴</a><span class="category-list-count">8</span></li>
@@ -178,8 +179,8 @@
         <ul class="tag-list">
             
             
-            <li class="tag-list-item"><a href="https://chlalstjd430.github.io/tags/docker/" class="tag-list-link">docker</a><span
-                    class="tag-list-count">2</span></li>
+            <li class="tag-list-item"><a href="https://chlalstjd430.github.io/tags/devops/" class="tag-list-link">devops</a><span
+                    class="tag-list-count">3</span></li>
             
             
             <li class="tag-list-item"><a href="https://chlalstjd430.github.io/tags/it-%EB%8F%99%EC%95%84%EB%A6%AC/" class="tag-list-link">it-동아리</a><span
@@ -261,6 +262,16 @@
             <li>
                 <div class="item-inner">
                     <p class="item-title">
+                        <a href="https://chlalstjd430.github.io/2020/09/docker_03/" class="title">[Docker/도커]03.도커 컨테이너 배포 - 컨테이너로 애플리케이션 실행하기</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-09-04 21:04:07 &#43;0900 KST" itemprop="datePublished">2020-09-04</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
                         <a href="https://chlalstjd430.github.io/2020/09/docker_02/" class="title">[Docker/도커]02. 도커의 기초 - 도커를 사용하는 의의 / 도커 설치하기</a>
                     </p>
                     <p class="item-date">
@@ -295,16 +306,6 @@
                     </p>
                     <p class="item-date">
                         <time datetime="2020-07-12 12:32:18 &#43;0900 KST" itemprop="datePublished">2020-07-12</time>
-                    </p>
-                </div>
-            </li>
-            <li>
-                <div class="item-inner">
-                    <p class="item-title">
-                        <a href="https://chlalstjd430.github.io/2020/07/spring_core_07/" class="title">[Spring Core(스프링 프레임워크 핵심기술)] 07. IoC 컨테이너 : 프로파일</a>
-                    </p>
-                    <p class="item-date">
-                        <time datetime="2020-07-12 12:30:33 &#43;0900 KST" itemprop="datePublished">2020-07-12</time>
                     </p>
                 </div>
             </li>
@@ -366,21 +367,27 @@
 <li>나는 현재 돈이 없다..(ㅜㅜ)</li>
 </ul>
 <p>이러한 조건의 서비스를 배포하기 위해서 PAAS의 Heroku도 생각했지만, 예전에 Heroku를 사용했을 떄, 서버 region이 외국에 있고 Cold Start 문제가 있어 서비스를 운영하는데 어려움을 많이 느꼇습니다. 그렇기에 AWS에서 제공해주는 프리 티어를 이용하여 간단하게 EC2 서버에 서비스를 배포할 계획을 하였습니다. 그러면 시작해보도록 하겠습니다!</p>
-<!-- raw HTML omitted -->
-<p><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<p align = "center">
+  <img src = "https://gifimage.net/wp-content/uploads/2018/04/lets-go-gif-11.gif">
+</p>
+<p><br><br><br></p>
 <blockquote>
 <p>본 글은 AWS에 회원가입 모두 완료되었다는 가정하에 진행됩니다.</p>
 </blockquote>
 <h2 id="ec2-인스턴스-생성하기">EC2 인스턴스 생성하기</h2>
 <hr>
-<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<p><br><br></p>
 <h3 id="1-인스턴스-시작">1. 인스턴스 시작</h3>
 <p>먼저 인스턴스를 만들어주기 위해 EC2 대시보드로 이동합시다!</p>
-<!-- raw HTML omitted -->
+<p align = "center">
+  <img src="https://user-images.githubusercontent.com/50758600/82554742-7a2c8780-9ba1-11ea-8a8b-414a46a3f5d0.png">
+</p>
 <p>이동하게 되면 위와 같은 화면을 마주하게 되는데요~, 여기서 화면 중앙의 <strong>인스턴스 시작</strong> 버튼을 눌러줍시다.</p>
-<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<p><br><br></p>
 <h3 id="2-단계-1-amazon-machine-imageami-선택">2. 단계 1: Amazon Machine Image(AMI) 선택</h3>
-<!-- raw HTML omitted -->
+<p align = "center">
+  <img src="https://user-images.githubusercontent.com/50758600/82557686-2755ce80-9ba7-11ea-96dc-e9a8a7a9b6f0.png">
+</p>
 <p>AWS EC2에서는 Amazaon Linux, Ubunto, SUSE 등 다양한 OS를 제공하고 있습니다. 저는 이중에서 &ldquo;Ubuntu Server 18.04 LTS (HVM), SSD Volume Type&rdquo; 를 선택하겠습니다.</p>
 <p><strong>🤷‍♂️ Why?</strong></p>
 <ul>
@@ -401,9 +408,11 @@
 </li>
 </ul>
 <p>어찌됐든 AMI른 선택해주었다면 다음 단계로 넘어가보자.</p>
-<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<p><br><br></p>
 <h3 id="3-단계-2-인스턴스-유형-선택">3. 단계 2: 인스턴스 유형 선택</h3>
-<!-- raw HTML omitted -->
+<p align = "center">
+  <img src="https://user-images.githubusercontent.com/50758600/82557778-55d3a980-9ba7-11ea-9b33-c6949c8cb1b3.png">
+</p>
 <p>여기서는 t2.micro를 선택하시면 됩니다~</p>
 <p><strong>🤷‍♂️ Why?</strong></p>
 <ul>
@@ -412,7 +421,9 @@
 <p>(돈 없는 학식은 웁니다 ㅜㅜ)</p>
 </li>
 </ul>
-<!-- raw HTML omitted -->
+<p align = "center">
+  <img src="https://gifimage.net/wp-content/uploads/2017/10/crying-gif-funny.gif">
+</p>
 <ul>
 <li>참고
 <ul>
@@ -421,9 +432,11 @@
 </ul>
 </li>
 </ul>
-<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<p><br><br></p>
 <h3 id="4-단계-3-인스턴스-세부-정보-구성">4. 단계 3: 인스턴스 세부 정보 구성</h3>
-<!-- raw HTML omitted -->
+<p align = "center">
+  <img src="https://user-images.githubusercontent.com/50758600/82557977-afd46f00-9ba7-11ea-8bf8-45e45bd52264.png">
+</p>
 <p>해당 사항은 추가적으로 건드리지 않고 그대로 진행하겠습니다!</p>
 <p><strong>🤷‍♂️ Why?</strong></p>
 <ul>
@@ -434,26 +447,33 @@
 <p>추가적으로 해당 관련 정보를 수정하기 위해서는 추가적인 공부가 필요할 것 같아 당장 EC2를 이용하기 위해서는 그대로 넘어가도록하겠습니다.</p>
 </li>
 </ul>
-<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<p><br><br></p>
 <h3 id="5-단계-4-스토리지-추가">5. 단계 4: 스토리지 추가</h3>
-<!-- raw HTML omitted -->
+<p align = "center">
+  <img src="https://user-images.githubusercontent.com/50758600/82558135-fcb84580-9ba7-11ea-86b0-560aafb01eb7.png">
+</p>
 <p>해당 스토리지의 크기를 30으로 설정해줍시다!</p>
 <p><strong>🤷‍♂️ Why?</strong></p>
 <ul>
 <li>프리 티어에서는 최대 30GB의 스토리지를 사용할 수 있기 떄문에 우리는 최~대한 이를 활용하기 위해서 최대한으로 설정해줍시다!</li>
 </ul>
-<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<p><br><br></p>
 <h3 id="6-단계-5-태그-추가">6. 단계 5: 태그 추가</h3>
-<!-- raw HTML omitted -->
+<p align = "center">
+  <img src="https://user-images.githubusercontent.com/50758600/82558443-941d9880-9ba8-11ea-9de5-e1910a7e673b.png" width = "49%">
+  <img src="https://user-images.githubusercontent.com/50758600/82558333-633d6380-9ba8-11ea-8749-3d9daedce58b.png" width = "49%">
+</p>
 <p>태그는 웹 콘솔에서 표기될 태그인 Name 태그를 등록합니다.</p>
 <p>(태그 추가 클릭 - 키에 Name입력 - 값에 본인의 서비스를 나타낼 수 있는 값을 입력)</p>
 <p><strong>🤷‍♂️ Why?</strong></p>
 <ul>
 <li>여러 인스턴스가 있을 경우 이를 태그별로 구분하기 위해 본인의 서비스를 나타낼 수 있는 값으로 등록을합니다.</li>
 </ul>
-<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<p><br><br></p>
 <h3 id="7-단계-6-보안-그룹-구성">7. 단계 6: 보안 그룹 구성</h3>
-<!-- raw HTML omitted -->
+<p align = "center">
+  <img src="https://user-images.githubusercontent.com/50758600/82558495-bb746580-9ba8-11ea-836f-74de2f80d0c7.png">
+</p>
 <p>보안 그룹은 사진과 같이 규칙을 추가하겠습니다.</p>
 <p><strong>🤷‍♂️ Why?</strong></p>
 <ul>
@@ -475,9 +495,12 @@
 </ul>
 </li>
 </ul>
-<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<p><br><br></p>
 <h3 id="8-단계-7-인스턴스-시작-검토">8. 단계 7: 인스턴스 시작 검토</h3>
-<!-- raw HTML omitted -->
+<p align = "center">
+  <img src="https://user-images.githubusercontent.com/50758600/82558853-8ae0fb80-9ba9-11ea-8803-8a9f1b444f28.png" width="49%">
+  <img src="https://user-images.githubusercontent.com/50758600/82558952-bebc2100-9ba9-11ea-923f-3a1a4e18d3c2.png" width="49%">
+</p>
 <ul>
 <li>
 <p>해당 단계에서는 그동안 저희가 설정했던 부분들이 일괄적으로 나오게 됩니다. 이상없는지 확인해주고 시작하기 버튼을 클릭합시다!</p>
@@ -489,35 +512,59 @@
 <p>위 과정이 완료되었으면 인스턴스 시작을 클릭합니다!</p>
 </li>
 </ul>
-<!-- raw HTML omitted -->
+<p align = "center">
+  <img src="https://user-images.githubusercontent.com/50758600/82559712-0d1def80-9bab-11ea-9a02-3ae0c677568c.png">
+</p>
 <p>다음과 같은 화면이 나오면 다시 EC2 대시보드로 이동해봅시다.</p>
-<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<p><br><br></p>
 <h3 id="9-인스턴스-생성-확인">9. 인스턴스 생성 확인</h3>
-<!-- raw HTML omitted -->
+<p align = "center">
+  <img src="https://user-images.githubusercontent.com/50758600/82559888-59692f80-9bab-11ea-8374-6a309197e80a.png">
+</p>
 <p>짜잔-! 인스턴스 상태가 초록불과 함께 running이라 나와있으면 해당 인스턴스가 잘 실행되고 있음을 뜻합니다.(인스턴스가 생성되고 실행되는 과정까지 시간이 소요될 수 있습니다.)</p>
 <p>잠깐! 저희가 EC2 서버를 실제 접속하기 전에 해야할 일이 있습니다!</p>
-<!-- raw HTML omitted -->
-<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<p align = "center">
+  <img src="https://thumbs.gfycat.com/TediousGrandAmericanpainthorse-small.gif">
+</p>
+<p><br><br></p>
 <h3 id="10-탄력적-ip-할당">10. 탄력적 IP 할당</h3>
 <p>인스턴스는 하나의 서버이기 떄문에 IP가 존재합니다. 인스턴스 생성시 항상 새 IP를 할당받고, 같은 인스턴스를 중지하고 다시 시작할 떄도 새 IP가 할당됩니다. 그렇게 되면 매번 접속해야 하는 IP가 변경되어 PC에서 매번 접속시 IP 주소를 확인해야하는 번거로움이 있습니다. 그렇기에  고정 IP를 가지게 해야하는데요, 우리는 이를 위해서 탄력적 IP를 할당합시다.</p>
 <h5 id="1-먼저-탄력적-ip-메뉴를-클릭합니다">1. 먼저 <strong>탄력적 IP</strong> 메뉴를 클릭합니다.</h5>
-<!-- raw HTML omitted -->
+<p align = "left">
+  <img src="https://user-images.githubusercontent.com/50758600/82560420-69354380-9bac-11ea-84c4-b3ee3cc68e4c.png" width="30%" height="30%">
+</p>
 <h5 id="2-탄력적-ip-주소-할당-을-클릭합니다">2. <strong>탄력적 IP 주소 할당</strong> 을 클릭합니다.</h5>
-<!-- raw HTML omitted -->
+<p align = "left">
+  <img src="https://user-images.githubusercontent.com/50758600/82560573-adc0df00-9bac-11ea-86f4-c1de43ba2f02.png" >
+</p>
 <h5 id="3-다음-화면에서-할당을-클릭합니다">3. 다음 화면에서 할당을 클릭합니다.</h5>
-<!-- raw HTML omitted -->
+<p align = "left">
+  <img src="https://user-images.githubusercontent.com/50758600/82584410-6bf56000-9bcf-11ea-8446-47c7be34a17a.png" >
+</p>
 <h5 id="4-탄력적-ip를-할당받으신걸-확인하실-수-있습니다-그러면-이전에-저희가-만든-인스턴스와-탄력적-ip를-연결해보도록-하겠습니다-먼저-퍼블릭-ipv4-주소-밑의-ip를-클릭합시다">4. 탄력적 IP를 할당받으신걸 확인하실 수 있습니다. 그러면 이전에 저희가 만든 인스턴스와 탄력적 IP를 연결해보도록 하겠습니다! 먼저 <strong>퍼블릭 IPv4 주소</strong> 밑의 IP를 클릭합시다.</h5>
-<!-- raw HTML omitted -->
+<p align = "left">
+  <img src="https://user-images.githubusercontent.com/50758600/82584618-b545af80-9bcf-11ea-970c-c6677ee386e9.png" >
+</p>
 <h5 id="5-이후-그대로-탄력적-ip-주소-연결-을-클릭합니다">5. 이후 그대로 <strong>탄력적 IP 주소 연결</strong> 을 클릭합니다.</h5>
-<!-- raw HTML omitted -->
+<p align = "left">
+  <img src="https://user-images.githubusercontent.com/50758600/82585719-71ec4080-9bd1-11ea-9622-ed342679f928.png" >
+</p>
 <h5 id="6-이후-이전에-만든-인스턴스와-프라이빗-ip-주소를-설정합니다-처음-aws-ec2-이용하시는-분은-그냥-그대로-설정하시고-연결하시면-됩니다">6. 이후 이전에 만든 인스턴스와 프라이빗 IP 주소를 설정합니다. 처음 AWS EC2 이용하시는 분은 그냥 그대로 설정하시고 연결하시면 됩니다.</h5>
-<!-- raw HTML omitted -->
+<p align = "left">
+  <img src="https://user-images.githubusercontent.com/50758600/82585866-abbd4700-9bd1-11ea-8aa7-53c9390e9c83.png" >
+</p>
 <h5 id="7-아래와-같이-나오게되면-탄력적-ip가-해당-인스턴스와-연결되었음을-알-수-있습니다">7. 아래와 같이 나오게되면, 탄력적 IP가 해당 인스턴스와 연결되었음을 알 수 있습니다.</h5>
-<!-- raw HTML omitted -->
+<p align = "left">
+  <img src="https://user-images.githubusercontent.com/50758600/82586211-2d14d980-9bd2-11ea-8792-b9ca07aa8cab.png" >
+</p>
 <p>실제로 EC2 인스턴스를 확인하면 탄력적 IP가 연결된것도 확인하실 수 있습니다!</p>
-<!-- raw HTML omitted -->
+<p align = "left">
+  <img src="https://user-images.githubusercontent.com/50758600/82586447-8250eb00-9bd2-11ea-95e0-e622eb5b7000.png" >
+</p>
 <p>지금까지 EC2 인스턴스 생성과 탄력적 IP 주소 연결까지의 과정을 소개해드렸습니다. 다음 포스팅에는 본격적으로 AWS EC2에 접속하는 방법과 서버에 Spring Boot를 배포하는 과정을 소개해드릴게요. 그럼 다음 포스팅떄 뵙겠습니다 :D</p>
-<!-- raw HTML omitted -->
+<p align = "center">
+  <img src="https://2.bp.blogspot.com/-D4zTIbdUxD0/XLsfrU4cgzI/AAAAAAAAB4s/iKc0CWOrLzEmY2lJtzmSS-mwxlluR3HQQCLcBGAs/s1600/byebyegif.gif" >
+</p>
 <p>참고 문헌</p>
 <ul>
 <li><a href="http://www.yes24.com/Product/Goods/83849117?">스프링 부트와 AWS로 혼자 구현하는 웹 서비스</a></li>

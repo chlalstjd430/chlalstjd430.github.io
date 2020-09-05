@@ -157,6 +157,7 @@
         <ul class="category-list">
             <li class="category-list-item"><a href="https://chlalstjd430.github.io/categories/2020-%EA%B3%84%ED%9A%8D/" class="category-list-link">2020-계획</a><span class="category-list-count">2</span></li>
             <li class="category-list-item"><a href="https://chlalstjd430.github.io/categories/aws/" class="category-list-link">aws</a><span class="category-list-count">3</span></li>
+            <li class="category-list-item"><a href="https://chlalstjd430.github.io/categories/docker/" class="category-list-link">docker</a><span class="category-list-count">3</span></li>
             <li class="category-list-item"><a href="https://chlalstjd430.github.io/categories/it-%EC%A0%95%EB%B3%B4/" class="category-list-link">it-정보</a><span class="category-list-count">2</span></li>
             <li class="category-list-item"><a href="https://chlalstjd430.github.io/categories/java/" class="category-list-link">java</a><span class="category-list-count">1</span></li>
             <li class="category-list-item"><a href="https://chlalstjd430.github.io/categories/%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4/" class="category-list-link">디자인패턴</a><span class="category-list-count">8</span></li>
@@ -178,8 +179,8 @@
         <ul class="tag-list">
             
             
-            <li class="tag-list-item"><a href="https://chlalstjd430.github.io/tags/docker/" class="tag-list-link">docker</a><span
-                    class="tag-list-count">2</span></li>
+            <li class="tag-list-item"><a href="https://chlalstjd430.github.io/tags/devops/" class="tag-list-link">devops</a><span
+                    class="tag-list-count">3</span></li>
             
             
             <li class="tag-list-item"><a href="https://chlalstjd430.github.io/tags/it-%EB%8F%99%EC%95%84%EB%A6%AC/" class="tag-list-link">it-동아리</a><span
@@ -261,6 +262,16 @@
             <li>
                 <div class="item-inner">
                     <p class="item-title">
+                        <a href="https://chlalstjd430.github.io/2020/09/docker_03/" class="title">[Docker/도커]03.도커 컨테이너 배포 - 컨테이너로 애플리케이션 실행하기</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-09-04 21:04:07 &#43;0900 KST" itemprop="datePublished">2020-09-04</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
                         <a href="https://chlalstjd430.github.io/2020/09/docker_02/" class="title">[Docker/도커]02. 도커의 기초 - 도커를 사용하는 의의 / 도커 설치하기</a>
                     </p>
                     <p class="item-date">
@@ -295,16 +306,6 @@
                     </p>
                     <p class="item-date">
                         <time datetime="2020-07-12 12:32:18 &#43;0900 KST" itemprop="datePublished">2020-07-12</time>
-                    </p>
-                </div>
-            </li>
-            <li>
-                <div class="item-inner">
-                    <p class="item-title">
-                        <a href="https://chlalstjd430.github.io/2020/07/spring_core_07/" class="title">[Spring Core(스프링 프레임워크 핵심기술)] 07. IoC 컨테이너 : 프로파일</a>
-                    </p>
-                    <p class="item-date">
-                        <time datetime="2020-07-12 12:30:33 &#43;0900 KST" itemprop="datePublished">2020-07-12</time>
                     </p>
                 </div>
             </li>
@@ -367,7 +368,9 @@
 <p>예제와 함께 커맨드 패턴에 대해 자세히 알아보도록 하겠습니다.</p>
 <h3 id="여러가지-방식으로-성적-출력하기">여러가지 방식으로 성적 출력하기</h3>
 <p>성적을 출력해주는 클래스가 다음과 같이 있다고 하자.</p>
-<!-- raw HTML omitted -->
+<p align = "center">
+  <img src = "https://user-images.githubusercontent.com/50758600/84571981-fe091680-add1-11ea-9ad1-eb6d0065636b.png"/>
+</p>
 <ul>
 <li>
 <p>ScoreRecord 클래스: 점수를 저장/관리하는 클래스</p>
@@ -451,10 +454,14 @@ class DataSheetView {
 <p>이에 성적 통보 대상이 변경되더라도 ScoreRecord 클래스를 그대로 재사용할 수 있도록 옵저버 패턴을 이용하여 클래스 구조를 바꿔보자.</p>
 <h3 id="여러가지-방식으로-성적-출력하기옵저버-패턴">여러가지 방식으로 성적 출력하기(옵저버 패턴)</h3>
 <p>먼저 옵저버 패턴은</p>
-<!-- raw HTML omitted -->
+<p align = "center">
+  <img src = "https://user-images.githubusercontent.com/50758600/84573929-6958e580-adde-11ea-9156-aa71c80e9d18.png"/>
+</p>
 <p>위와 같은 클래스 구조로 이루어져야 한다.</p>
 <p>옵저버 패턴은 통보 대상 객체의 관리를 Subject 클래스와 Observer 인터페이스로 일반화한다. 그러면 데이터 변경을 통보하는 클래스(ConcreteSubject)는 통보 대상 클래스/객체ConcreteObserver)에 대한 <strong>의존성을 제거</strong> 할 수 있다. 결과적으로 옵저버 패턴은 통보 대상 클래스나 대상 객체의 변경에도 ConcreteSubject 클래스를 수정 없이 그대로 사용할 수 있도록 한다.</p>
-<!-- raw HTML omitted -->
+<p align = "center">
+  <img src = "https://user-images.githubusercontent.com/50758600/84572680-af11b000-add6-11ea-8351-8cdd15ca61a3.png"/>
+</p>
 <p>옵저버 패턱을 적용하면 클래스 구조는 위와 같아집니다.</p>
 <p>그리고 코드는 다음과 같습니다.</p>
 <pre><code class="language-JAVA">
@@ -554,7 +561,7 @@ public class Client {
     }
 }
 </code></pre>
-<p><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<p><br><br><br></p>
 <p>참고</p>
 <ul>
 <li><a href="http://www.kyobobook.co.kr/product/detailViewKor.laf?mallGb=KOR&amp;ejkGb=KOR&amp;barcode=9788968480911&amp;orderClick=JAj&amp;OV_REFFER=http://click.linkprice.com/click.php?m=kbbook&amp;a=A100532541&amp;l=9999&amp;l_cd1=0&amp;u_id=kacg2ap746029ofs02yqe&amp;l_cd2=0&amp;tu=http%3A%2F%2Fwww.kyobobook.co.kr%2Fproduct%2FdetailViewKor.laf%3FmallGb%3DKOR%26ejkGb%3DKOR%26barcode%3D9788968480911%26orderClick%3DJAj">JAVA 객체지향 디자인 패턴 </a></li>

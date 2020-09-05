@@ -157,6 +157,7 @@
         <ul class="category-list">
             <li class="category-list-item"><a href="https://chlalstjd430.github.io/categories/2020-%EA%B3%84%ED%9A%8D/" class="category-list-link">2020-계획</a><span class="category-list-count">2</span></li>
             <li class="category-list-item"><a href="https://chlalstjd430.github.io/categories/aws/" class="category-list-link">aws</a><span class="category-list-count">3</span></li>
+            <li class="category-list-item"><a href="https://chlalstjd430.github.io/categories/docker/" class="category-list-link">docker</a><span class="category-list-count">3</span></li>
             <li class="category-list-item"><a href="https://chlalstjd430.github.io/categories/it-%EC%A0%95%EB%B3%B4/" class="category-list-link">it-정보</a><span class="category-list-count">2</span></li>
             <li class="category-list-item"><a href="https://chlalstjd430.github.io/categories/java/" class="category-list-link">java</a><span class="category-list-count">1</span></li>
             <li class="category-list-item"><a href="https://chlalstjd430.github.io/categories/%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4/" class="category-list-link">디자인패턴</a><span class="category-list-count">8</span></li>
@@ -178,8 +179,8 @@
         <ul class="tag-list">
             
             
-            <li class="tag-list-item"><a href="https://chlalstjd430.github.io/tags/docker/" class="tag-list-link">docker</a><span
-                    class="tag-list-count">2</span></li>
+            <li class="tag-list-item"><a href="https://chlalstjd430.github.io/tags/devops/" class="tag-list-link">devops</a><span
+                    class="tag-list-count">3</span></li>
             
             
             <li class="tag-list-item"><a href="https://chlalstjd430.github.io/tags/it-%EB%8F%99%EC%95%84%EB%A6%AC/" class="tag-list-link">it-동아리</a><span
@@ -261,6 +262,16 @@
             <li>
                 <div class="item-inner">
                     <p class="item-title">
+                        <a href="https://chlalstjd430.github.io/2020/09/docker_03/" class="title">[Docker/도커]03.도커 컨테이너 배포 - 컨테이너로 애플리케이션 실행하기</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-09-04 21:04:07 &#43;0900 KST" itemprop="datePublished">2020-09-04</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
                         <a href="https://chlalstjd430.github.io/2020/09/docker_02/" class="title">[Docker/도커]02. 도커의 기초 - 도커를 사용하는 의의 / 도커 설치하기</a>
                     </p>
                     <p class="item-date">
@@ -295,16 +306,6 @@
                     </p>
                     <p class="item-date">
                         <time datetime="2020-07-12 12:32:18 &#43;0900 KST" itemprop="datePublished">2020-07-12</time>
-                    </p>
-                </div>
-            </li>
-            <li>
-                <div class="item-inner">
-                    <p class="item-title">
-                        <a href="https://chlalstjd430.github.io/2020/07/spring_core_07/" class="title">[Spring Core(스프링 프레임워크 핵심기술)] 07. IoC 컨테이너 : 프로파일</a>
-                    </p>
-                    <p class="item-date">
-                        <time datetime="2020-07-12 12:30:33 &#43;0900 KST" itemprop="datePublished">2020-07-12</time>
                     </p>
                 </div>
             </li>
@@ -365,12 +366,17 @@
 </blockquote>
 <p>위의 내용은 위키에 나온 정의입니다. 해당 문장을 다시 표현하자면 &ldquo;구현시 달라질 수 있는 메소드들을 구현클래스에서 선언 후 호출&quot;하는 디자인 패턴입니다.</p>
 <p>백문이 불여일견, 같이 예제를 가지고 살펴보도록 합시다.</p>
-<!-- raw HTML omitted -->
+<p align = "center">
+  <img src = "https://media2.giphy.com/media/VGbsjSuQAnj0rWFF4o/source.gif" width = "30%" height = "30%">
+</p>
 <h3 id="엘레베이터-제어-시스템에서-모터를-구동시키는-기능일반-ver">엘레베이터 제어 시스템에서 모터를 구동시키는 기능(일반 ver)</h3>
 <p><strong>엘레베이터 제어 시스템에서 도터를 구동시킬 떄 여러 회사의 모터를 지원하기 위해서는 어떻게 할까?</strong></p>
-<!-- raw HTML omitted -->
+<br>
 <p>먼저 다음과 같은 구조의 클래스가 있다고 생각해봅시다.</p>
-<!-- raw HTML omitted -->
+<p align = "center">
+  <img src = "https://user-images.githubusercontent.com/50758600/82870394-d2c99f00-9f6a-11ea-8da2-1baf20b9689a.png">
+  <img src = "https://user-images.githubusercontent.com/50758600/82870786-7b77fe80-9f6b-11ea-86cc-3b2b6bfd360c.png">
+</p>
 <ul>
 <li>HyundiaMotor Class : 모터를 제어하여 엘리베이터를 이동시키는 클래스가</li>
 <li>Door Class : 문을 열거나 다는 기능을 제공하는 클래스</li>
@@ -483,7 +489,9 @@ class HyundaiMotor {
 }
 </code></pre>
 <p>이렇게 구현하면 LGMoter도 마찬가지로 사용가능하게 될겁니다. 그러나 코드를 보면 MoveLGMoter 메소드말고는 바뀐 부분이 없습니다. 이는 OCP 원칙에 위배됩니다. 그래서 다음과 같이 클래스 구조를 변경할 것입니다.</p>
-<!-- raw HTML omitted -->
+<p align = "center">
+  <img src = "https://user-images.githubusercontent.com/50758600/82874530-0a3b4a00-9f71-11ea-9268-f8182032d461.png">
+</p>
 <p>이렇게 하면 OCP원칙을 지키며 모터를 상속만해주면 다양한 모터들을 구현할 수 있는 것으로 보입니다. 코드로 구현하면 다음과 같습니다.</p>
 <pre><code class="language-JAVA">abstract class Motor {
     protected Door door;
@@ -553,7 +561,9 @@ class LGMoter extends Motor {
 <p>비교적 깔끔해진 코드를 볼 수있습니다. 그러나 자세히 move 메소드를 살펴보면 현대와 LG 모터 모두 똑같은 코드가 중복되는 부분이 보입니다. 지금 2개의 모터를 예제로 들었지만 이후 10개,100개의 모터와 호환이 되어야한다면 수 많은 코드가 중복되어 해당 로직이 변경된다고 하면 10번, 100번 넘게 코드를 수정해야하는 높은 유지보수 비용이 발생합니다. 그렇다면 어떻게 이를 대처할까요?</p>
 <h3 id="엘레베이터-제어-시스템에서-모터를-구동시키는-기능템플릿-메소드-패턴-적용-ver">엘레베이터 제어 시스템에서 모터를 구동시키는 기능(템플릿 메소드 패턴 적용 ver)</h3>
 <p>이러한 상황에서 템플릿 메소드 패턴을 활용하는 것을 살펴보도록 하겠습니다. 패턴을 적용하면 다음과 같은 구조가 나오게 됩니다.</p>
-<!-- raw HTML omitted -->
+<p aling = "center">
+  <img src = "https://user-images.githubusercontent.com/50758600/82915410-a97d3300-9fab-11ea-9c8f-134b98796bdf.png">
+</p>
 <p>얼핏 보면 크게 달라진게 없어보이지만, Motor 추상 클래스에 move와 moveMotor 메소드가 추가된것을 확인하실 수 있습니다. 이를 코드를 통해 자세히 확인해봅시다.</p>
 <pre><code class="language-JAVA">abstract class Motor {
     private Door door;

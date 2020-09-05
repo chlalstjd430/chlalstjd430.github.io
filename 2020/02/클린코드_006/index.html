@@ -157,6 +157,7 @@
         <ul class="category-list">
             <li class="category-list-item"><a href="https://chlalstjd430.github.io/categories/2020-%EA%B3%84%ED%9A%8D/" class="category-list-link">2020-계획</a><span class="category-list-count">2</span></li>
             <li class="category-list-item"><a href="https://chlalstjd430.github.io/categories/aws/" class="category-list-link">aws</a><span class="category-list-count">3</span></li>
+            <li class="category-list-item"><a href="https://chlalstjd430.github.io/categories/docker/" class="category-list-link">docker</a><span class="category-list-count">3</span></li>
             <li class="category-list-item"><a href="https://chlalstjd430.github.io/categories/it-%EC%A0%95%EB%B3%B4/" class="category-list-link">it-정보</a><span class="category-list-count">2</span></li>
             <li class="category-list-item"><a href="https://chlalstjd430.github.io/categories/java/" class="category-list-link">java</a><span class="category-list-count">1</span></li>
             <li class="category-list-item"><a href="https://chlalstjd430.github.io/categories/%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4/" class="category-list-link">디자인패턴</a><span class="category-list-count">8</span></li>
@@ -178,8 +179,8 @@
         <ul class="tag-list">
             
             
-            <li class="tag-list-item"><a href="https://chlalstjd430.github.io/tags/docker/" class="tag-list-link">docker</a><span
-                    class="tag-list-count">2</span></li>
+            <li class="tag-list-item"><a href="https://chlalstjd430.github.io/tags/devops/" class="tag-list-link">devops</a><span
+                    class="tag-list-count">3</span></li>
             
             
             <li class="tag-list-item"><a href="https://chlalstjd430.github.io/tags/it-%EB%8F%99%EC%95%84%EB%A6%AC/" class="tag-list-link">it-동아리</a><span
@@ -261,6 +262,16 @@
             <li>
                 <div class="item-inner">
                     <p class="item-title">
+                        <a href="https://chlalstjd430.github.io/2020/09/docker_03/" class="title">[Docker/도커]03.도커 컨테이너 배포 - 컨테이너로 애플리케이션 실행하기</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-09-04 21:04:07 &#43;0900 KST" itemprop="datePublished">2020-09-04</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
                         <a href="https://chlalstjd430.github.io/2020/09/docker_02/" class="title">[Docker/도커]02. 도커의 기초 - 도커를 사용하는 의의 / 도커 설치하기</a>
                     </p>
                     <p class="item-date">
@@ -295,16 +306,6 @@
                     </p>
                     <p class="item-date">
                         <time datetime="2020-07-12 12:32:18 &#43;0900 KST" itemprop="datePublished">2020-07-12</time>
-                    </p>
-                </div>
-            </li>
-            <li>
-                <div class="item-inner">
-                    <p class="item-title">
-                        <a href="https://chlalstjd430.github.io/2020/07/spring_core_07/" class="title">[Spring Core(스프링 프레임워크 핵심기술)] 07. IoC 컨테이너 : 프로파일</a>
-                    </p>
-                    <p class="item-date">
-                        <time datetime="2020-07-12 12:30:33 &#43;0900 KST" itemprop="datePublished">2020-07-12</time>
                     </p>
                 </div>
             </li>
@@ -363,7 +364,7 @@
     <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
       <h1 id="chapter-06---객체와-자료구조">Chapter 06 - 객체와 자료구조</h1>
 <hr>
-<p><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<p><br><br><br></p>
 <h3 id="1-자료-추상화">1. 자료 추상화</h3>
 <hr>
 <ul>
@@ -387,7 +388,7 @@
 }
 </code></pre>
 <p>목록 6-1같은 경우 내부 구졸르 노출하고. 목록 6-2는 구현을 완전히 숨긴다. 구현을 완전히 감추기 위해서는 <strong>추상화</strong> 가 필요하다. set,get 메서드로 변수를 다룬다고 클래스가 아니라, 추상 인터페이스를 제공해 사용자가 구현을 모른 채 자료의 핵심을 조작할 수 있어야 진정한 의미의 클래스다.</p>
-<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<p><br><br></p>
 <h3 id="2-자료객체-비대칭">2. 자료/객체 비대칭</h3>
 <ul>
 <li>
@@ -470,7 +471,7 @@ public class Circle implements Shape {
 </code></pre>
 <p>이번에는 목록 6-6을 살펴보자. 객체 지향적인 도형 클래스다. 새 도형을 추가해서 기존 함수에 아무런 영향을 미치지 않는다. 반면 새 함수를 추가하고 싶다면 도형 클래스 전부를 고쳐야 한다.</p>
 <p>즉, 객체 지향 코드에서 어려운 변경은 절차적인 코드에서 쉬우며, 절차적인 코드에서 어려운 변경은 객체 지향 코드에서 쉽다. 그러므로 <strong>상황에 맞게 클래스 &amp; 객체 지향 기법을 사용하거나, 절차적인 코드와 자료 구조를 적절하게 사용하는 것이 좋다.</strong></p>
-<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<p><br><br></p>
 <h3 id="3-디미터-법칩">3. 디미터 법칩</h3>
 <hr>
 <p>모듈은 자신이 조작하는 객체의 속사정을 몰라야 한다는 법칙이다. 좀 더 정확히 표현하자면, 디미터 법칙은 <strong>&ldquo;클래스 C의 메서드 f는 다음과 같은 객체의 메서드만 호출해야 한다&rdquo;</strong> 고 주장한다.</p>
@@ -525,7 +526,7 @@ public class Circle implements Shape {
 <p>자료 전달 객체(DTO)</p>
 </li>
 </ul>
-<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<p><br><br></p>
 <h3 id="결론">결론</h3>
 <hr>
 <ul>
@@ -536,7 +537,7 @@ public class Circle implements Shape {
 <p>무조건 객체가 옳은 것은 아니다. 상황에 맞게 객체나 자료 구조를 사용하여야 한다.</p>
 </li>
 </ul>
-<p><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<p><br><br><br><br><br></p>
 <p><a href="https://github.com/Yooii-Studios/Clean-Code">출저 : https://github.com/Yooii-Studios/Clean-Code</a></p>
 <p><a href="http://www.yes24.com/Product/Goods/11681152">출저 : Clean Code 클린 코드 : 애자일 소프트웨어 장인 정신</a></p>
 

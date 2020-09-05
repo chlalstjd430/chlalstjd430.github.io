@@ -5,10 +5,19 @@
     <link>https://chlalstjd430.github.io/</link>
     <description>Recent content on cmstown</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 04 Sep 2020 17:36:13 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 04 Sep 2020 21:04:07 +0900</lastBuildDate>
     
         <atom:link href="https://chlalstjd430.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>백준 1931 - 회의실 배정</title>
+      <link>https://chlalstjd430.github.io/2020/02/%EB%B0%B1%EC%A4%801931/</link>
+      <pubDate>Wed, 05 Feb 2020 17:37:55 +0900</pubDate>
+      
+      <guid>https://chlalstjd430.github.io/2020/02/%EB%B0%B1%EC%A4%801931/</guid>
+      <description>### [백준 문제 바로가기](https://www.acmicpc.net/problem/1931) #### 사용 언어 C++ 적용 알고리즘 그리디 알고리즘 정렬</description>
+    </item>
     
     <item>
       <title>2020 학습하고 싶은 공부</title>
@@ -43,7 +52,7 @@
       <pubDate>Tue, 04 Feb 2020 16:25:20 +0900</pubDate>
       
       <guid>https://chlalstjd430.github.io/2020/02/%EB%B0%B1%EC%A4%802529/</guid>
-      <description>C++ 적용 알고리즘 그리디 알고리즘 문제풀이 다음과 같은 과정을 거쳐 문제를 풀었습니다. 재귀를 통해 순열을 구한다. 해당 순열이 부등호를 충족시키는지 검사한다. (</description>
+      <description>### [백준 문제 바로가기](https://www.acmicpc.net/problem/1786) #### 사용 언어 C++ 적용 알고리즘 그리디 알고리즘 문제</description>
     </item>
     
     <item>
@@ -79,7 +88,7 @@
       <pubDate>Sun, 02 Feb 2020 23:07:51 +0900</pubDate>
       
       <guid>https://chlalstjd430.github.io/2020/02/%EB%B0%B1%EC%A4%801786/</guid>
-      <description>C++ 적용 알고리즘 KMP 알고리즘 문제풀이 문제에서는 것은 단순 문자열 비교 알고리즘이 아니라 KMP나 라빈 카프 같은 효율적인 알고리즘을 요구합니다. 그러므로 저는 KMP</description>
+      <description>### [백준 문제 바로가기](https://www.acmicpc.net/problem/1786) #### 사용 언어 C++ 적용 알고리즘 KMP 알고리즘 문제풀이</description>
     </item>
     
     <item>
@@ -160,7 +169,7 @@
       <pubDate>Sun, 19 Jan 2020 00:22:02 +0900</pubDate>
       
       <guid>https://chlalstjd430.github.io/2020/01/%EB%B0%B1%EC%A4%809465/</guid>
-      <description></description>
+      <description>☞ 백준 문제 바로가기[9465- 스티커] &amp;nbsp; &amp;nbsp; 사용 언어 - C++ &amp;nbsp; ﻿적용 알고리즘 - Dynamic Programing(다이나믹 프로그래밍) -&amp;nbsp;관련 동영상</description>
     </item>
     
     <item>
@@ -169,7 +178,7 @@
       <pubDate>Fri, 17 Jan 2020 14:35:55 +0900</pubDate>
       
       <guid>https://chlalstjd430.github.io/2020/01/%EB%B0%B1%EC%A4%802579/</guid>
-      <description></description>
+      <description>☞ 백준 문제 바로가기[2579- 계단 오르기] &amp;nbsp; &amp;nbsp; 사용 언어 - C++ &amp;nbsp; ﻿적용 알고리즘 - Dynamic Programing(다이나믹 프로그래밍) -&amp;nbsp;관련 동</description>
     </item>
     
     <item>
@@ -178,16 +187,7 @@
       <pubDate>Thu, 16 Jan 2020 20:16:13 +0900</pubDate>
       
       <guid>https://chlalstjd430.github.io/2020/01/%EB%B0%B1%EC%A4%801149/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>백준 2887 - 행성터널</title>
-      <link>https://chlalstjd430.github.io/2020/01/%EB%B0%B1%EC%A4%802887/</link>
-      <pubDate>Wed, 15 Jan 2020 21:00:48 +0900</pubDate>
-      
-      <guid>https://chlalstjd430.github.io/2020/01/%EB%B0%B1%EC%A4%802887/</guid>
-      <description>백준 문제 바로가기 C++ 적용 알고리즘 최소 스패닝 트리 합집합 찾기 문제풀이 일반적으로 난이도가 쉬운 최소 스패닝 트리 문제를 풀 때, 가중치 값 기준으로 정렬 후 크르스칼</description>
+      <description>☞ 백준 문제 바로가기[1149 - RGB거리] &amp;nbsp; &amp;nbsp; 사용 언어 - C++ &amp;nbsp; ﻿적용 알고리즘 - Dynamic Programing(다이나믹 프로그래밍) -&amp;nbsp;관련 동</description>
     </item>
     
   </channel>
