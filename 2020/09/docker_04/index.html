@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>
-        프로그래머스 - 카카오 프렌즈 컬러링북 - cmstown
+        [Docker/도커]04.도커 컨테이너 배포 - 도커 이미지 다루기 - cmstown
       </title>
     <head>
   <meta charset="utf-8">
@@ -23,32 +23,32 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <meta name="description" content="문제링크 사용언어 c&#43;&#43; 문제유형 dfs/bfs 그래프 주의 사항 전역 변수를 사용할 경우 함수 내에 초기화 코드를 꼭 작성하자 제출하면 답이 틀리려서 30분넘게 씨름했는데..so" />
+  <meta name="description" content="더 자세한 내용은 부디 책을 참고하길 부탁드립니다. 🐳 04.도커 컨테이너 배포 - 도커 이미지 다루기 🐳 도커 사용법은 크게 이미지를 대상으로 하는 것과 컨테이너를 대" />
   <meta name="generator" content="Hugo 0.73.0 with theme pure" />
-  <title>프로그래머스 - 카카오 프렌즈 컬러링북 - cmstown</title>
+  <title>[Docker/도커]04.도커 컨테이너 배포 - 도커 이미지 다루기 - cmstown</title>
   
   
   <link rel="stylesheet" href="https://chlalstjd430.github.io/css/style.min.9aaa883ebea87c2fd2d087c069cb2736c5f6cb2d52460262cad27bb9f932afc8.css">
   
   <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
-  <meta property="og:title" content="프로그래머스 - 카카오 프렌즈 컬러링북" />
-<meta property="og:description" content="문제링크 사용언어 c&#43;&#43; 문제유형 dfs/bfs 그래프 주의 사항 전역 변수를 사용할 경우 함수 내에 초기화 코드를 꼭 작성하자 제출하면 답이 틀리려서 30분넘게 씨름했는데..so" />
+  <meta property="og:title" content="[Docker/도커]04.도커 컨테이너 배포 - 도커 이미지 다루기" />
+<meta property="og:description" content="더 자세한 내용은 부디 책을 참고하길 부탁드립니다. 🐳 04.도커 컨테이너 배포 - 도커 이미지 다루기 🐳 도커 사용법은 크게 이미지를 대상으로 하는 것과 컨테이너를 대" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://chlalstjd430.github.io/2020/02/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_001/" />
-<meta property="article:published_time" content="2020-02-03T17:17:32+09:00" />
-<meta property="article:modified_time" content="2020-02-03T17:17:32+09:00" />
-<meta itemprop="name" content="프로그래머스 - 카카오 프렌즈 컬러링북">
-<meta itemprop="description" content="문제링크 사용언어 c&#43;&#43; 문제유형 dfs/bfs 그래프 주의 사항 전역 변수를 사용할 경우 함수 내에 초기화 코드를 꼭 작성하자 제출하면 답이 틀리려서 30분넘게 씨름했는데..so">
-<meta itemprop="datePublished" content="2020-02-03T17:17:32&#43;09:00" />
-<meta itemprop="dateModified" content="2020-02-03T17:17:32&#43;09:00" />
-<meta itemprop="wordCount" content="448">
+<meta property="og:url" content="https://chlalstjd430.github.io/2020/09/docker_04/" />
+<meta property="article:published_time" content="2020-09-05T17:45:30+09:00" />
+<meta property="article:modified_time" content="2020-09-05T17:45:30+09:00" />
+<meta itemprop="name" content="[Docker/도커]04.도커 컨테이너 배포 - 도커 이미지 다루기">
+<meta itemprop="description" content="더 자세한 내용은 부디 책을 참고하길 부탁드립니다. 🐳 04.도커 컨테이너 배포 - 도커 이미지 다루기 🐳 도커 사용법은 크게 이미지를 대상으로 하는 것과 컨테이너를 대">
+<meta itemprop="datePublished" content="2020-09-05T17:45:30&#43;09:00" />
+<meta itemprop="dateModified" content="2020-09-05T17:45:30&#43;09:00" />
+<meta itemprop="wordCount" content="3108">
 
 
 
-<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="프로그래머스 - 카카오 프렌즈 컬러링북"/>
-<meta name="twitter:description" content="문제링크 사용언어 c&#43;&#43; 문제유형 dfs/bfs 그래프 주의 사항 전역 변수를 사용할 경우 함수 내에 초기화 코드를 꼭 작성하자 제출하면 답이 틀리려서 30분넘게 씨름했는데..so"/>
+<meta itemprop="keywords" content="Devops," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="[Docker/도커]04.도커 컨테이너 배포 - 도커 이미지 다루기"/>
+<meta name="twitter:description" content="더 자세한 내용은 부디 책을 참고하길 부탁드립니다. 🐳 04.도커 컨테이너 배포 - 도커 이미지 다루기 🐳 도커 사용법은 크게 이미지를 대상으로 하는 것과 컨테이너를 대"/>
 
   <!--[if lte IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -333,8 +333,8 @@
       <h1 itemprop="name">
   <a
     class="article-title"
-    href="/2020/02/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_001/"
-    >프로그래머스 - 카카오 프렌즈 컬러링북</a
+    href="/2020/09/docker_04/"
+    >[Docker/도커]04.도커 컨테이너 배포 - 도커 이미지 다루기</a
   >
 </h1>
 
@@ -342,120 +342,335 @@
         
 <span class="article-date">
   <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://chlalstjd430.github.io/2020/02/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_001/" class="article-date">
-  <time datetime="2020-02-03 17:17:32 &#43;0900 KST" itemprop="datePublished">2020-02-03</time>
+<a href="https://chlalstjd430.github.io/2020/09/docker_04/" class="article-date">
+  <time datetime="2020-09-05 17:45:30 &#43;0900 KST" itemprop="datePublished">2020-09-05</time>
 </a>
 </span>
 <span class="article-category">
   <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4/"> 프로그래머스 문제풀이 </a>
-</span>
+  <a class="article-category-link" href="/categories/docker/"> Docker </a>
+</span>  
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>&nbsp;
+    <a class="article-tag-link" href="/tags/devops/"> Devops </a>
+  </span>
 
-        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/2020/02/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_001/#comments"
+        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/2020/09/docker_04/#comments"
             class="article-comment-link">Comments</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 448words</span>
-		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 1minutes </span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 3108words</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 7minutes </span>
       </div>
     </div>
     <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
-      <h3 id="문제링크httpsprogrammerscokrlearncourses30lessons1829"><a href="https://programmers.co.kr/learn/courses/30/lessons/1829">문제링크</a></h3>
+      <p>더 자세한 내용은 부디 <a href="http://www.yes24.com/Product/Goods/70893433">책</a>을 참고하길 부탁드립니다.</p>
+<h1 id="-04도커-컨테이너-배포---도커-이미지-다루기-">🐳 04.도커 컨테이너 배포 - 도커 이미지 다루기 🐳</h1>
+<p>도커 사용법은 크게 이미지를 대상으로 하는 것과 컨테이너를 대상으로 하는 것읕로 나눈다. 이번 글에서는 이미지를 다루는 법에 대해 먼저 알아보자.</p>
 <p><br><br></p>
-<h3 id="사용언어">사용언어</h3>
-<ul>
-<li>c++</li>
-</ul>
-<p><br><br></p>
-<h3 id="문제유형">문제유형</h3>
-<ul>
-<li>
-<p>dfs/bfs</p>
-</li>
-<li>
-<p>그래프</p>
-</li>
-</ul>
-<p><br><br></p>
-<h3 id="주의-사항">주의 사항</h3>
-<ul>
-<li>
-<p>전역 변수를 사용할 경우 함수 내에 초기화 코드를 꼭 작성하자</p>
-<ul>
-<li>제출하면 답이 틀리려서 30분넘게 씨름했는데..solution 함수 위에 다음과 같은 주석이 있었다&hellip;</li>
-</ul>
-<blockquote>
-<p>// 전역 변수를 정의할 경우 함수 내에 초기화 코드를 꼭 작성해주세요.</p>
-</blockquote>
-</li>
-</ul>
-<p><br><br></p>
-<h3 id="문제풀이">문제풀이</h3>
-<p>해당 문제에서는 DFS 혹은 BFS를 이용하여 풀 수 있는 문제이다. 나는 DFS를 선택하여 문제를 풀어보았다.</p>
-<pre><code class="language-c++">#include &lt;vector&gt;
-#include &lt;algorithm&gt;
+<h2 id="도커-이미지">도커 이미지</h2>
+<p>먼저 도커가 무엇인지 알아보자.<br>
+도커 이미지는 쉽게 말하면 도커 컨테이너를 만들기 위한 템플릿이다.</p>
+<p>도커 이미지는 운영 체제로 구성된 파일 시스템은 물론, 라이브러리, 샐행 환경 등을 포함하는 아카이브다. 이번 글에서는 이미지를 빌드하는 명령어부터 시작해 이미지를 다루는 기본 명령을 살펴볼 것이다. 그리고 마지막으로 도커 허브에 이미지를 등록하는 과정까지 수행하여 다른 사람이 이용할 수 있게 하는 단계를 목표로 한다.</p>
+<p>추가적으로 설명에서 부족한 명령들은 <strong>&ldquo;$ docker help&rdquo;</strong> 키워드를 이용하여 자세히 살펴 보기를 바란다.</p>
+<p><strong>docker help 예시</strong></p>
+<pre><code>$ docker help
 
-using namespace std;
+Usage:	docker [OPTIONS] COMMAND
 
-vector&lt;vector&lt;int&gt;&gt; vec;
-bool visited[102][102];
-int M, N;
-int dx[] = {-1, 0, 0, 1};
-int dy[] = {0, -1, 1, 0};
-int area;
+A self-sufficient runtime for containers
 
-void dfs(int x, int y, int color){
-	visited[x][y] = true;
-	area++;
+Options:
+      --config string      Location of client config files (default &quot;/Users/choeminseong/.docker&quot;)
+  -c, --context string     Name of the context to use to connect to the daemon (overrides DOCKER_HOST env var and default context set with &quot;docker context use&quot;)
+  -D, --debug              Enable debug mode
+  -H, --host list          Daemon socket(s) to connect to
+  -l, --log-level string   Set the logging level (&quot;debug&quot;|&quot;info&quot;|&quot;warn&quot;|&quot;error&quot;|&quot;fatal&quot;) (default &quot;info&quot;)
+      --tls                Use TLS; implied by --tlsverify
+      --tlscacert string   Trust certs signed only by this CA (default &quot;/Users/choeminseong/.docker/ca.pem&quot;)
+      --tlscert string     Path to TLS certificate file (default &quot;/Users/choeminseong/.docker/cert.pem&quot;)
+      --tlskey string      Path to TLS key file (default &quot;/Users/choeminseong/.docker/key.pem&quot;)
+      --tlsverify          Use TLS and verify the remote
+  -v, --version            Print version information and quit
 
-	for(int i = 0; i &lt; 4; i++){
-		int mx = x + dx[i];
-		int ny = y + dy[i];
+Management Commands:
+  builder     Manage builds
+  config      Manage Docker configs
+  container   Manage containers
+  context     Manage contexts
+  image       Manage images
+  network     Manage networks
+  node        Manage Swarm nodes
+  plugin      Manage plugins
+  secret      Manage Docker secrets
+  service     Manage services
+  stack       Manage Docker stacks
+  swarm       Manage Swarm
+  system      Manage Docker
+  trust       Manage trust on Docker images
+  volume      Manage volumes
 
-		if(0 &gt; mx || mx &gt; M-1 || 0 &gt; ny || ny &gt; N-1) continue;
+Commands:
+  attach      Attach local standard input, output, and error streams to a running container
+  build       Build an image from a Dockerfile
+  commit      Create a new image from a container's changes
+  cp          Copy files/folders between a container and the local filesystem
+  create      Create a new container
+  diff        Inspect changes to files or directories on a container's filesystem
+  events      Get real time events from the server
+  exec        Run a command in a running container
+  export      Export a container's filesystem as a tar archive
+  history     Show the history of an image
+  images      List images
+  import      Import the contents from a tarball to create a filesystem image
+  info        Display system-wide information
+  inspect     Return low-level information on Docker objects
+  kill        Kill one or more running containers
+  load        Load an image from a tar archive or STDIN
+  login       Log in to a Docker registry
+  logout      Log out from a Docker registry
+  logs        Fetch the logs of a container
+  pause       Pause all processes within one or more containers
+  port        List port mappings or a specific mapping for the container
+  ps          List containers
+  pull        Pull an image or a repository from a registry
+  push        Push an image or a repository to a registry
+  rename      Rename a container
+  restart     Restart one or more containers
+  rm          Remove one or more containers
+  rmi         Remove one or more images
+  run         Run a command in a new container
+  save        Save one or more images to a tar archive (streamed to STDOUT by default)
+  search      Search the Docker Hub for images
+  start       Start one or more stopped containers
+  stats       Display a live stream of container(s) resource usage statistics
+  stop        Stop one or more running containers
+  tag         Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE
+  top         Display the running processes of a container
+  unpause     Unpause all processes within one or more containers
+  update      Update configuration of one or more containers
+  version     Show the Docker version information
+  wait        Block until one or more containers stop, then print their exit codes
 
-		if(!visited[mx][ny] &amp;&amp; vec[mx][ny] == color){
-			dfs(mx,ny,color);
-		}
-	}
+Run 'docker COMMAND --help' for more information on a command.
+</code></pre>
+<pre><code>$ docker image --help
 
-}
+Usage:	docker image COMMAND
 
-// 전역 변수를 정의할 경우 함수 내에 초기화 코드를 꼭 작성해주세요.
-vector&lt;int&gt; solution(int m, int n, vector&lt;vector&lt;int&gt;&gt; picture) {
-	int number_of_area = 0;
-	int max_size_of_one_area = 0;
+Manage images
 
-  // 전역변수 초기화  
-        area = 0;
-	M = m;
-	N = n;
-	vec = picture;
+Commands:
+  build       Build an image from a Dockerfile
+  history     Show the history of an image
+  import      Import the contents from a tarball to create a filesystem image
+  inspect     Display detailed information on one or more images
+  load        Load an image from a tar archive or STDIN
+  ls          List images
+  prune       Remove unused images
+  pull        Pull an image or a repository from a registry
+  push        Push an image or a repository to a registry
+  rm          Remove one or more images
+  save        Save one or more images to a tar archive (streamed to STDOUT by default)
+  tag         Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE
 
-  // visited 2차원 배열을 초기화 안해서 계속 틀렸었다..아마 해당 문제에서는 전역변수 설정시 자동으로 false 설정이 안되나보다.
-    for(int i = 0; i &lt; m; i++){
-		for(int j = 0; j &lt; n; j++){
-			visited[i][j] = false;
-		}
-	}
+Run 'docker image COMMAND --help' for more information on a command.
+</code></pre>
+<pre><code>$ docker image build --help
 
-	for(int i = 0; i &lt; m; i++){
-		for(int j = 0; j &lt; n; j++){
-			if(!visited[i][j] &amp;&amp; vec[i][j] &gt; 0){
-				area = 0;
-				dfs(i, j, vec[i][j]);
-				number_of_area++;
-				max_size_of_one_area = max(area, max_size_of_one_area);
-			}
-		}
-	}
+Usage:	docker image build [OPTIONS] PATH | URL | -
 
+Build an image from a Dockerfile
 
-	vector&lt;int&gt; answer(2);
-	answer[0] = number_of_area;
-	answer[1] = max_size_of_one_area;
-	return answer;
-}
+Options:
+      --add-host list           Add a custom host-to-IP mapping (host:ip)
+      --build-arg list          Set build-time variables
+      --cache-from strings      Images to consider as cache sources
+      --cgroup-parent string    Optional parent cgroup for the container
+      --compress                Compress the build context using gzip
+      --cpu-period int          Limit the CPU CFS (Completely Fair Scheduler) period
+      --cpu-quota int           Limit the CPU CFS (Completely Fair Scheduler) quota
+  -c, --cpu-shares int          CPU shares (relative weight)
+      --cpuset-cpus string      CPUs in which to allow execution (0-3, 0,1)
+      --cpuset-mems string      MEMs in which to allow execution (0-3, 0,1)
+      --disable-content-trust   Skip image verification (default true)
+  -f, --file string             Name of the Dockerfile (Default is 'PATH/Dockerfile')
+      --force-rm                Always remove intermediate containers
+      --iidfile string          Write the image ID to the file
+      --isolation string        Container isolation technology
+      --label list              Set metadata for an image
+  -m, --memory bytes            Memory limit
+      --memory-swap bytes       Swap limit equal to memory plus swap: '-1' to enable unlimited swap
+      --network string          Set the networking mode for the RUN instructions during build (default &quot;default&quot;)
+      --no-cache                Do not use cache when building the image
+  -o, --output stringArray      Output destination (format: type=local,dest=path)
+      --platform string         Set platform if server is multi-platform capable
+      --progress string         Set type of progress output (auto, plain, tty). Use plain to show container output (default &quot;auto&quot;)
+      --pull                    Always attempt to pull a newer version of the image
+  -q, --quiet                   Suppress the build output and print image ID on success
+      --rm                      Remove intermediate containers after a successful build (default true)
+      --secret stringArray      Secret file to expose to the build (only if BuildKit enabled): id=mysecret,src=/local/secret
+      --security-opt strings    Security options
+      --shm-size bytes          Size of /dev/shm
+      --squash                  Squash newly built layers into a single new layer
+      --ssh stringArray         SSH agent socket or keys to expose to the build (only if BuildKit enabled) (format: default|&lt;id&gt;[=&lt;socket&gt;|&lt;key&gt;[,&lt;key&gt;]])
+      --stream                  Stream attaches to server to negotiate build context
+  -t, --tag list                Name and optionally a tag in the 'name:tag' format
+      --target string           Set the target build stage to build.
+      --ulimit ulimit           Ulimit options (default [])
 </code></pre>
 <p><br><br></p>
+<h2 id="docker-image-build---이미지-빌드">docker image build - 이미지 빌드</h2>
+<p>docker image build는 Dockerfile에 기술된 구성을 따라 도커 이미지를 생성하는 명령어이다.</p>
+<pre><code>docker image build -t 이미지명[:태그명] Dockerfile의_경로
+</code></pre>
+<br>
+<h4 id="dockerfile의_경로">Dockerfile의_경로</h4>
+<p>Dockerfile의 경로는 말 그대로 Dockerfile의 경로를 적어주면 된다. 만약 현재 작업 디렉토리에 있다면 그대로</p>
+<pre><code>docker image build -t examplet/echo:latest 
+</code></pre>
+<p>위와 같은 식으로 경로를 생략하고 명령어를 작성하면 된다.</p>
+<br>
+<h4 id="-t-옵션">-t 옵션</h4>
+<p>-t 옵션은 이미지명과 태그명을 붙이는 것으로, 실제 사용에서 거의 필수적으로 쓰인다.</p>
+<br>
+<h4 id="-f-옵션">-f 옵션</h4>
+<p>docker image build 명령은 기본으로 Dockerfile이라는 이름으로 된 Dokcerfile을 찾는다. 그 외 파일명으로 찾고자하는 경우 다음과 같이 -f 옵션을 사용해야 한다.</p>
+<pre><code>$ docker image build -f Dockerfile-test -t example/echo:latest
+</code></pre>
+<br>
+<h4 id="--pull-옵션">&ndash;pull 옵션</h4>
+<p>docker image build 영역으로 이미지를 빌드하려면 Dockerfile의 FROM 인스트럭션에 지정한 이미지를 레지스트리에서 내려받은 후, 이를 베이스 이미지로 해서 새로운 이미지를 빌드한다.</p>
+<p>이렇게 레지스트리에서 받아온 도커 이미지는 일부로 삭제하지 않는 한 호스트 운영 체제에 저장된다. 그러므로 이미지를 빌드할 떄 매번 베이스 이미지를 받아오지 않는다. 그러나 &ndash;pull 옵션을 사용하면 매번 베이스 이미지를 새로 받아온다.</p>
+<pre><code>$ docker image build --pull=true -t example/echo:latest
+</code></pre>
+<br>
+<h4 id="docker-search---이미지-검색">docker search - 이미지 검색</h4>
+<p>도커 허브는 도커 이미지 레지스트리로, 마치 깃허브처럼 사용자나 조직 이름으로 리포지토리를 만들 수 있다. 그리고 이 리포지토리를 사용해 도커 이미지를 관리한다. 또한 도커 허브에는 모든 이미지의 기반이 되는 운영 체제, 언어 런타임, 미들웨어 등이 관리되는 수많은 리포지토리가 있어 쉽게 만들어져있는 이미지를 사용할 수 있다.</p>
+<p>이런 도커 허브를 활용 할 떄 <strong>docker search</strong> 명령을 사용하면 도커 허브에 등록된 리포지토리를 검색할 수 있다.</p>
+<pre><code>docker search [options] 검색_키워드
+</code></pre>
+<br>
+<p>&ndash;limit 옵션으로 최대 검색 건수를 5개 제한하여, &ldquo;mysql&quot;을 검색해보면 다음과 같다.</p>
+<pre><code>$ docker search --limit 5 mysql
+NAME                  DESCRIPTION                                     STARS               OFFICIAL            AUTOMATED
+mysql                 MySQL is a widely used, open-source relation…   9928                [OK]                
+mysql/mysql-server    Optimized MySQL Server Docker images. Create…   723                                     [OK]
+mysql/mysql-cluster   Experimental MySQL Cluster Docker images. Cr…   75                                      
+bitnami/mysql         Bitnami MySQL Docker Image                      44                                      [OK]
+circleci/mysql        MySQL is a widely used, open-source relation…   19                                      
+
+</code></pre>
+<p>검색 결과는 start 순서이고, 공식 리포지토리의 네임스페이스는 보는 바와 같이 생략이 가능하다.</p>
+<p>docker search 명령으로 리포지토리는 검색할 수 있지만, 이 리포지토리가 관리하는 도커 이미지 태그까지는 검색이 불가능하다. 만약 리포지토리에 공개된 이미지의 태그를 알고 싶다면 도커 허브의 해당 리포지토리 페이지에서 Tags를 보는 방법이나 다음과 같이 API를 사용해도 좋다(API 사용시 <a href="https://stedolan.github.io/jq/download/">jq 사용시 별도 설치</a>).</p>
+<pre><code>choeminseong-ui-MacBook-Pro:~ choeminseong$ curl -s 'https:/hub.docker.com/v2/repositories/library/mysql/tags/?page_size=10' | jq -r '.results[].name'
+latest
+8.0.21
+8.0
+8
+5.7.31
+5.7
+5.6.49
+5.6
+5
+8.0.20
+</code></pre>
+<br>
+<h4 id="docker-image-pull---이미지-내려받기">docker image pull - 이미지 내려받기</h4>
+<p>도커 레지스트리에서 도커 이미지를 내려받으려면 docker image pull 명령을 사용한다.</p>
+<pre><code>docker image pull [options] 리포지토리명[:태그명]
+</code></pre>
+<pre><code>$ docker image pull jenkins:latest
+latest: Pulling from library/jenkins
+55cbf04beb70: Already exists 
+1607093a898c: Already exists 
+9a8ea045c926: Already exists 
+d4eee24d4dac: Already exists 
+c58988e753d7: Pull complete 
+794a04897db9: Pull complete 
+70fcfa476f73: Pull complete 
+0539c80a02be: Pull complete 
+54fefc6dcf80: Pull complete 
+911bc90e47a8: Pull complete 
+38430d93efed: Pull complete 
+7e46ccda148a: Pull complete 
+c0cbcb5ac747: Pull complete 
+35ade7a86a8e: Pull complete 
+aa433a6a56b1: Pull complete 
+841c1dd38d62: Pull complete 
+b865dcb08714: Pull complete 
+5a3779030005: Pull complete 
+12b47c68955c: Pull complete 
+1322ea3e7bfd: Pull complete 
+Digest: sha256:eeb4850eb65f2d92500e421b430ed1ec58a7ac909e91f518926e02473904f668
+Status: Downloaded newer image for jenkins:latest
+docker.io/library/jenkins:latest
+</code></pre>
+<br>
+<h4 id="docker-image-ls---보유한-도커-이미지-목록-보기">docker image ls - 보유한 도커 이미지 목록 보기</h4>
+<p>docker image ls 명령은 현재 호스트 운영 체제에 저장된 도커 이미지의 목록을 보여준다.</p>
+<pre><code>$ docker image ls
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+example/echo        latest              4aa00bbd35bd        17 hours ago        750MB
+jenkins             latest              cd14cecfdb3a        2 years ago         696MB
+golang              1.9                 ef89ef5c42a9        2 years ago         750MB
+gihyodocker/echo    latest              3dbbae6eb30d        2 years ago         733MB애
+</code></pre>
+<br>
+<h4 id="docker-image-tag---이미지에-태그-붙이기">docker image tag - 이미지에 태그 붙이기</h4>
+<p>docker image tag는 도커 이미지의 특정 버전에 태그를 붙일 때 사용한다.</p>
+<pre><code>docker image tag 기반이미지명[:태그] 새이미지명[:태그]
+</code></pre>
+<p>예를 들어 example/echo의 latest 이미지에 0.1.0 태그를 부여하려면 다음과 같이 부여하면 된다.</p>
+<pre><code>$ docker image ls
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+example/echo        latest              4aa00bbd35bd        17 hours ago        750MB
+
+$ docker image tag example/echo:latest example/echo:0.1.0
+
+$ docker image ls
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+example/echo        0.1.0               4aa00bbd35bd        17 hours ago        750MB
+example/echo        latest              4aa00bbd35bd        17 hours ago        750MB
+</code></pre>
+<br>
+<h4 id="docker-image-push---이미지를-외부에-공개하기">docker image push - 이미지를 외부에 공개하기</h4>
+<p>docker iamge push 명령은 현재 저장된 도커 이미지를 도커 허브 등의 레지스트리에 등록하기 위해 사용한다.</p>
+<pre><code>docker image push [options] 리포지토리명[:태그]
+</code></pre>
+<p>먼저 push를 위해서 docker에 로그인(회원가입이 안되어있다면 회원가입부터 해주자)을 해줘야한다. 로그인이 완료됬다면, 기존에 example/echo:latest 이미지를 [자신의계정ID]/echo:latest로 tag를 이용해 변경해주고 push해보자.</p>
+<pre><code>$ docker image ls
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+example/echo        0.1.0               4aa00bbd35bd        17 hours ago        750MB
+example/echo        latest              4aa00bbd35bd        17 hours ago        750MB
+
+$ docker image tag example/echo:latest chlalstjd430/echo:latest
+choeminseong-ui-MacBook-Pro:~ choeminseong$ docker image ls
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+chlalstjd430/echo   latest              4aa00bbd35bd        17 hours ago        750MB
+example/echo        0.1.0               4aa00bbd35bd        17 hours ago        750MB
+example/echo        latest              4aa00bbd35bd        17 hours ago        750MB
+
+$ docker image push chlalstjd430/echo:latest
+The push refers to repository [docker.io/chlalstjd430/echo]
+a6d7b9e2aac4: Pushed 
+4174db7ef66f: Pushed 
+186d94bd2c62: Mounted from library/golang 
+24a9d20e5bee: Mounted from library/golang 
+e7dc337030ba: Mounted from library/golang 
+920961b94eb3: Mounted from library/golang 
+fa0c3f992cbd: Mounted from library/jenkins 
+ce6466f43b11: Mounted from library/jenkins 
+719d45669b35: Mounted from library/jenkins 
+3b10514a95be: Mounted from library/jenkins 
+latest: digest: sha256:27fd43220bf04164667592c276235640dd69175c1d54381f16415318c946d07a size: 2418
+</code></pre>
+<p>이후 docker hub에 접속해 로그인하면 다음과 같이 레파지토리가 생긴걸 알 수 있다.</p>
+<img src='https://user-images.githubusercontent.com/50758600/92303755-de3d5500-efb2-11ea-85cf-81ff3e7a1b04.png'>
+<p>이로써 docker image를 다루는 기본 문법들을 살펴보았다. 더 자세한 문법을 직접 살펴보기를 권장드리며 이번 포스팅을 마치도록하겠다.</p>
+<br>
+<br>
+<br>
+<p><strong>참고</strong></p>
+<p><a href="http://www.yes24.com/Product/Goods/70893433">도커/쿠버네티스를 활용한 컨테이너 개발 실전 입문</a></p>
 
     </div>
     <div class="article-footer">
@@ -463,7 +678,7 @@ vector&lt;int&gt; solution(int m, int n, vector&lt;vector&lt;int&gt;&gt; picture
   <ul class="post-copyright list-unstyled">
     <li class="post-copyright-link hidden-xs">
       <strong>Permalink: </strong>
-      <a href="https://chlalstjd430.github.io/2020/02/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_001/" title="프로그래머스 - 카카오 프렌즈 컬러링북" target="_blank" rel="external">https://chlalstjd430.github.io/2020/02/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_001/</a>
+      <a href="https://chlalstjd430.github.io/2020/09/docker_04/" title="[Docker/도커]04.도커 컨테이너 배포 - 도커 이미지 다루기" target="_blank" rel="external">https://chlalstjd430.github.io/2020/09/docker_04/</a>
     </li>
     <li class="post-copyright-license">
       <strong>License：</strong><a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN</a>
@@ -498,14 +713,9 @@ vector&lt;int&gt; solution(int m, int n, vector&lt;vector&lt;int&gt;&gt; picture
     <div class="bar-inner">
         <ul class="pager pull-left">
             <li class="prev">
-                <a href="https://chlalstjd430.github.io/2020/02/%EB%B0%B1%EC%A4%801786/" title="백준 1786 - 찾기"><i
+                <a href="https://chlalstjd430.github.io/2020/09/docker_03/" title="[Docker/도커]03.도커 컨테이너 배포 - 컨테이너로 애플리케이션 실행하기"><i
                         class="icon icon-angle-left"
                         aria-hidden="true"></i><span>&nbsp;&nbsp;Older</span></a>
-            </li>
-            <li class="next">
-                <a href="https://chlalstjd430.github.io/2020/02/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_002/"
-                    title="프로그래머스 - 더 맵게"><span>Newer&nbsp;&nbsp;</span><i
-                        class="icon icon-angle-right" aria-hidden="true"></i></a>
             </li>
             
             <li class="toggle-toc">

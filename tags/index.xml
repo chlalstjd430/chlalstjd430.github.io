@@ -5,10 +5,19 @@
     <link>https://chlalstjd430.github.io/tags/</link>
     <description>Recent content in Tags on cmstown</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 04 Sep 2020 21:04:07 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 05 Sep 2020 17:45:30 +0900</lastBuildDate>
     
         <atom:link href="https://chlalstjd430.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>[Docker/도커]04.도커 컨테이너 배포 - 도커 이미지 다루기</title>
+      <link>https://chlalstjd430.github.io/2020/09/docker_04/</link>
+      <pubDate>Sat, 05 Sep 2020 17:45:30 +0900</pubDate>
+      
+      <guid>https://chlalstjd430.github.io/2020/09/docker_04/</guid>
+      <description>더 자세한 내용은 부디 책을 참고하길 부탁드립니다. 🐳 04.도커 컨테이너 배포 - 도커 이미지 다루기 🐳 도커 사용법은 크게 이미지를 대상으로 하는 것과 컨테이너를 대</description>
+    </item>
     
     <item>
       <title>[Docker/도커]03.도커 컨테이너 배포 - 컨테이너로 애플리케이션 실행하기</title>
@@ -179,15 +188,6 @@
       
       <guid>https://chlalstjd430.github.io/2020/06/python_01_list/</guid>
       <description>[Python 기초] - 리스트 리스트 기본 리스트 생성 리스트명 = [값1, 값2, 값3] 리스트의 색인 num_list = [3, 1, 5, 2] # 양수핼인 0 1 2 3 # 음수색인 -4 -3 -2 -1 길이 len(num_list) # 4 출력</description>
-    </item>
-    
-    <item>
-      <title>[DesignPattern] Observer pattern(옵저버 패턴)</title>
-      <link>https://chlalstjd430.github.io/2020/06/08_observer_pattern/</link>
-      <pubDate>Sat, 13 Jun 2020 23:13:36 +0900</pubDate>
-      
-      <guid>https://chlalstjd430.github.io/2020/06/08_observer_pattern/</guid>
-      <description>Observer pattern(옵저버 패턴) 이번에 학습할 디자인 패턴은 옵저버 패턴 입니다. Observer pattern(옵저버 패턴)이란? 위키에서는 다음과 같이 정의합니다.</description>
     </item>
     
   </channel>
