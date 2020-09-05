@@ -5,10 +5,19 @@
     <link>https://chlalstjd430.github.io/categories/docker/</link>
     <description>Recent content in Docker on cmstown</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 05 Sep 2020 17:45:30 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 05 Sep 2020 21:49:33 +0900</lastBuildDate>
     
         <atom:link href="https://chlalstjd430.github.io/categories/docker/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>[Docker/도커]05.도커 컨테이너 배포 - 도커 컨테이너 다루기</title>
+      <link>https://chlalstjd430.github.io/2020/09/docker_05/</link>
+      <pubDate>Sat, 05 Sep 2020 21:49:33 +0900</pubDate>
+      
+      <guid>https://chlalstjd430.github.io/2020/09/docker_05/</guid>
+      <description>더 자세한 내용은 부디 책을 참고하길 부탁드립니다. 🐳 05.도커 컨테이너 배포 - 도커 컨테이너 다루기 🐳 이번 글에서는 도커 컨테이너를 다루는 방법을 알아보자. 겉</description>
+    </item>
     
     <item>
       <title>[Docker/도커]04.도커 컨테이너 배포 - 도커 이미지 다루기</title>
@@ -179,15 +188,6 @@
       
       <guid>https://chlalstjd430.github.io/2020/06/python_02_collections/</guid>
       <description>[Python 기초] - 튜플,세트 그리고 딕셔너리 다양한 데이터 타입 컴퓨터 자원의 효율적 사용을 위해 상황에 맞는 데이터 구조를 선택해야 질 높은 프로그램을 개발할 수 있음 튜플</description>
-    </item>
-    
-    <item>
-      <title>[Python 기초] - 리스트</title>
-      <link>https://chlalstjd430.github.io/2020/06/python_01_list/</link>
-      <pubDate>Tue, 23 Jun 2020 15:00:26 +0900</pubDate>
-      
-      <guid>https://chlalstjd430.github.io/2020/06/python_01_list/</guid>
-      <description>[Python 기초] - 리스트 리스트 기본 리스트 생성 리스트명 = [값1, 값2, 값3] 리스트의 색인 num_list = [3, 1, 5, 2] # 양수핼인 0 1 2 3 # 음수색인 -4 -3 -2 -1 길이 len(num_list) # 4 출력</description>
     </item>
     
   </channel>
