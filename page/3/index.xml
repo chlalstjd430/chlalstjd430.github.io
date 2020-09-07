@@ -5,10 +5,19 @@
     <link>https://chlalstjd430.github.io/</link>
     <description>Recent content on cmstown</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 06 Sep 2020 03:14:26 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 06 Sep 2020 16:52:31 +0900</lastBuildDate>
     
         <atom:link href="https://chlalstjd430.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>프로그래머스 - [1차] 프렌즈4블록</title>
+      <link>https://chlalstjd430.github.io/2020/03/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_018/</link>
+      <pubDate>Fri, 20 Mar 2020 15:11:44 +0900</pubDate>
+      
+      <guid>https://chlalstjd430.github.io/2020/03/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_018/</guid>
+      <description>문제링크 사용언어 c++ 주의사항 입력으로 판의 높이 m, 폭 n과 판의 배치 정보 board가 들어온다. 2 ≦ n, m ≦ 30 board는 길이 n인 문자열 m개의 배열로 주어진</description>
+    </item>
     
     <item>
       <title>프로그래머스 - 짝지어 제거하기</title>
@@ -179,15 +188,6 @@
       
       <guid>https://chlalstjd430.github.io/2020/02/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_005/</guid>
       <description>문제링크 사용언어 c++ 주의사항 대각선이 지나가는 단위 정사각형의 개수를 구하는 수학적인 공식 h + w - (h와w의 최대공약수) 사실 왜 이러한 공식이 나오는 지 이해</description>
-    </item>
-    
-    <item>
-      <title>백준 2217 - 로프</title>
-      <link>https://chlalstjd430.github.io/2020/02/%EB%B0%B1%EC%A4%802217/</link>
-      <pubDate>Thu, 06 Feb 2020 14:43:20 +0900</pubDate>
-      
-      <guid>https://chlalstjd430.github.io/2020/02/%EB%B0%B1%EC%A4%802217/</guid>
-      <description>### [백준 문제 바로가기](https://www.acmicpc.net/problem/2217) #### 사용 언어 C++ 적용 알고리즘 그리디 알고리즘 정렬</description>
     </item>
     
   </channel>
