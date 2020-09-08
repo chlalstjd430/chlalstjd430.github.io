@@ -5,10 +5,19 @@
     <link>https://chlalstjd430.github.io/posts/</link>
     <description>Recent content in Posts on cmstown</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 06 Sep 2020 16:52:31 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 07 Sep 2020 22:22:15 +0900</lastBuildDate>
     
         <atom:link href="https://chlalstjd430.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Chapter 01 - 깨끗한 코드</title>
+      <link>https://chlalstjd430.github.io/2020/01/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C_001/</link>
+      <pubDate>Tue, 21 Jan 2020 21:18:20 +0900</pubDate>
+      
+      <guid>https://chlalstjd430.github.io/2020/01/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C_001/</guid>
+      <description>01.21부로 클린 코드에 대하여 요약한 게시글을 보고 나만의 후기를 남길 예정이다. 책은 우선시 되는 다른 공부가 어느정도 정리되면 그 때 읽어볼 예정이다. Chapter 01 -</description>
+    </item>
     
     <item>
       <title>백준 2156 - 포도주 시식</title>
