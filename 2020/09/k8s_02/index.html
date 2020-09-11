@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>
+        [Kubernets/쿠버네티스] 02. 쿠버네티스 입문 - 파드(Pod),래플리카세트(ReplicaSet),디플로이먼트(Deployment),서비스(Service) - cmstown
+      </title>
+    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no,email=no,adress=no">
+  
+  <meta name="theme-color" content="#000000" />
+  
+  <meta http-equiv="window-target" content="_top" />
+  
+  
+  <meta name="description" content="🕸 쿠버네티스 입문 - 파드(Pod),래플리카세트(ReplicaSet),디플로이먼트(Deployment),서비스(Service) 🕸 파드" />
+  <meta name="generator" content="Hugo 0.73.0 with theme pure" />
+  <title>[Kubernets/쿠버네티스] 02. 쿠버네티스 입문 - 파드(Pod),래플리카세트(ReplicaSet),디플로이먼트(Deployment),서비스(Service) - cmstown</title>
+  
+  
+  <link rel="stylesheet" href="https://chlalstjd430.github.io/css/style.min.9aaa883ebea87c2fd2d087c069cb2736c5f6cb2d52460262cad27bb9f932afc8.css">
+  
+  <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
+  <meta property="og:title" content="[Kubernets/쿠버네티스] 02. 쿠버네티스 입문 - 파드(Pod),래플리카세트(ReplicaSet),디플로이먼트(Deployment),서비스(Service)" />
+<meta property="og:description" content="🕸 쿠버네티스 입문 - 파드(Pod),래플리카세트(ReplicaSet),디플로이먼트(Deployment),서비스(Service) 🕸 파드" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://chlalstjd430.github.io/2020/09/k8s_02/" />
+<meta property="article:published_time" content="2020-09-11T15:49:19+09:00" />
+<meta property="article:modified_time" content="2020-09-11T15:49:19+09:00" />
+<meta itemprop="name" content="[Kubernets/쿠버네티스] 02. 쿠버네티스 입문 - 파드(Pod),래플리카세트(ReplicaSet),디플로이먼트(Deployment),서비스(Service)">
+<meta itemprop="description" content="🕸 쿠버네티스 입문 - 파드(Pod),래플리카세트(ReplicaSet),디플로이먼트(Deployment),서비스(Service) 🕸 파드">
+<meta itemprop="datePublished" content="2020-09-11T15:49:19&#43;09:00" />
+<meta itemprop="dateModified" content="2020-09-11T15:49:19&#43;09:00" />
+<meta itemprop="wordCount" content="4864">
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="[Kubernets/쿠버네티스] 02. 쿠버네티스 입문 - 파드(Pod),래플리카세트(ReplicaSet),디플로이먼트(Deployment),서비스(Service)"/>
+<meta name="twitter:description" content="🕸 쿠버네티스 입문 - 파드(Pod),래플리카세트(ReplicaSet),디플로이먼트(Deployment),서비스(Service) 🕸 파드"/>
+
+  <!--[if lte IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+    <![endif]-->
+
+  <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+  </head>
+
+  
+  
+
+  <body class="main-center theme-black" itemscope itemtype="http://schema.org/WebPage"><header class="header" itemscope itemtype="http://schema.org/WPHeader">
+    <div class="slimContent">
+      <div class="navbar-header">
+        <div class="profile-block text-center">
+          <a id="avatar" href="https://github.com/chlalstjd430" target="_blank">
+            <img class="img-circle img-rotate" src="https://chlalstjd430.github.io/avatar.png" width="200" height="200">
+          </a>
+          <h2 id="name" class="hidden-xs hidden-sm">최민성</h2>
+          <h3 id="title" class="hidden-xs hidden-sm hidden-md">26, 숭실대학교</h3>
+          <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i>Seoul, Korea</small>
+        </div><div class="search" id="search-form-wrap">
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="Search" />
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i
+                        class="icon icon-search"></i></button>
+            </span>
+        </div>
+        <div class="ins-search">
+            <div class="ins-search-mask"></div>
+            <div class="ins-search-container">
+                <div class="ins-input-wrapper">
+                    <input type="text" class="ins-search-input" placeholder="Type something..."
+                        x-webkit-speech />
+                    <button type="button" class="close ins-close ins-selectable" data-dismiss="modal"
+                        aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="ins-section-wrapper">
+                    <div class="ins-section-container"></div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+        <ul class="nav navbar-nav main-nav">
+            <li class="menu-item menu-item-home">
+                <a href="/">
+                    <i class="icon icon-home-fill"></i>
+                  <span class="menu-title">Home</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-archives">
+                <a href="/posts/">
+                    <i class="icon icon-archives-fill"></i>
+                  <span class="menu-title">Posts</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-categories">
+                <a href="/categories/">
+                    <i class="icon icon-folder"></i>
+                  <span class="menu-title">Categories</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-tags">
+                <a href="/tags/">
+                    <i class="icon icon-tags"></i>
+                  <span class="menu-title">Tags</span>
+                </a>
+            </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    
+      <div class="widget">
+    <h3 class="widget-title">Board</h3>
+    <div class="widget-body">
+        <div id="board">
+            <div class="content"><p>cms3136@gmail.com</p><p>- 숭실대학교 글로벌미디어학부</p><p>- Lectopia s/w expert course 17기</p><p>- YOURSSU 백엔드 개발자</p><p>- YAPP 16기</p><p>- NEXTERS 17기</p><p>- NAVER WEBTOON 서버개발 인턴</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+      <div class="widget">
+    <h3 class="widget-title"> Categories</h3>
+    <div class="widget-body">
+        <ul class="category-list">
+            <li class="category-list-item"><a href="https://chlalstjd430.github.io/categories/2020-%EA%B3%84%ED%9A%8D/" class="category-list-link">2020-계획</a><span class="category-list-count">2</span></li>
+            <li class="category-list-item"><a href="https://chlalstjd430.github.io/categories/aws/" class="category-list-link">aws</a><span class="category-list-count">3</span></li>
+            <li class="category-list-item"><a href="https://chlalstjd430.github.io/categories/docker/" class="category-list-link">docker</a><span class="category-list-count">8</span></li>
+            <li class="category-list-item"><a href="https://chlalstjd430.github.io/categories/it-%EC%A0%95%EB%B3%B4/" class="category-list-link">it-정보</a><span class="category-list-count">2</span></li>
+            <li class="category-list-item"><a href="https://chlalstjd430.github.io/categories/java/" class="category-list-link">java</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="https://chlalstjd430.github.io/categories/kubernetes/" class="category-list-link">kubernetes</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="https://chlalstjd430.github.io/categories/%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4/" class="category-list-link">디자인패턴</a><span class="category-list-count">8</span></li>
+            <li class="category-list-item"><a href="https://chlalstjd430.github.io/categories/%EB%A6%AC%EC%95%A1%ED%8B%B0%EB%B8%8C-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/" class="category-list-link">리액티브-프로그래밍</a><span class="category-list-count">2</span></li>
+            <li class="category-list-item"><a href="https://chlalstjd430.github.io/categories/%EB%B0%B1%EC%97%94%EB%93%9C/" class="category-list-link">백엔드</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="https://chlalstjd430.github.io/categories/%EB%B0%B1%EC%A4%80-%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4/" class="category-list-link">백준-문제풀이</a><span class="category-list-count">16</span></li>
+            <li class="category-list-item"><a href="https://chlalstjd430.github.io/categories/%EC%8A%A4%ED%84%B0%EB%94%94/" class="category-list-link">스터디</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="https://chlalstjd430.github.io/categories/%EC%8A%A4%ED%94%84%EB%A7%81/" class="category-list-link">스프링</a><span class="category-list-count">9</span></li>
+            <li class="category-list-item"><a href="https://chlalstjd430.github.io/categories/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/" class="category-list-link">알고리즘</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="https://chlalstjd430.github.io/categories/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C/" class="category-list-link">클린코드</a><span class="category-list-count">9</span></li>
+            <li class="category-list-item"><a href="https://chlalstjd430.github.io/categories/%ED%8C%8C%EC%9D%B4%EC%8D%AC/" class="category-list-link">파이썬</a><span class="category-list-count">6</span></li>
+            <li class="category-list-item"><a href="https://chlalstjd430.github.io/categories/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4/" class="category-list-link">프로그래머스-문제풀이</a><span class="category-list-count">22</span></li>
+        </ul>
+    </div>
+</div>
+      <div class="widget">
+    <h3 class="widget-title"> Tags</h3>
+    <div class="widget-body">
+        <ul class="tag-list">
+            
+            
+            <li class="tag-list-item"><a href="https://chlalstjd430.github.io/tags/devops/" class="tag-list-link">devops</a><span
+                    class="tag-list-count">9</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://chlalstjd430.github.io/tags/it-%EB%8F%99%EC%95%84%EB%A6%AC/" class="tag-list-link">it-동아리</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://chlalstjd430.github.io/tags/it-%EC%A0%95%EB%B3%B4/" class="tag-list-link">it-정보</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://chlalstjd430.github.io/tags/jwt/" class="tag-list-link">jwt</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://chlalstjd430.github.io/tags/kmp-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/" class="tag-list-link">kmp-알고리즘</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://chlalstjd430.github.io/tags/spring-webflux/" class="tag-list-link">spring-webflux</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://chlalstjd430.github.io/tags/%EA%B3%84%ED%9A%8D/" class="tag-list-link">계획</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://chlalstjd430.github.io/tags/%EA%B7%B8%EB%A6%AC%EB%94%94-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/" class="tag-list-link">그리디-알고리즘</a><span
+                    class="tag-list-count">5</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://chlalstjd430.github.io/tags/%EB%8B%A4%EC%9D%B4%EB%82%98%EB%AF%B9-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/" class="tag-list-link">다이나믹-프로그래밍</a><span
+                    class="tag-list-count">4</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://chlalstjd430.github.io/tags/%EB%8B%A4%EC%9D%B5%EC%8A%A4%ED%8A%B8%EB%9D%BC-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/" class="tag-list-link">다익스트라-알고리즘</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://chlalstjd430.github.io/tags/%EB%A6%AC%EC%95%A1%ED%8B%B0%EB%B8%8C-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/" class="tag-list-link">리액티브-프로그래밍</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://chlalstjd430.github.io/tags/%EB%B8%8C%EB%A3%A8%ED%8A%B8-%ED%8F%AC%EC%8A%A4%ED%8A%B8/" class="tag-list-link">브루트-포스트</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://chlalstjd430.github.io/tags/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/" class="tag-list-link">알고리즘</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://chlalstjd430.github.io/tags/%EC%9C%84%EC%83%81-%EC%A0%95%EB%A0%AC-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/" class="tag-list-link">위상-정렬-알고리즘</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://chlalstjd430.github.io/tags/%EC%9D%B4%EC%A7%84-%ED%8A%B8%EB%A6%AC-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/" class="tag-list-link">이진-트리-알고리즘</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://chlalstjd430.github.io/tags/%EC%B5%9C%EC%86%8C-%EC%8A%A4%ED%8C%A8%EB%8B%9D-%ED%8A%B8%EB%A6%AC/" class="tag-list-link">최소-스패닝-트리</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://chlalstjd430.github.io/tags/%ED%81%AC%EB%A3%A8%EC%8A%A4%EC%B9%BC-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/" class="tag-list-link">크루스칼-알고리즘</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://chlalstjd430.github.io/tags/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C/" class="tag-list-link">클린코드</a><span
+                    class="tag-list-count">9</span></li>
+            
+        </ul>
+
+    </div>
+</div>
+      
+<div class="widget">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget-body">
+        <ul class="recent-post-list list-unstyled no-thumbnail">
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://chlalstjd430.github.io/2020/09/k8s_02/" class="title">[Kubernets/쿠버네티스] 02. 쿠버네티스 입문 - 파드(Pod),래플리카세트(ReplicaSet),디플로이먼트(Deployment),서비스(Service)</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-09-11 15:49:19 &#43;0900 KST" itemprop="datePublished">2020-09-11</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://chlalstjd430.github.io/2020/09/k8s_01/" class="title">[Kubernets/쿠버네티스] 01. 쿠버네티스 입문 - 쿠버네티스란?</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-09-09 16:39:59 &#43;0900 KST" itemprop="datePublished">2020-09-09</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://chlalstjd430.github.io/2020/09/docker_08/" class="title">[Docker/도커] 08.컨테이너 실전 구축 및 배포</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-09-07 22:22:15 &#43;0900 KST" itemprop="datePublished">2020-09-07</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://chlalstjd430.github.io/2020/09/docker_07/" class="title">[Docker/도커] 07.도커 컨테이너 배포 - 도커 컴포즈로 여러 컨테이너 실행하기</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-09-06 16:52:31 &#43;0900 KST" itemprop="datePublished">2020-09-06</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://chlalstjd430.github.io/2020/09/docker_06/" class="title">[Docker/도커] 06.도커 컨테이너 배포 - 운영과 관리를 위한 명령</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-09-06 03:14:26 &#43;0900 KST" itemprop="datePublished">2020-09-06</time>
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+  </div>
+</aside>
+
+    
+    
+<aside class="sidebar sidebar-toc collapse" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    <h4 class="toc-title">Catalogue</h4>
+    <nav id="toc" class="js-toc toc">
+
+    </nav>
+  </div>
+</aside>
+<main class="main" role="main"><div class="content">
+  <article id="-" class="article article-type-" itemscope
+    itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/2020/09/k8s_02/"
+    >[Kubernets/쿠버네티스] 02. 쿠버네티스 입문 - 파드(Pod),래플리카세트(ReplicaSet),디플로이먼트(Deployment),서비스(Service)</a
+  >
+</h1>
+
+      <div class="article-meta">
+        
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="https://chlalstjd430.github.io/2020/09/k8s_02/" class="article-date">
+  <time datetime="2020-09-11 15:49:19 &#43;0900 KST" itemprop="datePublished">2020-09-11</time>
+</a>
+</span>
+
+
+        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/2020/09/k8s_02/#comments"
+            class="article-comment-link">Comments</a></span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 4864words</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 10minutes </span>
+      </div>
+    </div>
+    <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
+      <h1 id="-쿠버네티스-입문---파드pod래플리카세트replicaset디플로이먼트deployment서비스service-">🕸 쿠버네티스 입문 - 파드(Pod),래플리카세트(ReplicaSet),디플로이먼트(Deployment),서비스(Service) 🕸</h1>
+<h2 id="파드">파드</h2>
+<p>파드(pod)는 컨테이너가 모인 집합체의 단위로, 적어도 하나 이상의 컨테이너로 이루어진다. 쿠버네티스를 도커와 함께 사용한다면 파드는 컨테이너 하나 혹은 컨테이너의 집합체가 된다. 쿠버네티스에서는 결합이 강한 컨테이너를 파드로 묶어 일괄 배포한다.</p>
+<p>파드는 다음 그림에서 보듯이 노드에 배치해야 한다. 같은 파드를 여러 노드에 배치할 수도 있고 한 노드에 여러 개 배치할 수도 있다. 그러나 파드 하나가 여러 노드에 걸쳐 배치될 수는 없다.</p>
+<p><img src="https://www.slipp.net/wiki/download/attachments/41583706/image2019-9-16_15-33-53.png?version=1&amp;modificationDate=1568624763000&amp;api=v2" alt="image"></p>
+<br>
+<h4 id="파드-생성-및-배포하기">파드 생성 및 배포하기</h4>
+<p>그럼 이제 파드를 생성해 배포해 보자. nginx-proxy와 애플리케이션, 2개의 컨테이너를 포함하는 파드를 로컬 쿠버네티스 환경에 배포해 보자.</p>
+<p>파드 생성은 kubectl만 사용해도 가능하지만, 버전 관리 관점에서도 yaml 파일로 정의하는 것이 좋다. 쿠버네티스의 여러 가지 리소스를 정의하는 파일을 <strong>매니페스트 파일</strong> 이라고 한다. niginx와 echo라는 애플리케이션 두 컨테이너로 구성되는 파드를 정의한 매니페스트 파일을 simple-pod.yaml이라는 이름으로 다음과 같이 작성한다.</p>
+<pre><code class="language-yaml">apiVersion: v1
+kind: Pod
+metadata: 
+  name: simple-echo
+spec:
+  containers:
+  - name: nginx
+    image: gihyodocker/nginx:latest
+    env:
+    - name: BACKEND_HOST
+      value: localhost:8080
+    ports:
+    - containerPort: 80
+  - name: echo
+    image: gihyodocker/echo:latest
+    ports:
+    - containerPort: 8080
+</code></pre>
+<p>이 설정 파일의 내용을 설명하겠다.</p>
+<p><strong>kind</strong>는 이 파일에서 정의하는 쿠버네티스 리소스의 유형을 지정하는 속성이다. kind 속성의 값에 따라 spec 아래의 스키마가 변화한다.</p>
+<p><strong>metadata</strong>는 이름 그대로 리소스에 부여되는 메타데이터다. medatadata.name 속성의 값이 이 리소스의 이름이 된다.</p>
+<p><strong>spec</strong>은 리소스를 정의하기 위한 속성으로, 파드의 경우 파드를 구성하는 컨테이너를 containers 아래에 정의한다.</p>
+<p><strong>name</strong>은 컨테이너 이름, <strong>image</strong>는 도커 허브에 저장된 이미지 태그값을 지정한다.</p>
+<p><strong>ports</strong> 속성은 컨테이너가 노출시킬(EXPOSE) 포트를 지정한다.</p>
+<p><strong>env</strong> 속성에 환경 변수를 열거할 수 있다. nginx는 요청의 프록싱 대상이 될 BACKEND_HOST 값이 필요하기 때문에 이 값이 설정돼 있다.</p>
+<p>이 파드를 로컬 쿠버네티스 클러스터에 배포해 보겠다. 매니페스트 파일의 내용을 그대로 반여하려면 다음과 같이 kubectl에서 -f 옵션으로 매니페스트 파일에 대한 경로를 지정하고 apply 명령을 사용한다.</p>
+<pre><code>$ kubectl apply -f simple-pod.yaml
+pod/simple-echo created
+</code></pre>
+<p>이제 파드가 동작하기는 하지만, 아직은 접근할 수 없다. 파드에 접근하는 방법은 잠시 후에 다루도록 하겠다.</p>
+<br>
+<h4 id="파드-다루기">파드 다루기</h4>
+<p>매니페스트 파일로 파드를 생성했다. 이번에는 파드를 조작하는 기본 방법을 알아본다.</p>
+<p>파드의 상태는 다음과 같이 목록에서 확인할 수 있다. STATUS가 Running이면 파드 안의 모든 컨테이너가 실행 중이라는 의미다. READY 칼럼값의 분모는 파드에 정의된 컨테이너 수이고 분자는 실행 실행 상태의 컨테이너 수이다.</p>
+<pre><code>$ kubectl get pod
+NAME          READY   STATUS    RESTARTS   AGE
+simple-echo   2/2     Running   0          35m
+</code></pre>
+<p>kubectl을 사용해 <strong>컨테이너 안에 접근</strong> 할 수도 있다. 파드 안의 컨테이너가 여러 개인 경우에는 -c 옵션에 컨테이너 명을 지정한다.</p>
+<pre><code>$ kubectl exec -it simple-echo -c nginx /bin/bash
+root@simple-echo:/#     
+</code></pre>
+<p><strong>kubectl log 명령</strong> 으로 파드 안에 있는 컨테이너의 표준 출력을 화면에 출력할 수 있다. 마찬가지로 -c 옵션으로 컨테이너명을 지정한다.</p>
+<pre><code>$ kubectl logs -f simple-echo -c echo
+2020/09/09 14:00:56 start server
+</code></pre>
+<p>파드를 삭제하려면 kubectl delete pod 명령을 사용한다. kubectl delete 명령은 파드 외에 리소스에도 유효하다. 또한 매니페스트 파일로 파드를 삭제할 수 있는데, 이 경우에는 매니페스트에 작성된 리소스 전체가 삭제된다.</p>
+<pre><code>$ kubectl delete pod simple-echo
+</code></pre>
+<pre><code>$ kubectl delte -f simple-pod.yaml
+</code></pre>
+<p><br><br></p>
+<h2 id="레플리카세트">레플리카세트</h2>
+<p>파드를 정의한 매니페스트 파일로는 파드를 하나밖에 생성할 수 없다. 그러나 어느 정도 규모가 되는 애플리케이션을 구축하려면 같은 파드를 여러 개 실행해 가용성을 확보해야 하는 경우가 생긴다.</p>
+<p>이런 경우에 사용되는 것이 <strong>래플리카세트(ReplicaSet)</strong> 다. 래플리카 세트는 똑같은 정의를 갖는 파드를 여러 개 생성하고 관리하기 위한 리소스다. 파드의 정의 자체도 레플리카 세트를 정의한 yaml 파일에 작성하므로 파드의 설정 파일을 따로 둘 필요 없이 파일 하나로 정의를 완결지을 수 있다. 그러면 simple-replicaset.yaml을 작성해보자.</p>
+<pre><code class="language-yaml">apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: echo
+  labels:
+    app: echo
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: echo
+  template:
+    metadata: 
+      labels: 
+        app: echo
+    spec:
+      containers:
+      - name: nginx
+        image: gihyodocker/nginx:latest
+        env:
+        - name: BACKEND_HOST
+          value: localhost:8080
+        ports:
+        - containerPort: 80
+      - name: echo
+        image: gihyodocker/echo:latest
+        ports:
+        - containerPort: 8080
+</code></pre>
+<p><strong>replicas</strong>는 레플리카세트에서 만들 파드의 복제본 수다. 그리고 <strong>template</strong> 속성의 내용은 파드 정의와 같다. 이 레플리카세트를 배포하면 파드가 3개 만들어진 것을 확인할 수 있다. 같은 파드가 여럿 복제된 것이므로 파드명에 echo-xxx처럼 무작위로 생성된 접미사가 붙는다.</p>
+<pre><code>$ kubectl apply -f simple-replicaset.yaml
+replicaset.apps/echo created
+</code></pre>
+<pre><code>$ kubectl get pod
+NAME          READY   STATUS    RESTARTS   AGE
+echo-2sf2h    2/2     Running   0          45s
+echo-q76w2    2/2     Running   0          45s
+echo-tlknw    2/2     Running   0          45s
+</code></pre>
+<p>레플리카세트를 조작(yaml 파일을 수정) 파드의 수를 줄이면 줄인 개수만큼 파드가 삭제된다. 삭제된 파드는 복원할 수 없기 때문에 웹 애플리케이션 같은 stateless 파드를 사용하기에 유리하다.</p>
+<p>생성한 레플리카세트를 매니페스트 파일을 이용해 다음과 같이 삭제가 가능하다.</p>
+<pre><code>$ kubectl delete -f simple-replicaset.yaml
+replicaset.apps &quot;echo&quot; deleted
+
+$ kubectl get pod
+NAME          READY   STATUS        RESTARTS   AGE
+echo-2sf2h    2/2     Terminating   0          5m18s
+echo-q76w2    2/2     Terminating   0          5m18s
+echo-tlknw    2/2     Terminating   0          5m18s
+</code></pre>
+<p><br><br></p>
+<h2 id="디플로이먼트">디플로이먼트</h2>
+<p>레플리카세트보다 상위에 해당하는 리소스로 **디플로이먼트(deployment)**가 있다. 디플로이먼트는 애플리케이션 배포(deploy)의 기본 단위가 되는 리소스다. 또한 디플로이먼트는 레플리카세트를 관리하고 다루기 위한 리소스다.</p>
+<p>파드, 레플리카세트, 디플로이먼트의 관계를 정리하면 다음 그림과 같다.</p>
+<p><img src="https://www.bluematador.com/hs-fs/hubfs/blog/new/Kubernetes%20Deployments%20-%20Rolling%20Update%20Configuration/Deployment%20Diagrams%20-%20static.png?width=600&amp;name=Deployment%20Diagrams%20-%20static.png" alt="image"></p>
+<p>출처 : <a href="https://www.bluematador.com/blog/kubernetes-deployments-rolling-update-configuration">https://www.bluematador.com/blog/kubernetes-deployments-rolling-update-configuration</a></p>
+<br>
+<p>디플로이먼트를 정의한 매니페스트 파일 simple-deployment.yaml을 다음과 같이 작성한다</p>
+<pre><code class="language-yaml">apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: echo
+  labels:
+    app: echo
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: echo
+  template:
+    metadata: 
+      labels: 
+        app: echo
+    spec:
+      containers:
+      - name: nginx
+        image: gihyodocker/nginx:latest
+        env:
+        - name: BACKEND_HOST
+          value: localhost:8080
+        ports:
+        - containerPort: 80
+      - name: echo
+        image: gihyodocker/echo:latest
+        ports:
+        - containerPort: 8080
+</code></pre>
+<p>디플로이먼트의 정의는 레플리카세트의 정의와 크게 다르지 않다. 차이가 있다면 디플로이먼트가 레플리카세트의 리비전 관리를 할 수 있다는 점 정도다.</p>
+<p>이 매니페스트 파일을 어떤 kubectl 명령을 실행했는지 기록을 남기는 옵션인 <strong>&ndash;record</strong>를 붙여 kubectl로 클러스터에 반영한다.</p>
+<pre><code>$ kubectl apply -f simple-deployment.yaml --record
+deployment.apps/echo created
+</code></pre>
+<p>kubectl 명령으로 상태를 확인해 보자. 디플로이먼트는 물론이고, 레플리카세트와 파드가 생성된 것을 확인할 수 있다.</p>
+<pre><code>$ kubectl get pod,replicaset,deployment --selector app=echo
+NAME                        READY   STATUS    RESTARTS   AGE
+pod/echo-59dfb6bdf7-7lg62   2/2     Running   0          2m1s
+pod/echo-59dfb6bdf7-wj8k6   2/2     Running   0          2m1s
+pod/echo-59dfb6bdf7-xvwkc   2/2     Running   0          2m1s
+
+NAME                              DESIRED   CURRENT   READY   AGE
+replicaset.apps/echo-59dfb6bdf7   3         3         3       2m1s
+
+NAME                   READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/echo   3/3     3            3           2m1s
+choeminseong-ui-MacBook-Pro:04.docekr_pod choeminseong$ 
+</code></pre>
+<p>디플로이먼트의 리비전은 다음과 같이 kubectl rollout history 명령으로 확인할 수 있다. 현재는 첫번째 반영이므로 REVISION=1이다.</p>
+<pre><code>$ kubectl rollout history deployment echo
+deployment.apps/echo 
+REVISION  CHANGE-CAUSE
+1         kubectl apply --filename=simple-deployment.yaml --record=true
+</code></pre>
+<h3 id="레플리카세트의-생애주기">레플리카세트의 생애주기</h3>
+<p>실제 운영에서 쿠버네티스는 디플로이먼트를 단위로 애플리케이션을 배포한다. 디플로이먼트가 관리하는 레플리카세트는 지정된 개수만큼 파드를 확보하거나 파드를 새로운 버전으로 교체하거나 이전 버전으로 롤백하는 등 중요한 역할을 한다. 그러므로 애플리케이션 배포를 바르게 운영하려면 디플로이먼트 안에서 레플리카세트가 어떻게 동작하는지 파악할 수 있어야 한다. 디플로이먼트를 수정하면 레플리카세트가 새로 생성되고 기존 레플리카세트와 교체된다.</p>
+<p>어떤 경우에 새 레플리카세트가 생성되는지 살펴보자.</p>
+<h4 id="파드-개수만-수정하면-레플리카세트가-새로-생성되지-않음">파드 개수만 수정하면 레플리카세트가 새로 생성되지 않음</h4>
+<p>우성 파드 개수만을 수정해 보겠다. 매니페스트 파일에서 replicas 값을 3에서 4로 수정해 반영하고 적용해보자.</p>
+<pre><code># 개수 반영 전 #
+
+$ kubectl get pod
+NAME                    READY   STATUS    RESTARTS   AGE
+echo-59dfb6bdf7-7lg62   2/2     Running   0          17m
+echo-59dfb6bdf7-wj8k6   2/2     Running   0          17m
+echo-59dfb6bdf7-xvwkc   2/2     Running   0          17m
+</code></pre>
+<p>다음에서 보듯이 원래 있던 파드는 그대로 있고, 컨테이너가 하나 새로 생성된 것을 알 수 있다.</p>
+<pre><code># 개수 반영 후 #
+
+$ kubectl apply -f simple-deployment.yaml --record
+deployment.apps/echo configured
+
+$ kubectl get pod
+NAME                    READY   STATUS    RESTARTS   AGE
+echo-59dfb6bdf7-7lg62   2/2     Running   0          17m
+echo-59dfb6bdf7-c47zf   2/2     Running   0          16s
+echo-59dfb6bdf7-wj8k6   2/2     Running   0          17m
+echo-59dfb6bdf7-xvwkc   2/2     Running   0          17m
+</code></pre>
+<p>레플리카세트가 새로 생성됐다면 리비전 번호가 2일 텐데, 그 내용은 출력되지 않는다. replicas 값만 변경해서는 레플리카세트의 교체가 일어나지 않는다는 것을 알 수 있다.</p>
+<pre><code>$ kubectl rollout history deployment echo
+deployment.apps/echo 
+REVISION  CHANGE-CAUSE
+1         kubectl apply --filename=simple-deployment.yaml --record=true
+</code></pre>
+<h4 id="컨테이너-정의-수정">컨테이너 정의 수정</h4>
+<p>컨테이너 이미지가 수정된 경우를 확인해 보자, simple-deployment.yaml 파일의 echo 컨테이너 이미지를 다음과 같이 gihyodocker/echo:patced로 수정한다.</p>
+<pre><code class="language-yaml"> - name: echo
+        image: gihyodocker/echo:patched
+        ports:
+        - containerPort: 8080
+</code></pre>
+<pre><code>$ kubectl apply -f simple-deployment.yaml --record
+deployment.apps/echo configured
+</code></pre>
+<p>그러면 다음과 같이 새로운 파드가 생성되고 기존 파드는 단계적으로 정지됨을 알 수 있다.</p>
+<pre><code>$ kubectl get pod --selector app=echo
+NAME                    READY   STATUS        RESTARTS   AGE
+echo-59dfb6bdf7-7lg62   2/2     Terminating   0          22m
+echo-59dfb6bdf7-wj8k6   0/2     Terminating   0          22m
+echo-6c77cf9d47-8gq2m   2/2     Running       0          38s
+echo-6c77cf9d47-fc82h   2/2     Running       0          34s
+echo-6c77cf9d47-nwnrp   2/2     Running       0          50s
+echo-6c77cf9d47-wlxgn   2/2     Running       0          49s
+</code></pre>
+<p>디플로이먼트의 리비전을 확인해 보면 REVISION=2가 생성됐다. kubectl apply를 실행했을 떄 디플로이먼트의 내용이 변경된 경우 새로운 리비전이 생성된다.</p>
+<pre><code>$ kubectl rollout history deployment echo
+deployment.apps/echo 
+REVISION  CHANGE-CAUSE
+1         kubectl apply --filename=simple-deployment.yaml --record=true
+2         kubectl apply --filename=simple-deployment.yaml --record=true
+</code></pre>
+<br>
+<h3 id="롤백-실행하기">롤백 실행하기</h3>
+<p>디플로이먼트는 리비전 번호가 기록되므로 특정 리비전의 내용을 확인할 수 있다.</p>
+<pre><code>$ kubectl rollout history deployment echo --revision=1
+deployment.apps/echo with revision #1
+Pod Template:
+  Labels:	app=echo
+	pod-template-hash=59dfb6bdf7
+  Annotations:	kubernetes.io/change-cause: kubectl apply --filename=simple-deployment.yaml --record=true
+  Containers:
+   nginx:
+    Image:	gihyodocker/nginx:latest
+    Port:	80/TCP
+    Host Port:	0/TCP
+    Environment:
+      BACKEND_HOST:	localhost:8080
+    Mounts:	&lt;none&gt;
+   echo:
+    Image:	gihyodocker/echo:latest
+    Port:	8080/TCP
+    Host Port:	0/TCP
+    Environment:	&lt;none&gt;
+    Mounts:	&lt;none&gt;
+  Volumes:	&lt;none&gt;
+</code></pre>
+<p><strong>undo</strong>를 실행하면 디플로이먼트가 바로 직전 리비전으로 롤백된다.</p>
+<pre><code>$ kubectl rollout undo deployment echo
+deployment.apps/echo rolled back
+choeminseong-ui-MacBook-Pro:04.docekr_pod 
+</code></pre>
+<p>디플로이먼트는 다음과 같이 매니페스트 파일을 이용해서 삭제한다. 디플로이먼트 및 관련된 레플리카세트와 파드가 함께 삭제된다.</p>
+<pre><code>$ kubectl delete -f simple-deployment.yaml
+deployment.apps &quot;echo&quot; deleted
+</code></pre>
+<p><br><br></p>
+<h2 id="서비스">서비스</h2>
+<p>서비스는 쿠버네티스 클러스터 안에서 파드의 집합(주로 레플리카세트)에 대한 경로나 서비스 디스커버리(API 주소가 동적으로 바뀌는 경우에도 클라이언트가 접속 대상을 바꾸지 않고 하나의 이름으로 접근할 수 있도록 하는 기능)를 제공하는 리소스다. 서비스의 대상이 되는 파드는 서비스에서 정의하는 레이블 셀렉터로 정해진다.</p>
+<p>예를 들어, simple-replicaset-with-label.yaml이라는 이름으로 다음과 같은 매니페스트 파일을 작성해 레플리카세트를 2개 정의한다. 앞서 정의했던 echo 레플리카세트와 거의 같으나, release 속성값과 spring과 summer로 나뉜다.</p>
+<pre><code class="language-yaml">apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: echo-spring
+  labels:
+    app: echo
+    release: spring
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: echo
+      release: spring
+  template:
+    metadata:
+      labels:
+        app: echo
+        release: spring
+    spec:
+      containers:
+      - name: nginx
+        image: gihyodocker/nginx:latest
+        env:
+        - name: BACKEND_HOST
+          value: localhost:8080
+        ports:
+        - containerPort: 80
+      - name: echo
+        image: gihyodocker/echo:latest
+        ports:
+        - containerPort: 8080
+
+---
+
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: echo-summer
+  labels:
+    app: echo
+    release: summer
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: echo
+      release: summer
+  template:
+    metadata:
+      labels:
+        app: echo
+        release: summer
+    spec:
+      containers:
+      - name: nginx
+        image: gihyodocker/nginx:latest
+        env:
+        - name: BACKEND_HOST
+          value: localhost:8080
+        ports:
+        - containerPort: 80
+      - name: echo
+        image: gihyodocker/echo:latest
+        ports:
+        - containerPort: 8080
+</code></pre>
+<pre><code>$ kubectl apply -f simple-replicaset-with-label.yaml
+replicaset.apps/echo-spring created
+replicaset.apps/echo-summer created
+
+
+$ kubectl get pod -l app=echo -l release=spring
+NAME                READY   STATUS    RESTARTS   AGE
+echo-spring-5fp66   2/2     Running   0          75s
+
+$ kubectl get pod -l app=echo -l release=summer
+NAME                READY   STATUS    RESTARTS   AGE
+echo-summer-nff8t   2/2     Running   0          78s
+echo-summer-zkrkg   2/2     Running   0          78s
+</code></pre>
+<p>release=summer인 파드만 접근할 수 있는 서비스를 생성해 보자. 다음과 같이 simple-service.yaml 파일을 작성한다. spec.selector 속성값으로 서비스 대상으로 삼을 파드의 레이블값을 설정한다.</p>
+<pre><code class="language-yaml">apiVersion: v1
+kind: Service
+metadata:
+  name: echo
+spec:
+  selector:
+    app: echo
+    release: summer
+  ports:
+  - name: http
+    port: 80
+</code></pre>
+<p>이 서비스와 레이블로 구분되는 각 파드의 관계를 다음 그림에 나타냈다. 파다의 레이블이 서비스에 정의된 셀렉터 값과 일치하면 해당 파드는 그 서비스의 대상이 되므로 서비스를 경유해 트래픽이 들어 온다.</p>
+<p><img src="https://user-images.githubusercontent.com/50758600/92919192-176e3d00-f46b-11ea-8346-0db69753d45b.png" alt="service"></p>
+<p>simple-service.yaml을 반영해 서비스를 생성한다.</p>
+<pre><code>$ kubectl apply -f simple-service.yaml
+service/echo created
+
+$ kubectl get svc echo
+NAME   TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)   AGE
+echo   ClusterIP   10.97.4.73   &lt;none&gt;        80/TCP    19s
+</code></pre>
+<p>실제로도 release=summer인 파드에만 트래픽이 전달되는지 확인해 보자.</p>
+<p>서비스는 기본적으로 쿠버네티스 클러스터 안에서만 접근할 수 있다. 그러므로 쿠버네티스 클러스터 안에서 디버깅용 임시 컨테이너를 배포하고 curl 명령으로 HTTP 요청을 보내 확인해 볼 것이다. 디버그 컨테이너에 들어가서 http://echo/ 로 아무렇게나 HTTP 요청을 보낸다.</p>
+<pre><code>$ kubectl run -i --rm --tty debug --image=gihyodocker/fundamental:0.1.0 --restart=Never -- bash -il
+If you don't see a command prompt, try pressing enter.
+debug:/# curl http://echo/
+Hello Docker!!debug:/# 
+</code></pre>
+<p>여기서 &lsquo;http://echo/&rsquo; 로 접근이 가능한 이유는 쿠버네티스 클러스터의 DNS는 서비스를 서비스명.네임스페이스명.svc.local로 연결해준다.</p>
+<p>예를 들어, 위의 echosms default 네임스페이스에 배치돼 있으므로 다음과 같다.</p>
+<blockquote>
+<p><a href="http://echo.default.svc.local">http://echo.default.svc.local</a></p>
+</blockquote>
+<p>여기서 svc.local 부분은 생략할 수 있고, 같은 네임스페이스라면 서비스명만으로 참조가 가능하다.</p>
+<p>레이블이 summer인 파드를 하나 골라 로그를 확인해 보면 &ldquo;received request&quot;가 출력된다. 반면 레이블이 spring인 파드는 로그가 출력되지 않는다.</p>
+<pre><code>$ kubectl logs -f echo-summer-zkrkg -c echo
+2020/09/11 07:37:41 start server
+2020/09/11 14:01:07 received request
+</code></pre>
+<br>
+<h4 id="clusterip-서비스">ClusterIP 서비스</h4>
+<p>서비스에도 여러 가지 종류가 있어서 그 종류를 yaml 파일에서 지정할 수 있다. 종류의 기본값은 <strong>ClusterIP 서비스</strong> 다.</p>
+<p>ClusterIP 서비스를 사용하면 쿠버네티스 클러스터의 내부 IP 주소에 서비스를 공개할 수 있다. 이를 이용해 어떤 파드에서 다른 파드 그룹으로 접근할 떄 서비스를 거쳐 가도록 할 수 있으며, 서비스명으로 네임 레졸루션이 가능해진다. 다만, 외부로부터는 접근이 불가능하다.</p>
+<h4 id="nodeport-서비스">NodePort 서비스</h4>
+<p>NodePort 서비스는 클러스터 외부에서 접근할 수 있는 서비스다.</p>
+<p>NodePort 서비스는 ClusterIP를 만든다는 점은 ClusterIP 서비스와 같다. 각 노드에서 서비스 포트로 접속하기 위한 글로벌 포트를 개방한다는 점이 차이점이다.</p>
+<pre><code>apiVersion: v1
+kind: Service
+metadata:
+  name: echo
+spec:
+  type: NodePort
+  selector:
+    app: echo
+  ports:
+  - name: http
+    port: 80
+</code></pre>
+<pre><code>$ kubectl apply -f simple-nodeport-service.yaml
+service/echo configured
+choeminseong-ui-MacBook-Pro:04.docekr_pod choe
+
+$ kubectl get svc echo
+NAME   TYPE       CLUSTER-IP   EXTERNAL-IP   PORT(S)        AGE
+echo   NodePort   10.97.4.73   &lt;none&gt;        80:30727/TCP   115m
+</code></pre>
+<p>NodePort 서비스를 생성했다면 위의 80:30727/TCP라고 나왔듯이 노드의 포트 31058를 통해 서비스에 접근할 수 있다. 이를 이용해 서비스를 구버네티스 클러스터 외부로 공개할 수 있다.</p>
+<pre><code>$ curl http://localhost:30727
+Hello Docker!!
+</code></pre>
+<h4 id="loadbalancer-서비스">LoadBalancer 서비스</h4>
+<p><br><br><br><br><br><br><br><br><br><br></p>
+<p><strong>참고</strong></p>
+<p><a href="http://www.yes24.com/Product/Goods/70893433">도커/쿠버네티스를 활용한 컨테이너 개발 실전 입문</a></p>
+
+    </div>
+    <div class="article-footer">
+<blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
+    <li class="post-copyright-link hidden-xs">
+      <strong>Permalink: </strong>
+      <a href="https://chlalstjd430.github.io/2020/09/k8s_02/" title="[Kubernets/쿠버네티스] 02. 쿠버네티스 입문 - 파드(Pod),래플리카세트(ReplicaSet),디플로이먼트(Deployment),서비스(Service)" target="_blank" rel="external">https://chlalstjd430.github.io/2020/09/k8s_02/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>License：</strong><a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN</a>
+    </li>
+  </ul>
+</blockquote>
+
+<div class="panel panel-default panel-badger">
+  <div class="panel-body">
+    <figure class="media">
+      <div class="media-left">
+        <a href="https://github.com/chlalstjd430" target="_blank" class="img-burn thumb-sm visible-lg">
+          <img src="https://chlalstjd430.github.io/avatar.png" class="img-rounded w-full" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading"><a href="https://github.com/chlalstjd430" target="_blank"><span class="text-dark">최민성</span><small class="ml-1x">26, 숭실대학교</small></a></h3>
+        <div>cms3136@gmail.com</div>
+      </div>
+    </figure>
+  </div>
+</div>
+    </div>
+  </article>
+<section id="comments">
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+</section>
+
+</div><nav class="bar bar-footer clearfix" data-stick-bottom>
+    <div class="bar-inner">
+        <ul class="pager pull-left">
+            <li class="prev">
+                <a href="https://chlalstjd430.github.io/2020/09/k8s_01/" title="[Kubernets/쿠버네티스] 01. 쿠버네티스 입문 - 쿠버네티스란?"><i
+                        class="icon icon-angle-left"
+                        aria-hidden="true"></i><span>&nbsp;&nbsp;Older</span></a>
+            </li>
+            
+            <li class="toggle-toc">
+                <a class="toggle-btn collapsed" data-toggle="collapse" href="#collapseToc" aria-expanded="false"
+                    title="Catalogue" role="button">
+                    <span>[&nbsp;</span><span>Catalogue</span>
+                    <i class="text-collapsed icon icon-anchor"></i>
+                    <i class="text-in icon icon-close"></i>
+                    <span>]</span>
+                </a>
+            </li>
+        </ul>
+        <div class="bar-right">
+            <div class="share-component" data-sites=""
+                data-mobile-sites="weibo,qq,qzone"></div>
+        </div>
+    </div>
+</nav>
+
+</main><footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+<ul class="social-links">
+    <li><a href="https://github.com/chlalstjd430" target="_blank" title="github" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-github"></i></a></li>
+    <li><a href="https://chlalstjd430.github.io/index.xml" target="_blank" title="rss" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-rss"></i></a></li>
+</ul>
+  <div class="copyright">
+    &copy;2017  -
+    2020
+    <div class="publishby">
+        Theme by <a href="https://github.com/xiaoheiAh" target="_blank"> xiaoheiAh </a>base on<a href="https://github.com/xiaoheiAh/hugo-theme-pure" target="_blank"> pure</a>.
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_SVG"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+            showMathMenu: false, //disables context menu
+            tex2jax: {
+            inlineMath: [ ['$','$'], ['\\(','\\)'] ]
+           }
+    });
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script>
+    window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/highlight.min.js"></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/python.min.js" defer></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/javascript.min.js" defer></script><script>
+    hljs.configure({
+        tabReplace: '    ', 
+        classPrefix: ''     
+        
+    })
+    hljs.initHighlightingOnLoad();
+</script>
+<script src="https://chlalstjd430.github.io/js/application.min.bdeb64b910570b6c41badc6a05b7afb0c8ad9efd8525de3c7257d59e786326a3.js"></script>
+<script src="https://chlalstjd430.github.io/js/plugin.min.51ff8c7317566f82259170fa36e09c4493adc9b9378b427a01ad3f017ebac7dd.js"></script>
+
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: 'Posts',
+                PAGES: 'Pages',
+                CATEGORIES: 'Categories',
+                TAGS: 'Tags',
+                UNTITLED: '(Untitled)',
+            },
+            ROOT_URL: 'https:\/\/chlalstjd430.github.io',
+            CONTENT_URL: 'https:\/\/chlalstjd430.github.io\/searchindex.json ',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+<script type="text/javascript" src="https://chlalstjd430.github.io/js/insight.min.a343cd9a5a7698336b28ef3a7c16a3a1b1d2d5fb17dc8ed04022bbe08cc5459073a15bdafa3a8a58cdd56080784bdd69fa70b1ae8597565c799c57ed00f0e120.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+<script>
+    tocbot.init({
+        
+        tocSelector: '.js-toc',
+        
+        contentSelector: '.js-toc-content',
+        
+        headingSelector: 'h1, h2, h3',
+        
+        hasInnerContainers: true,
+    });
+</script>
+
+<script>
+    (function() { 
+    var d = document, s = d.createElement('script');
+    s.src = 'https://' + 'https-chlalstjd430-github-io' + '.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+  </body>
+</html>

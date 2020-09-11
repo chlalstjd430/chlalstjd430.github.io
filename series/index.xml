@@ -10,6 +10,24 @@
     
     
     <item>
+      <title>[Kubernets/쿠버네티스] 02. 쿠버네티스 입문 - 파드(Pod),래플리카세트(ReplicaSet),디플로이먼트(Deployment),서비스(Service)</title>
+      <link>https://chlalstjd430.github.io/2020/09/k8s_02/</link>
+      <pubDate>Fri, 11 Sep 2020 15:49:19 +0900</pubDate>
+      
+      <guid>https://chlalstjd430.github.io/2020/09/k8s_02/</guid>
+      <description>🕸 쿠버네티스 입문 - 파드(Pod),래플리카세트(ReplicaSet),디플로이먼트(Deployment),서비스(Service) 🕸 파드</description>
+    </item>
+    
+    <item>
+      <title>[Kubernets/쿠버네티스] 01. 쿠버네티스 입문 - 쿠버네티스란?</title>
+      <link>https://chlalstjd430.github.io/2020/09/k8s_01/</link>
+      <pubDate>Wed, 09 Sep 2020 16:39:59 +0900</pubDate>
+      
+      <guid>https://chlalstjd430.github.io/2020/09/k8s_01/</guid>
+      <description>🕸 쿠버네티스를 공부하기 전에&amp;hellip; 🕸 앞서 도커에 대해 공부를 해보았다. 도커가 발전함에 따라 컨테이너 오케스트레이션이 다양하게 등장했는데, 그 중</description>
+    </item>
+    
+    <item>
       <title>[Docker/도커] 08.컨테이너 실전 구축 및 배포</title>
       <link>https://chlalstjd430.github.io/2020/09/docker_08/</link>
       <pubDate>Mon, 07 Sep 2020 22:22:15 +0900</pubDate>
@@ -169,24 +187,6 @@
       
       <guid>https://chlalstjd430.github.io/2020/06/gc/</guid>
       <description>[JAVA] - GC(Garbage Collection) GC(Garbage Collection)는 Java 프로세스가 동작하는 과정에서 불필요한 또는 더이상은 사용하지 않는 객체들을 메모리에서 제거함으로써, Java 프로세스가 한</description>
-    </item>
-    
-    <item>
-      <title>[Python 기초] - 클래스</title>
-      <link>https://chlalstjd430.github.io/2020/06/python_06_class/</link>
-      <pubDate>Tue, 23 Jun 2020 15:02:09 +0900</pubDate>
-      
-      <guid>https://chlalstjd430.github.io/2020/06/python_06_class/</guid>
-      <description>[Python 기초] - 클래스 클래스의 개념 id() : 클래스에 의해 생성된 &amp;lsquo;객체&amp;rsquo;의 식별자를 반환하는 함수 &amp;lsquo;객체&amp;rsquo;는 &amp;</description>
-    </item>
-    
-    <item>
-      <title>[Python 기초] - 함수와 모듈</title>
-      <link>https://chlalstjd430.github.io/2020/06/python_05_function/</link>
-      <pubDate>Tue, 23 Jun 2020 15:01:53 +0900</pubDate>
-      
-      <guid>https://chlalstjd430.github.io/2020/06/python_05_function/</guid>
-      <description>[Python 기초] - 함수와 모듈 함수 기본 함수 만들기 def hello(name) : # 함수 선언 return name +&#39;님, 안녕하세요!&#39; hello(&#39;홍길동&#39;) # 함수 호출 pass 예약어 이름만 만들어 놓고 내</description>
     </item>
     
   </channel>
