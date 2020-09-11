@@ -5,10 +5,19 @@
     <link>https://chlalstjd430.github.io/tags/</link>
     <description>Recent content in Tags on cmstown</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 11 Sep 2020 15:49:19 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 12 Sep 2020 00:07:29 +0900</lastBuildDate>
     
         <atom:link href="https://chlalstjd430.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>[Kubernets/쿠버네티스] 03. 쿠버네티스 입문 - 인그레스(ingress)</title>
+      <link>https://chlalstjd430.github.io/2020/09/k8s_03/</link>
+      <pubDate>Sat, 12 Sep 2020 00:07:29 +0900</pubDate>
+      
+      <guid>https://chlalstjd430.github.io/2020/09/k8s_03/</guid>
+      <description>🕸 쿠버네티스 입문 - 인그레스 🕸 이전에 배운 NodePort로 외부 서비스를 공개하는 것은 L4 레벨까지만 다룰 수 있기 떄문에 HTTP/HTTPS처럼 경로를 기</description>
+    </item>
     
     <item>
       <title>[Kubernets/쿠버네티스] 02. 쿠버네티스 입문 - 파드(Pod),래플리카세트(ReplicaSet),디플로이먼트(Deployment),서비스(Service)</title>
@@ -179,15 +188,6 @@
       
       <guid>https://chlalstjd430.github.io/2020/06/spring_core_01/</guid>
       <description>[Spring Core(스프링 프레임워크 핵심기술)] 01 - 내가 스프링 핵심기술을 공부하게 된 이유 스프링을 공부한지 1년이 다되간다, 스프링을 이용하여 다양한 프로젝트</description>
-    </item>
-    
-    <item>
-      <title>[JAVA] - GC(Garbage Collection)</title>
-      <link>https://chlalstjd430.github.io/2020/06/gc/</link>
-      <pubDate>Wed, 24 Jun 2020 18:44:55 +0900</pubDate>
-      
-      <guid>https://chlalstjd430.github.io/2020/06/gc/</guid>
-      <description>[JAVA] - GC(Garbage Collection) GC(Garbage Collection)는 Java 프로세스가 동작하는 과정에서 불필요한 또는 더이상은 사용하지 않는 객체들을 메모리에서 제거함으로써, Java 프로세스가 한</description>
     </item>
     
   </channel>

@@ -3,49 +3,56 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://chlalstjd430.github.io/2020/09/k8s_02/</loc>
-    <lastmod>2020-09-11T15:49:19+09:00</lastmod>
+    <loc>https://chlalstjd430.github.io/2020/09/k8s_03/</loc>
+    <lastmod>2020-09-12T00:07:29+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://chlalstjd430.github.io/categories/</loc>
-    <lastmod>2020-09-11T15:49:19+09:00</lastmod>
+    <lastmod>2020-09-12T00:07:29+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://chlalstjd430.github.io/</loc>
-    <lastmod>2020-09-11T15:49:19+09:00</lastmod>
+    <lastmod>2020-09-12T00:07:29+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://chlalstjd430.github.io/tags/devops/</loc>
-    <lastmod>2020-09-11T15:49:19+09:00</lastmod>
+    <lastmod>2020-09-12T00:07:29+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://chlalstjd430.github.io/categories/kubernetes/</loc>
-    <lastmod>2020-09-11T15:49:19+09:00</lastmod>
+    <lastmod>2020-09-12T00:07:29+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://chlalstjd430.github.io/posts/</loc>
-    <lastmod>2020-09-11T15:49:19+09:00</lastmod>
+    <lastmod>2020-09-12T00:07:29+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://chlalstjd430.github.io/tags/</loc>
+    <lastmod>2020-09-12T00:07:29+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://chlalstjd430.github.io/2020/09/k8s_02/</loc>
     <lastmod>2020-09-11T15:49:19+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

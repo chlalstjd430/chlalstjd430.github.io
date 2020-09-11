@@ -11,6 +11,15 @@
     
     
     <item>
+      <title>[JAVA] - GC(Garbage Collection)</title>
+      <link>https://chlalstjd430.github.io/2020/06/gc/</link>
+      <pubDate>Wed, 24 Jun 2020 18:44:55 +0900</pubDate>
+      
+      <guid>https://chlalstjd430.github.io/2020/06/gc/</guid>
+      <description>[JAVA] - GC(Garbage Collection) GC(Garbage Collection)는 Java 프로세스가 동작하는 과정에서 불필요한 또는 더이상은 사용하지 않는 객체들을 메모리에서 제거함으로써, Java 프로세스가 한</description>
+    </item>
+    
+    <item>
       <title>[Python 기초] - 클래스</title>
       <link>https://chlalstjd430.github.io/2020/06/python_06_class/</link>
       <pubDate>Tue, 23 Jun 2020 15:02:09 +0900</pubDate>
@@ -179,15 +188,6 @@
       
       <guid>https://chlalstjd430.github.io/2020/05/01_decorator_pattern/</guid>
       <description>DecoratorPattern(데코레이터 패턴) 데코레인터 패턴이란? 객체의 결합 을 통해 기능을 동적으로 유연하게 확장 할 수 있게 해주는 패턴 위의 한 문장</description>
-    </item>
-    
-    <item>
-      <title>프로그래머스 - [3차] 방금그곡</title>
-      <link>https://chlalstjd430.github.io/2020/04/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_022/</link>
-      <pubDate>Fri, 10 Apr 2020 10:56:39 +0900</pubDate>
-      
-      <guid>https://chlalstjd430.github.io/2020/04/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_022/</guid>
-      <description>문제링크 사용언어 c++ 주의사항 방금그곡 서비스에서는 음악 제목, 재생이 시작되고 끝난 시각, 악보를 제공한다. 네오가 기억한 멜로디와 악보에 사용되는 음은 C, C#, D,</description>
     </item>
     
   </channel>
