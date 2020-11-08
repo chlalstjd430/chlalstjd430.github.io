@@ -2,191 +2,191 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>JWT on cmstown</title>
-    <link>https://chlalstjd430.github.io/tags/jwt/</link>
+    <link>http://blog.cmstown.com/tags/jwt/</link>
     <description>Recent content in JWT on cmstown</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Thu, 06 Feb 2020 21:42:05 +0900</lastBuildDate>
     
-        <atom:link href="https://chlalstjd430.github.io/tags/jwt/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://blog.cmstown.com/tags/jwt/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>[Kubernets/쿠버네티스] 03. 쿠버네티스 입문 - 인그레스(ingress)</title>
-      <link>https://chlalstjd430.github.io/2020/09/k8s_03/</link>
+      <link>http://blog.cmstown.com/2020/09/k8s_03/</link>
       <pubDate>Sat, 12 Sep 2020 00:07:29 +0900</pubDate>
       
-      <guid>https://chlalstjd430.github.io/2020/09/k8s_03/</guid>
+      <guid>http://blog.cmstown.com/2020/09/k8s_03/</guid>
       <description>🕸 쿠버네티스 입문 - 인그레스 🕸 이전에 배운 NodePort로 외부 서비스를 공개하는 것은 L4 레벨까지만 다룰 수 있기 떄문에 HTTP/HTTPS처럼 경로를 기</description>
     </item>
     
     <item>
       <title>[Kubernets/쿠버네티스] 02. 쿠버네티스 입문 - 파드(Pod),래플리카세트(ReplicaSet),디플로이먼트(Deployment),서비스(Service)</title>
-      <link>https://chlalstjd430.github.io/2020/09/k8s_02/</link>
+      <link>http://blog.cmstown.com/2020/09/k8s_02/</link>
       <pubDate>Fri, 11 Sep 2020 15:49:19 +0900</pubDate>
       
-      <guid>https://chlalstjd430.github.io/2020/09/k8s_02/</guid>
+      <guid>http://blog.cmstown.com/2020/09/k8s_02/</guid>
       <description>🕸 쿠버네티스 입문 - 파드(Pod),래플리카세트(ReplicaSet),디플로이먼트(Deployment),서비스(Service) 🕸 파드</description>
     </item>
     
     <item>
       <title>[Kubernets/쿠버네티스] 01. 쿠버네티스 입문 - 쿠버네티스란?</title>
-      <link>https://chlalstjd430.github.io/2020/09/k8s_01/</link>
+      <link>http://blog.cmstown.com/2020/09/k8s_01/</link>
       <pubDate>Wed, 09 Sep 2020 16:39:59 +0900</pubDate>
       
-      <guid>https://chlalstjd430.github.io/2020/09/k8s_01/</guid>
+      <guid>http://blog.cmstown.com/2020/09/k8s_01/</guid>
       <description>🕸 쿠버네티스를 공부하기 전에&amp;hellip; 🕸 앞서 도커에 대해 공부를 해보았다. 도커가 발전함에 따라 컨테이너 오케스트레이션이 다양하게 등장했는데, 그 중</description>
     </item>
     
     <item>
       <title>[Docker/도커] 08.컨테이너 실전 구축 및 배포</title>
-      <link>https://chlalstjd430.github.io/2020/09/docker_08/</link>
+      <link>http://blog.cmstown.com/2020/09/docker_08/</link>
       <pubDate>Mon, 07 Sep 2020 22:22:15 +0900</pubDate>
       
-      <guid>https://chlalstjd430.github.io/2020/09/docker_08/</guid>
+      <guid>http://blog.cmstown.com/2020/09/docker_08/</guid>
       <description>더 자세한 내용은 부디 책을 참고하길 부탁드립니다. 목차 [Docker/도커] 01. 도커의 기초 - 도커란 무엇인가? [Docker/도커] 02. 도커의 기초 - 도커</description>
     </item>
     
     <item>
       <title>[Docker/도커] 07.도커 컨테이너 배포 - 도커 컴포즈로 여러 컨테이너 실행하기</title>
-      <link>https://chlalstjd430.github.io/2020/09/docker_07/</link>
+      <link>http://blog.cmstown.com/2020/09/docker_07/</link>
       <pubDate>Sun, 06 Sep 2020 16:52:31 +0900</pubDate>
       
-      <guid>https://chlalstjd430.github.io/2020/09/docker_07/</guid>
+      <guid>http://blog.cmstown.com/2020/09/docker_07/</guid>
       <description>더 자세한 내용은 부디 책을 참고하길 부탁드립니다. 목차 [Docker/도커] 01. 도커의 기초 - 도커란 무엇인가? [Docker/도커] 02. 도커의 기초 - 도커</description>
     </item>
     
     <item>
       <title>[Docker/도커] 06.도커 컨테이너 배포 - 운영과 관리를 위한 명령</title>
-      <link>https://chlalstjd430.github.io/2020/09/docker_06/</link>
+      <link>http://blog.cmstown.com/2020/09/docker_06/</link>
       <pubDate>Sun, 06 Sep 2020 03:14:26 +0900</pubDate>
       
-      <guid>https://chlalstjd430.github.io/2020/09/docker_06/</guid>
+      <guid>http://blog.cmstown.com/2020/09/docker_06/</guid>
       <description>더 자세한 내용은 부디 책을 참고하길 부탁드립니다. 목차 [Docker/도커] 01. 도커의 기초 - 도커란 무엇인가? [Docker/도커] 02. 도커의 기초 - 도커</description>
     </item>
     
     <item>
       <title>[Docker/도커] 05.도커 컨테이너 배포 - 도커 컨테이너 다루기</title>
-      <link>https://chlalstjd430.github.io/2020/09/docker_05/</link>
+      <link>http://blog.cmstown.com/2020/09/docker_05/</link>
       <pubDate>Sat, 05 Sep 2020 21:49:33 +0900</pubDate>
       
-      <guid>https://chlalstjd430.github.io/2020/09/docker_05/</guid>
+      <guid>http://blog.cmstown.com/2020/09/docker_05/</guid>
       <description>더 자세한 내용은 부디 책을 참고하길 부탁드립니다. 목차 [Docker/도커] 01. 도커의 기초 - 도커란 무엇인가? [Docker/도커] 02. 도커의 기초 - 도커</description>
     </item>
     
     <item>
       <title>[Docker/도커] 04.도커 컨테이너 배포 - 도커 이미지 다루기</title>
-      <link>https://chlalstjd430.github.io/2020/09/docker_04/</link>
+      <link>http://blog.cmstown.com/2020/09/docker_04/</link>
       <pubDate>Sat, 05 Sep 2020 17:45:30 +0900</pubDate>
       
-      <guid>https://chlalstjd430.github.io/2020/09/docker_04/</guid>
+      <guid>http://blog.cmstown.com/2020/09/docker_04/</guid>
       <description>더 자세한 내용은 부디 책을 참고하길 부탁드립니다. 목차 [Docker/도커] 01. 도커의 기초 - 도커란 무엇인가? [Docker/도커] 02. 도커의 기초 - 도커</description>
     </item>
     
     <item>
       <title>[Docker/도커] 03.도커 컨테이너 배포 - 컨테이너로 애플리케이션 실행하기</title>
-      <link>https://chlalstjd430.github.io/2020/09/docker_03/</link>
+      <link>http://blog.cmstown.com/2020/09/docker_03/</link>
       <pubDate>Fri, 04 Sep 2020 21:04:07 +0900</pubDate>
       
-      <guid>https://chlalstjd430.github.io/2020/09/docker_03/</guid>
+      <guid>http://blog.cmstown.com/2020/09/docker_03/</guid>
       <description>더 자세한 내용은 부디 책을 참고하길 부탁드립니다. 목차 [Docker/도커] 01. 도커의 기초 - 도커란 무엇인가? [Docker/도커] 02. 도커의 기초 - 도커</description>
     </item>
     
     <item>
       <title>[Docker/도커] 02. 도커의 기초 - 도커를 사용하는 의의 / 도커 설치하기</title>
-      <link>https://chlalstjd430.github.io/2020/09/docker_02/</link>
+      <link>http://blog.cmstown.com/2020/09/docker_02/</link>
       <pubDate>Fri, 04 Sep 2020 17:36:13 +0900</pubDate>
       
-      <guid>https://chlalstjd430.github.io/2020/09/docker_02/</guid>
+      <guid>http://blog.cmstown.com/2020/09/docker_02/</guid>
       <description>더 자세한 내용은 부디 책을 참고하길 부탁드립니다. 목차 [Docker/도커] 01. 도커의 기초 - 도커란 무엇인가? 👉 [Docker/도커] 02. 도커의 기초 - 도</description>
     </item>
     
     <item>
       <title>[Docker/도커] 01. 도커의 기초 - 도커란 무엇인가?</title>
-      <link>https://chlalstjd430.github.io/2020/09/docker_01/</link>
+      <link>http://blog.cmstown.com/2020/09/docker_01/</link>
       <pubDate>Fri, 04 Sep 2020 13:23:15 +0900</pubDate>
       
-      <guid>https://chlalstjd430.github.io/2020/09/docker_01/</guid>
+      <guid>http://blog.cmstown.com/2020/09/docker_01/</guid>
       <description>목차 👉 [Docker/도커] 01. 도커의 기초 - 도커란 무엇인가? 👈 [Docker/도커] 02. 도커의 기초 - 도커를 사용하는 의의 / 도커 설치하기 [Docke</description>
     </item>
     
     <item>
       <title>Spring Singleton VS Java Singleton</title>
-      <link>https://chlalstjd430.github.io/2020/08/singleton/</link>
+      <link>http://blog.cmstown.com/2020/08/singleton/</link>
       <pubDate>Wed, 19 Aug 2020 13:51:32 +0900</pubDate>
       
-      <guid>https://chlalstjd430.github.io/2020/08/singleton/</guid>
+      <guid>http://blog.cmstown.com/2020/08/singleton/</guid>
       <description>Spring Singleton VS Java Singleton(스프링 싱글톤과 자바 싱글톤의 차이) 최근 프로젝트를 하던도중 싱글톤으로 구현해야하는 클래스가 생겼는데, Spring에서 s</description>
     </item>
     
     <item>
       <title>[Spring Core(스프링 프레임워크 핵심기술)] 08. IoC 컨테이너 : 프로퍼티</title>
-      <link>https://chlalstjd430.github.io/2020/07/spring_core_08/</link>
+      <link>http://blog.cmstown.com/2020/07/spring_core_08/</link>
       <pubDate>Sun, 12 Jul 2020 12:32:18 +0900</pubDate>
       
-      <guid>https://chlalstjd430.github.io/2020/07/spring_core_08/</guid>
+      <guid>http://blog.cmstown.com/2020/07/spring_core_08/</guid>
       <description>property 프로퍼티 다양한 방법으로 정의할 수 있는 설정값 Environment의 역할은 프로퍼티 소스 실행 및 프로퍼티 값 가져오기 application에 등록된 여</description>
     </item>
     
     <item>
       <title>[Spring Core(스프링 프레임워크 핵심기술)] 07. IoC 컨테이너 : 프로파일</title>
-      <link>https://chlalstjd430.github.io/2020/07/spring_core_07/</link>
+      <link>http://blog.cmstown.com/2020/07/spring_core_07/</link>
       <pubDate>Sun, 12 Jul 2020 12:30:33 +0900</pubDate>
       
-      <guid>https://chlalstjd430.github.io/2020/07/spring_core_07/</guid>
+      <guid>http://blog.cmstown.com/2020/07/spring_core_07/</guid>
       <description>profile ApplicationContext extends EnvironmentCapable application context는 bean factory뿐만 아니라 다양한 기능들을 제공한다. 그 중에서 구현하고 있는 EnviromentCapable에서 제공하</description>
     </item>
     
     <item>
       <title>[Spring Core(스프링 프레임워크 핵심기술)] 06. IoC 컨테이너 : 빈의 스코프</title>
-      <link>https://chlalstjd430.github.io/2020/07/spring_core_06/</link>
+      <link>http://blog.cmstown.com/2020/07/spring_core_06/</link>
       <pubDate>Thu, 09 Jul 2020 19:10:24 +0900</pubDate>
       
-      <guid>https://chlalstjd430.github.io/2020/07/spring_core_06/</guid>
+      <guid>http://blog.cmstown.com/2020/07/spring_core_06/</guid>
       <description>빈의 스코프 Scope 싱글톤(default) 프로토타입 Request Session WebSocket &amp;hellip; Single.java @Component public class Single { } Proto.java @Component @Scope(&amp;quot;prototype&amp;quot;) public class Proto { } AppRunner.java @Component public class AppRunner implements ApplicationRunner { @Autowired ApplicationContext ctx; @Override public void run(ApplicationArguments args) throws Exception { System.out.println(&amp;quot;single&amp;quot;); System.out.println(ctx.getBean(Single.class)); System.out.println(ctx.getBean(Single.class)); System.out.println(ctx.getBean(Single.class)); System.out.println(&amp;quot;proto&amp;quot;); System.out.println(ctx.getBean(Proto.class)); System.out.println(ctx.getBean(Proto.class)); System.out.println(ctx.getBean(Proto.class)); }</description>
     </item>
     
     <item>
       <title>[Spring Core(스프링 프레임워크 핵심기술)] 05. IoC 컨테이너 : @Component와 Component-Scan</title>
-      <link>https://chlalstjd430.github.io/2020/07/spring_core_05/</link>
+      <link>http://blog.cmstown.com/2020/07/spring_core_05/</link>
       <pubDate>Thu, 09 Jul 2020 10:04:44 +0900</pubDate>
       
-      <guid>https://chlalstjd430.github.io/2020/07/spring_core_05/</guid>
+      <guid>http://blog.cmstown.com/2020/07/spring_core_05/</guid>
       <description>@Component와 Component-Scan 컴포넌트 스캔 주요 기능 @Component @Repository @Service @Controller @Configuration @Componenet-Scan spring 3.1 부터 지원 @ComponentScan 어노테이션부터 component scan을 시작하여 해당 파일이 있는 패키지 안의 모든 것을 sc</description>
     </item>
     
     <item>
       <title>[Spring Core(스프링 프레임워크 핵심기술)] 04. @Autowired</title>
-      <link>https://chlalstjd430.github.io/2020/07/spring_core_04/</link>
+      <link>http://blog.cmstown.com/2020/07/spring_core_04/</link>
       <pubDate>Fri, 03 Jul 2020 02:49:29 +0900</pubDate>
       
-      <guid>https://chlalstjd430.github.io/2020/07/spring_core_04/</guid>
+      <guid>http://blog.cmstown.com/2020/07/spring_core_04/</guid>
       <description>@Autowired 필요한 의존 객체의 &amp;ldquo;타입&amp;quot;에 해당하는 빈을 찾아 주입한다. 사용할 수 있는 위치 클래스 주입 BookRepository.java public class BookRepository { } BookService.java @Service public class BookService { BookRepository bookRepository; @Autowired public BookService(BookRepository bookRepository){ this.bookRepository</description>
     </item>
     
     <item>
       <title>[Spring Core(스프링 프레임워크 핵심기술)] 03. IoC 컨테이너 2부 : ApplicationContext와 다양한 빈 설정 방법</title>
-      <link>https://chlalstjd430.github.io/2020/07/spring_core_03/</link>
+      <link>http://blog.cmstown.com/2020/07/spring_core_03/</link>
       <pubDate>Thu, 02 Jul 2020 02:21:47 +0900</pubDate>
       
-      <guid>https://chlalstjd430.github.io/2020/07/spring_core_03/</guid>
+      <guid>http://blog.cmstown.com/2020/07/spring_core_03/</guid>
       <description>2. IoC 컨테이너 2부 : ApplicationContext와 다양한 빈 설정 방법 스프링 IoC 컨테이너의 역할 빈 인스턴스 생성 의존관계설정 빈 제공 ApplicationContext 크게 두가지로</description>
     </item>
     
     <item>
       <title>[Spring Core(스프링 프레임워크 핵심기술)] 02. 스프링 IoC 컨테이너와 빈</title>
-      <link>https://chlalstjd430.github.io/2020/07/spring_core_02/</link>
+      <link>http://blog.cmstown.com/2020/07/spring_core_02/</link>
       <pubDate>Wed, 01 Jul 2020 01:40:21 +0900</pubDate>
       
-      <guid>https://chlalstjd430.github.io/2020/07/spring_core_02/</guid>
+      <guid>http://blog.cmstown.com/2020/07/spring_core_02/</guid>
       <description>스프링 IoC 컨테이너와 빈 IoC(Inversion of Control) 의존 관계 주입(DI, Dependency Injection)이라고도 하며, 어떤 객체가 사용하는 의존 객체를 직접 만들어 사용하는게 아니라, 주</description>
     </item>
     
     <item>
       <title>[Spring Core(스프링 프레임워크 핵심기술)] 01. 내가 스프링 핵심기술을 공부하게 된 이유</title>
-      <link>https://chlalstjd430.github.io/2020/06/spring_core_01/</link>
+      <link>http://blog.cmstown.com/2020/06/spring_core_01/</link>
       <pubDate>Tue, 30 Jun 2020 23:46:11 +0900</pubDate>
       
-      <guid>https://chlalstjd430.github.io/2020/06/spring_core_01/</guid>
+      <guid>http://blog.cmstown.com/2020/06/spring_core_01/</guid>
       <description>[Spring Core(스프링 프레임워크 핵심기술)] 01 - 내가 스프링 핵심기술을 공부하게 된 이유 스프링을 공부한지 1년이 다되간다, 스프링을 이용하여 다양한 프로젝트</description>
     </item>
     

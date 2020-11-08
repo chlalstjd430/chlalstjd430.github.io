@@ -2,191 +2,191 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Devops on cmstown</title>
-    <link>https://chlalstjd430.github.io/tags/devops/</link>
+    <link>http://blog.cmstown.com/tags/devops/</link>
     <description>Recent content in Devops on cmstown</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sat, 12 Sep 2020 00:07:29 +0900</lastBuildDate>
     
-        <atom:link href="https://chlalstjd430.github.io/tags/devops/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://blog.cmstown.com/tags/devops/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>백준 10610 - 30</title>
-      <link>https://chlalstjd430.github.io/2020/02/%EB%B0%B1%EC%A4%8010610/</link>
+      <link>http://blog.cmstown.com/2020/02/%EB%B0%B1%EC%A4%8010610/</link>
       <pubDate>Fri, 07 Feb 2020 14:59:53 +0900</pubDate>
       
-      <guid>https://chlalstjd430.github.io/2020/02/%EB%B0%B1%EC%A4%8010610/</guid>
+      <guid>http://blog.cmstown.com/2020/02/%EB%B0%B1%EC%A4%8010610/</guid>
       <description>### [백준 문제 바로가기](https://www.acmicpc.net/problem/10610) #### 사용 언어 C++ 적용 알고리즘 그리디 알고리즘 정</description>
     </item>
     
     <item>
       <title>JWT(1) - JWT(JSON Web Token)란 무엇인가?</title>
-      <link>https://chlalstjd430.github.io/2020/02/%EA%B3%B5%EB%B6%80_jwt/</link>
+      <link>http://blog.cmstown.com/2020/02/%EA%B3%B5%EB%B6%80_jwt/</link>
       <pubDate>Thu, 06 Feb 2020 21:42:05 +0900</pubDate>
       
-      <guid>https://chlalstjd430.github.io/2020/02/%EA%B3%B5%EB%B6%80_jwt/</guid>
+      <guid>http://blog.cmstown.com/2020/02/%EA%B3%B5%EB%B6%80_jwt/</guid>
       <description>JWT(JSON Web Token) 프로젝트를 진행 중 모바일에서 로그인 API를 제공해야 될 일이 생겼다. 기존에 웹에서 프로젝트를 할 때는 session 정보를 이용하여 로그인 기능을 제공하였는데 모바</description>
     </item>
     
     <item>
       <title>리액티브</title>
-      <link>https://chlalstjd430.github.io/2020/02/%EB%A6%AC%EC%95%A1%ED%8B%B0%EB%B8%8C_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D_webflux/</link>
+      <link>http://blog.cmstown.com/2020/02/%EB%A6%AC%EC%95%A1%ED%8B%B0%EB%B8%8C_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D_webflux/</link>
       <pubDate>Thu, 06 Feb 2020 17:44:27 +0900</pubDate>
       
-      <guid>https://chlalstjd430.github.io/2020/02/%EB%A6%AC%EC%95%A1%ED%8B%B0%EB%B8%8C_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D_webflux/</guid>
+      <guid>http://blog.cmstown.com/2020/02/%EB%A6%AC%EC%95%A1%ED%8B%B0%EB%B8%8C_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D_webflux/</guid>
       <description>Spring Webflux 최근 교내 커뮤니티 동아리 유어슈에서 Spring Webflux를 이용하여 프로젝트를 하였다. 사실 기존 동아리 스펙이 webflux로 정해져서 어쩔수 없이 새로운</description>
     </item>
     
     <item>
       <title>프로그래머스 - 멀쩡한 사각형</title>
-      <link>https://chlalstjd430.github.io/2020/02/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_005/</link>
+      <link>http://blog.cmstown.com/2020/02/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_005/</link>
       <pubDate>Thu, 06 Feb 2020 17:14:03 +0900</pubDate>
       
-      <guid>https://chlalstjd430.github.io/2020/02/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_005/</guid>
+      <guid>http://blog.cmstown.com/2020/02/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_005/</guid>
       <description>문제링크 사용언어 c++ 주의사항 대각선이 지나가는 단위 정사각형의 개수를 구하는 수학적인 공식 h + w - (h와w의 최대공약수) 사실 왜 이러한 공식이 나오는 지 이해</description>
     </item>
     
     <item>
       <title>백준 2217 - 로프</title>
-      <link>https://chlalstjd430.github.io/2020/02/%EB%B0%B1%EC%A4%802217/</link>
+      <link>http://blog.cmstown.com/2020/02/%EB%B0%B1%EC%A4%802217/</link>
       <pubDate>Thu, 06 Feb 2020 14:43:20 +0900</pubDate>
       
-      <guid>https://chlalstjd430.github.io/2020/02/%EB%B0%B1%EC%A4%802217/</guid>
+      <guid>http://blog.cmstown.com/2020/02/%EB%B0%B1%EC%A4%802217/</guid>
       <description>### [백준 문제 바로가기](https://www.acmicpc.net/problem/2217) #### 사용 언어 C++ 적용 알고리즘 그리디 알고리즘 정렬</description>
     </item>
     
     <item>
       <title>백준 1049 - 기타줄</title>
-      <link>https://chlalstjd430.github.io/2020/02/%EB%B0%B1%EC%A4%801049/</link>
+      <link>http://blog.cmstown.com/2020/02/%EB%B0%B1%EC%A4%801049/</link>
       <pubDate>Thu, 06 Feb 2020 14:08:14 +0900</pubDate>
       
-      <guid>https://chlalstjd430.github.io/2020/02/%EB%B0%B1%EC%A4%801049/</guid>
+      <guid>http://blog.cmstown.com/2020/02/%EB%B0%B1%EC%A4%801049/</guid>
       <description>### [백준 문제 바로가기](https://www.acmicpc.net/problem/1049) #### 사용 언어 C++ 적용 알고리즘 그리디 알고리즘 정렬</description>
     </item>
     
     <item>
       <title>Chapter 08 - 경계</title>
-      <link>https://chlalstjd430.github.io/2020/02/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C_008/</link>
+      <link>http://blog.cmstown.com/2020/02/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C_008/</link>
       <pubDate>Wed, 05 Feb 2020 21:46:46 +0900</pubDate>
       
-      <guid>https://chlalstjd430.github.io/2020/02/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C_008/</guid>
+      <guid>http://blog.cmstown.com/2020/02/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C_008/</guid>
       <description>Chapter 08 - 경계 외부에서 사용하느 코드 또한 우리 내부코드와 &amp;ldquo;깨끗하게&amp;rdquo; 통합시켜야 한다. 1. 서드파티 코드 사용하기 서드파티란? Map</description>
     </item>
     
     <item>
       <title>프로그래머스 - 프린터</title>
-      <link>https://chlalstjd430.github.io/2020/02/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_004/</link>
+      <link>http://blog.cmstown.com/2020/02/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_004/</link>
       <pubDate>Wed, 05 Feb 2020 21:25:08 +0900</pubDate>
       
-      <guid>https://chlalstjd430.github.io/2020/02/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_004/</guid>
+      <guid>http://blog.cmstown.com/2020/02/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_004/</guid>
       <description>문제링크 사용언어 c++ 주의사항 큐와 우선순위 큐의 개념에 알고있어야 한다. 우선순위 큐는 항상 값이 높은 것을 앞으로 보낸다. 문제풀이 언뜻 보면 굉장히 쉬워보였는데</description>
     </item>
     
     <item>
       <title>백준 1931 - 회의실 배정</title>
-      <link>https://chlalstjd430.github.io/2020/02/%EB%B0%B1%EC%A4%801931/</link>
+      <link>http://blog.cmstown.com/2020/02/%EB%B0%B1%EC%A4%801931/</link>
       <pubDate>Wed, 05 Feb 2020 17:37:55 +0900</pubDate>
       
-      <guid>https://chlalstjd430.github.io/2020/02/%EB%B0%B1%EC%A4%801931/</guid>
+      <guid>http://blog.cmstown.com/2020/02/%EB%B0%B1%EC%A4%801931/</guid>
       <description>### [백준 문제 바로가기](https://www.acmicpc.net/problem/1931) #### 사용 언어 C++ 적용 알고리즘 그리디 알고리즘 정렬</description>
     </item>
     
     <item>
       <title>2020 학습하고 싶은 공부</title>
-      <link>https://chlalstjd430.github.io/2020/02/2020%EA%B3%84%ED%9A%8D_002/</link>
+      <link>http://blog.cmstown.com/2020/02/2020%EA%B3%84%ED%9A%8D_002/</link>
       <pubDate>Wed, 05 Feb 2020 00:38:43 +0900</pubDate>
       
-      <guid>https://chlalstjd430.github.io/2020/02/2020%EA%B3%84%ED%9A%8D_002/</guid>
+      <guid>http://blog.cmstown.com/2020/02/2020%EA%B3%84%ED%9A%8D_002/</guid>
       <description>Study TODO 리스트 이것도 공부하고 싶고, 저것도 공부하고 싶고 공부하고 싶은 내용들이 너무 많다&amp;hellip; 그래서 Study todo 리스트를 만들어보았다. 단기간 내에 모든 것</description>
     </item>
     
     <item>
       <title>Chapter 07 - 에러 핸들링</title>
-      <link>https://chlalstjd430.github.io/2020/02/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C_007/</link>
+      <link>http://blog.cmstown.com/2020/02/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C_007/</link>
       <pubDate>Tue, 04 Feb 2020 19:26:07 +0900</pubDate>
       
-      <guid>https://chlalstjd430.github.io/2020/02/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C_007/</guid>
+      <guid>http://blog.cmstown.com/2020/02/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C_007/</guid>
       <description>Chapter 07 - 에러 핸들링 1. 리턴 코드 대신에 Exception을 사용하자! 기존에 flag를 이용하여 에러 코드를 리턴하거나 호출하는 측에서 예외처리를 하였다. 이</description>
     </item>
     
     <item>
       <title>프로그래머스 - 문자열 압축</title>
-      <link>https://chlalstjd430.github.io/2020/02/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_003/</link>
+      <link>http://blog.cmstown.com/2020/02/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_003/</link>
       <pubDate>Tue, 04 Feb 2020 18:49:01 +0900</pubDate>
       
-      <guid>https://chlalstjd430.github.io/2020/02/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_003/</guid>
+      <guid>http://blog.cmstown.com/2020/02/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_003/</guid>
       <description>문제링크 사용언어 c++ 주의사항 문자열은 제일 앞부터 정해진 길이만큼 잘라야 합니다. 문제풀이 문제풀이를 위해서 다음과 같은 과정을 거치게 됩니다. 문자열을 자를 단</description>
     </item>
     
     <item>
       <title>백준 2529 - 부등호</title>
-      <link>https://chlalstjd430.github.io/2020/02/%EB%B0%B1%EC%A4%802529/</link>
+      <link>http://blog.cmstown.com/2020/02/%EB%B0%B1%EC%A4%802529/</link>
       <pubDate>Tue, 04 Feb 2020 16:25:20 +0900</pubDate>
       
-      <guid>https://chlalstjd430.github.io/2020/02/%EB%B0%B1%EC%A4%802529/</guid>
+      <guid>http://blog.cmstown.com/2020/02/%EB%B0%B1%EC%A4%802529/</guid>
       <description>### [백준 문제 바로가기](https://www.acmicpc.net/problem/1786) #### 사용 언어 C++ 적용 알고리즘 그리디 알고리즘 문제</description>
     </item>
     
     <item>
       <title>Chapter 06 - 객체와 자료구조</title>
-      <link>https://chlalstjd430.github.io/2020/02/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C_006/</link>
+      <link>http://blog.cmstown.com/2020/02/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C_006/</link>
       <pubDate>Mon, 03 Feb 2020 18:43:57 +0900</pubDate>
       
-      <guid>https://chlalstjd430.github.io/2020/02/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C_006/</guid>
+      <guid>http://blog.cmstown.com/2020/02/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C_006/</guid>
       <description>Chapter 06 - 객체와 자료구조 1. 자료 추상화 목록 6-1 구체적인 Point 클래스 public class Point { public double x; public double y; } 목록 6-2 추상적인 Point 클래스 public interface Point { double getX(); double getY(); void setCartesian(double x, double y); double getR(); double getTheta(); void setPolar(double r, double</description>
     </item>
     
     <item>
       <title>프로그래머스 - 더 맵게</title>
-      <link>https://chlalstjd430.github.io/2020/02/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_002/</link>
+      <link>http://blog.cmstown.com/2020/02/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_002/</link>
       <pubDate>Mon, 03 Feb 2020 17:17:54 +0900</pubDate>
       
-      <guid>https://chlalstjd430.github.io/2020/02/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_002/</guid>
+      <guid>http://blog.cmstown.com/2020/02/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_002/</guid>
       <description>문제링크 사용언어 c++ 문제유형 힙/우선순위 큐 주의 사항 vector를 가지고 sort후 문제를 풀었더니 효율성에서 통과하지 못하였다. 이는 우선순위 큐를 선언</description>
     </item>
     
     <item>
       <title>프로그래머스 - 카카오 프렌즈 컬러링북</title>
-      <link>https://chlalstjd430.github.io/2020/02/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_001/</link>
+      <link>http://blog.cmstown.com/2020/02/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_001/</link>
       <pubDate>Mon, 03 Feb 2020 17:17:32 +0900</pubDate>
       
-      <guid>https://chlalstjd430.github.io/2020/02/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_001/</guid>
+      <guid>http://blog.cmstown.com/2020/02/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_001/</guid>
       <description>문제링크 사용언어 c++ 문제유형 dfs/bfs 그래프 주의 사항 전역 변수를 사용할 경우 함수 내에 초기화 코드를 꼭 작성하자 제출하면 답이 틀리려서 30분넘게 씨름했는데..so</description>
     </item>
     
     <item>
       <title>백준 1786 - 찾기</title>
-      <link>https://chlalstjd430.github.io/2020/02/%EB%B0%B1%EC%A4%801786/</link>
+      <link>http://blog.cmstown.com/2020/02/%EB%B0%B1%EC%A4%801786/</link>
       <pubDate>Sun, 02 Feb 2020 23:07:51 +0900</pubDate>
       
-      <guid>https://chlalstjd430.github.io/2020/02/%EB%B0%B1%EC%A4%801786/</guid>
+      <guid>http://blog.cmstown.com/2020/02/%EB%B0%B1%EC%A4%801786/</guid>
       <description>### [백준 문제 바로가기](https://www.acmicpc.net/problem/1786) #### 사용 언어 C++ 적용 알고리즘 KMP 알고리즘 문제풀이</description>
     </item>
     
     <item>
       <title>Chapter 05 - 형식 맞추기</title>
-      <link>https://chlalstjd430.github.io/2020/01/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C_005/</link>
+      <link>http://blog.cmstown.com/2020/01/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C_005/</link>
       <pubDate>Fri, 31 Jan 2020 22:47:01 +0900</pubDate>
       
-      <guid>https://chlalstjd430.github.io/2020/01/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C_005/</guid>
+      <guid>http://blog.cmstown.com/2020/01/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C_005/</guid>
       <description>Chapter 05 - 형식 맞추기 질서정연하고 깔끔하며, 일관적인 코드를 본다면 사람들에게 전문가가 짰다는 인상을 심어줄 수 있다. 반대로, 코드가 어수선해 보인다면 프로젝트</description>
     </item>
     
     <item>
       <title>백준 1948 - 임계경로</title>
-      <link>https://chlalstjd430.github.io/2020/01/%EB%B0%B1%EC%A4%801948/</link>
+      <link>http://blog.cmstown.com/2020/01/%EB%B0%B1%EC%A4%801948/</link>
       <pubDate>Thu, 30 Jan 2020 00:16:09 +0900</pubDate>
       
-      <guid>https://chlalstjd430.github.io/2020/01/%EB%B0%B1%EC%A4%801948/</guid>
+      <guid>http://blog.cmstown.com/2020/01/%EB%B0%B1%EC%A4%801948/</guid>
       <description>백준 문제 바로가기 사용 언어 C++ 적용 알고리즘 위상 정렬 알고리즘 문제풀이 해당 문제에서 요구하는 것은 2가지이다. 1. 모든 사람들이 만나는 시간 2. 1분도 쉬지 않고 달</description>
     </item>
     
     <item>
       <title>Chapter 04 - 주석</title>
-      <link>https://chlalstjd430.github.io/2020/01/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C_004/</link>
+      <link>http://blog.cmstown.com/2020/01/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C_004/</link>
       <pubDate>Wed, 29 Jan 2020 20:37:09 +0900</pubDate>
       
-      <guid>https://chlalstjd430.github.io/2020/01/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C_004/</guid>
+      <guid>http://blog.cmstown.com/2020/01/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C_004/</guid>
       <description>Chapter 04 - 주석 나쁜 코드에 주석을 달지 마라. 새로 짜라. - 브라이언 W.커니핸, P.J.플라우거 1. 불필요한 주석을 없애자. 주석은 코드로 의도를 표현하지 못하여</description>
     </item>
     
