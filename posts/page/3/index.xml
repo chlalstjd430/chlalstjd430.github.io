@@ -5,10 +5,19 @@
     <link>http://blog.cmstown.com/posts/</link>
     <description>Recent content in Posts on cmstown</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 09 Nov 2020 11:18:39 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2020 14:51:26 +0900</lastBuildDate>
     
         <atom:link href="http://blog.cmstown.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>AWS EC2를 이용하여 Spring Boot 배포하기(1)</title>
+      <link>http://blog.cmstown.com/2020/05/aws_ec2_01/</link>
+      <pubDate>Fri, 22 May 2020 02:26:58 +0900</pubDate>
+      
+      <guid>http://blog.cmstown.com/2020/05/aws_ec2_01/</guid>
+      <description>AWS EC2를 이용하여 Spring Boot 배포하기(1) 저는 지금까지 AWS EC2를 이용하여 여러번 서버를 배포해보았었는데요. 이번에 그 과정들을 간단하게 블로그에 담고자 글을</description>
+    </item>
     
     <item>
       <title>[DesignPattern] Decorator Pattern(데코레이터 패턴)</title>
@@ -179,15 +188,6 @@
       
       <guid>http://blog.cmstown.com/2020/02/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C_009/</guid>
       <description>Chapter 09 - 단위 테스트 사실 단위 테스트는 한 챕터로 설명하기에 부족한면이 없지않아 있다. 해당 챕터는 추후에 정리할 &amp;ldquo;자바와 JUnit을 활용한 실용주</description>
-    </item>
-    
-    <item>
-      <title>알고리즘 특징정리</title>
-      <link>http://blog.cmstown.com/2020/02/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98_%ED%8A%B9%EC%A7%95%EC%A0%95%EB%A6%AC/</link>
-      <pubDate>Tue, 11 Feb 2020 13:24:01 +0900</pubDate>
-      
-      <guid>http://blog.cmstown.com/2020/02/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98_%ED%8A%B9%EC%A7%95%EC%A0%95%EB%A6%AC/</guid>
-      <description>알고리즘 문제를 풀면서 어떠한 문제를 풀 때 어떠한 알고리즘을 적용해야하는 특징이 보이는 경우가 있다. 그래서 그러한 특징들이 보일 떄 마다 정리하려고 한다. 알고리</description>
     </item>
     
   </channel>

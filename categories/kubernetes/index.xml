@@ -11,6 +11,15 @@
     
     
     <item>
+      <title>[Spring(스프링)] 알고 쓰는 @Transactional</title>
+      <link>http://blog.cmstown.com/2020/11/transactional/</link>
+      <pubDate>Mon, 09 Nov 2020 14:51:26 +0900</pubDate>
+      
+      <guid>http://blog.cmstown.com/2020/11/transactional/</guid>
+      <description>알고 쓰는 @Transactional 스프링으로 프로젝트를 진행하다보면 @Transactional 어노테이션을 많이들 활용한다. 그런데 동아리나 다른 스프링 개발자들 중 해당 어노테이션의 default값이</description>
+    </item>
+    
+    <item>
       <title>트랜잭션(Transcation) </title>
       <link>http://blog.cmstown.com/2020/11/transcation/</link>
       <pubDate>Mon, 09 Nov 2020 11:18:39 +0900</pubDate>
@@ -179,15 +188,6 @@
       
       <guid>http://blog.cmstown.com/2020/07/spring_core_03/</guid>
       <description>2. IoC 컨테이너 2부 : ApplicationContext와 다양한 빈 설정 방법 스프링 IoC 컨테이너의 역할 빈 인스턴스 생성 의존관계설정 빈 제공 ApplicationContext 크게 두가지로</description>
-    </item>
-    
-    <item>
-      <title>[Spring Core(스프링 프레임워크 핵심기술)] 02. 스프링 IoC 컨테이너와 빈</title>
-      <link>http://blog.cmstown.com/2020/07/spring_core_02/</link>
-      <pubDate>Wed, 01 Jul 2020 01:40:21 +0900</pubDate>
-      
-      <guid>http://blog.cmstown.com/2020/07/spring_core_02/</guid>
-      <description>스프링 IoC 컨테이너와 빈 IoC(Inversion of Control) 의존 관계 주입(DI, Dependency Injection)이라고도 하며, 어떤 객체가 사용하는 의존 객체를 직접 만들어 사용하는게 아니라, 주</description>
     </item>
     
   </channel>
