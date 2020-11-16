@@ -11,6 +11,15 @@
     
     
     <item>
+      <title>카프카 개념</title>
+      <link>http://blog.cmstown.com/2020/11/kafka_sumary/</link>
+      <pubDate>Mon, 16 Nov 2020 22:16:35 +0900</pubDate>
+      
+      <guid>http://blog.cmstown.com/2020/11/kafka_sumary/</guid>
+      <description>카프카 개념 정리 카프카란? 기존에 end-to-end 연결 방식의 아키텍처로 인하여 데이터 연동의 복잡성이 증가되었다. 이에 링크드인에서 데이터가 갑자기 많아지더라도 확장이 용</description>
+    </item>
+    
+    <item>
       <title>[Spring(스프링)] 알고 쓰는 @Transactional</title>
       <link>http://blog.cmstown.com/2020/11/transactional/</link>
       <pubDate>Mon, 09 Nov 2020 14:51:26 +0900</pubDate>
@@ -179,15 +188,6 @@
       
       <guid>http://blog.cmstown.com/2020/07/spring_core_04/</guid>
       <description>@Autowired 필요한 의존 객체의 &amp;ldquo;타입&amp;quot;에 해당하는 빈을 찾아 주입한다. 사용할 수 있는 위치 클래스 주입 BookRepository.java public class BookRepository { } BookService.java @Service public class BookService { BookRepository bookRepository; @Autowired public BookService(BookRepository bookRepository){ this.bookRepository</description>
-    </item>
-    
-    <item>
-      <title>[Spring Core(스프링 프레임워크 핵심기술)] 03. IoC 컨테이너 2부 : ApplicationContext와 다양한 빈 설정 방법</title>
-      <link>http://blog.cmstown.com/2020/07/spring_core_03/</link>
-      <pubDate>Thu, 02 Jul 2020 02:21:47 +0900</pubDate>
-      
-      <guid>http://blog.cmstown.com/2020/07/spring_core_03/</guid>
-      <description>2. IoC 컨테이너 2부 : ApplicationContext와 다양한 빈 설정 방법 스프링 IoC 컨테이너의 역할 빈 인스턴스 생성 의존관계설정 빈 제공 ApplicationContext 크게 두가지로</description>
     </item>
     
   </channel>

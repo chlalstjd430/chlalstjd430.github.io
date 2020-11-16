@@ -10,6 +10,15 @@
     
     
     <item>
+      <title>Chapter 09 - 단위 테스트</title>
+      <link>http://blog.cmstown.com/2020/02/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C_009/</link>
+      <pubDate>Tue, 11 Feb 2020 19:23:15 +0900</pubDate>
+      
+      <guid>http://blog.cmstown.com/2020/02/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C_009/</guid>
+      <description>Chapter 09 - 단위 테스트 사실 단위 테스트는 한 챕터로 설명하기에 부족한면이 없지않아 있다. 해당 챕터는 추후에 정리할 &amp;ldquo;자바와 JUnit을 활용한 실용주</description>
+    </item>
+    
+    <item>
       <title>알고리즘 특징정리</title>
       <link>http://blog.cmstown.com/2020/02/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98_%ED%8A%B9%EC%A7%95%EC%A0%95%EB%A6%AC/</link>
       <pubDate>Tue, 11 Feb 2020 13:24:01 +0900</pubDate>
@@ -178,15 +187,6 @@
       
       <guid>http://blog.cmstown.com/2020/02/%EB%B0%B1%EC%A4%801786/</guid>
       <description>### [백준 문제 바로가기](https://www.acmicpc.net/problem/1786) #### 사용 언어 C++ 적용 알고리즘 KMP 알고리즘 문제풀이</description>
-    </item>
-    
-    <item>
-      <title>Chapter 05 - 형식 맞추기</title>
-      <link>http://blog.cmstown.com/2020/01/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C_005/</link>
-      <pubDate>Fri, 31 Jan 2020 22:47:01 +0900</pubDate>
-      
-      <guid>http://blog.cmstown.com/2020/01/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C_005/</guid>
-      <description>Chapter 05 - 형식 맞추기 질서정연하고 깔끔하며, 일관적인 코드를 본다면 사람들에게 전문가가 짰다는 인상을 심어줄 수 있다. 반대로, 코드가 어수선해 보인다면 프로젝트</description>
     </item>
     
   </channel>

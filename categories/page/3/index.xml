@@ -5,10 +5,19 @@
     <link>http://blog.cmstown.com/categories/</link>
     <description>Recent content in Categories on cmstown</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 09 Nov 2020 14:51:26 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 16 Nov 2020 22:16:35 +0900</lastBuildDate>
     
         <atom:link href="http://blog.cmstown.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>AWS EC2를 이용하여 Spring Boot 배포하기(2)</title>
+      <link>http://blog.cmstown.com/2020/05/aws_ec2_02/</link>
+      <pubDate>Fri, 22 May 2020 13:59:22 +0900</pubDate>
+      
+      <guid>http://blog.cmstown.com/2020/05/aws_ec2_02/</guid>
+      <description>AWS EC2를 이용하여 Spring Boot 배포하기(2) - AWS EC2 서버 접속 오늘은 AWS EC2 서버에 접속하는 과정을 소개해드리도록 하겠습니다. 먼저 시작하기 전에 해당 글은 윈도우 를 이</description>
+    </item>
     
     <item>
       <title>AWS EC2를 이용하여 Spring Boot 배포하기(1)</title>
@@ -179,15 +188,6 @@
       
       <guid>http://blog.cmstown.com/2020/02/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_007/</guid>
       <description>문제링크 사용언어 c++ 주의사항 1,2,4 숫자가 반복 진행 되므로 3진법을 구하는 방법과 비슷하게 진행하면 된다. 문제풀이 124 나라에서는 10진법 124 수로 표현되는 과정을 보</description>
-    </item>
-    
-    <item>
-      <title>Chapter 09 - 단위 테스트</title>
-      <link>http://blog.cmstown.com/2020/02/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C_009/</link>
-      <pubDate>Tue, 11 Feb 2020 19:23:15 +0900</pubDate>
-      
-      <guid>http://blog.cmstown.com/2020/02/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C_009/</guid>
-      <description>Chapter 09 - 단위 테스트 사실 단위 테스트는 한 챕터로 설명하기에 부족한면이 없지않아 있다. 해당 챕터는 추후에 정리할 &amp;ldquo;자바와 JUnit을 활용한 실용주</description>
     </item>
     
   </channel>

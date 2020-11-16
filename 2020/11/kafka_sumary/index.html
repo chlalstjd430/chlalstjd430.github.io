@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>
+        카프카 개념 - cmstown
+      </title>
+    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no,email=no,adress=no">
+  
+  <meta name="theme-color" content="#000000" />
+  
+  <meta http-equiv="window-target" content="_top" />
+  
+  
+  <meta name="description" content="카프카 개념 정리 카프카란? 기존에 end-to-end 연결 방식의 아키텍처로 인하여 데이터 연동의 복잡성이 증가되었다. 이에 링크드인에서 데이터가 갑자기 많아지더라도 확장이 용" />
+  <meta name="generator" content="Hugo 0.73.0 with theme pure" />
+  <title>카프카 개념 - cmstown</title>
+  
+  
+  <link rel="stylesheet" href="http://blog.cmstown.com/css/style.min.9aaa883ebea87c2fd2d087c069cb2736c5f6cb2d52460262cad27bb9f932afc8.css">
+  
+  <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
+  <meta property="og:title" content="카프카 개념" />
+<meta property="og:description" content="카프카 개념 정리 카프카란? 기존에 end-to-end 연결 방식의 아키텍처로 인하여 데이터 연동의 복잡성이 증가되었다. 이에 링크드인에서 데이터가 갑자기 많아지더라도 확장이 용" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://blog.cmstown.com/2020/11/kafka_sumary/" />
+<meta property="article:published_time" content="2020-11-16T22:16:35+09:00" />
+<meta property="article:modified_time" content="2020-11-16T22:16:35+09:00" />
+<meta itemprop="name" content="카프카 개념">
+<meta itemprop="description" content="카프카 개념 정리 카프카란? 기존에 end-to-end 연결 방식의 아키텍처로 인하여 데이터 연동의 복잡성이 증가되었다. 이에 링크드인에서 데이터가 갑자기 많아지더라도 확장이 용">
+<meta itemprop="datePublished" content="2020-11-16T22:16:35&#43;09:00" />
+<meta itemprop="dateModified" content="2020-11-16T22:16:35&#43;09:00" />
+<meta itemprop="wordCount" content="1572">
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="카프카 개념"/>
+<meta name="twitter:description" content="카프카 개념 정리 카프카란? 기존에 end-to-end 연결 방식의 아키텍처로 인하여 데이터 연동의 복잡성이 증가되었다. 이에 링크드인에서 데이터가 갑자기 많아지더라도 확장이 용"/>
+
+  <!--[if lte IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+    <![endif]-->
+
+  <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+  </head>
+
+  
+  
+
+  <body class="main-center theme-black" itemscope itemtype="http://schema.org/WebPage"><header class="header" itemscope itemtype="http://schema.org/WPHeader">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PKRV60YBKY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-PKRV60YBKY');
+</script>
+    <div class="slimContent">
+      <div class="navbar-header">
+        <div class="profile-block text-center">
+          <a id="avatar" href="https://github.com/chlalstjd430" target="_blank">
+            <img class="img-circle img-rotate" src="http://blog.cmstown.com/avatar.png" width="200" height="200">
+          </a>
+          <h2 id="name" class="hidden-xs hidden-sm">최민성</h2>
+          <h3 id="title" class="hidden-xs hidden-sm hidden-md">26, 숭실대학교</h3>
+          <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i>Seoul, Korea</small>
+        </div><div class="search" id="search-form-wrap">
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="Search" />
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i
+                        class="icon icon-search"></i></button>
+            </span>
+        </div>
+        <div class="ins-search">
+            <div class="ins-search-mask"></div>
+            <div class="ins-search-container">
+                <div class="ins-input-wrapper">
+                    <input type="text" class="ins-search-input" placeholder="Type something..."
+                        x-webkit-speech />
+                    <button type="button" class="close ins-close ins-selectable" data-dismiss="modal"
+                        aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="ins-section-wrapper">
+                    <div class="ins-section-container"></div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+        <ul class="nav navbar-nav main-nav">
+            <li class="menu-item menu-item-home">
+                <a href="/">
+                    <i class="icon icon-home-fill"></i>
+                  <span class="menu-title">Home</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-archives">
+                <a href="/posts/">
+                    <i class="icon icon-archives-fill"></i>
+                  <span class="menu-title">Posts</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-categories">
+                <a href="/categories/">
+                    <i class="icon icon-folder"></i>
+                  <span class="menu-title">Categories</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-tags">
+                <a href="/tags/">
+                    <i class="icon icon-tags"></i>
+                  <span class="menu-title">Tags</span>
+                </a>
+            </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    
+      <div class="widget">
+    <h3 class="widget-title">Board</h3>
+    <div class="widget-body">
+        <div id="board">
+            <div class="content"><p>cms3136@gmail.com</p><p>- 숭실대학교 글로벌미디어학부</p><p>- Lectopia s/w expert course 17기</p><p>- YOURSSU 백엔드 개발자</p><p>- YAPP 16기</p><p>- NEXTERS 17기</p><p>- NAVER WEBTOON 서버개발 인턴</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+      <div class="widget">
+    <h3 class="widget-title"> Categories</h3>
+    <div class="widget-body">
+        <ul class="category-list">
+            <li class="category-list-item"><a href="http://blog.cmstown.com/categories/2020-%EA%B3%84%ED%9A%8D/" class="category-list-link">2020-계획</a><span class="category-list-count">2</span></li>
+            <li class="category-list-item"><a href="http://blog.cmstown.com/categories/aws/" class="category-list-link">aws</a><span class="category-list-count">3</span></li>
+            <li class="category-list-item"><a href="http://blog.cmstown.com/categories/database/" class="category-list-link">database</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="http://blog.cmstown.com/categories/docker/" class="category-list-link">docker</a><span class="category-list-count">8</span></li>
+            <li class="category-list-item"><a href="http://blog.cmstown.com/categories/it-%EC%A0%95%EB%B3%B4/" class="category-list-link">it-정보</a><span class="category-list-count">2</span></li>
+            <li class="category-list-item"><a href="http://blog.cmstown.com/categories/java/" class="category-list-link">java</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="http://blog.cmstown.com/categories/kafka/" class="category-list-link">kafka</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="http://blog.cmstown.com/categories/kubernetes/" class="category-list-link">kubernetes</a><span class="category-list-count">3</span></li>
+            <li class="category-list-item"><a href="http://blog.cmstown.com/categories/spring/" class="category-list-link">spring</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="http://blog.cmstown.com/categories/%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4/" class="category-list-link">디자인패턴</a><span class="category-list-count">8</span></li>
+            <li class="category-list-item"><a href="http://blog.cmstown.com/categories/%EB%A6%AC%EC%95%A1%ED%8B%B0%EB%B8%8C-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/" class="category-list-link">리액티브-프로그래밍</a><span class="category-list-count">2</span></li>
+            <li class="category-list-item"><a href="http://blog.cmstown.com/categories/%EB%B0%B1%EC%97%94%EB%93%9C/" class="category-list-link">백엔드</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="http://blog.cmstown.com/categories/%EB%B0%B1%EC%A4%80-%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4/" class="category-list-link">백준-문제풀이</a><span class="category-list-count">16</span></li>
+            <li class="category-list-item"><a href="http://blog.cmstown.com/categories/%EC%8A%A4%ED%84%B0%EB%94%94/" class="category-list-link">스터디</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="http://blog.cmstown.com/categories/%EC%8A%A4%ED%94%84%EB%A7%81/" class="category-list-link">스프링</a><span class="category-list-count">9</span></li>
+            <li class="category-list-item"><a href="http://blog.cmstown.com/categories/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/" class="category-list-link">알고리즘</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="http://blog.cmstown.com/categories/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C/" class="category-list-link">클린코드</a><span class="category-list-count">9</span></li>
+            <li class="category-list-item"><a href="http://blog.cmstown.com/categories/%ED%8C%8C%EC%9D%B4%EC%8D%AC/" class="category-list-link">파이썬</a><span class="category-list-count">6</span></li>
+            <li class="category-list-item"><a href="http://blog.cmstown.com/categories/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4/" class="category-list-link">프로그래머스-문제풀이</a><span class="category-list-count">22</span></li>
+        </ul>
+    </div>
+</div>
+      <div class="widget">
+    <h3 class="widget-title"> Tags</h3>
+    <div class="widget-body">
+        <ul class="tag-list">
+            
+            
+            <li class="tag-list-item"><a href="http://blog.cmstown.com/tags/devops/" class="tag-list-link">devops</a><span
+                    class="tag-list-count">11</span></li>
+            
+            
+            <li class="tag-list-item"><a href="http://blog.cmstown.com/tags/it-%EB%8F%99%EC%95%84%EB%A6%AC/" class="tag-list-link">it-동아리</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="http://blog.cmstown.com/tags/it-%EC%A0%95%EB%B3%B4/" class="tag-list-link">it-정보</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="http://blog.cmstown.com/tags/jwt/" class="tag-list-link">jwt</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="http://blog.cmstown.com/tags/kmp-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/" class="tag-list-link">kmp-알고리즘</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="http://blog.cmstown.com/tags/spring-webflux/" class="tag-list-link">spring-webflux</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="http://blog.cmstown.com/tags/%EA%B3%84%ED%9A%8D/" class="tag-list-link">계획</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="http://blog.cmstown.com/tags/%EA%B7%B8%EB%A6%AC%EB%94%94-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/" class="tag-list-link">그리디-알고리즘</a><span
+                    class="tag-list-count">5</span></li>
+            
+            
+            <li class="tag-list-item"><a href="http://blog.cmstown.com/tags/%EB%8B%A4%EC%9D%B4%EB%82%98%EB%AF%B9-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/" class="tag-list-link">다이나믹-프로그래밍</a><span
+                    class="tag-list-count">4</span></li>
+            
+            
+            <li class="tag-list-item"><a href="http://blog.cmstown.com/tags/%EB%8B%A4%EC%9D%B5%EC%8A%A4%ED%8A%B8%EB%9D%BC-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/" class="tag-list-link">다익스트라-알고리즘</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="http://blog.cmstown.com/tags/%EB%A6%AC%EC%95%A1%ED%8B%B0%EB%B8%8C-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/" class="tag-list-link">리액티브-프로그래밍</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="http://blog.cmstown.com/tags/%EB%B8%8C%EB%A3%A8%ED%8A%B8-%ED%8F%AC%EC%8A%A4%ED%8A%B8/" class="tag-list-link">브루트-포스트</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="http://blog.cmstown.com/tags/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/" class="tag-list-link">알고리즘</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="http://blog.cmstown.com/tags/%EC%9C%84%EC%83%81-%EC%A0%95%EB%A0%AC-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/" class="tag-list-link">위상-정렬-알고리즘</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="http://blog.cmstown.com/tags/%EC%9D%B4%EC%A7%84-%ED%8A%B8%EB%A6%AC-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/" class="tag-list-link">이진-트리-알고리즘</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="http://blog.cmstown.com/tags/%EC%B5%9C%EC%86%8C-%EC%8A%A4%ED%8C%A8%EB%8B%9D-%ED%8A%B8%EB%A6%AC/" class="tag-list-link">최소-스패닝-트리</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="http://blog.cmstown.com/tags/%ED%81%AC%EB%A3%A8%EC%8A%A4%EC%B9%BC-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/" class="tag-list-link">크루스칼-알고리즘</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="http://blog.cmstown.com/tags/%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C/" class="tag-list-link">클린코드</a><span
+                    class="tag-list-count">9</span></li>
+            
+        </ul>
+
+    </div>
+</div>
+      
+<div class="widget">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget-body">
+        <ul class="recent-post-list list-unstyled no-thumbnail">
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="http://blog.cmstown.com/2020/11/kafka_sumary/" class="title">카프카 개념</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-11-16 22:16:35 &#43;0900 KST" itemprop="datePublished">2020-11-16</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="http://blog.cmstown.com/2020/11/transactional/" class="title">[Spring(스프링)] 알고 쓰는 @Transactional</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-11-09 14:51:26 &#43;0900 KST" itemprop="datePublished">2020-11-09</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="http://blog.cmstown.com/2020/11/transcation/" class="title">트랜잭션(Transcation) </a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-11-09 11:18:39 &#43;0900 KST" itemprop="datePublished">2020-11-09</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="http://blog.cmstown.com/2020/09/k8s_03/" class="title">[Kubernets/쿠버네티스] 03. 쿠버네티스 입문 - 인그레스(ingress)</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-09-12 00:07:29 &#43;0900 KST" itemprop="datePublished">2020-09-12</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="http://blog.cmstown.com/2020/09/k8s_02/" class="title">[Kubernets/쿠버네티스] 02. 쿠버네티스 입문 - 파드(Pod),래플리카세트(ReplicaSet),디플로이먼트(Deployment),서비스(Service)</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-09-11 15:49:19 &#43;0900 KST" itemprop="datePublished">2020-09-11</time>
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+  </div>
+</aside>
+
+    
+    
+<aside class="sidebar sidebar-toc collapse" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    <h4 class="toc-title">Catalogue</h4>
+    <nav id="toc" class="js-toc toc">
+
+    </nav>
+  </div>
+</aside>
+<main class="main" role="main"><div class="content">
+  <article id="-" class="article article-type-" itemscope
+    itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/2020/11/kafka_sumary/"
+    >카프카 개념</a
+  >
+</h1>
+
+      <div class="article-meta">
+        
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="http://blog.cmstown.com/2020/11/kafka_sumary/" class="article-date">
+  <time datetime="2020-11-16 22:16:35 &#43;0900 KST" itemprop="datePublished">2020-11-16</time>
+</a>
+</span>
+<span class="article-category">
+  <i class="icon icon-folder"></i>&nbsp;
+  <a class="article-category-link" href="/categories/kafka/"> kafka </a>
+</span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/2020/11/kafka_sumary/#comments"
+            class="article-comment-link">Comments</a></span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 1572words</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 4minutes </span>
+      </div>
+    </div>
+    <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
+      <h1 id="카프카-개념-정리">카프카 개념 정리</h1>
+<h2 id="카프카란">카프카란?</h2>
+<p>기존에 end-to-end 연결 방식의 아키텍처로 인하여 데이터 연동의 복잡성이 증가되었다. 이에 링크드인에서 데이터가 갑자기 많아지더라도 확장이 용이하고, 데이터를 전송 실시간 처리에 대한 필요성을 느꼈고 아래와 같은 특징을 가진 <strong>카프카</strong>를 개발하였다.</p>
+<p><img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fdm1kl4%2FbtqAavK4BAR%2FEKvMKV4xYnbkDkSki9gV80%2Fimg.png" alt="카프카"></p>
+<ul>
+<li>
+<p>프로듀서/컨슈머 분리</p>
+</li>
+<li>
+<p>메시지 데이터를 여러 컨슈머에게 허용</p>
+</li>
+<li>
+<p>높은 처리량을 위한 메시지 최적화</p>
+</li>
+<li>
+<p>스케일 아웃 가능</p>
+</li>
+<li>
+<p>관련 생태계 제공</p>
+</li>
+</ul>
+<p><br><br><br></p>
+<h2 id="브로커broker">브로커(broker)</h2>
+<ul>
+<li>
+<p>실행된 카프카 애플리케이션 서버 중 1대</p>
+<ul>
+<li>2대 이상일 수 있지만, 실제 운영 환경에서 그런 경우는 굉장히 드뭄</li>
+</ul>
+</li>
+<li>
+<p>3대 이상의 브로커로 클러스터구성</p>
+</li>
+<li>
+<p>주키퍼와 연동</p>
+<ul>
+<li>주키퍼의 역할 : 메타데이터(브로커id, 컨트롤러id 등) 저장</li>
+</ul>
+</li>
+<li>
+<p>n개 브로커 중 1대는 컨트롤러(Controller) 기능 수행</p>
+<ul>
+<li>
+<p>컨트롤러</p>
+<ul>
+<li>
+<p>각 브로커에게 담당 파티션 할당 수행.</p>
+</li>
+<li>
+<p>브로커 정상 동작 모니터링 관리.</p>
+</li>
+<li>
+<p>컨트롤러가 누군지는 주키퍼에 저장.</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><br><br><br></p>
+<h2 id="토픽--파티션topic--partition">토픽 &amp; 파티션(Topic &amp; Partition)</h2>
+<p><img src="https://user-images.githubusercontent.com/50758600/96070874-fcfd0880-0edb-11eb-93c8-07d4d7967c65.png" alt="스크린샷 2020-10-15 오전 11 45 35"></p>
+<ul>
+<li>
+<p>메시지 분류 단위</p>
+</li>
+<li>
+<p>n개의 파티션 할당 가능</p>
+<ul>
+<li>
+<p>파티션 수를 늘리면 처리량도 증가</p>
+</li>
+<li>
+<p>파티션 증가는 쉬우나 축소는 어려우니 처음 설계할 때 잘 고려할 것</p>
+</li>
+</ul>
+</li>
+<li>
+<p>각 파티션마다 고유한 오프셋(offset)을 까짐</p>
+<ul>
+<li>숫자가 클 수록 최신</li>
+</ul>
+</li>
+<li>
+<p>메시지 처리순서는 파티션별로 유지 관리됨</p>
+</li>
+</ul>
+<p><br><br><br></p>
+<h2 id="프로듀서--컨슈머producer--consumer">프로듀서 &amp; 컨슈머(Producer &amp; Consumer)</h2>
+<p><img src="https://user-images.githubusercontent.com/50758600/96073026-84e51180-0ee0-11eb-8d91-1d8c39ce1c59.png" alt="스크린샷 2020-10-15 오후 12 18 13"></p>
+<p>브로커가 컨슈머로 보내는 것이 아니다.</p>
+<ol>
+<li>
+<p>프로듀서는 레코드를 생성하여 브로커로 전송</p>
+</li>
+<li>
+<p>전송된 레코드는 파티션에 신규 오프셋과 함께 기록됨</p>
+</li>
+<li>
+<p>컨슈머는 쁘로커로 부터 레코드를 요청하여 가젹감(polling)</p>
+</li>
+</ol>
+<p><br><br><br></p>
+<h2 id="카프카-로그와-세그먼트">카프카 로그와 세그먼트</h2>
+<ul>
+<li>
+<p>레코드는 <strong>파일 시스템</strong> 단위로 저장된다.</p>
+</li>
+<li>
+<p>메시지가 저장될떄는 세그먼트 파일이 열려있음.</p>
+</li>
+<li>
+<p>섹그먼트는 시간 또는 크기 기준으로 닫힘</p>
+</li>
+<li>
+<p>세그먼트가 닫힌 이후일정 시간(또는 용량)에 따라 삭제 또는 압축</p>
+<ul>
+<li>카프카의 데이터는 보통 일정 기간/용량을 옵션을 준다</li>
+</ul>
+</li>
+</ul>
+<p><br><br><br></p>
+<h2 id="컨슈머와-파티션">컨슈머와 파티션</h2>
+<ul>
+<li>
+<p><strong>파티션 개수 &gt;= 컨슈머 개수</strong> 로 만들어야한다.</p>
+<ul>
+<li>반대의 경우에는 컨슈머가 파티션을 할당받지 못하고 대기하게 된다.</li>
+</ul>
+</li>
+<li>
+<p>파티션 3개, 컨슈머 3개 동작 중 컨슈머 1개가 장애가난 경우</p>
+<ul>
+<li>
+<p><strong>리밸런스</strong> 가 발생하여 파티션 컨슈머 할당 재조정</p>
+</li>
+<li>
+<p>리밸런스가 일어나는 중에는 할당하는 과정이 중단된다.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>2개 이상의 컨슈머 그룹이 있을 경우</p>
+<ul>
+<li>
+<p>각 그룹별로 독립적으로 파티션을 읽음.</p>
+</li>
+<li>
+<p>실제로 elasticsearch/hadoop 컨슈머 그룹을 나누어 저장하는 경우도 있음.</p>
+</li>
+</ul>
+</li>
+</ul>
+<p><br><br><br></p>
+<h2 id="리더-파티션-팔로워-파티션">리더 파티션, 팔로워 파티션</h2>
+<p><img src="https://user-images.githubusercontent.com/50758600/96074642-24f06a00-0ee4-11eb-9280-5a63fcb40db0.png" alt="스크린샷 2020-10-15 오후 12 44 10"></p>
+<ul>
+<li>
+<p>리더 파티션 : Kafka 클라이언트와 데이터를 주고 받는 역할</p>
+</li>
+<li>
+<p>팔로워 파티션</p>
+<ul>
+<li>
+<p>리더 파티션으로 부터 레코드를 지속 복제(복제하는데 시간이 걸림).</p>
+</li>
+<li>
+<p>리퍼 파티션의 동작이 불가능할 경우 나머지 팔로워 중 1개가 리더로 선출됨</p>
+</li>
+</ul>
+</li>
+<li>
+<p>ISR(In-Sync Replica) : 파티션의 리더, 팔로워의 레코드가 모두 복제되어 sync가 맞는 살태</p>
+<ul>
+<li>ISR이 아닌 상태에서 장애가 나면 : unclean.leader.election.enable</li>
+</ul>
+</li>
+</ul>
+<p><br><br><br></p>
+<h2 id="kafka-핵심요소-중간정리">kafka 핵심요소 중간정리</h2>
+<ul>
+<li>
+<p>Broker : 카프카 애플리케이션 서버 단위</p>
+</li>
+<li>
+<p>Topic : 데이터 분리 단위. 다수 파티션 보유</p>
+</li>
+<li>
+<p>Partition : 레코드를 담고 있음. 컨슈머 요청시 레코드 전달</p>
+</li>
+<li>
+<p>Offset : 각 레코드당 파티션에 할당된 고유 번호</p>
+</li>
+<li>
+<p>Consumer : 레코드를 polling하는 애플리케이션</p>
+<ul>
+<li>
+<p>Consumer group : 다수 컨슈머 묶음</p>
+</li>
+<li>
+<p>Consumer offset : 특정 컨슈머가 가져간 레코드의 번호</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Producer : 레코드를 브로커로 전송하는 애플리케이션</p>
+</li>
+<li>
+<p>Replication : 파티션 복제 기능</p>
+<ul>
+<li>ISR : 리더 + 팔로워 파티션의 sync가 된 묶음</li>
+</ul>
+</li>
+<li>
+<p>Rack-awareness: Server rack 이슈에 대응</p>
+</li>
+</ul>
+<p><br><br><br></p>
+<h2 id="카프카-클라이언트kafka-client">카프카 클라이언트(Kafka Client)</h2>
+<ul>
+<li>
+<p>kafka와 데이터를 주고받끼 위해 사용하는 java library</p>
+</li>
+<li>
+<p>producer, consumer, admin, stream 등 kafka 관련 api 제공</p>
+</li>
+</ul>
+<p><br><br><br></p>
+<h2 id="카프카-스트림즈kafka-streams">카프카 스트림즈(Kafka Streams)</h2>
+<ul>
+<li>
+<p>데이터를 변환하기 위한 목적으로 사용하는 API</p>
+</li>
+<li>
+<p>스트림 프로세싱을 지원하기 위한 다양한 기능을 제공</p>
+<ul>
+<li>
+<p>stateful 또는 stateless와 같이 상태기반 스틀미 처리 가능</p>
+</li>
+<li>
+<p>stream api와 DSL을 동시 지원</p>
+</li>
+<li>
+<p>kafka security 완벽 지원</p>
+</li>
+<li>
+<p>스트림 처리를 위한 별도 클러스터 불필요</p>
+</li>
+</ul>
+</li>
+</ul>
+<p><br><br><br></p>
+<h2 id="카프카-커넥트kafka-conenct">카프카 커넥트(Kafka Conenct)</h2>
+<ul>
+<li>
+<p>많은 경우 Kafka client를 Kafka로 데이터를 넣는 코드를 작성할떄도 있지만, Kafka connect를 통해 data를 import/export 할 수 있음</p>
+</li>
+<li>
+<p>코드 없이 configuration으로 데이터를 이동시키는 것이 목적</p>
+</li>
+</ul>
+<p><br><br><br></p>
+<h2 id="카프카-미러-메이커kafka-mirror-maker">카프카 미러 메이커(Kafka Mirror maker)</h2>
+<ul>
+<li>
+<p>특정 카프카 클러스터에서 다른 카프카 클러스터로 Topic 및 Record를 복제하는 Standalone tool</p>
+</li>
+<li>
+<p>클러스터간 토픽에 대한 모든 것을 복제하는 것이 목적</p>
+</li>
+</ul>
+<p><br><br><br>
+<br><br><br>
+<br><br><br></p>
+<h4 id="참고">참고</h4>
+<ul>
+<li>
+<p><a href="https://tacademy.skplanet.com/live/player/onlineLectureDetail.action?seq=183">아파치 카프카 입문 강의</a></p>
+</li>
+<li>
+<p><a href="https://kafka.apache.org/documentation/#introduction">kafka documentation</a></p>
+</li>
+</ul>
+
+    </div>
+    <div class="article-footer">
+<blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
+    <li class="post-copyright-link hidden-xs">
+      <strong>Permalink: </strong>
+      <a href="http://blog.cmstown.com/2020/11/kafka_sumary/" title="카프카 개념" target="_blank" rel="external">http://blog.cmstown.com/2020/11/kafka_sumary/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>License：</strong><a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN</a>
+    </li>
+  </ul>
+</blockquote>
+
+<div class="panel panel-default panel-badger">
+  <div class="panel-body">
+    <figure class="media">
+      <div class="media-left">
+        <a href="https://github.com/chlalstjd430" target="_blank" class="img-burn thumb-sm visible-lg">
+          <img src="http://blog.cmstown.com/avatar.png" class="img-rounded w-full" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading"><a href="https://github.com/chlalstjd430" target="_blank"><span class="text-dark">최민성</span><small class="ml-1x">26, 숭실대학교</small></a></h3>
+        <div>cms3136@gmail.com</div>
+      </div>
+    </figure>
+  </div>
+</div>
+    </div>
+  </article>
+<section id="comments">
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+</section>
+
+</div><nav class="bar bar-footer clearfix" data-stick-bottom>
+    <div class="bar-inner">
+        <ul class="pager pull-left">
+            <li class="prev">
+                <a href="http://blog.cmstown.com/2020/11/transactional/" title="[Spring(스프링)] 알고 쓰는 @Transactional"><i
+                        class="icon icon-angle-left"
+                        aria-hidden="true"></i><span>&nbsp;&nbsp;Older</span></a>
+            </li>
+            
+            <li class="toggle-toc">
+                <a class="toggle-btn collapsed" data-toggle="collapse" href="#collapseToc" aria-expanded="false"
+                    title="Catalogue" role="button">
+                    <span>[&nbsp;</span><span>Catalogue</span>
+                    <i class="text-collapsed icon icon-anchor"></i>
+                    <i class="text-in icon icon-close"></i>
+                    <span>]</span>
+                </a>
+            </li>
+        </ul>
+        <div class="bar-right">
+            <div class="share-component" data-sites=""
+                data-mobile-sites="weibo,qq,qzone"></div>
+        </div>
+    </div>
+</nav>
+
+</main><footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+<ul class="social-links">
+    <li><a href="https://github.com/chlalstjd430" target="_blank" title="github" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-github"></i></a></li>
+    <li><a href="http://blog.cmstown.com/index.xml" target="_blank" title="rss" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-rss"></i></a></li>
+</ul>
+  <div class="copyright">
+    &copy;2017  -
+    2020
+    <div class="publishby">
+        Theme by <a href="https://github.com/xiaoheiAh" target="_blank"> xiaoheiAh </a>base on<a href="https://github.com/xiaoheiAh/hugo-theme-pure" target="_blank"> pure</a>.
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_SVG"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+            showMathMenu: false, //disables context menu
+            tex2jax: {
+            inlineMath: [ ['$','$'], ['\\(','\\)'] ]
+           }
+    });
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script>
+    window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/highlight.min.js"></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/python.min.js" defer></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/javascript.min.js" defer></script><script>
+    hljs.configure({
+        tabReplace: '    ', 
+        classPrefix: ''     
+        
+    })
+    hljs.initHighlightingOnLoad();
+</script>
+<script src="http://blog.cmstown.com/js/application.min.bdeb64b910570b6c41badc6a05b7afb0c8ad9efd8525de3c7257d59e786326a3.js"></script>
+<script src="http://blog.cmstown.com/js/plugin.min.51ff8c7317566f82259170fa36e09c4493adc9b9378b427a01ad3f017ebac7dd.js"></script>
+
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: 'Posts',
+                PAGES: 'Pages',
+                CATEGORIES: 'Categories',
+                TAGS: 'Tags',
+                UNTITLED: '(Untitled)',
+            },
+            ROOT_URL: 'http:\/\/blog.cmstown.com',
+            CONTENT_URL: 'http:\/\/blog.cmstown.com\/searchindex.json ',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+<script type="text/javascript" src="http://blog.cmstown.com/js/insight.min.a343cd9a5a7698336b28ef3a7c16a3a1b1d2d5fb17dc8ed04022bbe08cc5459073a15bdafa3a8a58cdd56080784bdd69fa70b1ae8597565c799c57ed00f0e120.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+<script>
+    tocbot.init({
+        
+        tocSelector: '.js-toc',
+        
+        contentSelector: '.js-toc-content',
+        
+        headingSelector: 'h1, h2, h3',
+        
+        hasInnerContainers: true,
+    });
+</script>
+
+<script>
+    (function() { 
+    var d = document, s = d.createElement('script');
+    s.src = 'https://' + 'https-chlalstjd430-github-io' + '.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'G-PKRV60YBKY', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  </body>
+</html>

@@ -36,7 +36,7 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://blog.cmstown.com/" />
-<meta property="og:updated_time" content="2020-11-09T14:51:26+09:00" />
+<meta property="og:updated_time" content="2020-11-16T22:16:35+09:00" />
 <meta itemprop="name" content="cmstown">
 <meta itemprop="description" content=""><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="cmstown"/>
@@ -162,6 +162,7 @@
             <li class="category-list-item"><a href="http://blog.cmstown.com/categories/docker/" class="category-list-link">docker</a><span class="category-list-count">8</span></li>
             <li class="category-list-item"><a href="http://blog.cmstown.com/categories/it-%EC%A0%95%EB%B3%B4/" class="category-list-link">it-정보</a><span class="category-list-count">2</span></li>
             <li class="category-list-item"><a href="http://blog.cmstown.com/categories/java/" class="category-list-link">java</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="http://blog.cmstown.com/categories/kafka/" class="category-list-link">kafka</a><span class="category-list-count">1</span></li>
             <li class="category-list-item"><a href="http://blog.cmstown.com/categories/kubernetes/" class="category-list-link">kubernetes</a><span class="category-list-count">3</span></li>
             <li class="category-list-item"><a href="http://blog.cmstown.com/categories/spring/" class="category-list-link">spring</a><span class="category-list-count">1</span></li>
             <li class="category-list-item"><a href="http://blog.cmstown.com/categories/%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4/" class="category-list-link">디자인패턴</a><span class="category-list-count">8</span></li>
@@ -266,6 +267,16 @@
             <li>
                 <div class="item-inner">
                     <p class="item-title">
+                        <a href="http://blog.cmstown.com/2020/11/kafka_sumary/" class="title">카프카 개념</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-11-16 22:16:35 &#43;0900 KST" itemprop="datePublished">2020-11-16</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
                         <a href="http://blog.cmstown.com/2020/11/transactional/" class="title">[Spring(스프링)] 알고 쓰는 @Transactional</a>
                     </p>
                     <p class="item-date">
@@ -303,16 +314,6 @@
                     </p>
                 </div>
             </li>
-            <li>
-                <div class="item-inner">
-                    <p class="item-title">
-                        <a href="http://blog.cmstown.com/2020/09/k8s_01/" class="title">[Kubernets/쿠버네티스] 01. 쿠버네티스 입문 - 쿠버네티스란?</a>
-                    </p>
-                    <p class="item-date">
-                        <time datetime="2020-09-09 16:39:59 &#43;0900 KST" itemprop="datePublished">2020-09-09</time>
-                    </p>
-                </div>
-            </li>
         </ul>
     </div>
 </div>
@@ -328,6 +329,39 @@
     
     
     
+    <article
+      class="article article-type-page"
+      itemscope
+      itemtype="http://schema.org/BlogPosting"
+    >
+      <div class="article-header">
+        <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/2020/06/08_observer_pattern/"
+    >[DesignPattern] Observer pattern(옵저버 패턴)</a
+  >
+</h1>
+
+      </div>
+      <div class="article-entry text-muted" itemprop="description">Observer pattern(옵저버 패턴) 이번에 학습할 디자인 패턴은 옵저버 패턴 입니다. Observer pattern(옵저버 패턴)이란? 위키에서는 다음과 같이 정의합니다.</div>
+      <p class="article-meta">
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="http://blog.cmstown.com/2020/06/08_observer_pattern/" class="">
+  <time datetime="2020-06-13 23:13:36 &#43;0900 KST" itemprop="datePublished">2020-06-13</time>
+</a>
+</span>
+<span class="article-category">
+  <i class="icon icon-folder"></i>&nbsp;
+  <a class="article-category-link" href="/categories/%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4/"> 디자인패턴 </a>
+</span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/2020/06/08_observer_pattern/#comments" class="article-comment-link">Comments</a></span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 1269words</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 3minutes </span>
+      </p>
+    </article>
     <article
       class="article article-type-page"
       itemscope
@@ -622,39 +656,6 @@
 
         <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/2020/05/aws_ec2_03/#comments" class="article-comment-link">Comments</a></span>
 		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 907words</span>
-		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 2minutes </span>
-      </p>
-    </article>
-    <article
-      class="article article-type-page"
-      itemscope
-      itemtype="http://schema.org/BlogPosting"
-    >
-      <div class="article-header">
-        <h1 itemprop="name">
-  <a
-    class="article-title"
-    href="/2020/05/aws_ec2_02/"
-    >AWS EC2를 이용하여 Spring Boot 배포하기(2)</a
-  >
-</h1>
-
-      </div>
-      <div class="article-entry text-muted" itemprop="description">AWS EC2를 이용하여 Spring Boot 배포하기(2) - AWS EC2 서버 접속 오늘은 AWS EC2 서버에 접속하는 과정을 소개해드리도록 하겠습니다. 먼저 시작하기 전에 해당 글은 윈도우 를 이</div>
-      <p class="article-meta">
-<span class="article-date">
-  <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="http://blog.cmstown.com/2020/05/aws_ec2_02/" class="">
-  <time datetime="2020-05-22 13:59:22 &#43;0900 KST" itemprop="datePublished">2020-05-22</time>
-</a>
-</span>
-<span class="article-category">
-  <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/aws/"> AWS </a>
-</span>
-
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/2020/05/aws_ec2_02/#comments" class="article-comment-link">Comments</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 730words</span>
 		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 2minutes </span>
       </p>
     </article></div>
