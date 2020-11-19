@@ -5,10 +5,19 @@
     <link>http://blog.cmstown.com/posts/</link>
     <description>Recent content in Posts on cmstown</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 16 Nov 2020 22:16:35 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2020 16:32:20 +0900</lastBuildDate>
     
         <atom:link href="http://blog.cmstown.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>InnoDB Lock과 Isolation</title>
+      <link>http://blog.cmstown.com/2020/11/db_lock_in_treansaction/</link>
+      <pubDate>Thu, 19 Nov 2020 16:32:20 +0900</pubDate>
+      
+      <guid>http://blog.cmstown.com/2020/11/db_lock_in_treansaction/</guid>
+      <description>InnoDB Lock과 Isolation 앞서 게시글을 통해 Transaction과 Isolation에 대해 공부한 내용을 정리해보았다. 그런데 개발도중 이 isolation level을 이해하</description>
+    </item>
     
     <item>
       <title>카프카 개념</title>
@@ -179,15 +188,6 @@
       
       <guid>http://blog.cmstown.com/2020/07/spring_core_05/</guid>
       <description>@Component와 Component-Scan 컴포넌트 스캔 주요 기능 @Component @Repository @Service @Controller @Configuration @Componenet-Scan spring 3.1 부터 지원 @ComponentScan 어노테이션부터 component scan을 시작하여 해당 파일이 있는 패키지 안의 모든 것을 sc</description>
-    </item>
-    
-    <item>
-      <title>[Spring Core(스프링 프레임워크 핵심기술)] 04. @Autowired</title>
-      <link>http://blog.cmstown.com/2020/07/spring_core_04/</link>
-      <pubDate>Fri, 03 Jul 2020 02:49:29 +0900</pubDate>
-      
-      <guid>http://blog.cmstown.com/2020/07/spring_core_04/</guid>
-      <description>@Autowired 필요한 의존 객체의 &amp;ldquo;타입&amp;quot;에 해당하는 빈을 찾아 주입한다. 사용할 수 있는 위치 클래스 주입 BookRepository.java public class BookRepository { } BookService.java @Service public class BookService { BookRepository bookRepository; @Autowired public BookService(BookRepository bookRepository){ this.bookRepository</description>
     </item>
     
   </channel>

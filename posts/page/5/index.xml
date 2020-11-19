@@ -5,10 +5,19 @@
     <link>http://blog.cmstown.com/posts/</link>
     <description>Recent content in Posts on cmstown</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 16 Nov 2020 22:16:35 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2020 16:32:20 +0900</lastBuildDate>
     
         <atom:link href="http://blog.cmstown.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>백준 1786 - 찾기</title>
+      <link>http://blog.cmstown.com/2020/02/%EB%B0%B1%EC%A4%801786/</link>
+      <pubDate>Sun, 02 Feb 2020 23:07:51 +0900</pubDate>
+      
+      <guid>http://blog.cmstown.com/2020/02/%EB%B0%B1%EC%A4%801786/</guid>
+      <description>### [백준 문제 바로가기](https://www.acmicpc.net/problem/1786) #### 사용 언어 C++ 적용 알고리즘 KMP 알고리즘 문제풀이</description>
+    </item>
     
     <item>
       <title>Chapter 05 - 형식 맞추기</title>
@@ -142,7 +151,7 @@
       <pubDate>Mon, 13 Jan 2020 22:10:39 +0900</pubDate>
       
       <guid>http://blog.cmstown.com/2020/01/2020%EA%B3%84%ED%9A%8D_001/</guid>
-      <description>2020년 학업 계획 20-07-02 업데이트 1. IT동아리&amp;lt; YOURSSU 활동중(19.11.01~ ) YAPP 지원중(1.18 면접) 최종 합격(1.22) NEXTERS 최종 합격(6월)</description>
+      <description>2020년 학업 계획 20-11-19 업데이트 1. IT동아리&amp;lt; YOURSSU 활동중(19.11.01~ ) YAPP 지원중(1.18 면접) 최종 합격(1.22) NEXTERS 최종 합격(6월)</description>
     </item>
     
     <item>

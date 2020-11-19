@@ -4,27 +4,41 @@
   
   <url>
     <loc>http://blog.cmstown.com/categories/</loc>
-    <lastmod>2020-11-16T22:16:35+09:00</lastmod>
+    <lastmod>2020-11-19T16:32:20+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://blog.cmstown.com/</loc>
-    <lastmod>2020-11-16T22:16:35+09:00</lastmod>
+    <lastmod>2020-11-19T16:32:20+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://blog.cmstown.com/categories/kafka/</loc>
-    <lastmod>2020-11-16T22:16:35+09:00</lastmod>
+    <loc>http://blog.cmstown.com/categories/database/</loc>
+    <lastmod>2020-11-19T16:32:20+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.cmstown.com/2020/11/db_lock_in_treansaction/</loc>
+    <lastmod>2020-11-19T16:32:20+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://blog.cmstown.com/posts/</loc>
+    <lastmod>2020-11-19T16:32:20+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.cmstown.com/categories/kafka/</loc>
     <lastmod>2020-11-16T22:16:35+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -47,13 +61,6 @@
   <url>
     <loc>http://blog.cmstown.com/categories/spring/</loc>
     <lastmod>2020-11-09T14:51:26+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.cmstown.com/categories/database/</loc>
-    <lastmod>2020-11-09T11:18:39+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
