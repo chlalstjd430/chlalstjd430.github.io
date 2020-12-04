@@ -5,10 +5,19 @@
     <link>http://blog.cmstown.com/</link>
     <description>Recent content on cmstown</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 19 Nov 2020 16:32:20 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 04 Dec 2020 16:40:20 +0900</lastBuildDate>
     
         <atom:link href="http://blog.cmstown.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>[캐시(Cache)] redis VS ehcache VS memcached</title>
+      <link>http://blog.cmstown.com/2020/12/redis-vs-ehcache-vs-memcached/</link>
+      <pubDate>Fri, 04 Dec 2020 16:40:20 +0900</pubDate>
+      
+      <guid>http://blog.cmstown.com/2020/12/redis-vs-ehcache-vs-memcached/</guid>
+      <description>최근 캐시와 관련된 개발을 하게 되었는데, 접해보지 못했던 부분이라 기본적인 베이스를 학습하고자 글을 정리해본다. 캐시(Cache) 캐시란 지역성을 데이터를</description>
+    </item>
     
     <item>
       <title>InnoDB Lock과 Isolation</title>
@@ -179,15 +188,6 @@
       
       <guid>http://blog.cmstown.com/2020/07/spring_core_06/</guid>
       <description>빈의 스코프 Scope 싱글톤(default) 프로토타입 Request Session WebSocket &amp;hellip; Single.java @Component public class Single { } Proto.java @Component @Scope(&amp;quot;prototype&amp;quot;) public class Proto { } AppRunner.java @Component public class AppRunner implements ApplicationRunner { @Autowired ApplicationContext ctx; @Override public void run(ApplicationArguments args) throws Exception { System.out.println(&amp;quot;single&amp;quot;); System.out.println(ctx.getBean(Single.class)); System.out.println(ctx.getBean(Single.class)); System.out.println(ctx.getBean(Single.class)); System.out.println(&amp;quot;proto&amp;quot;); System.out.println(ctx.getBean(Proto.class)); System.out.println(ctx.getBean(Proto.class)); System.out.println(ctx.getBean(Proto.class)); }</description>
-    </item>
-    
-    <item>
-      <title>[Spring Core(스프링 프레임워크 핵심기술)] 05. IoC 컨테이너 : @Component와 Component-Scan</title>
-      <link>http://blog.cmstown.com/2020/07/spring_core_05/</link>
-      <pubDate>Thu, 09 Jul 2020 10:04:44 +0900</pubDate>
-      
-      <guid>http://blog.cmstown.com/2020/07/spring_core_05/</guid>
-      <description>@Component와 Component-Scan 컴포넌트 스캔 주요 기능 @Component @Repository @Service @Controller @Configuration @Componenet-Scan spring 3.1 부터 지원 @ComponentScan 어노테이션부터 component scan을 시작하여 해당 파일이 있는 패키지 안의 모든 것을 sc</description>
     </item>
     
   </channel>
