@@ -10,6 +10,15 @@
     
     
     <item>
+      <title>[Spring(스프링)] @Order</title>
+      <link>http://blog.cmstown.com/2020/12/transactional_order/</link>
+      <pubDate>Sun, 06 Dec 2020 22:22:26 +0900</pubDate>
+      
+      <guid>http://blog.cmstown.com/2020/12/transactional_order/</guid>
+      <description>@Order 최근 레디스 분산락으로 구현한 AOP와 @Transactional을 동시에 사용할 일이 생겼는데, 이 둘의 AOP 실행 순서에 있어서 구현한 AOP가 우선적으로</description>
+    </item>
+    
+    <item>
       <title>[캐시(Cache)] redis VS ehcache VS memcached</title>
       <link>http://blog.cmstown.com/2020/12/redis-vs-ehcache-vs-memcached/</link>
       <pubDate>Fri, 04 Dec 2020 16:40:20 +0900</pubDate>
@@ -178,15 +187,6 @@
       
       <guid>http://blog.cmstown.com/2020/07/spring_core_07/</guid>
       <description>profile ApplicationContext extends EnvironmentCapable application context는 bean factory뿐만 아니라 다양한 기능들을 제공한다. 그 중에서 구현하고 있는 EnviromentCapable에서 제공하</description>
-    </item>
-    
-    <item>
-      <title>[Spring Core(스프링 프레임워크 핵심기술)] 06. IoC 컨테이너 : 빈의 스코프</title>
-      <link>http://blog.cmstown.com/2020/07/spring_core_06/</link>
-      <pubDate>Thu, 09 Jul 2020 19:10:24 +0900</pubDate>
-      
-      <guid>http://blog.cmstown.com/2020/07/spring_core_06/</guid>
-      <description>빈의 스코프 Scope 싱글톤(default) 프로토타입 Request Session WebSocket &amp;hellip; Single.java @Component public class Single { } Proto.java @Component @Scope(&amp;quot;prototype&amp;quot;) public class Proto { } AppRunner.java @Component public class AppRunner implements ApplicationRunner { @Autowired ApplicationContext ctx; @Override public void run(ApplicationArguments args) throws Exception { System.out.println(&amp;quot;single&amp;quot;); System.out.println(ctx.getBean(Single.class)); System.out.println(ctx.getBean(Single.class)); System.out.println(ctx.getBean(Single.class)); System.out.println(&amp;quot;proto&amp;quot;); System.out.println(ctx.getBean(Proto.class)); System.out.println(ctx.getBean(Proto.class)); System.out.println(ctx.getBean(Proto.class)); }</description>
     </item>
     
   </channel>
