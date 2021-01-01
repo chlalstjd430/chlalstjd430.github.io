@@ -11,6 +11,15 @@
     
     
     <item>
+      <title>[DesignPattern] Factory method pattern(팩토리 메소드 패턴)</title>
+      <link>http://blog.cmstown.com/2020/06/03_factory_method_pattern/</link>
+      <pubDate>Tue, 02 Jun 2020 02:04:49 +0900</pubDate>
+      
+      <guid>http://blog.cmstown.com/2020/06/03_factory_method_pattern/</guid>
+      <description>Factory method pattern(팩토리 메소드 패턴) 이번에 학습할 디자인 패턴은 &amp;ldquo;팩토리 메소드 패턴&amp;rdquo; 입니다. 팩토리 메소드 메서드 패턴이란</description>
+    </item>
+    
+    <item>
       <title>[DesignPattern] Template Method Pattern(템플릿 메소드 패턴)</title>
       <link>http://blog.cmstown.com/2020/05/02_templete_method_pattern/</link>
       <pubDate>Tue, 26 May 2020 15:37:48 +0900</pubDate>
@@ -179,15 +188,6 @@
       
       <guid>http://blog.cmstown.com/2020/02/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_011/</guid>
       <description>문제링크 사용언어 c++ 주의사항 숫자는 1~9까지만 존재한다 동일한 숫자는 없다 문제풀이 일단 문제에서 답이될 수는 123~987에서 0을 포함하거나, 동일한 숫</description>
-    </item>
-    
-    <item>
-      <title>프로그래머스 - 위장</title>
-      <link>http://blog.cmstown.com/2020/02/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_010/</link>
-      <pubDate>Sun, 23 Feb 2020 17:29:27 +0900</pubDate>
-      
-      <guid>http://blog.cmstown.com/2020/02/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_010/</guid>
-      <description>문제링크 사용언어 c++ 주의사항 서로 다른 옷의 조합의 수를 구하는 공식을 생각해보자. 문제풀이 처음에 공식을 생각하지 않은 채, 재귀로 조합으로 경우의 수를 구하여 시</description>
     </item>
     
   </channel>

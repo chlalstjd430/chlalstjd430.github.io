@@ -11,6 +11,15 @@
     
     
     <item>
+      <title>2021 학업 계획</title>
+      <link>http://blog.cmstown.com/2021/01/2020_%ED%9A%8C%EA%B3%A0%EB%A1%9D/</link>
+      <pubDate>Fri, 01 Jan 2021 22:20:21 +0900</pubDate>
+      
+      <guid>http://blog.cmstown.com/2021/01/2020_%ED%9A%8C%EA%B3%A0%EB%A1%9D/</guid>
+      <description>2020 회고록 드디어 20201년이 다가왔다. 작년 한 해는 개인적으로 코로나뿐만 아니라 정말 다사다난한 한 해였다. 그러한 다사다난한 상황 속에서 개인적으로 개발자</description>
+    </item>
+    
+    <item>
       <title>[Spring(스프링)] @Order</title>
       <link>http://blog.cmstown.com/2020/12/transactional_order/</link>
       <pubDate>Sun, 06 Dec 2020 22:22:26 +0900</pubDate>
@@ -179,15 +188,6 @@
       
       <guid>http://blog.cmstown.com/2020/07/spring_core_08/</guid>
       <description>property 프로퍼티 다양한 방법으로 정의할 수 있는 설정값 Environment의 역할은 프로퍼티 소스 실행 및 프로퍼티 값 가져오기 application에 등록된 여</description>
-    </item>
-    
-    <item>
-      <title>[Spring Core(스프링 프레임워크 핵심기술)] 07. IoC 컨테이너 : 프로파일</title>
-      <link>http://blog.cmstown.com/2020/07/spring_core_07/</link>
-      <pubDate>Sun, 12 Jul 2020 12:30:33 +0900</pubDate>
-      
-      <guid>http://blog.cmstown.com/2020/07/spring_core_07/</guid>
-      <description>profile ApplicationContext extends EnvironmentCapable application context는 bean factory뿐만 아니라 다양한 기능들을 제공한다. 그 중에서 구현하고 있는 EnviromentCapable에서 제공하</description>
     </item>
     
   </channel>
