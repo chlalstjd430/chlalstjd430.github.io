@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://blog.cmstown.com/categories/2020-%EA%B3%84%ED%9A%8D/</loc>
+    <loc>http://blog.cmstown.com/categories/2021-%EA%B3%84%ED%9A%8D/</loc>
     <lastmod>2021-01-01T22:20:21+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -32,20 +32,6 @@
   
   <url>
     <loc>http://blog.cmstown.com/posts/</loc>
-    <lastmod>2021-01-01T22:20:21+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.cmstown.com/tags/</loc>
-    <lastmod>2021-01-01T22:20:21+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.cmstown.com/tags/%EA%B3%84%ED%9A%8D/</loc>
     <lastmod>2021-01-01T22:20:21+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -137,6 +123,13 @@
   
   <url>
     <loc>http://blog.cmstown.com/categories/kubernetes/</loc>
+    <lastmod>2020-09-12T00:07:29+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.cmstown.com/tags/</loc>
     <lastmod>2020-09-12T00:07:29+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -724,7 +717,21 @@
   </url>
   
   <url>
+    <loc>http://blog.cmstown.com/categories/2020-%EA%B3%84%ED%9A%8D/</loc>
+    <lastmod>2020-02-05T00:38:43+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.cmstown.com/2020/02/2020%EA%B3%84%ED%9A%8D_002/</loc>
+    <lastmod>2020-02-05T00:38:43+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.cmstown.com/tags/%EA%B3%84%ED%9A%8D/</loc>
     <lastmod>2020-02-05T00:38:43+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

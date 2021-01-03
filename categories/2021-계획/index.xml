@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2021 계획 on cmstown</title>
+    <link>http://blog.cmstown.com/categories/2021-%EA%B3%84%ED%9A%8D/</link>
+    <description>Recent content in 2021 계획 on cmstown</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 01 Jan 2021 22:20:21 +0900</lastBuildDate>
+    
+        <atom:link href="http://blog.cmstown.com/categories/2021-%EA%B3%84%ED%9A%8D/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>2021 회고록 - 3학년 학부생에서 네이버 인턴 경험까지</title>
+      <link>http://blog.cmstown.com/2021/01/2020_%ED%9A%8C%EA%B3%A0%EB%A1%9D/</link>
+      <pubDate>Fri, 01 Jan 2021 22:20:21 +0900</pubDate>
+      
+      <guid>http://blog.cmstown.com/2021/01/2020_%ED%9A%8C%EA%B3%A0%EB%A1%9D/</guid>
+      <description>2020 회고록 드디어 20201년이 다가왔다. 작년 한 해는 개인적으로 코로나뿐만 아니라 정말 다사다난한 한 해였다. 그러한 다사다난한 상황 속에서 개인적으로 개발자</description>
+    </item>
+    
+    <item>
+      <title>[Spring(스프링)] @Order</title>
+      <link>http://blog.cmstown.com/2020/12/transactional_order/</link>
+      <pubDate>Sun, 06 Dec 2020 22:22:26 +0900</pubDate>
+      
+      <guid>http://blog.cmstown.com/2020/12/transactional_order/</guid>
+      <description>@Order 최근 레디스 분산락으로 구현한 AOP와 @Transactional을 동시에 사용할 일이 생겼는데, 이 둘의 AOP 실행 순서에 있어서 구현한 AOP가 우선적으로</description>
+    </item>
+    
+    <item>
+      <title>[캐시(Cache)] redis VS ehcache VS memcached</title>
+      <link>http://blog.cmstown.com/2020/12/redis-vs-ehcache-vs-memcached/</link>
+      <pubDate>Fri, 04 Dec 2020 16:40:20 +0900</pubDate>
+      
+      <guid>http://blog.cmstown.com/2020/12/redis-vs-ehcache-vs-memcached/</guid>
+      <description>최근 캐시와 관련된 개발을 하게 되었는데, 접해보지 못했던 부분이라 기본적인 베이스를 학습하고자 글을 정리해본다. 캐시(Cache) 캐시란 지역성을 데이터를</description>
+    </item>
+    
+    <item>
+      <title>InnoDB Lock과 Isolation</title>
+      <link>http://blog.cmstown.com/2020/11/db_lock_in_treansaction/</link>
+      <pubDate>Thu, 19 Nov 2020 16:32:20 +0900</pubDate>
+      
+      <guid>http://blog.cmstown.com/2020/11/db_lock_in_treansaction/</guid>
+      <description>InnoDB Lock과 Isolation 앞서 게시글을 통해 Transaction과 Isolation에 대해 공부한 내용을 정리해보았다. 그런데 개발도중 이 isolation level을 이해하</description>
+    </item>
+    
+    <item>
+      <title>카프카 개념</title>
+      <link>http://blog.cmstown.com/2020/11/kafka_sumary/</link>
+      <pubDate>Mon, 16 Nov 2020 22:16:35 +0900</pubDate>
+      
+      <guid>http://blog.cmstown.com/2020/11/kafka_sumary/</guid>
+      <description>카프카 개념 정리 카프카란? 기존에 end-to-end 연결 방식의 아키텍처로 인하여 데이터 연동의 복잡성이 증가되었다. 이에 링크드인에서 데이터가 갑자기 많아지더라도 확장이 용</description>
+    </item>
+    
+    <item>
+      <title>[Spring(스프링)] 알고 쓰는 @Transactional</title>
+      <link>http://blog.cmstown.com/2020/11/transactional/</link>
+      <pubDate>Mon, 09 Nov 2020 14:51:26 +0900</pubDate>
+      
+      <guid>http://blog.cmstown.com/2020/11/transactional/</guid>
+      <description>알고 쓰는 @Transactional 스프링으로 프로젝트를 진행하다보면 @Transactional 어노테이션을 많이들 활용한다. 그런데 동아리나 다른 스프링 개발자들 중 해당 어노테이션의 default값이</description>
+    </item>
+    
+    <item>
+      <title>트랜잭션(Transcation) </title>
+      <link>http://blog.cmstown.com/2020/11/transcation/</link>
+      <pubDate>Mon, 09 Nov 2020 11:18:39 +0900</pubDate>
+      
+      <guid>http://blog.cmstown.com/2020/11/transcation/</guid>
+      <description>트랜잭션(Transaction) 트랜잭션은 정말 중요하다, 우리가 사이드로 프로젝트를 진행하나 실무에서 적용하나 트랜잭션은 반드시 활용될 것이다. 심지</description>
+    </item>
+    
+    <item>
+      <title>[Kubernets/쿠버네티스] 03. 쿠버네티스 입문 - 인그레스(ingress)</title>
+      <link>http://blog.cmstown.com/2020/09/k8s_03/</link>
+      <pubDate>Sat, 12 Sep 2020 00:07:29 +0900</pubDate>
+      
+      <guid>http://blog.cmstown.com/2020/09/k8s_03/</guid>
+      <description>🕸 쿠버네티스 입문 - 인그레스 🕸 이전에 배운 NodePort로 외부 서비스를 공개하는 것은 L4 레벨까지만 다룰 수 있기 떄문에 HTTP/HTTPS처럼 경로를 기</description>
+    </item>
+    
+    <item>
+      <title>[Kubernets/쿠버네티스] 02. 쿠버네티스 입문 - 파드(Pod),래플리카세트(ReplicaSet),디플로이먼트(Deployment),서비스(Service)</title>
+      <link>http://blog.cmstown.com/2020/09/k8s_02/</link>
+      <pubDate>Fri, 11 Sep 2020 15:49:19 +0900</pubDate>
+      
+      <guid>http://blog.cmstown.com/2020/09/k8s_02/</guid>
+      <description>🕸 쿠버네티스 입문 - 파드(Pod),래플리카세트(ReplicaSet),디플로이먼트(Deployment),서비스(Service) 🕸 파드</description>
+    </item>
+    
+    <item>
+      <title>[Kubernets/쿠버네티스] 01. 쿠버네티스 입문 - 쿠버네티스란?</title>
+      <link>http://blog.cmstown.com/2020/09/k8s_01/</link>
+      <pubDate>Wed, 09 Sep 2020 16:39:59 +0900</pubDate>
+      
+      <guid>http://blog.cmstown.com/2020/09/k8s_01/</guid>
+      <description>🕸 쿠버네티스를 공부하기 전에&amp;hellip; 🕸 앞서 도커에 대해 공부를 해보았다. 도커가 발전함에 따라 컨테이너 오케스트레이션이 다양하게 등장했는데, 그 중</description>
+    </item>
+    
+    <item>
+      <title>[Docker/도커] 08.컨테이너 실전 구축 및 배포</title>
+      <link>http://blog.cmstown.com/2020/09/docker_08/</link>
+      <pubDate>Mon, 07 Sep 2020 22:22:15 +0900</pubDate>
+      
+      <guid>http://blog.cmstown.com/2020/09/docker_08/</guid>
+      <description>더 자세한 내용은 부디 책을 참고하길 부탁드립니다. 목차 [Docker/도커] 01. 도커의 기초 - 도커란 무엇인가? [Docker/도커] 02. 도커의 기초 - 도커</description>
+    </item>
+    
+    <item>
+      <title>[Docker/도커] 07.도커 컨테이너 배포 - 도커 컴포즈로 여러 컨테이너 실행하기</title>
+      <link>http://blog.cmstown.com/2020/09/docker_07/</link>
+      <pubDate>Sun, 06 Sep 2020 16:52:31 +0900</pubDate>
+      
+      <guid>http://blog.cmstown.com/2020/09/docker_07/</guid>
+      <description>더 자세한 내용은 부디 책을 참고하길 부탁드립니다. 목차 [Docker/도커] 01. 도커의 기초 - 도커란 무엇인가? [Docker/도커] 02. 도커의 기초 - 도커</description>
+    </item>
+    
+    <item>
+      <title>[Docker/도커] 06.도커 컨테이너 배포 - 운영과 관리를 위한 명령</title>
+      <link>http://blog.cmstown.com/2020/09/docker_06/</link>
+      <pubDate>Sun, 06 Sep 2020 03:14:26 +0900</pubDate>
+      
+      <guid>http://blog.cmstown.com/2020/09/docker_06/</guid>
+      <description>더 자세한 내용은 부디 책을 참고하길 부탁드립니다. 목차 [Docker/도커] 01. 도커의 기초 - 도커란 무엇인가? [Docker/도커] 02. 도커의 기초 - 도커</description>
+    </item>
+    
+    <item>
+      <title>[Docker/도커] 05.도커 컨테이너 배포 - 도커 컨테이너 다루기</title>
+      <link>http://blog.cmstown.com/2020/09/docker_05/</link>
+      <pubDate>Sat, 05 Sep 2020 21:49:33 +0900</pubDate>
+      
+      <guid>http://blog.cmstown.com/2020/09/docker_05/</guid>
+      <description>더 자세한 내용은 부디 책을 참고하길 부탁드립니다. 목차 [Docker/도커] 01. 도커의 기초 - 도커란 무엇인가? [Docker/도커] 02. 도커의 기초 - 도커</description>
+    </item>
+    
+    <item>
+      <title>[Docker/도커] 04.도커 컨테이너 배포 - 도커 이미지 다루기</title>
+      <link>http://blog.cmstown.com/2020/09/docker_04/</link>
+      <pubDate>Sat, 05 Sep 2020 17:45:30 +0900</pubDate>
+      
+      <guid>http://blog.cmstown.com/2020/09/docker_04/</guid>
+      <description>더 자세한 내용은 부디 책을 참고하길 부탁드립니다. 목차 [Docker/도커] 01. 도커의 기초 - 도커란 무엇인가? [Docker/도커] 02. 도커의 기초 - 도커</description>
+    </item>
+    
+    <item>
+      <title>[Docker/도커] 03.도커 컨테이너 배포 - 컨테이너로 애플리케이션 실행하기</title>
+      <link>http://blog.cmstown.com/2020/09/docker_03/</link>
+      <pubDate>Fri, 04 Sep 2020 21:04:07 +0900</pubDate>
+      
+      <guid>http://blog.cmstown.com/2020/09/docker_03/</guid>
+      <description>더 자세한 내용은 부디 책을 참고하길 부탁드립니다. 목차 [Docker/도커] 01. 도커의 기초 - 도커란 무엇인가? [Docker/도커] 02. 도커의 기초 - 도커</description>
+    </item>
+    
+    <item>
+      <title>[Docker/도커] 02. 도커의 기초 - 도커를 사용하는 의의 / 도커 설치하기</title>
+      <link>http://blog.cmstown.com/2020/09/docker_02/</link>
+      <pubDate>Fri, 04 Sep 2020 17:36:13 +0900</pubDate>
+      
+      <guid>http://blog.cmstown.com/2020/09/docker_02/</guid>
+      <description>더 자세한 내용은 부디 책을 참고하길 부탁드립니다. 목차 [Docker/도커] 01. 도커의 기초 - 도커란 무엇인가? 👉 [Docker/도커] 02. 도커의 기초 - 도</description>
+    </item>
+    
+    <item>
+      <title>[Docker/도커] 01. 도커의 기초 - 도커란 무엇인가?</title>
+      <link>http://blog.cmstown.com/2020/09/docker_01/</link>
+      <pubDate>Fri, 04 Sep 2020 13:23:15 +0900</pubDate>
+      
+      <guid>http://blog.cmstown.com/2020/09/docker_01/</guid>
+      <description>목차 👉 [Docker/도커] 01. 도커의 기초 - 도커란 무엇인가? 👈 [Docker/도커] 02. 도커의 기초 - 도커를 사용하는 의의 / 도커 설치하기 [Docke</description>
+    </item>
+    
+    <item>
+      <title>Spring Singleton VS Java Singleton</title>
+      <link>http://blog.cmstown.com/2020/08/singleton/</link>
+      <pubDate>Wed, 19 Aug 2020 13:51:32 +0900</pubDate>
+      
+      <guid>http://blog.cmstown.com/2020/08/singleton/</guid>
+      <description>Spring Singleton VS Java Singleton(스프링 싱글톤과 자바 싱글톤의 차이) 최근 프로젝트를 하던도중 싱글톤으로 구현해야하는 클래스가 생겼는데, Spring에서 s</description>
+    </item>
+    
+    <item>
+      <title>[Spring Core(스프링 프레임워크 핵심기술)] 08. IoC 컨테이너 : 프로퍼티</title>
+      <link>http://blog.cmstown.com/2020/07/spring_core_08/</link>
+      <pubDate>Sun, 12 Jul 2020 12:32:18 +0900</pubDate>
+      
+      <guid>http://blog.cmstown.com/2020/07/spring_core_08/</guid>
+      <description>property 프로퍼티 다양한 방법으로 정의할 수 있는 설정값 Environment의 역할은 프로퍼티 소스 실행 및 프로퍼티 값 가져오기 application에 등록된 여</description>
+    </item>
+    
+  </channel>
+</rss>
