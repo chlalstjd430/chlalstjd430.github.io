@@ -5,10 +5,19 @@
     <link>http://blog.cmstown.com/</link>
     <description>Recent content on cmstown</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 01 Jan 2021 22:20:21 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 04 Jan 2021 23:20:21 +0900</lastBuildDate>
     
         <atom:link href="http://blog.cmstown.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>[HTTP Method] PUT과 PATCH의 차이점</title>
+      <link>http://blog.cmstown.com/2020/06/put_vs_patch/</link>
+      <pubDate>Tue, 02 Jun 2020 18:04:02 +0900</pubDate>
+      
+      <guid>http://blog.cmstown.com/2020/06/put_vs_patch/</guid>
+      <description>RESTful API를 설계할 때 내가 만난 대부분은 주로 &amp;ldquo;수정&amp;rdquo; 기능에 대헤 PUT 을 사용하게 됩니다. 그러나 수정할 때 무조건 PUT 을 이용하는 것을 옳지</description>
+    </item>
     
     <item>
       <title>[DesignPattern] Factory method pattern(팩토리 메소드 패턴)</title>
@@ -179,15 +188,6 @@
       
       <guid>http://blog.cmstown.com/2020/02/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_012/</guid>
       <description>문제링크 사용언어 c++ 주의사항 stock에 있는 밀가루는 오늘(0일 이후)부터 사용됩니다. stock과 k는 2 이상 100,000 이하입니다. dates의 각 원소는 1</description>
-    </item>
-    
-    <item>
-      <title>프로그래머스 - 숫자 야구</title>
-      <link>http://blog.cmstown.com/2020/02/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_011/</link>
-      <pubDate>Wed, 26 Feb 2020 21:53:38 +0900</pubDate>
-      
-      <guid>http://blog.cmstown.com/2020/02/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4_011/</guid>
-      <description>문제링크 사용언어 c++ 주의사항 숫자는 1~9까지만 존재한다 동일한 숫자는 없다 문제풀이 일단 문제에서 답이될 수는 123~987에서 0을 포함하거나, 동일한 숫</description>
     </item>
     
   </channel>
